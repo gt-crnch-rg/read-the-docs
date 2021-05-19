@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'CRNCH Rogues Gallery Documentation'
+project = u'CRNCH Rogues Gallery'
 copyright = u'2020, CRNCH'
 
 # The version info for the project you're documenting, acts as replacement for

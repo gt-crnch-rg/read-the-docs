@@ -10,7 +10,7 @@ Contribute
 Support
 -------
 
-TBD - we are still setting up public mailing lists.
+We are still setting up public mailing lists. Please stay tuned!
 
 License
 -------
