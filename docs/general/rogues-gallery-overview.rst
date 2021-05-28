@@ -15,7 +15,7 @@ will enable us to expand that to networking and quantum-related testbed
 equipment. The figure below shows a high-level overview of what the
 Rogues Gallery testbed looks like.
 
-.. figure:: RG_CCRI_Infrastructure_Overview.png
+.. figure:: ../figures/general/RG_CCRI_Infrastructure_Overview.png
    :alt: RG CCRI Infrastructure Overview
 
    RG CCRI Infrastructure Overview
