@@ -25,7 +25,7 @@ including: 1) sparse and irregular HPC 2) hardware and software codesign
 3) novel machine learning systems 4) and edge computing and
 next-generation networking. |RG Enabled Research Pillars|
 
-.. |RG Enabled Research Pillars| image:: RG_CCRI_Enabled_Research_Pillars.png
+.. |RG Enabled Research Pillars| image:: ../figures/general/RG_CCRI_Enabled_Research_Pillars.png
 
 Who are the users?
 ------------------
