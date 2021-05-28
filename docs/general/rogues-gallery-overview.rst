@@ -18,8 +18,6 @@ Rogues Gallery testbed looks like.
 .. figure:: ../figures/general/RG_CCRI_Infrastructure_Overview.png
    :alt: RG CCRI Infrastructure Overview
 
-   RG CCRI Infrastructure Overview
-
 This testbed is meant to enable several CISE-specific research pillars
 including: 1) sparse and irregular HPC 2) hardware and software codesign
 3) novel machine learning systems 4) and edge computing and
@@ -28,6 +26,6 @@ next-generation networking. |RG Enabled Research Pillars|
 .. |RG Enabled Research Pillars| image:: ../figures/general/RG_CCRI_Enabled_Research_Pillars.png
 
 Who are the users?
-------------------
+==============================
 Anyone in the US can request an account for the CRNCH Rogues Gallery testbed with priority for
 CISE researchers, students, and industry partners.
