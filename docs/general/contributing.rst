@@ -5,7 +5,9 @@ We welcome and appreciate your comments and contributions to this documentation.
 
 What is the process for contributing documentation?
 ########
-To contribute documentation, you should write an rst-formatted file related to your topic and submit it via merge request to this repository. We will also have a form where you can upload and submit new documentation to be posted in a simplified fashion.
+To contribute documentation, you should write an rst-formatted file related to your topic and submit it via `pull request to this repository <https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_. We will also eventually have a form where you can upload and submit new documentation to be posted in a simplified fashion.
+
+All read-the-docs documentation uses `_Restructered Text<https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary_terms.html#term-rst
 
 What should my documentation contain?
 ########
@@ -15,3 +17,13 @@ What should my documentation contain?
 
 2) A brief description of the problem you're trying to solve.
 * Ex: "This documentation details how to compile ROS for AC701 using the flubber server".
+
+3) 
+
+Where should I add new files?
+########
+Ideally, your file should go under a 
+
+How to convert MarkDown files to RST
+########
+While there are many nice GUI-based editors for MarkDown files, there are not that many editors for Restructered Text 
