@@ -7,7 +7,7 @@ What is the process for contributing documentation?
 ########
 To contribute documentation, you should write an rst-formatted file related to your topic and submit it via `pull request to this repository <https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_. We will also eventually have a form where you can upload and submit new documentation to be posted in a simplified fashion.
 
-All read-the-docs documentation uses `_Restructered Text<https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary_terms.html#term-rst`_. 
+All read-the-docs documentation uses `_Restructered Text <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary_terms.html#term-rst>`_. 
 
 What should my documentation contain?
 ########
