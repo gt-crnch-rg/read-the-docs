@@ -42,17 +42,6 @@ How do I contribute new documentation?
   formatting in the browser. You can check basic format of commits in the Github web interface.
 | 3) Commit *and* push to your fork and initiate a pull request. 
 
-
-
-Questions?
-----------
-
-Please email Jeff Young via our ticketing system
-crnch-help@cc.gatech.edu with any questions or please feel free to ask
-on our `CRNCH Rogues Gallery MS Teams
-group <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__.
-
-
 What should my documentation contain?
 ########
 
@@ -101,3 +90,8 @@ How do I add code snippets?
 ----------------------
 
 You can use either two `` to delineate small segments of RST code or the ".. code::" tag to add indented code blocks. Check the figure instructions for an example!
+
+Questions?
+##########
+Please email us via our ticketing system crnch-help@cc.gatech.edu with any questions or please feel free to ask on our `CRNCH Rogues Gallery MS Teams
+group.
