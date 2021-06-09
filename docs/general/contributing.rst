@@ -9,6 +9,68 @@ To contribute documentation, you should write an rst-formatted file related to y
 
 All read-the-docs documentation uses `Restructered Text <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary_terms.html#term-rst>`_. 
 
+Topic areas:
+------------
+
+-  Emu
+
+-  Getting Started - general topics needed to get started with RG
+
+-  Miscellaneous
+
+-  Networking - in-network computing, 5G, and edge.
+
+-  Neuromorphic and Novel Systems for ML
+
+-  Reconfig - all FPGA-related documentation
+
+-  Quantum
+
+-  Related - all related work
+
+How do I update existing documentation?
+---------------------------------------
+
+| 1) Fork this repo. 
+| 2) Find the page you are looking to update and make your edits.
+| 3) Commit *and* push to your fork and initiate a pull request. 
+
+How do I contribute new documentation?
+--------------------------------------
+
+| 1) Fork this repo. 
+| 2) Find the folder you are looking to update and create a new page
+  with the following titleformat: *[Topic
+  Area]-my-new-documentation-page*. 
+|  \* As an example, creating a new page for reconfigurable resources
+  might have a title like: *[Reconfig]-Using-Vitis-for-AI.md*
+|  \* Note that you may need to create your page with the appropriate
+  .md suffix name (for MarkDown) and then edit it to get appropriate
+  formatting in the browser.
+| 3) Add an appropriate link to \_Sidebar.md under your topic area with
+  a link to the new page. Note that regardless of which folder you use
+  the title is all that is needed because the wiki has a "flat"
+  structure.
+|  ``### Reconfigurable Hardware - Xilinx
+      * [Xilinx FPGAs - Getting Started]([Reconfig]-Xilinx-FPGAs----Getting-Started)
+          * [Xilinx HLS and SDAccel]([Reconfig]-Xilinx-HLS-and-SDAccel)
+          * [ML for Xilinx platforms]([Reconfig]-Xilinx-ML-Tools)
+          * [Alveo Tutorials and Resources]([Reconfig]-Xilinx-Alveo-Tutorials-and-Resources)
+      * [Xilinx Vitis]([Reconfig]-Xilinx-Vitis)
+      * [Xilinx Vitis for AI]([Reconfig]-Using-Vitis-for-AI) //New page added under the appropriate topic area and device type``
+| 4) Commit *and* push to your fork and initiate a pull request. 
+
+
+
+Questions?
+----------
+
+Please email Jeff Young via our ticketing system
+crnch-help@cc.gatech.edu with any questions or please feel free to ask
+on our `CRNCH Rogues Gallery MS Teams
+group <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__.
+
+
 What should my documentation contain?
 ########
 
@@ -22,8 +84,35 @@ What should my documentation contain?
 
 Where should I add new files?
 ########
-Ideally, your file should go under a 
+Ideally, your file should go under a directory related to your given topic. Please name your file with hyphens if it is a long filename, e.g., `reconfig-new-quartus-tools.rst` and place it under the correct folder in your commit. If you're not totally sure where a file should go, feel free to submit a pull request and we can help you format and find the right place for your file. 
 
 How to convert MarkDown files to RST
 ########
-While there are many nice GUI-based editors for MarkDown files, there are not that many editors for Restructered Text 
+While there are many nice GUI-based editors for MarkDown files, there are not that many editors for Restructered Text. One approach to contributing documentation would be to write it in Markdown and then convert it with Pandoc. [This URL](https://avilpage.com/2014/11/pandoc-best-way-to-convert-markdown-to.html) shows a simple example. 
+
+You can use the following format to convert a MarkDown file to RST, but you may then want to check that the links and figure links get populated correctly. 
+
+.. code:: 
+  pandoc rg-overview.md --from markdown --to rst -s -o rg-overview.rst
+
+Style Guide Suggestions
+#######################
+
+How do I add a figure?
+----------------------
+
+| 1) Add your figure to the ``docs/figures`` directory with a reasonable title. As an example, the overview page uses the figure  ``RG_CCRI_Infrastructure_Overview.png``. 
+| 2) Use RST syntax to add it the appropriate page. 
+
+.. code:: 
+
+   #Adds the image with a relative path to the figure directory.
+   .. figure:: ../figures/general/RG_CCRI_Infrastructure_Overview.png
+   :alt: RG CCRI Infrastructure Overview
+   
+3) Commit your change and check the hosting page to see if it looks reasonable (placement, height, width, etc.). Proceed with the pull request as normal.
+
+How do I add code snippets?
+----------------------
+
+You can use either two `` to delineate small segments of RST code or the ".. code::" tag to add indented code blocks. Check the figure instructions for an example!
