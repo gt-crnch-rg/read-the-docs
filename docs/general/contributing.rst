@@ -7,25 +7,18 @@ What is the process for contributing documentation?
 ########
 To contribute documentation, you should write an rst-formatted file related to your topic and submit it via `pull request to this repository <https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_. We will also eventually have a form where you can upload and submit new documentation to be posted in a simplified fashion.
 
-All read-the-docs documentation uses `Restructered Text <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary_terms.html#term-rst>`_. 
+All read-the-docs documentation uses `Restructered Text <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary_terms.html#term-rst>`_, so we ask that you write documentation in this format or convert Markdown files for your pull requests. 
 
-Topic areas:
+Current Topic Areas:
 ------------
 
 -  Emu
-
 -  Getting Started - general topics needed to get started with RG
-
 -  Miscellaneous
-
 -  Networking - in-network computing, 5G, and edge.
-
 -  Neuromorphic and Novel Systems for ML
-
 -  Reconfig - all FPGA-related documentation
-
 -  Quantum
-
 -  Related - all related work
 
 How do I update existing documentation?
@@ -43,22 +36,11 @@ How do I contribute new documentation?
   with the following titleformat: *[Topic
   Area]-my-new-documentation-page*. 
 |  \* As an example, creating a new page for reconfigurable resources
-  might have a title like: *[Reconfig]-Using-Vitis-for-AI.md*
+  might have a title like: *[Reconfig]-Using-Vitis-for-AI.rst*
 |  \* Note that you may need to create your page with the appropriate
-  .md suffix name (for MarkDown) and then edit it to get appropriate
-  formatting in the browser.
-| 3) Add an appropriate link to \_Sidebar.md under your topic area with
-  a link to the new page. Note that regardless of which folder you use
-  the title is all that is needed because the wiki has a "flat"
-  structure.
-|  ``### Reconfigurable Hardware - Xilinx
-      * [Xilinx FPGAs - Getting Started]([Reconfig]-Xilinx-FPGAs----Getting-Started)
-          * [Xilinx HLS and SDAccel]([Reconfig]-Xilinx-HLS-and-SDAccel)
-          * [ML for Xilinx platforms]([Reconfig]-Xilinx-ML-Tools)
-          * [Alveo Tutorials and Resources]([Reconfig]-Xilinx-Alveo-Tutorials-and-Resources)
-      * [Xilinx Vitis]([Reconfig]-Xilinx-Vitis)
-      * [Xilinx Vitis for AI]([Reconfig]-Using-Vitis-for-AI) //New page added under the appropriate topic area and device type``
-| 4) Commit *and* push to your fork and initiate a pull request. 
+  .rst suffix name and then edit it to get appropriate
+  formatting in the browser. You can check basic format of commits in the Github web interface.
+| 3) Commit *and* push to your fork and initiate a pull request. 
 
 
 
@@ -80,7 +62,9 @@ What should my documentation contain?
 2) A brief description of the problem you're trying to solve.
 * Ex: "This documentation details how to compile ROS for AC701 using the flubber server".
 
-3) 
+3) Code snippets that demonstrate proper execution of a technique or application for the topic in question. See the suggested format for code snippets below.
+
+4) References to relative links from official documentaiton or examples, if they are relevant.
 
 Where should I add new files?
 ########
@@ -90,7 +74,7 @@ How to convert MarkDown files to RST
 ########
 While there are many nice GUI-based editors for MarkDown files, there are not that many editors for Restructered Text. One approach to contributing documentation would be to write it in Markdown and then convert it with Pandoc. [This URL](https://avilpage.com/2014/11/pandoc-best-way-to-convert-markdown-to.html) shows a simple example. 
 
-You can use the following format to convert a MarkDown file to RST, but you may then want to check that the links and figure links get populated correctly. 
+You can use the following format to convert a MarkDown file to RST, but you may then want to check that the links and figure links get populated correctly. You can also use editors like [Typora](https://typora.io/) to edit Markdown and export RST. Note that Typora uses pandoc behind the scenes to do this conversion!
 
 .. code:: 
   pandoc rg-overview.md --from markdown --to rst -s -o rg-overview.rst
@@ -107,6 +91,7 @@ How do I add a figure?
 .. code:: 
 
    #Adds the image with a relative path to the figure directory.
+   #Alt tag is nice to have if the image does not load correctly
    .. figure:: ../figures/general/RG_CCRI_Infrastructure_Overview.png
    :alt: RG CCRI Infrastructure Overview
    
