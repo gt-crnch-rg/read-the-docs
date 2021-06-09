@@ -58,7 +58,7 @@ Ideally, your file should go under a directory related to your given topic. Plea
 
 How to convert MarkDown files to RST
 ########
-While there are many nice GUI-based editors for MarkDown files, there are not that many editors for Restructered Text. One approach to contributing documentation would be to write it in Markdown and then convert it with Pandoc. `This URL <https://avilpage.com/2014/11/pandoc-best-way-to-convert-markdown-to.html`_ shows a simple example. 
+While there are many nice GUI-based editors for MarkDown files, there are not that many editors for Restructered Text. One approach to contributing documentation would be to write it in Markdown and then convert it with Pandoc. `This URL <https://avilpage.com/2014/11/pandoc-best-way-to-convert-markdown-to.html>`_ shows a simple example. 
 
 You can use the following format to convert a MarkDown file to RST, but you may then want to check that the links and figure links get populated correctly. You can also use editors like `Typora <https://typora.io/>`_ to edit Markdown and export RST. Note that Typora uses pandoc behind the scenes to do this conversion!
 
