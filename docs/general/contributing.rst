@@ -89,7 +89,7 @@ How do I add a figure?
 How do I add code snippets?
 ----------------------
 
-You can use either two `` to delineate small segments of RST code or the ".. code::" tag to add indented code blocks. Check the figure instructions for an example!
+You can use either two `` to delineate small segments of RST code or the ".. code::" tag to add indented code blocks. Check the figure instructions above for an example!
 
 Questions?
 ##########
