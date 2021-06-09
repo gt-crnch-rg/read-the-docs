@@ -45,15 +45,12 @@ How do I contribute new documentation?
 What should my documentation contain?
 ########
 
-1) A useful title
+| 1) A useful title
 * Ex: "Compiling ROS for the AC701 FPGA platform"
-
-2) A brief description of the problem you're trying to solve.
-* Ex: "This documentation details how to compile ROS for AC701 using the flubber server".
-
-3) Code snippets that demonstrate proper execution of a technique or application for the topic in question. See the suggested format for code snippets below.
-
-4) References to relative links from official documentaiton or examples, if they are relevant.
+| 2) A brief description of the problem you're trying to solve.
+| \* Ex: "This documentation details how to compile ROS for AC701 using the flubber server".
+| 3) Code snippets that demonstrate proper execution of a technique or application for the topic in question. See the suggested format for code snippets below.
+| 4) References to relative links from official documentaiton or examples, if they are relevant.
 
 Where should I add new files?
 ########
@@ -61,9 +58,9 @@ Ideally, your file should go under a directory related to your given topic. Plea
 
 How to convert MarkDown files to RST
 ########
-While there are many nice GUI-based editors for MarkDown files, there are not that many editors for Restructered Text. One approach to contributing documentation would be to write it in Markdown and then convert it with Pandoc. [This URL](https://avilpage.com/2014/11/pandoc-best-way-to-convert-markdown-to.html) shows a simple example. 
+While there are many nice GUI-based editors for MarkDown files, there are not that many editors for Restructered Text. One approach to contributing documentation would be to write it in Markdown and then convert it with Pandoc. `This URL <https://avilpage.com/2014/11/pandoc-best-way-to-convert-markdown-to.html`_ shows a simple example. 
 
-You can use the following format to convert a MarkDown file to RST, but you may then want to check that the links and figure links get populated correctly. You can also use editors like [Typora](https://typora.io/) to edit Markdown and export RST. Note that Typora uses pandoc behind the scenes to do this conversion!
+You can use the following format to convert a MarkDown file to RST, but you may then want to check that the links and figure links get populated correctly. You can also use editors like `Typora <https://typora.io/>`_ to edit Markdown and export RST. Note that Typora uses pandoc behind the scenes to do this conversion!
 
 .. code:: 
   pandoc rg-overview.md --from markdown --to rst -s -o rg-overview.rst
@@ -93,5 +90,5 @@ You can use either two `` to delineate small segments of RST code or the ".. cod
 
 Questions?
 ##########
-Please email us via our ticketing system crnch-help@cc.gatech.edu with any questions or please feel free to ask on our `CRNCH Rogues Gallery MS Teams
+Please email us via our ticketing system crnch-help@cc.gatech.edu with any questions or please feel free to ask on our CRNCH Rogues Gallery MS Teams
 group.
