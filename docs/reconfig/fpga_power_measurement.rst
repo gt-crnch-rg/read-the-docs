@@ -23,10 +23,12 @@ Additionally, some devices like the Programmable Accelerator Cards (PAC)
 report power and thermal information using their Bus Management
 Controller interfaces. As shown in the example below, the
 ``fpgainfo power`` can be used to sample the current and voltage values
-for various on-board components. According to `the BMC guide for Stratix
+for various on-board components. 
+
+According to `the BMC guide for Stratix
 10 <https://www.intel.com/content/www/us/en/programmable/documentation/bvk1543945927773.html#agp1572483278309>`__,
 this sampling uses the PCIe SMBus to transfer data using a slave I2C
-interface at a rate from 10 KHz to 1 MHZ.
+interface at a rate from 10 KHz to 1 MHZ. This compares reasonably well with other external measurement solutions.
 
 Output from D5005 Stratix 10 PAC card
 -------------------------------------
