@@ -37,6 +37,16 @@ Reconfigurable Computing
    reconfig/intel/reconfig_oneapi
 
 *****
+Miscellaneous
+*****
+.. toctree::
+   :caption: Miscellaneous
+   :maxdepth: 2
+   :glob:
+
+   measurements/power_monitoring
+   
+*****
 Related Work
 *****
 .. toctree::
