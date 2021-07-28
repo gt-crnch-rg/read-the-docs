@@ -32,6 +32,7 @@ Reconfigurable Computing
    :maxdepth: 2
    :glob:
 
+   reconfig/fpga_power_measurement
    reconfig/xilinx/vitis_ai
    reconfig/intel/reconfig_oneapi
 
