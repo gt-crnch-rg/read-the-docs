@@ -20,9 +20,6 @@ General
    general/equipment
    general/contributing
 
-*****
-HowTos
-*****
 
 *****
 Lucata (near-memory)
