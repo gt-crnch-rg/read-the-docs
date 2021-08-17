@@ -29,7 +29,7 @@ Lucata (near-memory)
    :maxdepth: 2
    :glob:
 
-   lucata/lucata_getting_started
+   lucata/lucata-getting-started
 
 *****
 Reconfigurable Computing
