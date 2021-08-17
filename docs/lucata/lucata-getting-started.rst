@@ -1,18 +1,10 @@
 *Last updated: 8/17/2021*
 
-Lucata Systems Getting Started
+Lucata Pathfinder Getting Started
 ============
 
-There are 
+The Rogues Gallery hosts two systems from Lucata (formerly known as Emu Technology): The Gen1 Emu Chick, an 8-node desktop-style system, and the Lucata Pathfinder, a two-chassis system with 16 nodes and 24 cores in each node for a total of 384 cores. 
 
-Nodes will be accessible from the VMs only - use rg-login.crnch.gatech.edu as the primary access point.
-
-Since the March 2018 update, the Emu nodes are part of an internal subnet. This means that they are only accessible from the main node,
-currently called **karrawingi-login.crnch.gatech.edu**. You will have a
-local user account on each emu node, and you can access these nodes via
-**karrawingi-login**. For more information on logging in, please see the
-common questions
-`page <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/EMU-Common-User-Questions>`__.
 
 Using the EMU simulation and compiler tools
 ===========================================
@@ -30,9 +22,9 @@ Eric Hein has also written a nice README.
   **NOTE:** You cannot run any code on this node and will need to copy
   your code to n0-n7 on the Emu machine. 
 
-Typically usage model:
+Typical usage model:
 
-1. Compile and simulate code on rg-login or rg-emu-dev. Do debugging and
+1. Compile and simulate code on rg-emu-dev. Do debugging and
    initial verification here but note that simulation is slow!
 
 2. Copy your .mwx file and any inputs to karrawingi-login and then to a
@@ -41,20 +33,8 @@ Typically usage model:
 3. Run your code natively on n0 (multinode) or any of n0-n7
    (single-node).
 
-Singularity image
------------------
 
-The tools also are wrapped in a
-`Singularity <https://www.sylabs.io/docs/>`__ image, but this is only
-needed if you want to run the tools on your local machine. If one is
-available for a toolchain, it will be in /tools/emu/singularity. See
-this
-`page <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BEmu%5D-Emu-toolchain-Singularity-image>`__
-for more details on using this image. Note you can copy the image to
-other systems, *e.g.* your laptop, but do not distribute it to outside
-people.
-
-Common Emu examples and tools
+Tutorials and Training
 =============================
 
 We have placed some examples for using the Emu as well as related tools
@@ -68,7 +48,6 @@ Please feel free to branch and fork as makes sense for your research.
 
 Where do I get more assistance?
 ===============================
-
 
 -  Emu has also started an official `community
    forum <http://www.emutechnology.com/community/>`__.
