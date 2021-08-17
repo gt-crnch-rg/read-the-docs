@@ -25,6 +25,16 @@ HowTos
 *****
 
 *****
+Lucata (near-memory)
+*****
+.. toctree::
+   :caption: Lucata Pathfinder
+   :maxdepth: 2
+   :glob:
+
+   lucata/[Lucata] Getting Started
+
+*****
 Reconfigurable Computing
 *****
 .. toctree::
