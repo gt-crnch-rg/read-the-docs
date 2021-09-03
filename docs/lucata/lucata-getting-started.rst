@@ -1,4 +1,4 @@
-*Last updated: 8/17/2021*
+*Last updated: 9/02/2021*
 
 Lucata Pathfinder Getting Started
 ============
