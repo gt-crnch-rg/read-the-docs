@@ -26,7 +26,7 @@ Lucata (near-memory)
 *****
 .. toctree::
    :caption: Lucata Pathfinder
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    lucata/lucata-getting-started
