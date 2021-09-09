@@ -7,9 +7,9 @@ How do I request an account on the Rogues Gallery?
 
 Users should request a new account using our form on the CRNCH page `here <http://crnch.gatech.edu/request-rogues-access>`__. Note that it may take 2-3 business days for your account to be added after you are approved. 
 
-For both internal and external users, we ask for "an RG contact". If you've talked to one of the key personnel for the RG testbed you can put this person down, or you can put down your research advisor if you are external to GT but working at a university.  
+For both internal and external users, we ask for "an RG contact". If you've talked to one of the key personnel for the RG testbed you can put this person down, or you can put down your research advisor if you are external to GT but working at a university. 
 
-For GT internal users, we will need your GT (Passport) username to add login access for you. 
+For GT users, please put your research advisor or down one of the testbed personnel you have talked to. We will also need your GT (Passport) username to add login access for you. 
 
 How do I ssh to the RG machines?
 --------------------------------
