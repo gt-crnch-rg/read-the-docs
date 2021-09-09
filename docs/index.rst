@@ -27,6 +27,7 @@ Lucata (near-memory)
 .. toctree::
    :caption: Lucata Pathfinder
    :maxdepth: 2
+   :hidden:
    :glob:
 
    lucata/lucata-getting-started
@@ -38,6 +39,7 @@ Reconfigurable Computing
 .. toctree::
    :caption: Reconfigurable Computing
    :maxdepth: 2
+   :hidden:
    :glob:
 
    reconfig/fpga_power_measurement
@@ -50,6 +52,7 @@ Miscellaneous
 .. toctree::
    :caption: Miscellaneous
    :maxdepth: 2
+   :hidden:
    :glob:
 
    measurements/power_monitoring
