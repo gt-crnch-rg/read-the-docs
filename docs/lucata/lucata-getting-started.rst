@@ -37,7 +37,7 @@ Typical usage model:
 Tutorials and Training
 -------------
 
-Please check out the recent _`PEARC21 tutorial <https://github.com/gt-crnch-rg/pearc-tutorial-2021>`__
+Please check out the recent `PEARC21 tutorial <https://github.com/gt-crnch-rg/pearc-tutorial-2021>`__
 for official training material for the Pathfinder systems. There are also some examples and related tools 
 shared in a Github repo at https://github.gatech.edu/crnch-rg/emu-common.
 Please feel free to branch and fork as makes sense for your research.
