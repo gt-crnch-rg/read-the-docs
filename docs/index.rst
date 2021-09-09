@@ -6,7 +6,7 @@ The Rogues Gallery is a new concept focused on developing our understanding of n
 
 To see what hardware the Rogues Gallery currently includes, please see this `page <http://crnch.gatech.edu/rogues-hardware>`__. For more information on the initial Rogues Gallery vision, please see our recent presentation at the 2021 CRNCH Summit [`Slides <https://github.com/gt-crnch/crnch-summit-2021/blob/main/presenter_slides/Thursday_01_28_21/105--Rogues-Gallery-Update-Jeff-Young-CRNCH-Summit-2021.pdf>`__] [`Talk] <https://mediaspace.gatech.edu/media/Jeff%20Young%20-%20Rogues%20Gallery%20-%20CRNCH%20Summit%202021/1_lqlgr0jj>`__.
 
-NSF Acknowledgment: The Rogues Gallery testbed is primarily supported by the National Science Foundation (NSF) under NSF Award Number #2016701. Any opinions, findings and conclusions, or recommendations expressed in this documentation are those of the author(s), and do not necessarily reflect those of the NSF.
+**NSF Acknowledgment**: The Rogues Gallery testbed is primarily supported by the National Science Foundation (NSF) under NSF Award Number #2016701. Any opinions, findings and conclusions, or recommendations expressed in this documentation are those of the author(s), and do not necessarily reflect those of the NSF.
 
 
 .. toctree::
