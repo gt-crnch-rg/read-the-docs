@@ -7,7 +7,7 @@ The Rogues Gallery hosts two systems from Lucata (formerly known as Emu Technolo
 
 
 Using the EMU simulation and compiler tools
-===========================================
+-------------
 
 The current toolset, documentation, and examples are available on the
 login and emu-dev VMs under ``/usr/local/emu/`` for the current
@@ -35,7 +35,7 @@ Typical usage model:
 
 
 Tutorials and Training
-=============================
+-------------
 
 We have placed some examples for using the Emu as well as related tools
 in a Github repo at https://github.gatech.edu/crnch-rg/emu-common.
@@ -45,12 +45,6 @@ Please feel free to branch and fork as makes sense for your research.
   and recursive spawn. 
 | `Micro
   benchmark <https://github.gatech.edu/crnch-rg/emu-microbench>`__
-
-Where do I get more assistance?
-===============================
-
--  Emu has also started an official `community
-   forum <http://www.emutechnology.com/community/>`__.
 
 I think that I have found a bug to report to Emu!
 =================================================
