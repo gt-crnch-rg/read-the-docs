@@ -47,7 +47,7 @@ and recursive spawn. `Micro benchmark <https://github.gatech.edu/crnch-rg/emu-mi
 
 
 Other resources:
-================
+----------------
 
 -  CilkPlus can also be run on CPU-based clusters. For more information
    on general CilkPlus check out the official
