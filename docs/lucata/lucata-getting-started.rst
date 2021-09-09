@@ -37,25 +37,14 @@ Typical usage model:
 Tutorials and Training
 -------------
 
-We have placed some examples for using the Emu as well as related tools
-in a Github repo at https://github.gatech.edu/crnch-rg/emu-common.
+Please check out the recent _`PEARC21 tutorial <https://github.com/gt-crnch-rg/pearc-tutorial-2021>`__
+for official training material for the Pathfinder systems. There are also some examples and related tools 
+shared in a Github repo at https://github.gatech.edu/crnch-rg/emu-common.
 Please feel free to branch and fork as makes sense for your research.
 
-| Eric Hein has also contributed a nice micro-benchmark that uses serial
-  and recursive spawn. 
-| `Micro
-  benchmark <https://github.gatech.edu/crnch-rg/emu-microbench>`__
+Eric Hein has also contributed a nice micro-benchmark that uses serial
+and recursive spawn. `Micro benchmark <https://github.gatech.edu/crnch-rg/emu-microbench>`__
 
-I think that I have found a bug to report to Emu!
-=================================================
-
-First of all, please try to create a minimum working example (MWE) that
-replicates the problem you are seeing with detailed output and limited
-extraneous code. Right now, we have a few people who can post issues
-with the emusolutions tracker, so it might be best to go through them:
-Eric Hein, Jason Riedy, Jeff Young can all post to the tracker. Please
-also feel free to discuss via the mailing list once you have an MWE to
-illustrate the problem.
 
 Other resources:
 ================
