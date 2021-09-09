@@ -30,6 +30,7 @@ Lucata (near-memory)
    :glob:
 
    lucata/lucata-getting-started
+   lucata/lucata-faq
 
 *****
 Reconfigurable Computing
