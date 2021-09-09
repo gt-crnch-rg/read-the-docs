@@ -1,5 +1,3 @@
-*Last updated: 9/08/2021*
-
 Lucata Pathfinder FAQs
 ============
 This page details answers to some commonly asked questions about the Lucata Pathfinder system. 
