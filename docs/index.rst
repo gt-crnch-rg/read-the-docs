@@ -7,9 +7,6 @@ The Rogues Gallery is a new concept focused on developing our understanding of n
 To see what hardware the Rogues Gallery currently includes, please see this `page <http://crnch.gatech.edu/rogues-hardware>`__. For more information on the initial Rogues Gallery vision, please see our recent presentation at the 2021 CRNCH Summit [`Slides <https://github.com/gt-crnch/crnch-summit-2021/blob/main/presenter_slides/Thursday_01_28_21/105--Rogues-Gallery-Update-Jeff-Young-CRNCH-Summit-2021.pdf>`__] [`Talk] <https://mediaspace.gatech.edu/media/Jeff%20Young%20-%20Rogues%20Gallery%20-%20CRNCH%20Summit%202021/1_lqlgr0jj>`__.
 
 
-*****
-General
-*****
 .. toctree::
    :caption: General Topics
    :maxdepth: 1
@@ -21,9 +18,6 @@ General
    general/contributing
 
 
-*****
-Lucata (near-memory)
-*****
 .. toctree::
    :caption: Lucata Pathfinder
    :maxdepth: 2
@@ -33,9 +27,6 @@ Lucata (near-memory)
    lucata/lucata-getting-started
    lucata/lucata-faq
 
-*****
-Reconfigurable Computing
-*****
 .. toctree::
    :caption: Reconfigurable Computing
    :maxdepth: 2
@@ -46,9 +37,6 @@ Reconfigurable Computing
    reconfig/xilinx/vitis_ai
    reconfig/intel/oneapi-fpga
 
-*****
-Miscellaneous
-*****
 .. toctree::
    :caption: Miscellaneous
    :maxdepth: 2
@@ -57,18 +45,11 @@ Miscellaneous
 
    measurements/power_monitoring
    
-*****
-Related Work
-*****
 .. toctree::
    :caption: Related Work
    :maxdepth: 1
    :hidden:
 
-   
-*****
-Educational Resources
-*****
 
 .. toctree::
    :caption: Educational Resources
