@@ -1,30 +1,20 @@
 FAQs 
 =====
 
--  `Request access to the MS Teams
-   group <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__.
-   If you are external to GT, please send us a ticket to add you.
+-  `Request access to the MS Teams   group <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__.  If you are external to GT, please send us a ticket to add you.
 
-   -  We also have a somewhat less used Slack
-      `here <gt-crnch-rg.slack.com>`__ if you have trouble connecting to
-      Teams.
+   -  We also have a CRNCH RG Slack workspace `here <https://join.slack.com/t/gt-crnch-rg/shared_invite/zt-velklwgm-Bfh~IXesIM2uhrLs~y8s_w>`__ if you have trouble connecting to
+      Teams. Most of the Lucata discussion currently uses this Slack. Just note that since we are on a free plan that old conversations are not saved.
 
 -  `How to use the help ticket webform at
    www.crnch.gatech.edu/crnch-rg-help <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Help-Webform-Examples>`__
 
--  The main CRNCH help ticket email address is
-   crnch-rg-help@cc.gatech.edu. We would prefer if you use the webform
-   but the email address is ok if you include your GT username (e.g.,
-   gburdell3 for George Burdell).
+-  The main CRNCH help ticket email address is   crnch-rg-help@cc.gatech.edu. We would prefer if you use the webform but the email address is ok if you include your GT username (e.g., gburdell3 for George Burdell).
 
 Help for the CRNCH Rogues Gallery
 =================================
 
-The Rogues Gallery testbed is rapidly growing along with its support
-structures. In general, we try to respond to help tickets within 1
-business day of your request. Note that the admins and researchers for
-this project work 9-6 ET Monday-Friday, so any requests outside of this
-timeframe will be delayed at least until the next business day. Tickets
+The Rogues Gallery testbed is rapidly growing along with its support structures. In general, we try to respond to help tickets within 1 business day of your request. Note that the admins and researchers for this project work 9-6 ET Monday-Friday, so any requests outside of this timeframe will be delayed at least until the next business day. Tickets
 submitted over the weekend or on any GT holidays will be evaluated on
 the following business day. Please note that Georgia Tech is officially
 closed for the last week of each calendar year for the Christmas
