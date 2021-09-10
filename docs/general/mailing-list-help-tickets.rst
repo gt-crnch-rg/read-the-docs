@@ -15,21 +15,13 @@ Help for the CRNCH Rogues Gallery
 =================================
 
 The Rogues Gallery testbed is rapidly growing along with its support structures. In general, we try to respond to help tickets within 1 business day of your request. Note that the admins and researchers for this project work 9-6 ET Monday-Friday, so any requests outside of this timeframe will be delayed at least until the next business day. Tickets
-submitted over the weekend or on any GT holidays will be evaluated on
-the following business day. Please note that Georgia Tech is officially
-closed for the last week of each calendar year for the Christmas
-holiday.
+submitted over the weekend or on any GT holidays will be evaluated on the following business day. Please note that Georgia Tech is officially closed for the last week of each calendar year for the Christmas holiday.
 
 How do I request help?
 ======================
 
-The Rogues Gallery uses a Request Tracker (RT) based ticketing system.
-You can submit tickets ideally via the
-`webform <https://crnch.gatech.edu/crnch-rg-help>`__ or alternatively
-using the email address, crnch-rg-help@cc.gatech.edu. We would request
-that you submit a help ticket for anything that is not a discussion or
-minor clarification question. This helps us track specific issues for
-users and also is important as a metric for our funded testbed project.
+The Rogues Gallery uses a Request Tracker (RT) based ticketing system. You can submit tickets ideally via the `webform <https://crnch.gatech.edu/crnch-rg-help>`__ or alternatively using the email address, crnch-rg-help@cc.gatech.edu. We would request that you submit a help ticket for anything that is not a discussion or
+minor clarification question. This helps us track specific issues for users and also is important as a metric for our funded testbed project.
 
 That said, the general process for asking for help is:
 
@@ -94,9 +86,7 @@ well as sub-lists for each large area of research within the Rogues
 Gallery testbed infrastructure.
 
 Please note that the MS Teams group for `CRNCH Rogues
-Gallery <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__
-may be the quickest way to post questions. However, the GT "SYMPA"
-mailing lists can also be used for discussion and will be used for
+Gallery <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__ may be the quickest way to post questions. However, the GT "SYMPA" mailing lists can also be used for discussion and will be used for
 subarea-specific announcements.
 
 Mailing lists
@@ -109,13 +99,12 @@ Note that most lists are closed to external users.
 -  crnch-rg-users@lists.gatech.edu - general user list. Mainly used for
    announcements and very high-level discussion.
 
--  crnch-rg-nearmem@lists.gatech.edu - Discussion of the Emu system and
-   near-memory computing hardware like HBM, HMC, and NVDIMM
+-  crnch-rg-fpga@lists.gatech.edu - Discussion of FPGA and reconfigurable computing
 
--  crnch-rg-networking@lists.gatech.edu - Discussion of in-network
-   computing, FPGA networking, and edge computing/5G
+-  crnch-rg-nearmem@lists.gatech.edu - Discussion of the Emu system and near-memory computing hardware like HBM, HMC, and NVDIMM
 
--  crnch-rg-neuro-sysml@lists.gatech.edu - Discussion of neuromorphic
-   computing and systems for machine learning
+-  crnch-rg-networking@lists.gatech.edu - Discussion of in-network computing, FPGA networking, and edge computing/5G
+
+-  crnch-rg-neuro-sysml@lists.gatech.edu - Discussion of neuromorphic computing and systems for machine learning
 
 -  crnch-rg-quantum@lists.gatech.edu - Discussion of quantum computing
