@@ -3,7 +3,7 @@ Related Testbed Resources
 
 *Last updated: September 24th, 2021*
 
-We realize that the Rogues Gallery cannot host all possible hardware, software, and configurations, so we encourage researchers to check out related resources for their work. 
+We realize that the Rogues Gallery cannot host all possible hardware, software, and configurations, so we encourage researchers to check out related resources for their work. Note that this page is provided for informational purposes, but we at the Rogues Gallery cannot provide any additional information or support for users of these other testbeds. 
 
 Reconfigurable Computing
 -------------------------
