@@ -13,9 +13,9 @@ Reconfigurable Computing
    :widths: auto
 
    `Xilinx Adaptive Compute Cluster <https://www.xilinx.com/support/university/XUP-XACC.html>`__, Xilinx  University Program, Non-commercial researchers, Hosted at UIUC and ETH
-   `Intel DevCloud <>`__, Intel, Anyone, Stratix 10 and Arria10; 3 month time limit
+   `Intel DevCloud <https://software.intel.com/content/www/us/en/develop/tools/devcloud/fpga.html>`__, Intel, Anyone, Stratix 10 and Arria10; 3 month time limit
    `Open Cloud Testbed <https://massopen.cloud/connected-initiatives/open-cloud-testbed/>`__, NSF CCRI #1925464, US researchers,Alveo U280; networking; virtualization
-   `ACES - Texas A&M <https://hprc.tamu.edu/aces/>`__, NSF #2112356, - , 2022 deployment
+   `ACES - Texas A&M <https://hprc.tamu.edu/aces/>`__, NSF #2112356, TBD , 2022 deployment
 
 Related Tutorials
 -----------------
