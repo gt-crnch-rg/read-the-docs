@@ -8,7 +8,7 @@ We realize that the Rogues Gallery cannot host all possible hardware, software, 
 Reconfigurable Computing
 -------------------------
 
-.. csv-table:: Reconfigurable Computing Testbeds
+.. csv-table::
    :header: "Testbed", "Sponsor", "Who Can Apply", "Notes"
    :widths: auto
 
