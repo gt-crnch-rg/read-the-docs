@@ -8,6 +8,8 @@ We realize that the Rogues Gallery cannot host all possible hardware, software, 
 Reconfigurable Computing
 -------------------------
 
+.. table:: Reconfigurable Computing Testbeds
+   :widths: auto
 +-----------------+-----------------+-----------------+-----------------+
 | Testbed         | Sponsor         | Who can Apply   | Notes           |
 +=================+=================+=================+=================+
@@ -35,6 +37,7 @@ Reconfigurable Computing
 +-----------------+-----------------+-----------------+-----------------+
 
 Related Tutorials
+-----------------
 
 -  `Open Cloud Testbed
    Tutorial <https://github.com/OCT-FPGA/OCT-Tutorials/>`__
