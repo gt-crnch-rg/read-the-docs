@@ -12,7 +12,7 @@ Reconfigurable Computing
    :header: "Testbed", "Sponsor", "Who Can Apply", "Notes"
    :widths: auto
 
- `Xilinx Adaptive  Compute  Cluster<university>`__, Xilinx  University Program, Hosted at UIUC and ETH
+ `Xilinx Adaptive Compute Cluster <https://www.xilinx.com/support/university/XUP-XACC.html>`__, Xilinx  University Program, Non-commercial researchers, Hosted at UIUC and ETH
 
 
 Related Tutorials
