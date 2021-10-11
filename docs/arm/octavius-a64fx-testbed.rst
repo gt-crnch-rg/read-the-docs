@@ -27,7 +27,7 @@ System Specifications and Tools
 | rg-arm-short,| ipedia.org/ |             |             |             |
 |              | wiki/Fujits |             |             |             |
 | rg-arm-long  | u_A64FX>`__ |             |             |             |
-+-------------+-------------+-------------+-------------+-------------+
++--------------+-------------+-------------+-------------+-------------+
 
 Octavius is a 16 node cluster, where each node contains one CPU with
 integrated HBM memory, a small amount of SSD storage (340 GB per node),
