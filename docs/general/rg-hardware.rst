@@ -14,7 +14,7 @@ on the rg-fpga-dev VMs, you can then use the same code on the physical
 currently have three pairs of development VMs that map to physical
 hardware, as described more in the tables below.
 
-.. figure:: ../figures/rg-machine-overview.png
+.. figure:: ../figures/general/rg-machine-overview.png
    :alt: Rogues Gallery Hardware
 
 RG Virtual Machines
@@ -44,26 +44,23 @@ Ubuntu 18.04 LTS.
 |                | Broadwell   |             |             | the A64FX   |
 |                |             |             |             | cluster     |
 +----------------+-------------+-------------+-------------+-------------+
-
-
-+-------------+-------------+-------------+-------------+-------------+
-| rg-login    | 4 core,     | 8           | 650         | Login node  |
-|             | E312xx      |             |             |             |
-+-------------+-------------+-------------+-------------+-------------+
-| rg-emu-dev  | 4 core,     | 4           | 33          | Emu         |
-|             | E312xx      |             |             | simulator   |
-|             |             |             |             | and tools   |
-+-------------+-------------+-------------+-------------+-------------+
-| rg-fpga-dev | 4 core,     | 8           | 250 GB      | Ubuntu 18,  |
-| -<1-6>      | E312xx      |             |             | use for     |
-|             |             |             |             | FPGA tools  |
-+-------------+-------------+-------------+-------------+-------------+
-| rg-neuro-de | 4 core,     | 8           | 450         | ROS, FPAA   |
-| v           | Broadwell   |             |             | tools       |
-+-------------+-------------+-------------+-------------+-------------+
-| rg-quantum- | 4 core,     | 8           | 130         | XACC,       |
-| dev         | Broadwell   |             |             | Qiskit      |
-+-------------+-------------+-------------+-------------+-------------+
+| rg-login       | 4 core,     | 8           | 650         | Login node  |
+|                | E312xx      |             |             |             |
++----------------+-------------+-------------+-------------+-------------+
+| rg-emu-dev     | 4 core,     | 4           | 33          | Emu         |
+|                | E312xx      |             |             | simulator   |
+|                |             |             |             | and tools   |
++----------------+-------------+-------------+-------------+-------------+
+| rg-fpga-dev    | 4 core,     | 8           | 250 GB      | Ubuntu 18,  |
+| -<1-6>         | E312xx      |             |             | use for     |
+|                |             |             |             | FPGA tools  |
++----------------+-------------+-------------+-------------+-------------+
+| rg-neuro-dev   | 4 core,     | 8           | 450         | ROS, FPAA   |
+|                | Broadwell   |             |             | tools       |
++----------------+-------------+-------------+-------------+-------------+
+| rg-quantum-dev | 4 core,     | 8           | 130         | XACC,       |
+|                | Broadwell   |             |             | Qiskit      |
++----------------+-------------+-------------+-------------+-------------+
 
 RG Physical Machines
 ====================
