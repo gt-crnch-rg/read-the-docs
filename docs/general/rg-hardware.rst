@@ -58,7 +58,7 @@ Ubuntu 18.04 LTS.
 RG Physical Machines
 ====================
 	
-.. list-table:: Physical Resources
+.. list-table:: 
     :widths: auto
     :header-rows: 1
     :stub-columns: 1
