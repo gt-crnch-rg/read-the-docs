@@ -25,6 +25,8 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    :maxdepth: 2
    :hidden:
    :glob:
+   
+   arm/octavius-a64fx-testbed.rst
 
 
 .. toctree::
