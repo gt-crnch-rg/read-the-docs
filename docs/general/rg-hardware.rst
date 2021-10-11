@@ -81,7 +81,7 @@ Techfee Systems
 .. list-table:: 
     :widths: auto
     :header-rows: 1
-    :stub-columns: 3
+    :stub-columns: 1
 
     * - Resource
       - CPU
