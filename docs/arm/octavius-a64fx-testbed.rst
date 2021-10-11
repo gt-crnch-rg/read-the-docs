@@ -23,10 +23,10 @@ System Specifications and Tools
 |              |             |             |             | (GB)        |
 +==============+=============+=============+=============+=============+
 | rg-arm-debug,| `A64FX <htt | 32 HBM2e    | EDR IB      | 330         |
-|              | ps://en.wik |             |             |             |
-| rg-arm-short,| ipedia.org/ |             |             |             |
+| rg-arm-short,| ps://en.wik |             |             |             |
+| rg-arm-long  | ipedia.org/ |             |             |             |
 |              | wiki/Fujits |             |             |             |
-| rg-arm-long  | u_A64FX>`__ |             |             |             |
+|              | u_A64FX>`__ |             |             |             |
 +--------------+-------------+-------------+-------------+-------------+
 
 Octavius is a 16 node cluster, where each node contains one CPU with
