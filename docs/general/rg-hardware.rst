@@ -51,7 +51,7 @@ Ubuntu 18.04 LTS.
 |                | E312xx      |             |             | simulator   |
 |                |             |             |             | and tools   |
 +----------------+-------------+-------------+-------------+-------------+
-| rg-fpga-dev    | 4 core,     | 8           | 250 GB      | Ubuntu 18,  |
+| rg-fpga-dev    | 4 core,     | 8           | 250         | Ubuntu 18,  |
 | -<1-6>         | E312xx      |             |             | use for     |
 |                |             |             |             | FPGA tools  |
 +----------------+-------------+-------------+-------------+-------------+
@@ -65,12 +65,19 @@ Ubuntu 18.04 LTS.
 RG Physical Machines
 ====================
 
-+---------+---------+---------+---------+---------+---------+---------+
-| Queue   | Resourc | CPU     | Memory  | Network | Cards   | Notes   |
-|         | e       |         | (GB)    | ing     |         |         |
-+=========+=========+=========+=========+=========+=========+=========+
-| TBD     | flubber | 2x      | 256     | 10GE    | 2x      |         |
-|         | 1       | `Intel  | DDR4,   |         | Alveo   |         |
+.. csvtable:: Physical Resources
+   :widths: auto
+   :header: "Queue", "Resource", "CPU", "Memory (GB)", "Network", "Cards", Notes
+   "flubber1", "2x [Intel E5-2630](https://ark.intel.com/content/www/us/en/ark/products/92981/intel-xeon-processor-e5-2630-v4-25m-cache-2-20-ghz.html)", "256 DDR4, 2133GHz, 32 GB Samsung DIMMs", "10GE", "1x Alveo U280, Coral TPU", 
+   
+
++---------+----------+---------+---------+---------+---------+---------+
+| Queue   | Resource | CPU     | Memory  | Network | Cards   | Notes   |
+|         |          |         | (GB)    |         |         |         |
++=========+==========+=========+=========+=========+=========+=========+
+| TBD     | flubber1 | 2x      | 256     | 10GE    | 2x      |         |
++---------+----------+---------+---------+---------+---------+---------+
+|         |         | `Intel  | DDR4,   |         | Alveo   |         |
 |         |         | E5-2630 | 2133GHz |         | U280,   |         |
 |         |         |  <https | ,       |         | Coral   |         |
 |         |         | ://ark. | 32 GB   |         | TPU     |         |
