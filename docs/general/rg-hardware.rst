@@ -59,7 +59,7 @@ RG Physical Machines
 ====================
 	
 .. list-table:: Physical Resources
-    :widths: 20 20 30 50 50 50
+    :widths: auto
     :header-rows: 1
     :stub-columns: 1
 
@@ -71,7 +71,7 @@ RG Physical Machines
       - Notes
     * - flubber1
       - 2x `Intel E5-2630 <https://ark.intel.com/content/www/us/en/ark/products/92981/intel-xeon-processor-e5-2630-v4-25m-cache-2-20-ghz.html>`__
-      - 256 DDR4, 2133GHz, 32 GB Samsung DIMMs
+      - 256 DDR4, 2133GHz, 32 GB DIMMs
       - 10 GE
       - 2x Alveo U280, Coral TPU
       - NA
