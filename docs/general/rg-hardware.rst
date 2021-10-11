@@ -58,10 +58,14 @@ Ubuntu 18.04 LTS.
 RG Physical Machines
 ====================
 
-.. csvtable:: Physical Resources
+.. table:: Physical Resources
    :widths: auto
-   :header: "Queue", "Resource", "CPU", "Memory (GB)", "Network", "Cards", "Notes"
-   "flubber1", "Intel", "256 DDR4, 2133GHz", "32 GB Samsung DIMMs", "10GE", "1x Alveo U280, Coral TPU", 
+   =====  =====  ======   ======   ======   ======   ======
+   Queue  Resource CPU    "Memory (GB)"     "Network" "Cards" "Notes"
+   =====  =====  ======   ======   ======   ======   ======
+
+
+"flubber1", "Intel", "256 DDR4, 2133GHz", "32 GB Samsung DIMMs", "10GE", "1x Alveo U280, Coral TPU", 
    
 
 +---------+----------+---------+---------+---------+---------+---------+
