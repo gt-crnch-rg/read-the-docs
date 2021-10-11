@@ -20,6 +20,12 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    general/equipment
    general/contributing
 
+.. toctree::
+   :caption: Arm-based HPC
+   :maxdepth: 2
+   :hidden:
+   :glob:
+
 
 .. toctree::
    :caption: Lucata Pathfinder
@@ -31,6 +37,24 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    lucata/lucata-faq
 
 .. toctree::
+   :caption: Neuromorphic Computing
+   :maxdepth: 2
+   :hidden:
+   :glob:
+
+.. toctree::
+   :caption: Novel Networking
+   :maxdepth: 2
+   :hidden:
+   :glob:
+
+.. toctree::
+   :caption: Quantum Computing
+   :maxdepth: 2
+   :hidden:
+   :glob:
+   
+.. toctree::
    :caption: Reconfigurable Computing
    :maxdepth: 2
    :hidden:
@@ -39,6 +63,13 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    reconfig/fpga_power_measurement
    reconfig/xilinx/vitis_ai
    reconfig/intel/oneapi-fpga
+
+.. toctree::
+   :caption: RISC-V
+   :maxdepth: 2
+   :hidden:
+   :glob:
+
 
 .. toctree::
    :caption: Miscellaneous
