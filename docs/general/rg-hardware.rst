@@ -59,7 +59,7 @@ RG Physical Machines
 ====================
 	
 .. list-table:: Physical Resources
-    :widths: 10 10 10 20
+    :widths: 20 20 30 50 50
     :header-rows: 1
     :stub-columns: 1
 
