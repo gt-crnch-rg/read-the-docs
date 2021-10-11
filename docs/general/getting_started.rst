@@ -28,13 +28,41 @@ Note that all machines have a **.crnch.gatech.edu** suffix
 
 What's this about the VPN?
 --------------------------
-You can access all CRNCH resources using login nodes like rg-login. However, you can also use GT's `VPN <https://faq.oit.gatech.edu/content/how-do-i-get-started-campus-vpn>`__
-solution as an alternative to access VMs and nodes directly. Note that this may require that you set up two-factor authentication on your phone and link it with your account name. You shouldn't need to use the VPN to access Rogues Gallery resources and materials, but for special requirements please email us at *crnch-rg-admin@lists.gatech.edu*. External users do not have access to the VPN unless they specifically request it.
+You can access all CRNCH resources using login nodes like rg-login. However, you can also use GT's `VPN <https://faq.oit.gatech.edu/content/how-do-i-get-started-campus-vpn>`__ solution as an alternative to access VMs and nodes directly. Note that this may require that you set up two-factor authentication on your phone and link it with your account name. You shouldn't need to use the VPN to access Rogues Gallery resources and materials, but for special requirements please email us at *crnch-rg-admin@lists.gatech.edu*. External users do not have access to the VPN unless they specifically request it.
 
 How do I work with *novel architecture of interest X*?
 ------------------------------------------------------
 
-First of all, check the sidebar for the appropriate architecture category and read through the existing documentation. Once you have done this, if you have questions please `ask on Teams or via help ticket <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Mailing-Lists-and-Requesting-Help>`__.
+First of all, check the sidebar for the appropriate architecture category and read through the existing documentation. Note that we are migrating some of our pages from our internal wiki to this public ReadTheDocs site over the next few months. You can use your GT username and password to log into the internal wiki.
+
+Once you have done this, if you have questions please `ask on Teams or via help ticket <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Mailing-Lists-and-Requesting-Help>`__.
+
+-  `Rogues Gallery Hardware Master
+   List <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Hardware>`__
+
+-  `Lucata Pathfinder Getting
+   Started <https://gt-crnch-rg.readthedocs.io/en/main/lucata/lucata-getting-started.html>`__
+
+-  `Reconfigurable Computing HW and
+   Tools <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BReconfig%5D-FPGA-Hardware-and-Tools>`__
+
+   -  `Intel FPGAs Getting
+      Started <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BReconfig%5D-Intel-FPGAs---Getting-Started>`__
+
+   -  `Xilinx FPGAs Getting
+      Started <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BReconfig%5D-Xilinx-FPGAs--Getting-Started>`__
+
+-  `Quantum
+   Computing <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BQuantum%5D-Quantum-Tools-and-Software-Stacks>`__
+
+-  `Neuromorphic
+   Computing <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BFPAA%5D-Getting-Started-with-the-FPAA>`__
+
+-  `Smart
+   Networking <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__
+
+-  `RISC-V <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BRISC-V%5D-SiFive-Unmatched>`__
+
 
 What are some best practices for using the RG hardware?
 -------------------------------------------------------
