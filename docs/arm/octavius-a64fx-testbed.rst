@@ -18,15 +18,15 @@ BUGS / Feature Requests
 System Specifications and Tools
 ===============================
 
-+-------------+-------------+-------------+-------------+-------------+
-| Queues      | CPU         | Memory (GB) | Networking  | Storage     |
-|             |             |             |             | (GB)        |
-+=============+=============+=============+=============+=============+
-| rg-arm-debu | `A64FX <htt | 32 HBM2e    | EDR IB      | 330         |
-| g,          | ps://en.wik |             |             |             |
-| rg-arm-shor | ipedia.org/ |             |             |             |
-| t,          | wiki/Fujits |             |             |             |
-| rg-arm-long | u_A64FX>`__ |             |             |             |
++--------------+-------------+-------------+-------------+-------------+
+| Queues       | CPU         | Memory (GB) | Networking  | Storage     |
+|              |             |             |             | (GB)        |
++==============+=============+=============+=============+=============+
+| rg-arm-debug,| `A64FX <htt | 32 HBM2e    | EDR IB      | 330         |
+|              | ps://en.wik |             |             |             |
+| rg-arm-short,| ipedia.org/ |             |             |             |
+|              | wiki/Fujits |             |             |             |
+| rg-arm-long  | u_A64FX>`__ |             |             |             |
 +-------------+-------------+-------------+-------------+-------------+
 
 Octavius is a 16 node cluster, where each node contains one CPU with
