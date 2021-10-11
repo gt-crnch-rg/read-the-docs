@@ -29,3 +29,7 @@ Who are the users?
 ==============================
 Anyone in the US can request an account for the CRNCH Rogues Gallery testbed with priority for
 CISE researchers, students, and industry partners.
+
+How do I acknowledge the use of Rogues Gallery resources?
+===================================
+Please see our `project page <https://crnch-rg.cc.gatech.edu/rogues-gallery-citation/>`__ on citing the usage of the Rogues Gallery. This helps us acknowledge NSF and other support and assists in the growth of the testbed!
