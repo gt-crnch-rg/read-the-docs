@@ -57,156 +57,18 @@ Ubuntu 18.04 LTS.
 
 RG Physical Machines
 ====================
+	
+.. list-table:: Physical Resources
+    :widths: 10 10 10 20
+    :header-rows: 1
+    :stub-columns: 1
 
-.. table:: Physical Resources
-	:widths: auto
-	====
-	Queue
-	=====
-	TBD
-	=====
-
-.. table:: Physical Resources
-	:widths: auto
-	=====  =====  ======   ======   ======   ======   ======
-	Queue  Resource CPU    "Memory (GB)"  "Network" "Cards" "Notes"
-	=====  =====  ======   ======   ======   ======   ======
-	TBD   flubber1
-	=====  =====  ======   ======   ======   ======   ======
-
-
-"flubber1", "Intel", "256 DDR4, 2133GHz", "32 GB Samsung DIMMs", "10GE", "1x Alveo U280, Coral TPU", 
-   
-
-+---------+----------+---------+---------+---------+---------+---------+
-| Queue   | Resource | CPU     | Memory  | Network | Cards   | Notes   |
-|         |          |         | (GB)    |         |         |         |
-+=========+==========+=========+=========+=========+=========+=========+
-| TBD     | flubber1 | 2x      | 256     | 10GE    | 2x      |         |
-+---------+----------+---------+---------+---------+---------+---------+
-|         |         | `Intel  | DDR4,   |         | Alveo   |         |
-|         |         | E5-2630 | 2133GHz |         | U280,   |         |
-|         |         |  <https | ,       |         | Coral   |         |
-|         |         | ://ark. | 32 GB   |         | TPU     |         |
-|         |         | intel.c | Samsung |         |         |         |
-|         |         | om/cont | DIMMs   |         |         |         |
-|         |         | ent/www |         |         |         |         |
-|         |         | /us/en/ |         |         |         |         |
-|         |         | ark/pro |         |         |         |         |
-|         |         | ducts/9 |         |         |         |         |
-|         |         | 2981/in |         |         |         |         |
-|         |         | tel-xeo |         |         |         |         |
-|         |         | n-proce |         |         |         |         |
-|         |         | ssor-e5 |         |         |         |         |
-|         |         | -2630-v |         |         |         |         |
-|         |         | 4-25m-c |         |         |         |         |
-|         |         | ache-2- |         |         |         |         |
-|         |         | 20-ghz. |         |         |         |         |
-|         |         | html>`_ |         |         |         |         |
-|         |         | _       |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| TBD     | flubber | 2x      | 384 GB  | 10GE    | Arria   |         |
-|         | 2       | `Intel  | DDR4,   |         | 10 PAC, |         |
-|         |         | Gold    | 2666GHz |         | Bittwar |         |
-|         |         | 6226R < | ,       |         | e       |         |
-|         |         | https:/ | 32 GB   |         | 385A-So |         |
-|         |         | /ark.in | Micron  |         | C,      |         |
-|         |         | tel.com | DIMMs   |         | `Bluefi |         |
-|         |         | /conten |         |         | eld-1   |         |
-|         |         | t/www/u |         |         | NIC <ht |         |
-|         |         | s/en/ar |         |         | tps://g |         |
-|         |         | k/produ |         |         | ithub.g |         |
-|         |         | cts/199 |         |         | atech.e |         |
-|         |         | 347/int |         |         | du/crnc |         |
-|         |         | el-xeon |         |         | h-rg/ro |         |
-|         |         | -gold-6 |         |         | gues-do |         |
-|         |         | 226r-pr |         |         | cs/wiki |         |
-|         |         | ocessor |         |         | /%5BNet |         |
-|         |         | -22m-ca |         |         | working |         |
-|         |         | che-2-9 |         |         | %5D-Mel |         |
-|         |         | 0-ghz.h |         |         | lanox-B |         |
-|         |         | tml>`__ |         |         | lueFiel |         |
-|         |         |         |         |         | d-Resou |         |
-|         |         |         |         |         | rces>`_ |         |
-|         |         |         |         |         | _       |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| TBD     | flubber | 2x      | 384 GB  | 10GE,   | Alveo   |         |
-|         | 3       | `Intel  | DDR4,   | EDR IB  | U280,   |         |
-|         |         | Gold    | 2666GHz |         | Arria   |         |
-|         |         | 6226R < | ,       |         | 10 PAC, |         |
-|         |         | https:/ | 32 GB   |         | Bittwar |         |
-|         |         | /ark.in | Micron  |         | e       |         |
-|         |         | tel.com | DIMMs   |         | 385A,   |         |
-|         |         | /conten |         |         | Bittwar |         |
-|         |         | t/www/u |         |         | e       |         |
-|         |         | s/en/ar |         |         | 520N,   |         |
-|         |         | k/produ |         |         | `Bluefi |         |
-|         |         | cts/199 |         |         | eld-1   |         |
-|         |         | 347/int |         |         | NIC <ht |         |
-|         |         | el-xeon |         |         | tps://g |         |
-|         |         | -gold-6 |         |         | ithub.g |         |
-|         |         | 226r-pr |         |         | atech.e |         |
-|         |         | ocessor |         |         | du/crnc |         |
-|         |         | -22m-ca |         |         | h-rg/ro |         |
-|         |         | che-2-9 |         |         | gues-do |         |
-|         |         | 0-ghz.h |         |         | cs/wiki |         |
-|         |         | tml>`__ |         |         | /%5BNet |         |
-|         |         |         |         |         | working |         |
-|         |         |         |         |         | %5D-Mel |         |
-|         |         |         |         |         | lanox-B |         |
-|         |         |         |         |         | lueFiel |         |
-|         |         |         |         |         | d-Resou |         |
-|         |         |         |         |         | rces>`_ |         |
-|         |         |         |         |         | _       |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| TBD     | karrawi | PowerPC | 400     |         |         | Each of |
-|         | ngi-log | e5500   |         |         |         | the 8   |
-|         | in      |         |         |         |         | nodes   |
-|         |         |         |         |         |         | has the |
-|         |         |         |         |         |         | same    |
-|         |         |         |         |         |         | CPU as  |
-|         |         |         |         |         |         | a       |
-|         |         |         |         |         |         | station |
-|         |         |         |         |         |         | ary     |
-|         |         |         |         |         |         | core    |
-|         |         |         |         |         |         | and 400 |
-|         |         |         |         |         |         | GB of   |
-|         |         |         |         |         |         | memory  |
-+---------+---------+---------+---------+---------+---------+---------+
-| TBD     | pathfin | PowerPC |         |         | Lucata  |         |
-|         | der<1-2 | e5500   |         |         | Pathfin |         |
-|         | >       |         |         |         | der     |         |
-|         |         |         |         |         | system  |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| TBD     | brainar | TBD     | TBD     |         |         |         |
-|         | d       |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| arm-\*  | octaviu | A64FX   | 32      | HDR IB  |         |         |
-|         | s<1-16> |         |         |         |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
-| TBD     | rg-neur | 4 core, | 8       | 1GE     | FPAA    | Raspber |
-|         | o-host  | Armv7   |         |         | v1.0    | ry      |
-|         |         |         |         |         |         | Pi      |
-|         |         |         |         |         |         | Model   |
-|         |         |         |         |         |         | 3B host |
-+---------+---------+---------+---------+---------+---------+---------+
-| TBD     | noteboo | 4x      | 1 TB    | 1GE     |         | Used    |
-|         | k/hawks | E7-4820 |         |         |         | for     |
-|         | bill    |         |         |         |         | noteboo |
-|         |         |         |         |         |         | ks      |
-|         |         |         |         |         |         | and     |
-|         |         |         |         |         |         | simulat |
-|         |         |         |         |         |         | ions    |
-+---------+---------+---------+---------+---------+---------+---------+
-| TBD     | flatbac | 2x      | 512 GB  | 1GE     |         | Used    |
-|         | k       | E7-4820 |         |         |         | for     |
-|         |         |         |         |         |         | noteboo |
-|         |         |         |         |         |         | ks      |
-|         |         |         |         |         |         | and     |
-|         |         |         |         |         |         | simulat |
-|         |         |         |         |         |         | ions    |
-+---------+---------+---------+---------+---------+---------+---------+
-| TBD     | frozone |         |         | 10GE,   |         |         |
-|         | <1-4>   |         |         | Omnipat |         |         |
-|         |         |         |         | h-100   |         |         |
-+---------+---------+---------+---------+---------+---------+---------+
+    * - Resource
+      - CPU
+      - Memory (GB)
+      - Network
+    * - Flubber1
+      - 
+      -
+      -
+    
