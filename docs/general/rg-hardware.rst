@@ -59,11 +59,14 @@ RG Physical Machines
 ====================
 
 .. table:: Physical Resources
-    :widths: auto
-    =====  =====  ======   ======   ======   ======   ======
-    Queue  Resource CPU    "Memory (GB)"     "Network" "Cards" "Notes"
-    =====  =====  ======   ======   ======   ======   ======
-    TBD
+	:widths: auto
+
+	=====  =====  ======   ======   ======   ======   ======
+	Queue  Resource CPU    "Memory (GB)"     "Network" "Cards" "Notes"
+	=====  =====  ======   ======   ======   ======   ======
+	TBD   flubber1
+	=====  =====  ======   ======   ======   ======   ======
+
 
 "flubber1", "Intel", "256 DDR4, 2133GHz", "32 GB Samsung DIMMs", "10GE", "1x Alveo U280, Coral TPU", 
    
