@@ -28,11 +28,11 @@ long-running simulations. Local storage refers to space hosted within
 the VM for /localscratch. Except where noted, all machines are running
 Ubuntu 18.04 LTS.
 
-+-------------+-------------+-------------+-------------+-------------+
++----------------+-------------+-------------+-------------+-------------+
 | Resource    | CPU         | Memory(GB)  | Local       | Software    |
 |             |             |             | Storage     | and         |
 |             |             |             | (GB)        | Features    |
-+=============+=============+=============+=============+=============+
++================+=============+=============+=============+=============+
 | octavius-login | 4 core,     | 32          | 340         | Login for   |
 |             | Broadwell   |             |             | the A64FX   |
 |             |             |             |             | cluster     |
