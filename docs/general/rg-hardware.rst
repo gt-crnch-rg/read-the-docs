@@ -60,9 +60,16 @@ RG Physical Machines
 
 .. table:: Physical Resources
 	:widths: auto
+	====
+	Queue
+	=====
+	TBD
+	=====
 
+.. table:: Physical Resources
+	:widths: auto
 	=====  =====  ======   ======   ======   ======   ======
-	Queue  Resource CPU    "Memory (GB)"     "Network" "Cards" "Notes"
+	Queue  Resource CPU    "Memory (GB)"  "Network" "Cards" "Notes"
 	=====  =====  ======   ======   ======   ======   ======
 	TBD   flubber1
 	=====  =====  ======   ======   ======   ======   ======
