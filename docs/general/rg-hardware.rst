@@ -28,6 +28,11 @@ long-running simulations. Local storage refers to space hosted within
 the VM for /localscratch. Except where noted, all machines are running
 Ubuntu 18.04 LTS.
 
+.. csv-table::  :rst:dir:`csv-table`
+   :header: "Resource", "CPU", "Memory (GB)", "Local Storage (GB)", "Software and Features"
+   "octavius-login", "4 core Broadwell", "32", "340", "login for A64FX cluster"
+   "rg-login", "4 core E312xx", "8", "650", "Login node"
+
 +----------------+-------------+-------------+-------------+-------------+
 | Resource    | CPU         | Memory(GB)  | Local       | Software    |
 |             |             |             | Storage     | and         |
