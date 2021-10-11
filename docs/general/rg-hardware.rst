@@ -28,13 +28,6 @@ long-running simulations. Local storage refers to space hosted within
 the VM for /localscratch. Except where noted, all machines are running
 Ubuntu 18.04 LTS.
 
-.. csvtable:: Virtual Machines
-   :widths: auto
-   :header: "Resource", "CPU", "Memory (GB)", "Local Storage (GB)", "Software and Features"
-   "octavius-login", "4 core Broadwell", "32", "340", "login for A64FX cluster"
-   "rg-login", "4 core E312xx", "8", "650", "Login node"
-
-
 +----------------+-------------+-------------+-------------+-------------+
 | Resource       | CPU         | Memory(GB)  | Local       | Software    |
 |                |             |             | Storage     | and         |
@@ -67,8 +60,8 @@ RG Physical Machines
 
 .. csvtable:: Physical Resources
    :widths: auto
-   :header: "Queue", "Resource", "CPU", "Memory (GB)", "Network", "Cards", Notes
-   "flubber1", "2x [Intel E5-2630](https://ark.intel.com/content/www/us/en/ark/products/92981/intel-xeon-processor-e5-2630-v4-25m-cache-2-20-ghz.html)", "256 DDR4, 2133GHz, 32 GB Samsung DIMMs", "10GE", "1x Alveo U280, Coral TPU", 
+   :header: "Queue", "Resource", "CPU", "Memory (GB)", "Network", "Cards", "Notes"
+   "flubber1", `2x Intel E5-2630 <https://ark.intel.com/content/www/us/en/ark/products/92981/intel-xeon-processor-e5-2630-v4-25m-cache-2-20-ghz.html>`_, "256 DDR4, 2133GHz", "32 GB Samsung DIMMs", "10GE", "1x Alveo U280, Coral TPU", 
    
 
 +---------+----------+---------+---------+---------+---------+---------+
