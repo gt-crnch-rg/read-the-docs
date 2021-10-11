@@ -33,8 +33,8 @@ Ubuntu 18.04 LTS.
 |             |             |             | Storage     | and         |
 |             |             |             | (GB)        | Features    |
 +=============+=============+=============+=============+=============+
-| octavius-lo | 4 core,     | 32          | 340         | Login for   |
-| gin         | Broadwell   |             |             | the A64FX   |
+| octavius-login | 4 core,     | 32          | 340         | Login for   |
+|             | Broadwell   |             |             | the A64FX   |
 |             |             |             |             | cluster     |
 +-------------+-------------+-------------+-------------+-------------+
 | rg-login    | 4 core,     | 8           | 650         | Login node  |
