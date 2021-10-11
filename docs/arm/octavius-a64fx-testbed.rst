@@ -72,7 +72,7 @@ local scratch space on VMs or nodes.
 The Mellanox SB7890 provides an InfiniBand connection to all the nodes
 within this cluster (as well as to flubber3), and
 
-.. figure:: https://github.gatech.edu/crnch-rg/rogues-docs-wiki/blob/master/figs/rg-arm-servers-fall-2020.png
+.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/figures/armhpc/rg-arm-servers-fall-2020.png
    :alt: 
 
 Compiling for the A64FX
