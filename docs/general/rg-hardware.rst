@@ -58,6 +58,55 @@ Ubuntu 18.04 LTS.
 RG Physical Machines
 ====================
 
+Arm HPC
+--------------------
+.. list-table:: 
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Resource
+      - CPU
+      - Memory (GB)
+      - Network
+      - Cards
+      - Notes
+    * - octavius<1-16>
+      - A64FX
+      - 32 GB HBM2e
+      - EDR IB
+      - 
+      - 
+
+Near-Memory
+--------------------
+
+Neuromorphic
+--------------------
+.. list-table:: 
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Resource
+      - CPU
+      - Memory (GB)
+      - Network
+      - Cards
+      - Notes
+    * - quorra1-2
+      - 
+      - 
+      - 10 GE
+      - 
+      - 
+    * - rg-fpaa-host
+      - 
+      - 
+      - 
+      - 
+      - 
+    
 Reconfigurable and Novel Networking
 --------------------
 	
@@ -90,7 +139,8 @@ Reconfigurable and Novel Networking
       - 10 GE, EDR IB, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__ 
       - Stratix 10 PAC 
       - NA
-    
+ 
+ 
 Techfee Systems
 ===============
 .. list-table:: 
