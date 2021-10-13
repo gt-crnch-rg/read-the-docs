@@ -1,4 +1,0 @@
-Rogues Gallery Equipment
-=======================
-
-TBD
