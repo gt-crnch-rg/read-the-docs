@@ -79,13 +79,13 @@ RG Physical Machines
       - 2x `Intel Gold 6226R <https://ark.intel.com/content/www/us/en/ark/products/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz.html>`__
       - 384 DDR4, 2666GHz, 32 GB DIMMs
       - 10 GE
-      - Arria 10 PAC, Bittware 385A-SoC, Bittware 520N, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__
+      - Arria 10 PAC, Bittware 385A-SoC, Bittware 520N, 
       - NA
     * - flubber3
       - 2x `Intel Gold 6226R <https://ark.intel.com/content/www/us/en/ark/products/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz.html>`__
       - 384 DDR4, 2666GHz, 32 GB DIMMs
       - 10 GE, EDR IB
-      - Stratix 10 PAC, Bittware 385A, Bittware 520N, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__
+      - Stratix 10 PAC, Bittware 385A, 
       - NA
       
       2x [Intel Gold 6226R](https://ark.intel.com/content/www/us/en/ark/products/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz.html)   | 384 GB DDR4, 2666GHz, 32 GB Micron DIMMs  | 10GE | Arria 10 PAC, Bittware 385A-SoC, [Bluefield-1 NIC](https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources)
