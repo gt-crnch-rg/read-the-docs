@@ -61,7 +61,7 @@ RG Physical Machines
 .. list-table:: 
     :widths: auto
     :header-rows: 1
-    :stub-columns: 1
+    :stub-columns: 3
 
     * - Resource
       - CPU
