@@ -57,6 +57,9 @@ Ubuntu 18.04 LTS.
 
 RG Physical Machines
 ====================
+
+Reconfigurable and Novel Networking
+--------------------
 	
 .. list-table:: 
     :widths: auto
@@ -72,20 +75,20 @@ RG Physical Machines
     * - flubber1
       - 2x `Intel E5-2630 <https://ark.intel.com/content/www/us/en/ark/products/92981/intel-xeon-processor-e5-2630-v4-25m-cache-2-20-ghz.html>`__
       - 256 DDR4, 2133GHz, 32 GB DIMMs
-      - 10 GE
+      - 10 GE, Innova-2 Flex
       - 2x Alveo U280, Coral TPU
       - NA
     * - flubber2
       - 2x `Intel Gold 6226R <https://ark.intel.com/content/www/us/en/ark/products/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz.html>`__
       - 384 DDR4, 2666GHz, 32 GB DIMMs
-      - 10 GE
-      - Arria 10 PAC, Bittware 385A-SoC, Bittware 520N, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__
+      - 10 GE, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`
+      - Arria 10 PAC, Bittware 385A-SoC, Bittware 520N, Bittware 520MX 
       - NA
     * - flubber3
       - 2x `Intel Gold 6226R <https://ark.intel.com/content/www/us/en/ark/products/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz.html>`__
       - 384 DDR4, 2666GHz, 32 GB DIMMs
-      - 10 GE, EDR IB
-      - Stratix 10 PAC, Bittware 385A, 
+      - 10 GE, EDR IB, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__ 
+      - Stratix 10 PAC 
       - NA
     
 Techfee Systems
