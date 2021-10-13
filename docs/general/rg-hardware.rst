@@ -81,7 +81,7 @@ Reconfigurable and Novel Networking
     * - flubber2
       - 2x `Intel Gold 6226R <https://ark.intel.com/content/www/us/en/ark/products/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz.html>`__
       - 384 DDR4, 2666GHz, 32 GB DIMMs
-      - 10 GE, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`
+      - 10 GE, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__
       - Arria 10 PAC, Bittware 385A-SoC, Bittware 520N, Bittware 520MX 
       - NA
     * - flubber3
