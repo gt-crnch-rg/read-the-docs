@@ -8,7 +8,7 @@ On-board Power Measurement Tools
 -  `FPGA Power
    Measurement <https://gt-crnch-rg.readthedocs.io/en/latest/reconfig/fpga_power_measurement.html>`__
    
-For Bluefield cards, we think we should be using IPMI `<https://docs.mellanox.com/pages/viewpage.action?pageId=47034628#heading-ChangingI2CAddresses>`__ to measure power (details forthcoming).
+For Bluefield cards, we think we should be using ` IPMI<https://docs.mellanox.com/pages/viewpage.action?pageId=47034628>`__ to measure power (details forthcoming).
 
 External Power Measurement Tools
 ================================
