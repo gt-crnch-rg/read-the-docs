@@ -185,7 +185,7 @@ Simulation and Tutorial Machines
       - 512 DDR3
       - 1 GE
       - Used for Jupyter notebooks
-   * - hawksbill
+    * - hawksbill / notebook
       - 4x `Intel E7-4820 <https://ark.intel.com/content/www/us/en/ark/products/53675/intel-xeon-processor-e74820-18m-cache-2-00-ghz-5-86-gts-intel-qpi.html>`__
       - 1024 DDR3
       - 1 GE
