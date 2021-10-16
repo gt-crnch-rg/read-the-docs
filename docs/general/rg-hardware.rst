@@ -98,7 +98,7 @@ The Pathfinder system consists of 2 chassis while the Emu Chick is a one chassis
       - 8
       - 512
       - 64
-      - RapidIO/1 GE
+      - RapidIO, 1 GE
       - karrawingi-login
     * - pathfinder (2 chassis)
       - 16  
@@ -179,20 +179,17 @@ Simulation and Tutorial Machines
       - CPU
       - Memory (GB)
       - Network
-      - Cards
       - Notes
     * - flatback
       - 2x `Intel E7-4820 <https://ark.intel.com/content/www/us/en/ark/products/53675/intel-xeon-processor-e74820-18m-cache-2-00-ghz-5-86-gts-intel-qpi.html>`__
       - 512 DDR3
       - 1 GE
-      - -
-      - -
+      - 
    * - hawksbill
       - 4x `Intel E7-4820 <https://ark.intel.com/content/www/us/en/ark/products/53675/intel-xeon-processor-e74820-18m-cache-2-00-ghz-5-86-gts-intel-qpi.html>`__
       - 1024 DDR3
       - 1 GE
-      - -
-      - -
+      - 
  
 Techfee Systems
 ===============
