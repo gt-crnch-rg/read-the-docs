@@ -68,7 +68,7 @@ What are some best practices for using the RG hardware?
 -------------------------------------------------------
 
 1. Make sure to back your code up, preferably with a GT Github or external Github repository. While we do have a `shared filesystem <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__, this can possibly experience a hardware failure.
-2. Use `tmux or screen `__ on the login and development VMs, especially when running tests.
+2. Use tmux or screen on the login and development VMs, especially when running tests.
 
 How do I ask for assistance? Is there a mailing list?
 -----------------------------------------------------
