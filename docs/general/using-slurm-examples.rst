@@ -122,8 +122,7 @@ Batch run jobs using MPI (Message Passing Interface) can also be run
 with Slurm on the Rogues Gallery testbed.
 
 Here is a simple example using `Open MPI <https://www.open-mpi.org/>`__
-that you can run on the Newell cluster that runs the commmand
-``hostname`` and outputs it to a file.
+that you can run on the Newell cluster that compiles and runs code for a simple MPI "hello world" program.
 
 First, create a file or download the C code from here:
 `mpi-hello-world.c <https://github.com/mpitutorial/mpitutorial/blob/gh-pages/tutorials/mpi-hello-world/code/mpi_hello_world.c>`__.
