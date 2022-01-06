@@ -19,7 +19,26 @@ is targeted.
 What Slurm queues are available?
 --------------------------------
 
-<TBD>
+Octavius queues:
+
+-  rg-arm-debug - 1 hour reservation for compiling, basic tests
+
+-  rg-arm-short - 2 hour reservation for short-term testing
+
+-  rg-arm-long - 6 hour reservation for longer runs
+
+Newell queues:
+
+-  debug - 1 hour reservation for compiling, basic tests
+
+-  short - 2 hour reservation for short-term testing
+
+-  long - 6 hour reservation for longer runs
+
+Quorra queues:
+
+-  rg-gpu - Reservation for runs with GPU
+
 
 How do I get started with Slurm on RG?
 --------------------------------
