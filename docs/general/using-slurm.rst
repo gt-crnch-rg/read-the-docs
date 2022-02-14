@@ -49,9 +49,12 @@ and the RG Workflows page for architecture of interest.
 Slurm General Resources
 =======================
 
+-  `Slurm Quickstart User Guide <https://slurm.schedmd.com/quickstart.html>`__
 -  `LLNL Slurm User
    Manual <https://hpc.llnl.gov/banks-jobs/running-jobs/slurm-user-manual>`__
 -  `LLNL Slurm QuickStart
    Guide <https://hpc.llnl.gov/banks-jobs/running-jobs/slurm-quick-start-guide>`__
 -  `LLNL Slurm Commands
    Reference <https://hpc.llnl.gov/banks-jobs/running-jobs/slurm-commands>`__
+-  `University of Maryland Torque versus Moab Guide
+   Reference <https://hpcc.umd.edu/hpcc/help/slurm-vs-moab.html>`__
