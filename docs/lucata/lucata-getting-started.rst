@@ -1,23 +1,22 @@
-*Last updated: 9/02/2021*
+*Last updated: 2/15/2022*
 
 Lucata Pathfinder Getting Started
 ============
 
-The Rogues Gallery hosts two systems from Lucata (formerly known as Emu Technology): The Gen1 Emu Chick, an 8-node desktop-style system, and the Lucata Pathfinder, a two-chassis system with 16 nodes and 24 cores in each node for a total of 384 cores. 
-
+The Rogues Gallery hosts two systems from Lucata (formerly known as Emu Technology): The Gen1 Emu Chick, an 8-node desktop-style system, and the Lucata Pathfinder, a two-chassis system with 16 nodes and 24 cores in each node for a total of 384 cores. We currently also have 2 Pathfinder chassis on loan from Lucata, which are denoted as PF<2-3>.
 
 Using the EMU simulation and compiler tools
 -------------
 
-The current toolset, documentation, and examples are available on the
-login and emu-dev VMs under ``/usr/local/emu/`` for the current
-most-stable version. Other versions are available under ``/tools/emu``.
-Eric Hein has also written a nice README.
+The current toolset, documentation, and examples are available on the rg-emu-dev VM and other nodes as a module. Note that the Pathfinder currently requires the use of the latest 22.02 tools.
+
 
 | rg-login.crnch.gatech.edu: primary login VM for Rogue’s Gallery. Use
-  for **Emu compilation and simulation**
-| rg-emu-dev.crnch.gatech.edu: VM for **Emu compilation and simulation**
-| karrawingi-login.crnch.gatech.edu (emuscb): The main EMU node, used
+  to log in to another node for testing and simulation from off campus.
+| rg-emu-dev.crnch.gatech.edu: VM for **Lucata compilation and simulation**
+| pathfinder<0-3>.crnch.gatech.edu: Lucata pathfinder chassis for HW execution
+
+| karrawingi-login.crnch.gatech.edu (emuscb): The main EMU Chick node, used
   for login and transferring files to a specific node/set of nodes.
   **NOTE:** You cannot run any code on this node and will need to copy
   your code to n0-n7 on the Emu machine. 
@@ -27,26 +26,6 @@ Typical usage model:
 1. Compile and simulate code on rg-emu-dev. Do debugging and
    initial verification here but note that simulation is slow!
 
-2. Copy your .mwx file and any inputs to karrawingi-login and then to a
-   specific Emu node (n0-n7).
-
-3. Run your code natively on n0 (multinode) or any of n0-n7
-   (single-node).
-   
-```mermaid
-   graph TD;
-     A([Test code on <b>rg-emu-dev</b>])--X86 emulation-->B([Run with x86_memoryweb. <br/> Use gdb to debug]);
-     B--Emusim simulation-->C[Simulate code with emusim.x <br/>for SN and MN untimed];
-     B--Fails-->B;
-     C--Succeeds-->D[Profile code and optimize];
-     C--Fails-->C;
-     D--Hardware execution-->E{{Make reservation for Lucata HW}};
-     E-->F{{Run single-node run <br/>on <b><i>pf<0>, SN<0-7></i></b>}};
-     F--Succeeds-->G{{Run multi-node on <b><i>pf<0></i></b>}}
-     F--Fails-->C
-     G--Succeeds-->H{{Run multi-node on <b><i>pf<0-3></i></b>}}
-     G--Fails-->F
-```
 
 
 Tutorials and Training
