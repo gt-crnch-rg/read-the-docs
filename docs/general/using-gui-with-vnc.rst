@@ -1,4 +1,5 @@
-*Last updated: 2/22/21*
+Using GUI Applications with VNC
+==================================
 
 **NOTE:**\ Please also see our `page on using
 X2Go <%5BMisc%5D-Using-GUI-applications-with-X2Go>`__ as this is a
@@ -11,7 +12,7 @@ as this allows for a low-latency but somewhat standardized and
 open-source setup.
 
 Table of Contents
-=================
+-----------------
 
 -  `Quick Start <#quick-start>`__
 
@@ -50,8 +51,6 @@ Table of Contents
 
 -  | `Common Errors <#common-errors>`__
    | 
-
-Table of contents generated with markdown-toc
 
 .. _a-idquick-startatldr---how-do-i-quickly-get-started-using-vnc-on-crnch-resources:
 
@@ -390,5 +389,6 @@ TBD - not totally clear why this might be happening..
 
 .. code:: 
 
-   startxfce4
+   startxfce4
+
    Cannot open /dev/tty0 (Permission denied)

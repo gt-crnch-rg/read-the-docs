@@ -20,6 +20,10 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    general/rg-filesystems
    general/mailing-list-help-tickets
    general/contributing
+   general/using-slurm
+   general/using-slurm-examples
+   general/rg-workflows
+   general/using-gui-with-vnc
 
 .. toctree::
    :caption: Arm-based HPC

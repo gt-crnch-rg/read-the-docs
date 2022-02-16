@@ -24,7 +24,7 @@ Note that all machines have a **.crnch.gatech.edu** suffix
 -  **rg-emu-dev:** VM for Emu compilation and simulation
 -  **rg-fpga-dev-<1-6>:** VMs for FPGA compilation and simulation
 -  **rg-neuro-dev:** VM for neuromorphic tools
--  Please see `this page <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Hardware>`__ for a complete list of available machines in the RG testbed
+-  Please see `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-hardware.html>`__ for a complete list of available machines in the RG testbed
 
 What's this about the VPN?
 --------------------------
@@ -35,10 +35,10 @@ How do I work with *novel architecture of interest X*?
 
 First of all, check the sidebar for the appropriate architecture category and read through the existing documentation. Note that we are migrating some of our pages from our internal wiki to this public ReadTheDocs site over the next few months. You can use your GT username and password to log into the internal wiki.
 
-Once you have done this, if you have questions please `ask on Teams or via help ticket <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Mailing-Lists-and-Requesting-Help>`__.
+Once you have done this, if you have questions please `ask on Teams or via help ticket <https://gt-crnch-rg.readthedocs.io/en/main/general/mailing-list-help-tickets.html>`__.
 
 -  `Rogues Gallery Hardware Master
-   List <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Hardware>`__
+   List <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-hardware.html>`__
 
 -  `Lucata Pathfinder Getting
    Started <https://gt-crnch-rg.readthedocs.io/en/main/lucata/lucata-getting-started.html>`__
@@ -67,10 +67,10 @@ Once you have done this, if you have questions please `ask on Teams or via help 
 What are some best practices for using the RG hardware?
 -------------------------------------------------------
 
-1. Make sure to back your code up, preferably with a GT Github or external Github repository. While we do have a `shared filesystem <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Filesystems>`__, this can possibly experience a hardware failure.
-2. Use `tmux or screen `__ on the login and development VMs, especially when running tests.
+1. Make sure to back your code up, preferably with a GT Github or external Github repository. While we do have a `shared filesystem <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__, this can possibly experience a hardware failure.
+2. Use tmux or screen on the login and development VMs, especially when running tests.
 
 How do I ask for assistance? Is there a mailing list?
 -----------------------------------------------------
 
-Please refer to this `page <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Mailing-Lists-and-Requesting-Help>`__ for more details on asking for help and posting to RG community groups and mailing lists.
+Please refer to this `page <https://gt-crnch-rg.readthedocs.io/en/main/general/mailing-list-help-tickets.html>`__ for more details on asking for help and posting to RG community groups and mailing lists.

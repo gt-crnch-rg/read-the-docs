@@ -81,6 +81,32 @@ Arm HPC
 Near-Memory
 --------------------
 
+The Pathfinder system consists of 2 chassis while the Emu Chick is a one chassis system. 
+
+.. list-table:: 
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Resource
+      - Nodes
+      - Memory (GB)
+      - LCEs
+      - Network
+      - Notes
+    * - karrawingi (Emu Chick, 1 chassis)
+      - 8
+      - 512
+      - 64
+      - RapidIO, 1 GE
+      - karrawingi-login
+    * - pathfinder (2 chassis)
+      - 16  
+      - 1024
+      - 392
+      - RapidIO 2.0, 10 GE
+      - 
+
 Neuromorphic
 --------------------
 .. list-table:: 
@@ -140,6 +166,30 @@ Reconfigurable and Novel Networking
       - Stratix 10 PAC 
       - NA
  
+ 
+Simulation and Tutorial Machines
+--------------------
+	
+.. list-table:: 
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Resource
+      - CPU
+      - Memory (GB)
+      - Network
+      - Notes
+    * - flatback
+      - 2x `Intel E7-4820 <https://ark.intel.com/content/www/us/en/ark/products/53675/intel-xeon-processor-e74820-18m-cache-2-00-ghz-5-86-gts-intel-qpi.html>`__
+      - 512 DDR3
+      - 1 GE
+      - Used for Jupyter notebooks
+    * - hawksbill / notebook
+      - 4x `Intel E7-4820 <https://ark.intel.com/content/www/us/en/ark/products/53675/intel-xeon-processor-e74820-18m-cache-2-00-ghz-5-86-gts-intel-qpi.html>`__
+      - 1024 DDR3
+      - 1 GE
+      - Used for Jupyter notebooks
  
 Techfee Systems
 ===============
