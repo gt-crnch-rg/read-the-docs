@@ -26,6 +26,7 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    :maxdepth: 2
    :hidden:
    :glob:
+   
    general/rg-workflows
    general/using-slurm
    general/using-slurm-examples
