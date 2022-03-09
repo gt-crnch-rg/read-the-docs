@@ -1,11 +1,11 @@
 Visual Studio Code
 ========================
 
-Note: For remote GUI applications, we currently recommend using `x2go <https://gt-crnch-rg.readthedocs.io/en/main/general/using-gui-with-x2go.html?highlight=x2go#how-do-i-quickly-get-started-using-x2go-on-crnch-resources>`__.
+**Note:** For remote GUI applications, we currently recommend using `x2go <https://gt-crnch-rg.readthedocs.io/en/main/general/using-gui-with-x2go.html?highlight=x2go#how-do-i-quickly-get-started-using-x2go-on-crnch-resources>`__.
 
 You are welcome to use `Visual Studio Code (VS Code or VSC) <https://code.visualstudio.com/>`__
 along with the `Remote Development Extension Pack <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack>`__
-to SSH to Rogues Gallery resouces. This allows you to navigate folders
+to SSH to Rogues Gallery resources. This allows you to navigate folders
 and edit code with the power and convenience of VS Code and its many excellent extensions.
 
 Recommended Extensions Include: 
