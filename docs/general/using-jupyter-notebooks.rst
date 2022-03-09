@@ -1,4 +1,6 @@
-Last updated: 12/6/21
+Jupyter Notebooks
+=================
+
 
 We suggest using JupyterLab as your interface for neuromorphic, quantum,
 and reconfigurable research. PACE has a `nice
