@@ -1,7 +1,6 @@
 Visual Studio Code
 ========================
 
-
 Note: For remote GUI applications, we currently recommend using `x2go <https://gt-crnch-rg.readthedocs.io/en/main/general/using-gui-with-x2go.html?highlight=x2go#how-do-i-quickly-get-started-using-x2go-on-crnch-resources>`__.
 
 You are welcome to use `Visual Studio Code <https://code.visualstudio.com/>`__
@@ -44,3 +43,4 @@ option which will route your connection to ``rg-neuro-dev`` through ``rg-login``
 
 Now, if you select that green button again, then ``Connect to Host``, you can pick either ``rg-login`` or ``rg-neuro-dev`` as options.
 
+Special Thanks to our Contributing Authors for this Page: James Wood
