@@ -20,11 +20,20 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    general/rg-filesystems
    general/mailing-list-help-tickets
    general/contributing
+
+.. toctree::
+   :caption: RG Workflows
+   :maxdepth: 2
+   :hidden:
+   :glob:
+   general/rg-workflows
    general/using-slurm
    general/using-slurm-examples
-   general/rg-workflows
    general/using-gui-with-vnc
-
+   general/using-gui-with-x2go
+   general/visual-studio-code
+   general/using-jupyter-notebooks
+   
 .. toctree::
    :caption: Arm-based HPC
    :maxdepth: 2
