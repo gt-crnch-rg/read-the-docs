@@ -95,7 +95,13 @@ shares the string to do so with you:
 Example images of Jupyter notebook usage
 ----------------------------------------
 
+.. figure:: ../figures/general/jupyter-url-port-forwarding.png
+   :alt: Jupyter URL port forwarding
+   
 Figure 1: Example of using the JupyterLab token to connect locally
+
+.. figure:: ../figures/general/jupyter-lab-example.png
+   :alt: Jupyter Lab Example
 
 Figure 2: JupyterLab session with Qiskit code
 
