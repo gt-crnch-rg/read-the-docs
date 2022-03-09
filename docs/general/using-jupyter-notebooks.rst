@@ -59,6 +59,9 @@ provided.
 .. code:: 
 
    http://localhost:59801/?token=f59c32ebccccbc3f3036bfd32b8f62a47b48442085f3f4a2
+   
+**Note:** Remember to close both your jump session and your jupyterlab
+session when you are finished!
 
 Alternative method: use the provided setup script
 -------------------------------------------------
@@ -104,6 +107,3 @@ Figure 1: Example of using the JupyterLab token to connect locally
    :alt: Jupyter Lab Example
 
 Figure 2: JupyterLab session with Qiskit code
-
-**Note:** Remember to close both your jump session and your jupyterlab
-session when you are finished!
