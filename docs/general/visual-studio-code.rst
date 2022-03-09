@@ -13,6 +13,7 @@ Recommended Extensions Include: Remote Development - Includes the Remote SSH, Re
 * Jupyter - can be used to interact with and execute Jupyter notebooks from VSC.
 
 Optional Extensions May Include:
+
 * C/C++ - C syntax highlighting
 * Python - Python highlighting
 
@@ -43,4 +44,4 @@ option which will route your connection to ``rg-neuro-dev`` through ``rg-login``
 
 Now, if you select that green button again, then ``Connect to Host``, you can pick either ``rg-login`` or ``rg-neuro-dev`` as options.
 
-Special Thanks to our Contributing Authors for this Page: James Wood
+*Special Thanks to our Contributing Authors for this Page*: James Wood
