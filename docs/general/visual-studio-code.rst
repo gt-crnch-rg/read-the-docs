@@ -3,7 +3,7 @@ Visual Studio Code
 
 Note: For remote GUI applications, we currently recommend using `x2go <https://gt-crnch-rg.readthedocs.io/en/main/general/using-gui-with-x2go.html?highlight=x2go#how-do-i-quickly-get-started-using-x2go-on-crnch-resources>`__.
 
-You are welcome to use `Visual Studio Code <https://code.visualstudio.com/>`__
+You are welcome to use `Visual Studio Code (VS Code or VSC) <https://code.visualstudio.com/>`__
 along with the `Remote Development Extension Pack <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack>`__
 to SSH to Rogues Gallery resouces. This allows you to navigate folders
 and edit code with the power and convenience of VS Code and its many excellent extensions.
@@ -17,7 +17,8 @@ Optional Extensions May Include:
 * C/C++ - C syntax highlighting
 * Python - Python highlighting
 
-
+VSC and SSH Config Files
+--------------------------
 If you use VS Code, it is recommended to set up an SSH configuration file for easy access to RG nodes.
 In this way, you don't have to remember hostnames or worry about whether you are on the campus VPN or not. 
 
@@ -38,10 +39,18 @@ In this way, you don't have to remember hostnames or worry about whether you are
     HostName rg-neuro-dev.crnch.gatech.edu
     User gburdell
     ProxyJump rg-Login
+    
+.. figure:: ../figures/general/vsc/vscode-rg-ssh-config.png
+   :alt:
 
 This has added ``rg-login``, and below that ``rg-neuro-dev``. Pay special notice to the ``ProxyJump`` 
 option which will route your connection to ``rg-neuro-dev`` through ``rg-login`` first. 
 
 Now, if you select that green button again, then ``Connect to Host``, you can pick either ``rg-login`` or ``rg-neuro-dev`` as options.
+
+VSC with Jupyter Notebooks
+--------------------------
+.. figure:: ../figures/general/vsc/vscode-rg-jupyter-nb.png
+   :alt:
 
 *Special Thanks to our Contributing Authors for this Page*: James Wood
