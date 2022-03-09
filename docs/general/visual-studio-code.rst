@@ -8,7 +8,9 @@ along with the `Remote Development Extension Pack <https://marketplace.visualstu
 to SSH to Rogues Gallery resouces. This allows you to navigate folders
 and edit code with the power and convenience of VS Code and its many excellent extensions.
 
-Recommended Extensions Include: Remote Development - Includes the Remote SSH, Remote Container, and Remote WSL extensions
+Recommended Extensions Include: 
+
+* Remote Development - Includes the Remote SSH, Remote Container, and Remote WSL extensions
 * Remote SSH - required to interact with remote SSH sessions on RG
 * Jupyter - can be used to interact with and execute Jupyter notebooks from VSC.
 
