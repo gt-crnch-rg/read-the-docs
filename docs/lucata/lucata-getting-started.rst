@@ -28,7 +28,7 @@ Lucata Workflow
 .. figure:: ../figures/lucata/lucata_workflow_diagram.png
    :alt: Rogues Gallery Hardware
 
-When getting started, we highly recommend checking out the _`Lucata Pathfinder Programming Manual <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/main/docs/pathfinder/Lucata-Pathfinder-Programming-Guide-v2.0.0-2202-tools.pdf>`__ (requires GT Github login) and read through Chapters 1,2,3, 5.1, 6, and 7. This will give you a basic understanding of the Cilk-based workflow and Lucata-specific APIs and tools. 
+When getting started, we highly recommend checking out the `Lucata Pathfinder Programming Manual <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/main/docs/pathfinder/Lucata-Pathfinder-Programming-Guide-v2.0.0-2202-tools.pdf>`__ (*requires GT Github login*) and read through Chapters 1,2,3, 5.1, 6, and 7. This will give you a basic understanding of the Cilk-based workflow and Lucata-specific APIs and tools. 
 
 As shown in the figure above, the suggested Lucata workflow combines 1) x86 functionality testing, 2) simulation of code on a VM, 3) execution on a single node of the Pathfinder system, and 4) execution on multiple nodes and chassis.
 
