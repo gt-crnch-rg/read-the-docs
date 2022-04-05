@@ -58,3 +58,4 @@ Slurm General Resources
    Reference <https://hpc.llnl.gov/banks-jobs/running-jobs/slurm-commands>`__
 -  `University of Maryland Torque versus Moab Guide
    Reference <https://hpcc.umd.edu/hpcc/help/slurm-vs-moab.html>`__
+-  `Princeton Research Computing's Slurm learning resources <https://researchcomputing.princeton.edu/education/external-online-resources/slurm>`__
