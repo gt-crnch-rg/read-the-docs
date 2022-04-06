@@ -4,11 +4,11 @@ To bring up a multichassis system, you should use `emu_system_cmd` and `emu_chas
 emu_system_cmd -p -c {0..3} -- 'emu_chassis_start -u 10 -l {0..7}'
 ```
 
-see [Parallel command execution with emu_node_cmd and emu_system_cmd](https://github.com/emusolutions/chick-helpers/wiki/Parallel-command-execution-with-emu_node_cmd-and-emu_system_cmd) on using `emu_system_cmd` and `emu_node_cmd`
+see [Parallel command execution with emu_node_cmd and emu_system_cmd](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/parallel_cmds.md) on using `emu_system_cmd` and `emu_node_cmd`
 
-see [Bringing up a chassis with emu_chassis_start](https://github.com/emusolutions/chick-helpers/wiki/Bringing-up-a-chassis-with-emu_chassis_start) on using `emu_chassis_start`
+see [Bringing up a chassis with emu_chassis_start](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/multichassis_start.md) on using `emu_chassis_start`
 
-After all the chassis have finished `emu_chassis_start`, check the SRIO links see [SRIO Link Checking](https://github.com/emusolutions/chick-helpers/wiki/SRIO-Link-Checking) on how to check SRIO links.  Reboot and reset links as necessary.  Once you are certainly there are no errors with any links, you are good to go!
+After all the chassis have finished `emu_chassis_start`, check the SRIO links see [SRIO Link Checking](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/check_srio.md) on how to check SRIO links.  Reboot and reset links as necessary.  Once you are certainly there are no errors with any links, you are good to go!
 
 Generally, if the SRIO switches have been initialized and you are not planning to change the interchassis link speed, you can run `emu_chassis_start` without rebooting or power cycling.  If you are planning on changing the interchassis link speed, you may need to power cycle or reset the SRIO switches.
 
