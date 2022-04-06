@@ -1,4 +1,4 @@
-This is a continuation of [https://github.com/gt-crnch-rg/read-the-docs/docs/lucata/diagnosing_prolems.md]
+This is a continuation of [running programs and diagnosing problems](https://github.com/gt-crnch-rg/read-the-docs/docs/lucata/diagnosing_prolems.md)
 
 ***
 
