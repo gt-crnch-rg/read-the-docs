@@ -21,10 +21,6 @@ to check the entire system that you are using.  You should calculate what #(C-1)
 
 In general, you want all of the nodes that you are using together to have matching versions. This means that if you are running a program on 32 nodes, you want all 32 nodes to have the same sc-driver version and the same hardware/ncdimm image. 
 
-If you need to update the hardware/ncdimm/FPGA image, see this page: [Update FPGA Images](https://github.com/emusolutions/chick-helpers/wiki/Update-FPGA-Images)
-
-If you need to update the sc-driver version, see this page: [Installing or swapping sc driver outside of dnf](https://github.com/emusolutions/sc-driver/wiki/Installing-or-swapping-sc-driver-outside-of-dnf) 
-
 ### Is the system configured correctly?
 Use
 ```
@@ -44,8 +40,8 @@ There are a few things in the output that you should pay attention to:
 3. If the link speed is shown, check that the links are running at the speed you want. 
 
 If you need to reconfigure the system, see these pages:   
-- [System-Reconfiguration](https://github.com/emusolutions/chick-helpers/wiki/System-Reconfiguration) 
-- [Bringing up a multichassis system](https://github.com/emusolutions/chick-helpers/wiki/Bringing-up-a-multichassis-system)
+- [System-Reconfiguration](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/system_reconfig.md) 
+- [Bringing up a multichassis system](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/multichassis_start.md)
 
 ### Are SRIO ports running well?
 Use
@@ -90,7 +86,7 @@ emu_system_cmd -p -c {0..#(C-1)} -- 'emu_switch_diagnostic --port_error_status -
 ```
 to check the interchassis links.  If you have stopped ports, you will probably have to reboot the SRIO switches.  This can be done by using `switch-board -c disable` to turn off the switch booard followed by `emu_chassis_start`, which will automatically power on the switch board.  Alternatively, you can also use `emu_switch_start` to reboot the switch.  If problems persist, you should probably check the physical cables.
 
-For more information, see this page: [SRIO Link Checking](https://github.com/emusolutions/chick-helpers/wiki/SRIO-Link-Checking)
+For more information, see this page: [SRIO Link Checking](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/check_srio.md)
 
 ### Are there already other runs in progress?
 
@@ -113,7 +109,7 @@ In general, it is a good idea to run w/ a reasonable time out so you can get `em
 If you suspect that something has gone wrong while you are running a program or during termination, you should check the log files. 
 The log files are called `mn_exec_sys.PID.log` and `mn_exec_usr.PID.log`, and they can be found in the directory the program was run from. 
 You can look in these files for ERROR, FATAL, and WARN messages. 
-For more information, see this page: [emu_multinode_exec logging](https://github.com/emusolutions/sc-driver/wiki/emu_multinode_%7Bexec,common,poll%7D-scripts.#logging-for-emu_multinode_exec)
+For more information, see this page: [Running programs with emu_multinode_exec](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/emu_multinode_exec.md)
 
 ### Manually terminating a program
 
