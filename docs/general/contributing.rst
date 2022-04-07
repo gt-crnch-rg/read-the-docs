@@ -66,6 +66,8 @@ While there are many nice GUI-based editors for MarkDown files, there are not th
 
 You can use this simple script to convert a MarkDown file to RST, but you may then want to check that the links and figure links get populated correctly. You can also use editors like `Typora <https://typora.io/>`_ to edit Markdown and then export an RST file. Note that Typora uses pandoc behind the scenes to do this conversion!
 
+You can also use Python tools like _`m2r <https://github.com/miyakogi/m2r>`__ which may provide a better translation capability than pandoc. 
+
 
 Style Guide Suggestions
 #######################
