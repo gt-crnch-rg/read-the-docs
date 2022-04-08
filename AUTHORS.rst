@@ -5,7 +5,8 @@ Current maintainers:
 ------
 * Jeff Young
 
-Previous contributors:
+Community Contributors:
 ------
-* Jason Riedy 
-* James Wood
+* Yujen Juan, Lucata Corporation
+* Jason Riedy, Lucata Corporation 
+* James Wood, Georgia Tech
