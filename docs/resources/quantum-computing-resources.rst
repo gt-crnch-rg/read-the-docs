@@ -1,7 +1,7 @@
 Quantum Computing Resources
 ===========================
 
-*Last updated: January 15, 2021*
+*Last updated: May 4, 2022*
 
 While we don’t currently host any quantum hardware, this page lists
 resources for common simulators, tutorials, and benchmarks that can be
@@ -37,6 +37,8 @@ What related courses does Georgia Tech offer?
 
 -  `Linear algebra (MATH
    1554) <https://math.gatech.edu/courses/math/1554>`__
+-  `Quantum Computing Technologies (PHYS
+   4813) <https://parkerlab.gatech.edu/web/research/>`__ - Dr. Colin Parker
 -  `Quantum Information and Quantum Computing (PHYS/MATH
    4782) <https://math.gatech.edu/courses/math/4782>`__
 -  `Introduction to Quantum Computing
