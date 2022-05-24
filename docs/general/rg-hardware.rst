@@ -149,23 +149,64 @@ Reconfigurable and Novel Networking
       - Notes
     * - flubber1
       - 2x `Intel E5-2630 <https://ark.intel.com/content/www/us/en/ark/products/92981/intel-xeon-processor-e5-2630-v4-25m-cache-2-20-ghz.html>`__
-      - 256 DDR4, 2133GHz, 32 GB DIMMs
+      - 256 DDR4, 2133 MHz, 32 GB DIMMs
       - 10 GE, Innova-2 Flex
       - 2x Alveo U280, Coral TPU
       - NA
     * - flubber2
       - 2x `Intel Gold 6226R <https://ark.intel.com/content/www/us/en/ark/products/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz.html>`__
-      - 384 DDR4, 2666GHz, 32 GB DIMMs
-      - 10 GE, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__
+      - 384 DDR4, 2666 MHz, 32 GB DIMMs
+      - 10 GE, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__
       - Arria 10 PAC, Bittware 385A-SoC, Bittware 520N, Bittware 520MX 
       - NA
     * - flubber3
       - 2x `Intel Gold 6226R <https://ark.intel.com/content/www/us/en/ark/products/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz.html>`__
-      - 384 DDR4, 2666GHz, 32 GB DIMMs
+      - 384 DDR4, 2666 MHz, 32 GB DIMMs
       - 10 GE, EDR IB, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__ 
       - Stratix 10 PAC 
       - NA
- 
+    * - flubber4
+      - 2x `AMD EPYC 7513 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7513>`__
+      - 256 DDR4, 3200 MHz, 16 GB DIMMs
+      - NVIDIA ConnectX-6 
+      - NA
+      - NA
+    * - flubber5
+      - 2x `AMD EPYC 7513 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7513>`__
+      - 256 DDR4, 3200 MHz, 16 GB DIMMs
+      - NVIDIA ConnectX-6 
+      - Xilinx Alveo U280
+      - NA
+    * flubber6
+      - 2x `AMD EPYC 7513 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7513>`__
+      - 256 DDR4, 3200 MHz, 16 GB DIMMs
+      - NVIDIA ConnectX-6, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__, Bluefield-2 NIC, Intel N6000 
+      - NA 
+      - NA
+    * flubber7
+      - 2x `AMD EPYC 7513 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7513>`__
+      - 256 DDR4, 3200 MHz, 16 GB DIMMs
+      - NVIDIA ConnectX-6, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__, Bluefield-2 NIC, Intel N6000 
+      - NA
+      - NA
+    * - flubber8
+      - 2x `Intel Gold 6338 <https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html>`__
+      - 512 DDR4, 3200 MHz, 32 GB DIMMs
+      - NVIDIA ConnectX-6
+      - NA 
+      - NA
+    * - flubber9
+      - 2x `Intel Gold 6338 <https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html>`__
+      - 512 DDR4, 3200 MHz, 32 GB DIMMs
+      - 10 GE, NVIDIA ConnectX-6
+      - NA 
+      - NA
+    * - flubber10
+      - 2x `Intel Gold 6338 <https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html>`__
+      - 512 DDR4, 3200 MHz, 32 GB DIMMs
+      - 10 GE, NVIDIA ConnectX-6
+      - NA 
+      - NA
  
 Simulation and Tutorial Machines
 --------------------
