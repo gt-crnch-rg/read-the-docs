@@ -182,13 +182,13 @@ Reconfigurable and Novel Networking
       - 256 DDR4, 3200 MHz, 16 GB DIMMs
       - NVIDIA ConnectX-6, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__, Bluefield-2 NIC, Intel N6000 
       - NA 
-      - NA
+      - Smart Networking Node
     * - flubber7
       - 2x `AMD EPYC 7513 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7513>`__
       - 256 DDR4, 3200 MHz, 16 GB DIMMs
       - NVIDIA ConnectX-6, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__, Bluefield-2 NIC, Intel N6000 
       - NA
-      - NA
+      - Smart Networking Node
     * - flubber8
       - 2x `Intel Gold 6338 <https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html>`__
       - 512 DDR4, 3200 MHz, 32 GB DIMMs
