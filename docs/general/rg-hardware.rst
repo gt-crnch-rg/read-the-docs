@@ -121,18 +121,29 @@ Neuromorphic
       - Cards
       - Notes
     * - quorra1-2
-      - 
-      - 
-      - 10 GE
-      - 
-      - 
+      - 2x `AMD EPYC 7502 (Rome) <https://www.amd.com/en/products/cpu/amd-epyc-7502>`__
+      - 256 DDR4, 3200 MHz, 16 GB DIMMs
+      - Bluefield-2 NIC, 10 GE
+      - 4x A30
+      -       
+    * - quorra2
+      - 2x `AMD EPYC 7502 (Rome) <https://www.amd.com/en/products/cpu/amd-epyc-7502>`__
+      - 256 DDR4, 3200 MHz, 16 GB DIMMs
+      - Bluefield-2 NIC, 10 GE
+      - 4x A30, 1x A100
+      -
     * - rg-fpaa-host
+      - Raspberry Pi Model 3B
+      - 2 GB
       - 
       - 
+      - Hosts FPAA via USB UART connection
+    * - rudi1
       - 
-      - 
-      - 
-    
+      -
+      -
+      - `Jetson Xavier NX Developer Kit <https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit>`__
+      
 Reconfigurable and Novel Networking
 --------------------
 	
@@ -207,7 +218,44 @@ Reconfigurable and Novel Networking
       - NVIDIA ConnectX-6
       - NA 
       - NA
- 
+      
+Devboard Hosts
+--------------------   
+.. list-table:: 
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+    
+ * - Resource
+      - CPU
+      - Memory (GB)
+      - Network
+      - Cards
+      - Notes
+    * - brainard2
+      - i5-10210U
+      - 32 GB DDR4
+      - 1 GE
+      - Connection to RISC-V board and FPGA
+      
+RISC-V
+--------------------   
+.. list-table:: 
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Resource
+      - CPU
+      - Memory (GB)
+      - Network
+      - Notes
+    * - _`johnny-rv5-1 <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/[RISC-V]-SiFive-Unmatched>`__
+      - 4xU74 cores and 1xS7 core, 1.4 GHz
+      - 16 GB DDR4
+      - 1 GE
+      - SiFive Unmatched motherboard
+
 Simulation and Tutorial Machines
 --------------------
 	
@@ -221,11 +269,6 @@ Simulation and Tutorial Machines
       - Memory (GB)
       - Network
       - Notes
-    * - flatback
-      - 2x `Intel E7-4820 <https://ark.intel.com/content/www/us/en/ark/products/53675/intel-xeon-processor-e74820-18m-cache-2-00-ghz-5-86-gts-intel-qpi.html>`__
-      - 512 DDR3
-      - 1 GE
-      - Used for Jupyter notebooks
     * - hawksbill / notebook
       - 4x `Intel E7-4820 <https://ark.intel.com/content/www/us/en/ark/products/53675/intel-xeon-processor-e74820-18m-cache-2-00-ghz-5-86-gts-intel-qpi.html>`__
       - 1024 DDR3
