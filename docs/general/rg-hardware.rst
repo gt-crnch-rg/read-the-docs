@@ -107,7 +107,7 @@ The Pathfinder system consists of 2 chassis while the Emu Chick is a one chassis
       - RapidIO 2.0, 10 GE
       - 
 
-Neuromorphic
+Neuromorphic/AI
 --------------------
 .. list-table:: 
     :widths: auto
@@ -120,7 +120,7 @@ Neuromorphic
       - Network
       - Cards
       - Notes
-    * - quorra1-2
+    * - quorra1
       - 2x `AMD EPYC 7502 (Rome) <https://www.amd.com/en/products/cpu/amd-epyc-7502>`__
       - 256 DDR4, 3200 MHz, 16 GB DIMMs
       - Bluefield-2 NIC, 10 GE
@@ -140,6 +140,7 @@ Neuromorphic
       - Hosts FPAA via USB UART connection
     * - rudi1
       - 
+      -
       -
       -
       - `Jetson Xavier NX Developer Kit <https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit>`__
@@ -226,7 +227,7 @@ Devboard Hosts
     :header-rows: 1
     :stub-columns: 1
     
- * - Resource
+    * - Resource
       - CPU
       - Memory (GB)
       - Network
@@ -237,6 +238,7 @@ Devboard Hosts
       - 32 GB DDR4
       - 1 GE
       - Connection to RISC-V board and FPGA
+      -
       
 RISC-V
 --------------------   
@@ -250,7 +252,7 @@ RISC-V
       - Memory (GB)
       - Network
       - Notes
-    * - _`johnny-rv5-1 <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/[RISC-V]-SiFive-Unmatched>`__
+    * - _`johnny-rv5-1 <'https://github.gatech.edu/crnch-rg/rogues-docs/wiki/>`_
       - 4xU74 cores and 1xS7 core, 1.4 GHz
       - 16 GB DDR4
       - 1 GE
