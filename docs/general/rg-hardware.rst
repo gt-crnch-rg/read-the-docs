@@ -252,7 +252,7 @@ RISC-V
       - Memory (GB)
       - Network
       - Notes
-    * - _`johnny-rv5-1 <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/>`_
+    * - johnny-rv5-1
       - 4xU74 cores and 1xS7 core, 1.4 GHz
       - 16 GB DDR4
       - 1 GE
