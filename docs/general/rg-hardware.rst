@@ -235,10 +235,10 @@ Devboard Hosts
       - Notes
     * - brainard2
       - i5-10210U
-      - 32 GB DDR4
+      - 32 GB DDR4, 2666 MHz, 16 GB DIMMs
       - 1 GE
       - 
-      - Connection to RISC-V board and FPGA
+      - Connection to RISC-V board and FPGA, `Intel NUC10i5FNK <https://www.intel.com/content/www/us/en/products/sku/195507/intel-nuc-10-performance-kit-nuc10i5fnk/specifications.html>`__
       
 RISC-V
 --------------------   
