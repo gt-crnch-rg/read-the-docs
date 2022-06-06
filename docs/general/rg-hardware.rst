@@ -290,7 +290,7 @@ Techfee Systems
       - Network
       - Cards
       - Notes
-    * - frozone-<1-4>
+    * - frozone<1-4>
       - 2x `Ice Lake 8352Y <https://www.intel.com/content/www/us/en/products/sku/212284/intel-xeon-platinum-8352y-processor-48m-cache-2-20-ghz/specifications.html>`__
       - 256 DDR4, 3200GHz, 16 GB DIMMs
       - `Omni-Path 100 GB, 100HFA16LS <https://ark.intel.com/content/www/us/en/ark/products/92007/intel-omni-path-host-fabric-interface-adapter-100-series-1-port-pcie-x16.html>`__
