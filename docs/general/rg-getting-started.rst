@@ -11,6 +11,8 @@ For both internal and external users, we ask for "an RG contact". If you've talk
 
 For GT users, please put your research advisor or down one of the testbed personnel you have talked to. We will also need your GT (Passport) username to add login access for you. 
 
+**NOTE:** For GT faculty or staff looking to add new *external* users, it is very helpful to us if you can sponsor the users as `Passport guests <https://support.cc.gatech.edu/faq/how-do-i-sponsor-guest-accounts>`__. Then the above form can be filled out with the external user's guest username which helps to streamline the access process. You can sponsor a guest account with Passport for up to one year and then renew the user if they are still an active collaborator. 
+
 How do I Access RG machines?
 --------------------------------
 
