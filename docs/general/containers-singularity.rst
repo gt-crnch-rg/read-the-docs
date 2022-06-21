@@ -1,4 +1,8 @@
+=======================
+Singularity
+=======================
 
+You might want to use Singularity for more high-performance or AI-focused workloads as opposed to Docker.
 
 Installing Singularity Locally
 --------------------------
