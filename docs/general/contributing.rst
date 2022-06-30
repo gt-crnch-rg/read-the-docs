@@ -5,14 +5,14 @@ We welcome and appreciate your comments and contributions to this documentation.
 
 What is the process for contributing documentation?
 ########
-To contribute documentation, you should write an rst-formatted file related to your topic and submit it via `pull request to this repository <https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_. We will also eventually have a form where you can upload and submit new documentation to be posted in a simplified fashion.
+To contribute documentation, you should write an rst-formatted file related to your topic and submit it via `pull request to this repository <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_. We will also eventually have a form where you can upload and submit new documentation to be posted in a simplified fashion.
 
-All read-the-docs documentation uses `Restructered Text <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary_terms.html#term-rst>`_, so we ask that you write documentation in this format or convert Markdown files for your pull requests. 
+All read-the-docs documentation uses `Restructered Text <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary_terms.html#term-rst>`_, so we ask that you write documentation in this format or convert Markdown files for your pull requests. However, we can also accept updates in Markdown format and integrate them into this repo.
 
 Current Topic Areas:
 ------------
 
--  Emu
+-  Emu/Lucata
 -  Getting Started - general topics needed to get started with RG
 -  Miscellaneous
 -  Networking - in-network computing, 5G, and edge.
@@ -66,7 +66,7 @@ While there are many nice GUI-based editors for MarkDown files, there are not th
 
 You can use this simple script to convert a MarkDown file to RST, but you may then want to check that the links and figure links get populated correctly. You can also use editors like `Typora <https://typora.io/>`_ to edit Markdown and then export an RST file. Note that Typora uses pandoc behind the scenes to do this conversion!
 
-You can also use Python tools like _`m2r <https://github.com/miyakogi/m2r>`__ which may provide a better translation capability than pandoc. 
+You can also use Python tools like `m2r <https://github.com/miyakogi/m2r>`__ which may provide a better translation capability than pandoc. 
 
 
 Style Guide Suggestions
