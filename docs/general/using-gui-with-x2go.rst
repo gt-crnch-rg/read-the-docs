@@ -25,8 +25,8 @@ As a baseline just to get started you need to do the following:
    window manager. Your login is your GT username and your password is
    your standard RG password.
 
-.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/figures/general/x2go/x2go_client_login_1.png
-   :alt: 
+.. figure:: ../figures/general/x2go/x2go_client_login_1.png
+   :alt:
 
 1. You may want to change the size of the GUI window and also turn off
    the sound (media tab - not shown here).
