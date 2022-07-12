@@ -31,7 +31,7 @@ As a baseline just to get started you need to do the following:
 1. You may want to change the size of the GUI window and also turn off
    the sound (media tab - not shown here).
 
-.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/figures/general/x2go/x2go_client_login_2.png
+.. figure:: ../figures/general/x2go/x2go_client_login_2.png
    :alt: 
 
 1. If you are on **not** on campus VPN, you need to add the "proxy
@@ -39,28 +39,28 @@ As a baseline just to get started you need to do the following:
    login or jump host proxy. Set the proxy to use the same login and
    password as the x2go server.
 
-.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/figures/general/x2go/x2go_client_login_proxy.png
+.. figure:: ../figures/general/x2go/x2go_client_login_proxy.png
    :alt: 
 
 1. Click OK to save your session, and then you will need to click on the
    seal icon to start your session. Enter your GT passport username and
    password. If successful, a new terminal will pop up.
 
-.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/figures/general/x2go/x2go_client_login_3.png
+.. figure:: ../figures/general/x2go/x2go_client_login_3.png
    :alt: 
 
 1. After 15-30 seconds you should see a default blue GUI background. You
    can then open a terminal to run GUI applications or click on the
    existing Desktop icons for Xilinx tools.
 
-.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/figures/general/x2go/x2go_client_terminal.png
+.. figure:: ../figures/general/x2go/x2go_client_terminal.png
    :alt: 
 
 As an example, if you source the OneAPI tools environment script in a
 terminal (or have it sourced in your .bashrc) you can then launch the
 GUI version of vTune for profiling.
 
-.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/figures/general/x2go/x2go_vtune_one_api.png
+.. figure:: ../figures/general/x2go/x2go_vtune_one_api.png
    :alt: 
 
 1. When you are done with your session, go back to the main client
@@ -69,7 +69,7 @@ GUI version of vTune for profiling.
    X2Go sessions if they are running longer than a day without any user
    interaction.
 
-.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/figures/general/x2go/x2go_client_pause_quit.png
+.. figure:: ../figures/general/x2go/x2go_client_pause_quit.png
    :alt: 
 
 Troubleshooting
