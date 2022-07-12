@@ -88,11 +88,13 @@ On Ubuntu, installation is relatively easy. You may want to install
 xfce-desktop if you have not already done so for VNC sessions.
 
 .. code::
+
    sudo apt-get install xfce-desktop x2goserver x2goserver-xsession
 
 On Redhat 7 run the following:
 
-.. code:: 
+.. code::
+
    sudo yum groupinstall xfce
    sudo dnf install x2goserver x2goserver-xsession
 
