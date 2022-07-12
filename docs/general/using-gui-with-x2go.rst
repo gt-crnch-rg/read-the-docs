@@ -92,7 +92,7 @@ client settings (Options-->Settings-->X.Org Server Settings-->Do not use
 primary clipboard). Make sure to fully restart your x2go client (kill
 via command-line, if needed) to see the change.
 
-:ref:`Installation`:
+.. _a-idInstallation:
 
 Installation
 ------------
