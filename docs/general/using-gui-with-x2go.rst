@@ -100,6 +100,7 @@ Redhat 8 requires the use of EPEL to get XFCE as an available desktop -
 see `here <https://forum.xfce.org/viewtopic.php?id=13412>`__.
 
 .. code::
+
    //Install EPEL and XFCE
    sudo dnf -y install epel-release
    sudo dnf -y groupinstall Xfce
