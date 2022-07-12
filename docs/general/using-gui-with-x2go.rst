@@ -8,17 +8,6 @@ X2go is an open-source implementation of `NoMachine or
 NX <https://en.wikipedia.org/wiki/NX_technology>`__ that requires fewer
 steps to setup and use.
 
-Table of Contents
-=================
-
--  `Quick Start <#quick-start>`__
-
--  `Installation <#installation>`__
-
--  TBD - Using an SSH Key/Agent with x2Go
-    
-
-.. _a-idquick-start:
 
 How do I quickly get started using X2go on CRNCH resources?
 -----------------------------------------------------------
@@ -92,9 +81,7 @@ client settings (Options-->Settings-->X.Org Server Settings-->Do not use
 primary clipboard). Make sure to fully restart your x2go client (kill
 via command-line, if needed) to see the change.
 
-:ref:`Installation`:
-
-Installation
+x2Go Installation
 ------------
 
 On Ubuntu, installation is relatively easy. You may want to install
@@ -113,7 +100,7 @@ Redhat 8 requires the use of EPEL to get XFCE as an available desktop -
 see `here <https://forum.xfce.org/viewtopic.php?id=13412>`__.
 
 .. code::
-   //Install 
+   //Install EPEL and XFCE
    sudo dnf -y install epel-release
    sudo dnf -y groupinstall Xfce
    sudo dnf install x2goserver x2goserver-xsession
