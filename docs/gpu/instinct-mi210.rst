@@ -67,10 +67,34 @@ As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
 an on-campus connection. 
 
+To request an allocation on Instinct using slurm:
+
+.. code::
+
+    //Request an allocation of 1 hr, partition rg-gpu, and specify the node name for the server with -w
+    salloc -t 1:00:00 -p rg-gpu -w instinct
+
 Compiling for the MI210 GPUs
 ----------------------------
 
 Currently we suggest using the ROCm compiler stack to compile or GCC 12+.
+
+Modules should be available but you may need to update your module path:
+
+.. code::
+
+    //Usually can skip this first line
+    []$ module use /projects/tools/x86_64/rhel-8/modulefiles/
+    []$ module avail
+
+    -------------------------------------------- /projects/tools/x86_64/rhel-8/modulefiles -------------------------------------  
+    rocm/5.2.0
+    
+    []$ module load rocm/5.2.0
+    []$ which hipcc
+    /opt/rocm-5.2.0/bin/hipcc
+   
+Useful ROCm tools include hipcc, amdclang, aompcc, amdflang, rocgdb, and rocprof. 
 
 Running jobs
 ------------
@@ -86,4 +110,4 @@ TBD
 Vendor-provided Documents and Resources
 ---------------------------------------
 
-TBD
+- `AMD Training Center (Getting Started, pointers to docs) <https://developer.amd.com/resources/rocm-learning-center/>`__
