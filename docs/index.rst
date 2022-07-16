@@ -41,7 +41,7 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    :hidden:
    :glob:
    
-   gpu/instinct-mi200.rst
+   gpu/instinct-mi210.rst
    gpu/quorra-nvidia.rst
    arm/octavius-a64fx-testbed.rst
    arm/kingpin-ampere.rst
