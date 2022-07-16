@@ -83,8 +83,11 @@ Modules should be available but you may need to update your module path:
 
 .. code::
 
-    //Usually can skip this first line
-    []$ module use /projects/tools/x86_64/rhel-8/modulefiles/
+    //Usually can skip these lines but may be needed if you run into a "bash: module: command not found" error
+    //[]$ source /etc/profile.d/modules.sh
+    //OR
+    //[]$ module use /projects/tools/x86_64/rhel-8/modulefiles/
+    
     []$ module avail
 
     -------------------------------------------- /projects/tools/x86_64/rhel-8/modulefiles -------------------------------------  
