@@ -36,14 +36,16 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    general/using-jupyter-notebooks
    
 .. toctree::
-   :caption: Arm-based HPC
+   :caption: Novel HPC
    :maxdepth: 2
    :hidden:
    :glob:
    
+   gpu/instinct-mi200.rst
+   gpu/quorra-nvidia.rst
    arm/octavius-a64fx-testbed.rst
-
-
+   arm/kingpin-ampere.rst
+  
 .. toctree::
    :caption: Lucata Pathfinder
    :maxdepth: 2
