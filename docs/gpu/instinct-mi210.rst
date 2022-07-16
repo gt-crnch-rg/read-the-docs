@@ -2,6 +2,10 @@
 Instinct - AMD MI210
 ============
 
+Acknowledgments
+==============
+We greatly appreciate the donation of this test platform from AMD to `Dr. Spencer Bryngelson <https://comp-physics.group/>`__, a CRNCH faculty member working on computational fluid dynamics (CFD) codes including `MFC <https://mflowcode.github.io/>`__.
+
 Current Status
 ==============
 
