@@ -5,18 +5,18 @@ Octavius - A64FX Testbed
 *Last Updated: 10/11/21*
 
 Current Status
-==============
+--------------
 
 Octavius has been updated with the latest Cray Programming Environment
 and Lmod support.
 
 BUGS / Feature Requests
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 -  No topology file for Slurm
 
 System Specifications and Tools
-===============================
+---------------------------------
 
 +--------------+-------------+-------------+-------------+-------------+
 | Queues       | CPU         | Memory (GB) | Networking  | Storage     |
@@ -39,23 +39,43 @@ supercomputer is that Fugaku also includes a 6D Torus network that is
 tied into each CPU core.
 
 Current Tools
--------------
+^^^^^^^^^^^^^
 
 Note that the Cray compilers are likely to have the best support for
-SVE, although GCC 10 is supposed to add more low-level support geared
+SVE, although GCC 11 and 12 add more low-level support geared
 towards A64FX.
 
-**Compilers**: CCE 12.0.1 (updated to July 2021 version), Clang 10,
-GNU8.3, 9, MVAPICH2, OpenMPI4
+.. list-table::
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
 
-**Arm tools**: Arm 21.0 and Forge/Map 21.0
+    * - Distro
+      - Kernel
+      - Standard Compilers
+      - Other Compilers
+      - MPI
+      - Miscellaneous
+    * - CentOS 8
+      - 4.18.0
+      - CCE 12.0.1, GCC 8.3, 9, 11.2.0
+      - Armclang 22.0.2, Forge 22.0, Clang 10
+      - MVAPICH2, OpenMPI 4.0
+      - 
 
 **Debuggers**: gdb4hpc 4.7.2, 4.8.1; valgrind4hpc 2.7.1, 2.8.1
 
 **Profilers**: PAPI 6.0, perftools 20.10.0
 
+To use the latest Arm 22.0.2 compilers, you may need to update your modulepath (this will be fixed in future upgrades):
+
+.. code::
+   
+                   $ module use /net/projects/tools/aarch64/rhel-8/arm-allinea/arm-compiler/22.0.2/modulefiles
+   Alternatively:  $ export MODULEPATH=$MODULEPATH:/net/projects/tools/aarch64/rhel-8/arm-allinea/arm-compiler/22.0.2/modulefiles
+
 How do I get to Octavius?
-=========================
+-------------------------
 
 As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
@@ -129,8 +149,33 @@ To request a specific node you can use the ``-w <nodename>`` flag
 Using modules
 -------------
 
-By default octavius uses LMOD. Use the standard ``module avail`` and
-``module load`` commands.
+By default octavius uses LMOD. Use the standard ``module avail`` and ``module load`` commands. If you don't see all the modules you can try to source our script which will update your MODULEPATH environment variable.
+
+.. code::
+   //Shows how to source this script to add all available module paths
+   $ . /tools/armhpc/init_modules_slurm_octavius_manual.sh
+   $ module avail
+
+This would produce the following output (elided for clarity)::
+
+   --------------------------------------------------------- /opt/cray/pe/perftools/default/modulefiles ---------------------------------------------------------
+   perftools-lite-events    perftools-lite-gpu    perftools-lite-hbm    perftools-lite-loops    perftools-lite    perftools-preload    perftools
+
+   ------------------------------------------------------------------------ Cray Modules ------------------------------------------------------------------------   
+   PrgEnv-cray/8.1.0           (L,D)    cray-hdf5/1.12.0.2                       (D)      cray-parallel-netcdf/1.12.1.0 (D)
+
+   ------------------------------------------------------ /opt/cray/pe/craype-targets/default/modulefiles -------------------------------------------------------   
+   craype-arm-nsp1    craype-arm-thunderx2    craype-network-infiniband
+
+   ---------------------------------------------------------------------- Octavius Modules ----------------------------------------------------------------------   
+   cmake/3.21.3    gnu9/9.4.0    hwloc/2.5.0    libfabric/1.13.0    openmpi4-gnu9-backup/4.0.4    prun/2.2    ucx/1.11.2
+
+   ----------------------------------------------------------------------- Arm Compilers ------------------------------------------------------------------------   
+   acfl/22.0.2    armie22/22.0    binutils/11.2.0    gnu/11.2.0    gnurt11/11.2.0
+
+   ------------------------------------------------------- /net/projects/tools/aarch64/rhel-8/modulefiles -------------------------------------------------------   
+   arm-forge/22.0.2    likwid/5.1.1
+
 
 Running jobs
 ------------
