@@ -23,7 +23,7 @@ We have the following quotas for users, subject to future modifications:
    depending on how many users are using a shared project.
 
 -  ``/netscratch`` - no quota limits but please note the lack of backups
-   and data retention policies below.
+   and data retention policies below. You can find a symlink to netscratch at <user_home>/USERSCRATCH
 
 Data retention policies
 -----------------------
