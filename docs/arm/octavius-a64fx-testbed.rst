@@ -74,6 +74,12 @@ To use the latest Arm 22.0.2 compilers, you may need to update your modulepath (
                    $ module use /net/projects/tools/aarch64/rhel-8/arm-allinea/arm-compiler/22.0.2/modulefiles
    Alternatively:  $ export MODULEPATH=$MODULEPATH:/net/projects/tools/aarch64/rhel-8/arm-allinea/arm-compiler/22.0.2/modulefiles
 
+Tools - Arm Instruction Emulator
+^^^^^^^^^^^^^
+ArmIE is a DynamoRio front-end that allows for testing and evaluating SVE instructions on hardware that may not support the latest Arm ISA. As an example, you can use ArmIE to instrument your code with "regions of interest" and then print out instruction counts or the numbers and types of different operations (e.g., gather/scatter or load/stores).
+
+For more information on using ArmIE, see this `Getting Started page <https://developer.arm.com/documentation/102190/22-0/Get-started/Get-started-with-Arm-Instruction-Emulator>`__ and `this tutorial page <https://developer.arm.com/documentation/102190/22-0/Tutorials/Analyze-Scalable-Vector-Extension--SVE--applications-with-Arm-Instruction-Emulator?lang=en>`__.
+
 How do I get to Octavius?
 -------------------------
 
