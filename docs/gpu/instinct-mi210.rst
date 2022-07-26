@@ -56,7 +56,7 @@ Software and Tools
     * - RHEL8
       - 4.18.0
       - GCC 8.5
-      - ROCm 5.2.0
+      - ROCm 5.2.0, `AOCC 3.2.0 <https://developer.amd.com/wp-content/resources/57222_AOCC_UG_Rev_3.2.pdf>`__
       - NA
       - 
 
