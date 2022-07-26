@@ -91,7 +91,7 @@ Modules should be available but you may need to update your module path:
     []$ module avail
 
     -------------------------------------------- /projects/tools/x86_64/rhel-8/modulefiles -------------------------------------  
-    rocm/5.2.0
+    aocc/3.2.0  rocm/5.2.0
     
     []$ module load rocm/5.2.0
     []$ which hipcc
