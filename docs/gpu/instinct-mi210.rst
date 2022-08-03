@@ -58,7 +58,7 @@ Software and Tools
       - GCC 8.5
       - ROCm 5.2.0, `AOCC 3.2.0 <https://developer.amd.com/wp-content/resources/57222_AOCC_UG_Rev_3.2.pdf>`__
       - 
-      - AOCL 3.2.0, `ROCm libraries 5.2.0 <https://rocblas.readthedocs.io/en/rocm-5.2.1/>`__
+      - AOCL 3.2.0, `ROCm libraries 5.2.0 <https://rocblas.readthedocs.io/en/rocm-5.2.1/>`__, `uProf 3.6 <https://developer.amd.com/amd-uprof/>`__
 
 How do I get to Instinct?
 =========================
