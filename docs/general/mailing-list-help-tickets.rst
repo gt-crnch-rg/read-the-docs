@@ -12,7 +12,7 @@ Help and Mailing List FAQs
       Teams. Most of the Lucata discussion currently uses this Slack. Just note that since we are on a free plan that old conversations are not saved.
 
 -  `How to use the help ticket webform at
-   www.crnch.gatech.edu/crnch-rg-help <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/RG-Help-Webform-Examples>`__
+   www.crnch.gatech.edu/crnch-rg-help <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-help-webform-examples.html>`__
 
 -  The main CRNCH help ticket email address is   crnch-rg-help@cc.gatech.edu. We would prefer if you use the webform but the email address is ok if you include your GT username (e.g., gburdell3 for George Burdell).
 
@@ -113,3 +113,7 @@ Note that most lists are closed to external users.
 -  crnch-rg-neuro-sysml@lists.gatech.edu - Discussion of neuromorphic computing and systems for machine learning
 
 -  crnch-rg-quantum@lists.gatech.edu - Discussion of quantum computing
+
+Vendor Forums
+-------------
+If we can't answer your question via chat, we may direct you to the relevant vendor forum for more assistance. See a list of related vendors `here <https://gt-crnch-rg.readthedocs.io/en/main/general/vendor-forum.html>`.
