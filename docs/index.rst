@@ -19,6 +19,7 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    general/rg-hardware 
    general/rg-filesystems
    general/mailing-list-help-tickets
+   general/vendor-forums
    general/contributing
 
 .. toctree::
