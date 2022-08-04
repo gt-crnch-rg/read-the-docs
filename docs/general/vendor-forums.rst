@@ -45,4 +45,4 @@ Mellanox Networking
 Arm 
 -----------
 * `Community forum <https://community.arm.com/>`__
-* `Arm HPC User Group Slack<https://join.slack.com/t/a-hug/shared_invite/zt-jj7d6hsl-etZunIu5aaVd7RT05fg8Nw>`__
+* `Arm HPC User Group Slack <https://join.slack.com/t/a-hug/shared_invite/zt-jj7d6hsl-etZunIu5aaVd7RT05fg8Nw>`__
