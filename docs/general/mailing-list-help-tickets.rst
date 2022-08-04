@@ -116,4 +116,4 @@ Note that most lists are closed to external users.
 
 Vendor Forums
 -------------
-If we can't answer your question via chat, we may direct you to the relevant vendor forum for more assistance. See a list of related vendors `here <https://gt-crnch-rg.readthedocs.io/en/main/general/vendor-forum.html>`.
+If we can't answer your question via chat, we may direct you to the relevant vendor forum for more assistance. See a list of related vendors `here <https://gt-crnch-rg.readthedocs.io/en/main/general/vendor-forum.html>`__.
