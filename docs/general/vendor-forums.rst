@@ -1,10 +1,11 @@
-
+#############
 Vendor Forums
 #############
 
 In many cases, we hope that the Rogues Gallery Teams group can be helpful to solving basic issues with novel hardware. However, at some point it is likely that you will need to post on a vendor-related forum. We have collected links to specific forums here and encourage you to sign up for the architecture you are working on.
 
-### Intel FPGA
+Intel FPGA
+----------
 * Intel's main forum can be found [here](https://community.intel.com/t5/FPGAs-and-Programmable-Solutions/ct-p/fpgas-programmable-devices). Note that the https://community.intel.com/ site replaces Altera's old forum.
 * Intel vLab clusters or Intel HARP has a [ReadTheDocs](https://wiki.intel-research.net/FPGA.html) and you can email them at iam@intel-research.net for questions specific to the cluster environment. HARP specifically has a private user forum [here](https://community.intel.com/t5/HARP-Private-Forum/gh-p/harp).
 * OPAE has some support resources listed on their [Github for the OPAE SDK](https://github.com/OPAE/opae-sdk), but the mailing list seems inactive.
