@@ -80,6 +80,9 @@ following:
 
 .. code:: 
 
+   //On newer flubber installs you may need to add the newest VNC to your path. This will be updated shortly!
+   export PATH=$PATH:/opt/TurboVNC/bin
+   //Launch a vnc server
    vncserver
    #Enter your 6 character password on first use.
 
