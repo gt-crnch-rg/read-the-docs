@@ -46,9 +46,9 @@ What should my documentation contain?
 ########
 
 | 1) A useful title
-* Ex: "Compiling ROS for the AC701 FPGA platform"
+|  \* Ex: "Compiling ROS for the AC701 FPGA platform"
 | 2) A brief description of the problem you're trying to solve.
-| \* Ex: "This documentation details how to compile ROS for AC701 using the flubber server".
+|  \* Ex: "This documentation details how to compile ROS for AC701 using the flubber server".
 | 3) Code snippets that demonstrate proper execution of a technique or application for the topic in question. See the suggested format for code snippets below.
 | 4) References to relative links from official documentaiton or examples, if they are relevant.
 
@@ -58,6 +58,8 @@ Ideally, your file should go under a directory related to your given topic. Plea
 
 How to convert MarkDown files to RST
 ########
+Note that we prefer RST formatted documentation since that is used natively by ReadTheDocs. However, if you can only submit Markdown documentation this is also very helpful and appreciated! 
+
 While there are many nice GUI-based editors for MarkDown files, there are not that many editors for Restructered Text. One approach to contributing documentation would be to write it in Markdown and then convert it with Pandoc. `This URL <https://avilpage.com/2014/11/pandoc-best-way-to-convert-markdown-to.html>`_ shows a simple example that we have repeated below. 
 
 .. code:: 
