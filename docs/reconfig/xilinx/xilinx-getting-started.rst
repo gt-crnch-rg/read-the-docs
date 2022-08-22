@@ -1,40 +1,118 @@
-*Last updated: 3/21/2021* 
-
 Xilinx FPGA hardware
 --------------------
 
-Please see the master list for the most up-to-date list. RG currently has:
+Acknowledgments
+====================
+We appreciate the donation of 2x Alveo U280 boards and licenses from Xilinx's University Program as well as the donation of an AC-510 and AC-511 HMC chip from Micron.
 
+Xilinx FPGA Hardware
+====================
+This master list specifies the available Rogues Gallery FPGA hardware:
 
-* A Pico Computing SC6 desktop machine, rg-fpga-cubed.crnch.gatech.edu
+.. list-table:: **Server-based hardware**
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
 
-  * Contains one EX-700 PCIe backplane and four AC-510 Xilinx and HMC modules. Each AC-510 has a 4GB HMC and a Xilinx Ultrascale XCVU060 FPGA (package FFVA1156).
+    * - FPGA Board
+      - FPGA Chip
+      - Memory
+      - Hosting Machine
+      - Notes
+    * - Xilinx Alveo U50
+      - 
+      - 8 GB HBM
+      - flubber1
+      - 2 boards
+    * - Xilinx Alveo U250
+      - 
+      - 
+      - TBD
+      -
+    * - Xilinx Alveo U280
+      - 
+      - 
+      - flubber5
+      - 3 boards (1 currently)
+    * - Xilinx SmartSSD
+      - 
+      - 
+      - flubber4
+      -
+    * - AC-510
+      - XCVU060 (Pkg FFVA1156)
+      - 4 GB HMC 1.0
+      - rg-fpga-cubed
+      -
 
-* Xilinx `Pynq <http://www.pynq.io/>`_ Z1 and Z2 boards
-* An Ultrascale devkit board (ZCU102) - this is currently locally accessible since it is a USB device but can be put online on request.
-* Xilinx Alveo U280 boards in flubber1.crnch.gatech.edu
+.. list-table:: **Development Board hardware**
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - FPGA Board
+      - FPGA Chip
+      - Memory
+      - Hosting Machine
+      - Notes
+    * - ZCU102
+      - 
+      - 
+      - 
+      - 
+    * - Versal VCK190
+      - 
+      - 
+      - TBD
+      -
+    * - Pynq Z2
+      - 
+      - 
+      - synestia2
+      - 50+ boards available for classes
+      
 
 Accessing the Rogues Gallery Xilinx FPGAs
------------------------------------------
+=========================================
 
-From either the login node (rg-login), from a campus network machine, or VPN if off GT's campus network you can ssh to the FPGA boxes or ideally to development VMs, rg-fpga-dev-1, and rg-fpga-dev-2.
+See the Reconfigurable Computing Workflow page for more details on the process to use this hardware.
 
-
-* **rg-fpga-cubed.crnch.gatech.edu** - The Pico Computing SC6 system - contains HMC memory and Xilinx Ultrascale chips.
-* **flubber1.crnch.gatech.edu** - Hosts 3x Alveo U280 boards.
-* pynq-z2-<1-10>.cc.gatech.edu - Pynq Z2 FPGAs
-
-What are my tool options?
--------------------------
-
-Xilinx currently supports: 
+The short version is: 
+* For emulation and development, please use the FPGA development VMs, `rg-fpga-dev-<1-6>`.
+* For final bitstream compilation, request a hardware node using Slurm and run the tools on that node. 
 
 
-* `Xilinx Vitis <https://www.xilinx.com/products/design-tools/vitis/vitis-platform.html>`_ - Starting with Xilinx 19.2, Vitis is the preferred high-level tool for targeting boards like Alveo and Versal. Vitis includes Vivado and what used to be called SDAccel and SDSoC Designer.
+Xilinx Software 
+===============
 
-* `Vivado HLx <https://www.xilinx.com/products/design-tools/vivado.html>`_\ , which is the base tool for compiling Verilog/VHDL and which provides some HLS support for C and C++ codes. 
+Please see the specifc pages on using Vitis (standard flow), Vivado flow (advanced), or frameworks for SmartNics like OpenNIC
 
-* `Xilinx SDAccel <https://www.xilinx.com/products/design-tools/software-zone/sdaccel.html>`_ - SDx has been deprecated by the introduction of Vitis and licenses are no longer supported by Xilinx. See here for info on using `2019 tools <[Reconfig]-Xilinx-SDAccel-(Deprecated>`_\ )
+.. list-table:: **Supported Software**
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+    
+    * - Software
+      - Versions
+      - OS Supported
+      - Notes
+    * - Vitis
+      - 
+      -
+      - 
+    * - Vivado
+      - 
+      -
+      -
+    * - Vitis-AI
+      -
+      -
+      - 
+    * - SDAccel
+      -
+      -
+      - Deprecated
+      
 
 * How to quickly start Vitis/Vivado 20.2:
 
@@ -46,11 +124,9 @@ Xilinx currently supports:
      . $XILINXTOOLSHARE/Vitis/2020.2/settings64.sh
      . $XILINXTOOLSHARE/Vitis_HLS/2020.2/settings64.sh
 
-* To use the tools with the GUI interface we recommend using x2go and connecting to either rg-fpga-dev-<1-2> or synestia VMs. `See here for more information <https://github.gatech.edu/crnch-rg/rogues-docs-wiki/blob/master/%5BMisc%5D-Using-GUI-applications-with-X2Go.md>`_.
 
 How do I check the licenses that are available?
------------------------------------------------
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You can either use the licensing center from the GUI version of a tool like Vivado or Vitis, or you can run the following:
 
 .. code-block::
@@ -102,9 +178,9 @@ You can either use the licensing center from the GUI version of a tool like Viva
    Users of PlanAhead:  (Total of 15 licenses issued;  Total of 0 licenses in use)
 
 Getting started with AWS for development
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Amazon supports F1 instances that have between 1 and 8 Xilinx FPGAs. Currently they support the VCU1525 with an Ultrascale+ part. As of October, they do not seem to support Alveo or Versal boards. Xilinx and Amazon both have good references on getting started with these instances.
+Amazon supports F1 instances that have between 1 and 8 Xilinx FPGAs. Currently they support the VCU1525 with an Ultrascale+ part. Xilinx and Amazon both have good references on getting started with these instances.
 
 
 * `Xilinx Getting Started with AWS <https://www.xilinx.com/products/design-tools/acceleration-zone/aws.html#gettingstarted>`_
@@ -112,7 +188,7 @@ Amazon supports F1 instances that have between 1 and 8 Xilinx FPGAs. Currently t
 * `SDAccel AWS Labs <https://github.com/Xilinx/SDAccel-AWS-F1-Developer-Labs>`_
 
 Xilinx Accelerator Program
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Xilinx has a program for faculty and staff that seems to provide discounts on Alveo board (~$1500 discount for up to two board) and links to existing resources for SDAccel, AWS, and Alveo products. These are normally behind a login wall, but please see the links below:
 
@@ -122,7 +198,5 @@ Xilinx has a program for faculty and staff that seems to provide discounts on Al
 * `General Xilinx Forums <https://forums.xilinx.com/t5/Forums/ct-p/XlnxProd>`_ 
 
 Xilinx Machine Learning Options
--------------------------------
-
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * `Xilinx ML page <[Reconfig]-Xilinx-ML-Tools>`_
