@@ -80,7 +80,7 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    :hidden:
    :glob:
 
-   reconfig/xilinx/xilinx-getting-started
+   reconfig/xilinx/xilinx-getting-started.rst
    reconfig/xilinx/vitis_ai
    reconfig/intel/oneapi-fpga
    reconfig/fpga_power_measurement
