@@ -1,4 +1,4 @@
-Xilinx FPGA hardware
+Xilinx FPGAs - Getting Started
 --------------------
 
 Acknowledgments
