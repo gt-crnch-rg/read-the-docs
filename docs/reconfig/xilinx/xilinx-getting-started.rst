@@ -7,9 +7,10 @@ We appreciate the donation of 2x Alveo U280 boards and licenses from Xilinx's Un
 
 Xilinx FPGA Hardware
 ====================
-This master list specifies the available Rogues Gallery FPGA hardware:
 
-.. list-table:: **Server-based hardware**
+Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
+
+.. list-table:: **Server-based Hardware**
     :widths: auto
     :header-rows: 1
     :stub-columns: 1
@@ -45,7 +46,7 @@ This master list specifies the available Rogues Gallery FPGA hardware:
       - rg-fpga-cubed
       -
 
-.. list-table:: **Development Board hardware**
+.. list-table:: **Development Board Hardware**
     :widths: auto
     :header-rows: 1
     :stub-columns: 1
