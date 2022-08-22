@@ -79,7 +79,9 @@ Accessing the Rogues Gallery Xilinx FPGAs
 See the Reconfigurable Computing Workflow page for more details on the process to use this hardware.
 
 The short version is: 
+
 * For emulation and development, please use the FPGA development VMs, `rg-fpga-dev-<1-6>`.
+* For GUI-based development, use VNC, ideally with either Slurm or our OOD instance.
 * For final bitstream compilation, request a hardware node using Slurm and run the tools on that node. 
 
 
