@@ -72,6 +72,11 @@ Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
       - synestia2
       - 50+ boards available for classes
       
+Documentation and Related Repositories
+======================================
+
+- All of our manuals for Alveo boards can be found in the `reconfig-docs repo <https://github.gatech.edu/crnch-rg/reconfig-docs>`__ (requires RG login)
+. 
 
 Accessing the Rogues Gallery Xilinx FPGAs
 =========================================
@@ -88,7 +93,7 @@ The short version is:
 Xilinx Software 
 ===============
 
-Please see the specifc pages on using Vitis (standard flow), Vivado flow (advanced), or frameworks for SmartNics like OpenNIC
+Please see the specifc pages on using Vitis (standard flow), `Vivado flow (advanced) <>`__, or frameworks for SmartNics like OpenNIC
 
 .. list-table:: **Supported Software**
     :widths: auto
