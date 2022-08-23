@@ -81,6 +81,9 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    :glob:
 
    reconfig/xilinx/xilinx-getting-started.rst
+   reconfig/xilinx/xilinx-vivado-flow.rst
+   reconfig/xilinx/xilinx-smart-ssd.rst
+   reconfig/vortex/vortex-riscv-gpgpu.rst
    reconfig/xilinx/vitis_ai
    reconfig/intel/oneapi-fpga
    reconfig/fpga_power_measurement
@@ -90,6 +93,10 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    :maxdepth: 2
    :hidden:
    :glob:
+   
+   riscv/rg-riscv-hardware.rst
+   reconfig/vortex/vortex-riscv-gpgpu.rst
+   
 
 
 .. toctree::
