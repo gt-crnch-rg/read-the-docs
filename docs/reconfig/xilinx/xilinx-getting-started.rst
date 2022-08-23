@@ -92,7 +92,11 @@ The short version is:
 Xilinx Software 
 ===============
 
-Please see the specifc pages on using Vitis (standard flow), `Vivado flow (advanced) <>`__, or frameworks for SmartNics like OpenNIC
+Please see the specifc pages on using Vitis (standard flow), `Vivado flow (advanced) <>`__, or frameworks for SmartNics like OpenNIC.
+
+Vitis versus Vitis HLS versus Vivado versus Vitis AI
+~~~~~~~~~~~~~~~~
+TBD!
 
 .. list-table:: **Supported Software**
     :widths: auto
