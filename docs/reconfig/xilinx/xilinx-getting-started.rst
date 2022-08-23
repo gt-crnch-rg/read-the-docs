@@ -75,8 +75,7 @@ Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
 Documentation and Related Repositories
 ======================================
 
-- All of our manuals for Alveo boards can be found in the `reconfig-docs repo <https://github.gatech.edu/crnch-rg/reconfig-docs>`__ (requires RG login)
-. 
+- All of our manuals for Alveo boards can be found in the `reconfig-docs repo <https://github.gatech.edu/crnch-rg/reconfig-docs>`__ (requires RG login). 
 
 Accessing the Rogues Gallery Xilinx FPGAs
 =========================================
