@@ -18,8 +18,7 @@ The current toolset, documentation, and examples are available on the rg-emu-dev
 * **rg-login.crnch.gatech.edu**: primary login VM for Rogue’s Gallery. Use this VM to log in to another node for testing and simulation from off campus.
 * **rg-emu-dev.crnch.gatech.edu**: VM for **Lucata compilation and simulation**
 * **pf<0-3>.crnch.gatech.edu**: Lucata Pathfinder chassis for HW execution
-* **karrawingi-login.crnch.gatech.edu**: The main EMU Chick node, used for login and transferring files to a specific node/set of nodes.
-    * **NOTE:** You cannot run any code on this node and will need to copy your code to n0-n7 on the Emu machine. 
+* **karrawingi-login.crnch.gatech.edu**: The main EMU Chick node, used for login and transferring files to a specific node/set of nodes. **NOTE:** You cannot run any code on this node and will need to copy your code to n0-n7 on the Emu Chick machine. 
 
 Lucata Workflow
 --------------
