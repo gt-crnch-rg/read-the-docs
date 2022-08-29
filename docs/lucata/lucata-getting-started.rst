@@ -17,10 +17,9 @@ The current toolset, documentation, and examples are available on the rg-emu-dev
 
 * **rg-login.crnch.gatech.edu**: primary login VM for Rogue’s Gallery. Use this VM to log in to another node for testing and simulation from off campus.
 * **rg-emu-dev.crnch.gatech.edu**: VM for **Lucata compilation and simulation**
-* **pf<0-1>.crnch.gatech.edu**: Lucata Pathfinder chassis for HW execution
-* **karrawingi-login.crnch.gatech.edu**: The main EMU Chick node, used
-  for login and transferring files to a specific node/set of nodes.
-**NOTE:** You cannot run any code on this node and will need to copy your code to n0-n7 on the Emu machine. 
+* **pf<0-3>.crnch.gatech.edu**: Lucata Pathfinder chassis for HW execution
+* **karrawingi-login.crnch.gatech.edu**: The main EMU Chick node, used for login and transferring files to a specific node/set of nodes.
+    * **NOTE:** You cannot run any code on this node and will need to copy your code to n0-n7 on the Emu machine. 
 
 Lucata Workflow
 --------------
@@ -32,7 +31,7 @@ When getting started, we highly recommend checking out the `Lucata Pathfinder Pr
 
 As shown in the figure above, the suggested Lucata workflow combines 1) x86 functionality testing, 2) simulation of code on a VM, 3) execution on a single node of the Pathfinder system, and 4) execution on multiple nodes and chassis.
 
-1. Compile your code on rg-emud-dev using <memoryweb.h>  and emu-cc.sh to target x86 execution. This will run the Cilk code and emulate any data allocations specified by the Lucata APIs.
+1. Compile your code on rg-emu-dev using <memoryweb.h>  and emu-cc.sh to target x86 execution. This will run the Cilk code and emulate any data allocations specified by the Lucata APIs.
 2. Simulate code on rg-emu-dev. Do debugging and initial verification here but note that simulation is slow! If you need to use a machine with more memory you can use hawksbill.crnch.gatech.edu
 3. Profile your code with the simulator for small input sets.
 4. Make a reservation on the Google Calendar for the Pathfinder to run jobs. We also use our Slack channel to reserve time on the Pathfinder 
@@ -55,6 +54,7 @@ and recursive spawn. `Micro benchmark <https://github.gatech.edu/crnch-rg/emu-mi
 
 Other resources:
 ----------------
+-  The `GraphBLAS branch can be found here <https://github.gatech.edu/crnch-rg/LucataGraphBLAS>`__
 
 -  CilkPlus can also be run on CPU-based clusters. For more information
    on general CilkPlus check out the official
