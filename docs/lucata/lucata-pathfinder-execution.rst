@@ -12,6 +12,12 @@ Following our workflow guide for the Lucata Pathfinder platform, you will normal
 
 Here we go through the last 3 steps in more detail. 
 
+Checking the status of the system:
+------------------------
+
+Check all nodes in the system to see if it is multi-chassis, single-chassis, or single-node
+`emu_system_cmd -p -c {0..3} -- 'emu_chassis_get_configs -l {0..7}'`
+
 Single Node PF Execution
 -------------
 
