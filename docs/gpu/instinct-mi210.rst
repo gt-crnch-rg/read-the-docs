@@ -99,6 +99,10 @@ Modules should be available but you may need to update your module path:
    
 Useful ROCm tools include hipcc, amdclang, aompcc, amdflang, rocgdb, and rocprof. 
 
+Running OpenACC with GCC13
+~~~~~~~~~~~~
+Alex Woods has compiled GCC13 for testing OpenACC on the Instinct GPU, and we have put his script in the internal docs `here <https://github.gatech.edu/crnch-rg/rogues-docs/blob/master/hpc/amd-gpu/build-gcc13-amdgpu.sh>`__ When compiling with the new gcc install, add the flags :code:`-fopenacc -foffload-options=-march=gfx90a` for the Instinct MI2XX GPUs. Note that performance will likely be slow. 
+
 Running jobs
 ------------
 
@@ -108,7 +112,7 @@ testing.
 Useful training material
 ------------------------
 
-TBD
+- `OmniTrace <https://amdresearch.github.io/omnitrace/>`__ - AMD's newest tracing and profiling tool.
 
 Vendor-provided Documents and Resources
 ---------------------------------------
