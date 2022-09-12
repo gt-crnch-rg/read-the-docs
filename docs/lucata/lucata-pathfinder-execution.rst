@@ -19,7 +19,7 @@ Check all nodes in the system to see if it is multi-chassis, single-chassis, or 
 
 .. code::
 
-    emu_system_cmd -p -c {0..3} -- 'emu_chassis_get_configs -l {0..7}'
+    $ emu_system_cmd -p -c {0..3} -- 'emu_chassis_get_configs -l {0..7}'
     c0: Running 'emu_report_config' in parallel on n[0,1,2,3,4,5,6,7]...
     c0: n0: Node Initialization Status = initialized.
     c0: n0:         Logical Node 0 in a 32 node system. Node has 8 MSPs, 8 clusters with 2 GCs per cluster.
