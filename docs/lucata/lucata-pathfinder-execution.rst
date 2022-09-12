@@ -16,7 +16,19 @@ Checking the status of the system:
 ------------------------
 
 Check all nodes in the system to see if it is multi-chassis, single-chassis, or single-node
-`emu_system_cmd -p -c {0..3} -- 'emu_chassis_get_configs -l {0..7}'`
+
+.. code::
+
+    emu_system_cmd -p -c {0..3} -- 'emu_chassis_get_configs -l {0..7}'
+    c0: Running 'emu_report_config' in parallel on n[0,1,2,3,4,5,6,7]...
+    c0: n0: Node Initialization Status = initialized.
+    c0: n0:         Logical Node 0 in a 32 node system. Node has 8 MSPs, 8 clusters with 2 GCs per cluster.
+    c0: n0:         Core clock is at 180 MHz, GC clock is at 225 MHz
+    ...
+    c3: n7: Node Initialization Status = initialized.
+    c3: n7:         Logical Node 31 in a 32 node system. Node has 8 MSPs, 8 clusters with 2 GCs per cluster.
+    c3: n7:         Core clock is at 180 MHz, GC clock is at 225 MHz
+    c3: Chassis Switch Initialization Status = initialized.
 
 Single Node PF Execution
 -------------
@@ -27,3 +39,7 @@ Multi-node PF Execution
 Multiple-chassis PF Execution
 -------------
 
+Reconfiguring the system 
+~~~~~~~~~~~~~~~~~~~~~~~~
+Please ask an admin to reconfigure the system if your Slurm job fails to run. 
+emu_system_reconfig -n 8 -s
