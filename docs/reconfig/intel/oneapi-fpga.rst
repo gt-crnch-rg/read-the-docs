@@ -22,11 +22,12 @@ What examples and resources are available?
 How can I test out oneAPI?
 ----------------------------
 
-There are several resources for using oneAPI both online and at Georgia Tech.
+There are several resources for using oneAPI both online and at Georgia Tech. The `OneAPI FPGA code samples tutorial <https://www.intel.com/content/www/us/en/developer/articles/code-sample/explore-dpcpp-through-intel-fpga-code-samples.html>`__ is a good place to start.
+
+
 
 Online oneAPI Resources
 ~~~~~~~~~~~~~~~~~~~~~~
-
 * `Docker containers <https://github.com/intel/oneapi-containers>`_ with the "base" toolkit
 * `Intel DevCloud <https://intelsoftwaresites.secure.force.com/devcloud/oneapi>`_ - you can easily get a 3 month pass that can be extended by registering a project on the "Intel DevMesh". Once you sign up, you can `connect <https://devcloud.intel.com/oneapi/connect/>`_ either via an SSH terminal (using a provided SSH config script) or using a JupyterHub notebook interface. There are workshop files that can be copied to your home directory using the following command: `/data/oneapi_workshop/get_oneapi_workshop.sh`
 
