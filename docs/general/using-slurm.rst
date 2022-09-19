@@ -19,32 +19,41 @@ is targeted.
 What Slurm queues are available?
 --------------------------------
 
-Octavius queues:
+You can check the current status of all queues at 
 
--  rg-arm-debug - 1 hour reservation for compiling, basic tests
+Neuromorphic/AI
+--------------------
+.. list-table:: 
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
 
--  rg-arm-short - 2 hour reservation for short-term testing
-
--  rg-arm-long - 6 hour reservation for longer runs
-
-Newell queues:
-
--  debug - 1 hour reservation for compiling, basic tests
-
--  short - 2 hour reservation for short-term testing
-
--  long - 6 hour reservation for longer runs
-
-Quorra queues:
-
--  rg-gpu - Reservation for runs with GPU
-
+    * - Queue Partition
+      - Time Limit
+      - Nodes
+      - Node List
+      - Notes
+    * - rg-pathfinder
+      - No limit
+      - 32
+      - c0n[0-7],c1n[0-7],c2n[0-7],c3n[0-7]
+      - Lucata Pathfinder system
+    
 
 How do I get started with Slurm on RG?
 --------------------------------
 We suggest that you first check out the following Slurm "Getting Started" resources from LLNL
 if you have not used a batch submission system before. Then please check out our RG Slurm Examples page
 and the RG Workflows page for architecture of interest.
+
+Important Slurm Commands
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- sinfo
+- squeue
+- scancel
+
+
 
 Slurm General Resources
 =======================
