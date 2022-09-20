@@ -38,7 +38,46 @@ Slurm Partitions
       - 32
       - c0n[0-7],c1n[0-7],c2n[0-7],c3n[0-7]
       - Lucata Pathfinder system
-    
+    * - rg-arm-debug
+      - 4 hours
+      - 4
+      - octavius[1-4]
+      - Used to compile/profile code
+    * - rg-arm-long
+      - 12 hours
+      - 16
+      - octavius[1-16]
+      - Used for longer running jobs      
+    * - rg-gpu
+      - 12 hours
+      - 7
+      - frozone[1-4],instinct,quorra[1-2]
+      - Different types of GPU-focused nodes for classes and neuromorphic research
+    * - rg-hpc
+      - 12 hours
+      - 3
+      - flubber[8-10]
+      - General HPC nodes      
+    * - rg-intel-fpga-hw
+      - 12 hours
+      - 2
+      - flubber[2-3]
+      - Hosts Intel FPGAs
+    * - rg-xilinx-fpga-hw
+      - 12 hours
+      - 2
+      - flubber[1-3]
+      - Hosts Xilinx FPGAss
+    * - rg-smart-nic
+      - 12 hours
+      - 2
+      - flubber[6-7]
+      - SmartNIC nodes      
+    * - notebook
+      - 12 hours
+      - 1
+      - hawksbill
+      - Used to run Jupyter notebooks for tutorials, data analysis    
 
 How do I get started with Slurm on RG?
 --------------------------------
@@ -46,8 +85,9 @@ We suggest that you first check out the following Slurm "Getting Started" resour
 if you have not used a batch submission system before. 
 
 Then please check out our RG Slurm Examples page and the RG Workflows page for architecture of interest and specific commands to run for these systems.
-- RG Slurm Examples
-- RG Workflows
+
+- `RG Slurm Examples <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm-examples.html>`__
+- `RG Workflows <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-workflows.html>`__
 
 Important Slurm Commands
 ~~~~~~~~~~~~~~~~~~~~~~~~
