@@ -28,6 +28,7 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    :hidden:
    :glob:
    
+   general/rg-python-environments
    general/rg-workflows
    general/using-slurm
    general/using-slurm-examples
