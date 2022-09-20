@@ -7,7 +7,7 @@ If you have not checked out the main Slurm page with the queues and links to oth
 
 
 Current Slurm Status
-======================
+--------------------
 Right now we mostly do not support the usage of the account flag ``-A <GTusername``.
 
 Slurm Interactive Jobs
