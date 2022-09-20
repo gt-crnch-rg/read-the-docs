@@ -1,21 +1,25 @@
 Using Slurm Examples
 ====================
 
-This page documents some common operations that you might use with Slurm on the Rogues Gallery testbed.
+This page documents some common operations that you might use with Slurm on the Rogues Gallery testbed. 
+
+If you have not checked out the main Slurm page with the queues and links to other training, `please read that page first <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm.html>`__.
+
+
+Current Slurm Status
+======================
+Right now we mostly do not support the usage of the account flag ``-A <GTusername``.
 
 Slurm Interactive Jobs
 ----------------------
 
-On the Rogues Gallery testbed clusters (i.e. Newell, Octavius, etc),
-interactive jobs can be run with Slurm for you to test out debug your
-code.
+On the Rogues Gallery testbed cluster, interactive jobs can be run with Slurm for you to test out debug your code. This is especially important for heterogeneous resources like Arm clusters. 
 
-Here is an example allocating one node (newell1) on the Newell cluster
-to the "debug queue for 1 hour using ``salloc``:
+Here is an example allocating one node (octavius1) on the A64FX cluster to the "debug" queue for 1 hour using ``salloc``:
 
 .. code:: shell
 
-   $ salloc -p debug --account=<NAME_OF_MY_ACCOUNT> --nodes=1 --ntasks-per-node=1 --nodelist newell1 --time=01:00:00
+   $ salloc -p rg-arm-debug --nodes=1 --ntasks-per-node=1 --nodelist octavius1 --time=01:00:00
    salloc: Granted job allocation 382
 
 Note that for the "account" parameter for ``salloc`` that you should use
@@ -29,7 +33,7 @@ You can verify that the resources have been allocated using the
 
    $ squeue
                 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-                  382     debug interact jvaldez8  R       0:04      1 newell1
+                  382     debug interact gburdell3  R       0:04      1 octavius1
 
 Finally, you can access the interactive job with a bash shell using
 ``srun``:
@@ -46,7 +50,7 @@ command:
 
 .. code:: shell
 
-   $ srun -p debug --account=<NAME_OF_MY_ACCCOUNT> --nodes=1 --ntasks-per-node=1 --time=01:00:00 --pty bash -i
+   $ srun -p debug  --nodes=1 --ntasks-per-node=1 --time=01:00:00 --pty bash -i
 
 For more information on ``salloc``, please go here: `Slurm
 salloc <https://slurm.schedmd.com/salloc.html>`__.
@@ -57,9 +61,9 @@ srun <https://slurm.schedmd.com/srun.html>`__.
 Slurm Batch Run Job
 -------------------
 
-Batch run jobs can also be run with Slurm on the Rogues Gallery testbed.
+Batch jobs can also be run with Slurm on the Rogues Gallery testbed.
 
-Here is a simple example that you can run on the Newell cluster that
+Here is a simple example that you can run on the quorra cluster that
 runs the command ``hostname`` and outputs it to a file. Create a text
 file named "batch-job-example.batch" with the following content:
 
@@ -93,8 +97,6 @@ file named "batch-job-example.batch" with the following content:
 
    # Run hostname command
    hostname
-
-Be sure to change the "account" parameter to your GT user account.
 
 Then run the example with ``sbatch``:
 
@@ -236,4 +238,4 @@ MPI <https://www.open-mpi.org/>`__
 Slurm with MIG
 --------------
 
-References - `NVIDIA's MIG Discovery page <https://gitlab.com/nvidia/hpc/slurm-mig-discovery>`__
+- `NVIDIA's MIG Discovery page <https://gitlab.com/nvidia/hpc/slurm-mig-discovery>`__
