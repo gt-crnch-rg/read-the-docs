@@ -68,6 +68,7 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    :maxdepth: 2
    :hidden:
    :glob:
+   
    networking/novel-networking-getting-started.rst
 
 .. toctree::
@@ -124,4 +125,3 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    resources/neuromorphic-computing-resources
    resources/quantum-computing-resources
    resources/related-testbeds.rst
-
