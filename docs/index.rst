@@ -122,6 +122,8 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    :hidden:
 
    resources/rg-tutorials
+   resources/near-memory-resources
+   resources/graphblas-resources
    resources/neuromorphic-computing-resources
    resources/quantum-computing-resources
    resources/related-testbeds.rst
