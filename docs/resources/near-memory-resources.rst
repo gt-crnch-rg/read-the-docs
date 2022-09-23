@@ -1,4 +1,6 @@
-
+=====================
+Near-memory Resources
+=====================
 
 Suggested Papers/Reading
 --------------------------------
