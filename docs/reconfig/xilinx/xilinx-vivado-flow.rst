@@ -26,7 +26,7 @@ We have moved the Alveo documentation, XDC (constraint files), and related tools
 General Locations of Board Files
 --------------------------------
 
-Xilinx now posts their board files in a Github repo at https://github.com/Xilinx/XilinxBoardStore and their example designs for Vivado at https://github.com/Xilinx/XilinxCEDStore.
+Xilinx now posts their board files in a Github repos for the [Board Store](https://github.com/Xilinx/XilinxBoardStore] and [Vivado example designs](https://github.com/Xilinx/XilinxCEDStore).
 
 U50 Boards
 ^^^^^^^^^^
