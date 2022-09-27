@@ -1,4 +1,5 @@
-Open OnDemand (GUI interfaces)
+=============
+Open OnDemand
 =============
 
 With the arrival of Slurm scheduling for most resources, we have switched to using Open OnDemand for GUI and notebook interfaces. `Open On Demand <https://openondemand.org/>`__ provides a web browser interface from which users can launch GUI-based applications including Jupyter notebooks, file browsers,
@@ -23,4 +24,3 @@ More Resources
 
 - `PACE OOD Guide <https://docs.pace.gatech.edu/ood/guide/>`__ - PACE's Open OnDemand instructions
 - `Open OnDemand Discourse <https://discourse.openondemand.org/>`__ - community discussions and a good place for Q&A
-
