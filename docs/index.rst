@@ -32,6 +32,7 @@ To see what hardware the Rogues Gallery currently includes, please see this `pag
    general/rg-workflows
    general/using-slurm
    general/using-slurm-examples
+   general/open-on-demand
    general/using-gui-with-vnc
    general/using-gui-with-x2go
    general/visual-studio-code
