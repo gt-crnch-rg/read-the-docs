@@ -18,16 +18,28 @@ You should be able to log into the CRNCH RG Open OnDemand portal using your GT l
 
 VNC for GUI applications
 ------------------------
-We have switched to using `VNC <https://gt-crnch-rg.readthedocs.io/en/main/general/using-gui-with-vnc.html>`__ instead of other tools like x2go because it is easier to schedule and works better with Open OnDemand. To run a job on one of the reconfigurable server nodes, please select ``Reconfig-->Virtual Desktop``.
+We have switched to using `VNC <https://gt-crnch-rg.readthedocs.io/en/main/general/using-gui-with-vnc.html>`__ instead of other tools like x2go because it is easier to schedule and works better with Open OnDemand. 
+
+.. note:: 
+
+Like with x2go, your VNC session runs with a VNC server and will remain running for the length of your scheduled job, even if you need to close your laptop or the session tab. You can go to ``Interactive Sessions`` to resume any running job. 
+
+To run a job on one of the reconfigurable server nodes, please select ``Reconfig-->Virtual Desktop``.
 
 .. figure:: ../figures/general/ood/ood_login_vnc_reconfig.PNG
  :alt: OOD VNC tab
+ 
+ On the next page, you will need to specify the length of your job (we suggest 1-2 hours for non-compilation jobs), the number of cores to use (2-4 unless doing a parallel compile), and the queue (rg-xilinx-fpga-hw for flubber1 or rg-intel-fpga-hw for flubber2). 
 
 .. figure:: ../figures/general/ood/ood_vnc_job.PNG
  :alt: OOD VNC job launcher
+ 
+ Once the job starts, you can change the image quality and compression settings for the VNC session to make your connection faster. Note that higher graphical quality may result in some lag on slower network connections. Click on ``Launch Virtual Desktop`` to start your VNC session.
 
 .. figure:: ../figures/general/ood/ood_reconfig_vnc_1.PNG
  :alt: OOD VNC job launched
+ 
+ You can then run applications from the terminal within the XFCE window or by using desktop icon launchers to launch GUI applications.
 
 .. figure:: ../figures/general/ood/ood_reconfig_vnc_2.PNG
  :alt: OOD VNC interface
