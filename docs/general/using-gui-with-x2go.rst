@@ -2,8 +2,7 @@ GUI Applications with x2Go (Legacy)
 ==================================
 
 .. note::
-
-x2go is considered a legacy option for CRNCH RG as we migrate to use `Open OnDemand <https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html>`__. We strongly encourage you to use VNC instead of x2go or test out Open OnDemand for your application.
+   x2go is considered a legacy option for CRNCH RG as we migrate to use `Open OnDemand <https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html>`__. We strongly encourage you to use VNC instead of x2go or test out Open OnDemand for your application.
 
 Here we cover how to use x2go client on the CRNCH Rogues Gallery machines to access and manipulate GUI-based applications. As an alternative to using VNC, X2go is an open-source implementation of `NoMachine or NX <https://en.wikipedia.org/wiki/NX_technology>`__ that requires fewer steps to setup and use.
 
