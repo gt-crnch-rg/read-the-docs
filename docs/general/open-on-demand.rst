@@ -13,7 +13,7 @@ Logging In
 You should be able to log into the CRNCH RG Open OnDemand portal using your GT login and password with rg-ood.crnch.gatech.edu. If you are a GT employee or student, you will also need to use two-factor authentication (i.e., Duo) with your login while guests are not required to use two-factor login. Once you log in, you will be greeted by the login portal which has several tabs at the top of the webpage. 
 
 .. figure:: ../figures/general/ood/ood_login_page.PNG
-   :alt: 
+   :alt: OOD Login
 
 VNC for GUI applications
 ------------------------
