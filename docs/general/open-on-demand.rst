@@ -4,9 +4,8 @@ Open OnDemand
 
 With the arrival of Slurm scheduling for most resources, we have switched to using Open OnDemand (sometimes called OOD) for GUI and notebook interfaces. `Open On Demand <https://openondemand.org/>`__ provides a web browser interface from which users can launch GUI-based applications including Jupyter notebooks, file browsers, command-line terminals, and VNC-based applications. We encourage you to review the `general PACE instructions <https://docs.pace.gatech.edu/ood/guide/>`__ for more details on what you can do with OOD - this page covers RG-specific tasks that you might find useful. 
 
-.. note:: 
-
-OOD depends on using Slurm to reserve parts of nodes. This means that you will need to predict how long your job will take and how many cores your job needs. A compile that may take 3-4 hours should be run with a job that lasts at least that long. 
+.. note::
+   OOD depends on using Slurm to reserve parts of nodes. This means that you will need to predict how long your job will take and how many cores your job needs. A compile that may take 3-4 hours should be run with a job that lasts at least that long. 
 
 Logging In
 ----------
@@ -21,8 +20,7 @@ VNC for GUI applications
 We have switched to using `VNC <https://gt-crnch-rg.readthedocs.io/en/main/general/using-gui-with-vnc.html>`__ instead of other tools like x2go because it is easier to schedule and works better with Open OnDemand. 
 
 .. note:: 
-
-Like with x2go, your VNC session runs with a VNC server and will remain running for the length of your scheduled job, even if you need to close your laptop or the session tab. You can go to ``Interactive Sessions`` to resume any running job. 
+   Like with x2go, your VNC session runs with a VNC server and will remain running for the length of your scheduled job, even if you need to close your laptop or the session tab. You can go to ``Interactive Sessions`` to resume any running job. 
 
 To run a job on one of the reconfigurable server nodes, please select ``Reconfig-->Virtual Desktop``.
 
