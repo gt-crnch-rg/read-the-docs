@@ -27,12 +27,12 @@ To run a job on one of the reconfigurable server nodes, please select ``Reconfig
 .. figure:: ../figures/general/ood/ood_login_vnc_reconfig.PNG
  :alt: OOD VNC tab
  
- On the next page, you will need to specify the length of your job (we suggest 1-2 hours for non-compilation jobs), the number of cores to use (2-4 unless doing a parallel compile), and the queue (rg-xilinx-fpga-hw for flubber1 or rg-intel-fpga-hw for flubber2). 
+On the next page, you will need to specify the length of your job (we suggest 1-2 hours for non-compilation jobs), the number of cores to use (2-4 unless doing a parallel compile), and the queue (rg-xilinx-fpga-hw for flubber1 or rg-intel-fpga-hw for flubber2). 
 
 .. figure:: ../figures/general/ood/ood_vnc_job.PNG
  :alt: OOD VNC job launcher
  
- Once the job starts, you can change the image quality and compression settings for the VNC session to make your connection faster. Note that higher graphical quality may result in some lag on slower network connections. Click on ``Launch Virtual Desktop`` to start your VNC session.
+Once the job starts, you can change the image quality and compression settings for the VNC session to make your connection faster. Note that higher graphical quality may result in some lag on slower network connections. Click on ``Launch Virtual Desktop`` to start your VNC session.
 
 .. figure:: ../figures/general/ood/ood_reconfig_vnc_1.PNG
  :alt: OOD VNC job launched
