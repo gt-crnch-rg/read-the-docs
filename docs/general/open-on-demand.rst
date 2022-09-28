@@ -20,7 +20,7 @@ VNC for GUI applications
 We have switched to using `VNC <https://gt-crnch-rg.readthedocs.io/en/main/general/using-gui-with-vnc.html>`__ instead of other tools like x2go because it is easier to schedule and works better with Open OnDemand. 
 
 .. note:: 
-   Like with x2go, your VNC session runs with a VNC server and will remain running for the length of your scheduled job, even if you need to close your laptop or the session tab. You can go to ``Interactive Sessions`` to resume any running job. 
+   Like with x2go, your VNC session runs with a VNC server and will remain running for the length of your scheduled job, even if you need to close your laptop or the session tab. You can go to ``My Interactive Sessions`` to resume any running job. 
 
 To run a job on one of the reconfigurable server nodes, please select ``Reconfig-->Virtual Desktop``.
 
