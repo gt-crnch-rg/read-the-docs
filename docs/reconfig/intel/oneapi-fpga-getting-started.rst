@@ -1,5 +1,5 @@
 ============
-Getting Started with OneAPI for Reconfigurable Computing
+Intel OneAPI for Reconfigurable Computing
 ============
 
 Intel has recently released their oneAPI framework for programming CPUs, GPUs, and FPGAs. oneAPI or Data-parallel C++ (DPC++) is a variant of the SYCL language with added features to better support Intel platforms. Note that much of the DPC++ ecosystem is built on LLVM, so related tools like HipSYCL and Xilinx's SYCL support *may* be compatible with DPC++ code (see `Xilinx's triSYCL for an example <https://github.com/triSYCL/sycl/blob/sycl/unified/next/sycl/doc/GettingStartedXilinxFPGA.md>`__).
