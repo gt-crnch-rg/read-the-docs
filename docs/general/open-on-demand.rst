@@ -98,7 +98,8 @@ Open OnDemand includes a file browser, that you can use to open and investigate 
 Troubleshooting
 -----------------------
 
-1) When launching a new job, the job may fail to launch with an error about writing state.
+1) When launching a new job, the job may fail to launch with an I/O error.  
+    - ``Failed to submit session with the following error: sbatch: error: Batch job submission failed: I/O error writing script/environment to file``
     - Try to relaunch the job. This may just be related to small OOD bugs.
     
 2) When opening a VNC or Virtual Desktop session, you get the error "Failed to establish a websocket connection".
