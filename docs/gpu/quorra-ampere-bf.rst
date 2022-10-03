@@ -1,10 +1,12 @@
 ============
-Instinct - NVIDIA Ampere GPUs
+Quorra - NVIDIA Ampere GPUs
 ============
 
 Acknowledgments
 ==============
 We greatly appreciate the donation of this test platform from AMD to `Dr. Spencer Bryngelson <https://comp-physics.group/>`__, a CRNCH faculty member working on computational fluid dynamics (CFD) codes including `MFC <https://mflowcode.github.io/>`__.
+
+Quorra1 is also funded via GT's Techfee program, so usage for this server is reserved for coursework (when requested by instructors or students). Please read more about Techfee hardware `on this page <https://crnch-rg.cc.gatech.edu/tech-fee-hosted-equipment/>`__
 
 Current Status
 ==============
@@ -32,12 +34,10 @@ System Specifications
       - 2x `AMD EPYC 7713 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7713>`__
       - 512 GB DDR4, 3200 MHz, 32 GB DIMMs
       - Connect-X 6 (MT28908), 10 GE
-      - 2x `MI210 <https://www.amd.com/en/products/server-accelerators/amd-instinct-mi210>`__
-      -       
+      - 4x `A30 <>`__
+      - 1x `A100 <>`__      
 
-Instinct is a single node server with two AMD 210 GPUs, which are very similar to the
-MI250x GPUs deployed in `ORNL's Frontier <https://www.olcf.ornl.gov/frontier/>`__. This
-server has two Milan CPUs, 512 GB of DDR4 memory, and a Connect-X 6 networking card.
+
 
 Software and Tools
 =====================
@@ -67,15 +67,16 @@ As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
 an on-campus connection. 
 
-To request an allocation on Instinct using slurm:
+To request an allocation on Quorra using slurm:
 
 .. code::
 
     //Request an allocation of 1 hr, partition rg-gpu, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-gpu -w instinct
+    salloc -t 1:00:00 -p rg-gpu -w quorra
 
 MIG
 ---
+See our internal docs for more instructions on using MIG with these GPUs.
 
 Running jobs
 ------------
