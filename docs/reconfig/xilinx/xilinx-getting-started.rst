@@ -96,7 +96,34 @@ Please see the specifc pages on using Vitis (standard flow), `Vivado flow (advan
 
 Vitis versus Vitis HLS versus Vivado versus Vitis AI
 ~~~~~~~~~~~~~~~~
-TBD!
+
+Xilinx released the Vitis SW and HW focused framework officially in 2020 to complement existing tools like Vivado (for RTL-based designs), and replace existing tools like SDx (for OpenCL-based designs). However, it is still somewhat confusing as to which tool you might want to use for which situation. This `issue on the Vitis Tutorials repo <https://github.com/Xilinx/Vitis-Tutorials/issues/73>`__ includes an insightful table from Víctor Vilches which we have included and modified slightly.
+
+.. list-table:: **Xilinx Tool Variations (from `Issue 73 and Víctor Vilches <https://github.com/Xilinx/Vitis-Tutorials/issues/73>`__)*
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+    
+    * - Tool 
+      - Stakeholder
+      - Aim of Tool
+    * - Vivado
+      - Hardware engineer
+      - Develops RTL (ie, Verilog) kernels
+    * - Vitis
+      - Embedded engineer
+      - Creates low level firmware, BSPs, boot sequences and integrates software and hardware efforts
+    * - Vitis HLS
+      - Software engineer
+      - Develops C, C++ or OpenCL kernels
+    * - Vitis AI
+      - Data scientist
+      - Uses HLS and frameworks to develop AI constructs/kernels
+
+Supported Versions of Xilinx Tools
+~~~~~~~~~~~~~~~~
+
+With that in mind, we support the following versions of Xilinx software on our testbed:
 
 .. list-table:: **Supported Software**
     :widths: auto
@@ -105,23 +132,21 @@ TBD!
     
     * - Software
       - Versions
-      - OS Supported
       - Notes
     * - Vitis
-      - 
+      - 2020.2, 2021.1, 2021.2, 2022.1
       -
-      - 
     * - Vivado
-      - 
+      - 2020.2, 2021.1, 2021.2, 2022.1
       -
+    * - Vitis HLS
+      - 2020.2, 2021.1, 2021.2, 2022.1
       -
     * - Vitis-AI
       -
       -
-      - 
     * - SDAccel
-      -
-      -
+      - 2019.2
       - Deprecated
       
 
