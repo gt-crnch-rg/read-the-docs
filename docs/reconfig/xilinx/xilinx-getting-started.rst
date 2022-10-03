@@ -94,7 +94,7 @@ Xilinx Software
 
 Please see the specifc pages on using Vitis (standard flow), `Vivado flow (advanced) <>`__, or frameworks for SmartNics like OpenNIC.
 
-Vitis versus Vitis HLS versus Vivado versus Vitis AI
+Vitis vs. Vivado vs..
 ~~~~~~~~~~~~~~~~
 
 Xilinx released the Vitis SW and HW focused framework officially in 2020 to complement existing tools like Vivado (for RTL-based designs), and replace existing tools like SDx (for OpenCL-based designs). However, it is still somewhat confusing as to which tool you might want to use for which situation. This `issue on the Vitis Tutorials repo <https://github.com/Xilinx/Vitis-Tutorials/issues/73>`__ includes an insightful table from Víctor Vilches which we have included and modified slightly.
