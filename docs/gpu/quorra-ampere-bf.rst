@@ -4,8 +4,6 @@ Quorra - NVIDIA Ampere GPUs
 
 Acknowledgments
 ==============
-We greatly appreciate the donation of this test platform from AMD to `Dr. Spencer Bryngelson <https://comp-physics.group/>`__, a CRNCH faculty member working on computational fluid dynamics (CFD) codes including `MFC <https://mflowcode.github.io/>`__.
-
 Quorra1 is also funded via GT's Techfee program, so usage for this server is reserved for coursework (when requested by instructors or students). Please read more about Techfee hardware `on this page <https://crnch-rg.cc.gatech.edu/tech-fee-hosted-equipment/>`__
 
 Current Status
@@ -25,17 +23,26 @@ System Specifications
     :stub-columns: 1
 
     * - Queues
+      - Node Name
       - CPU
       - Memory (GB)
       - Network
       - Cards
       - Notes
     * - rg-gpu
-      - 2x `AMD EPYC 7713 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7713>`__
-      - 512 GB DDR4, 3200 MHz, 32 GB DIMMs
-      - Connect-X 6 (MT28908), 10 GE
-      - 4x `A30 <>`__
-      - 1x `A100 <>`__      
+      - quorra1
+      - 2x `AMD EPYC 7502 (Rome) <https://www.amd.com/en/products/cpu/amd-epyc-7502>`__
+      - 256 GB DDR4, 3200 MHz, 16 GB DIMMs
+      - Connect-X 5 (MT27800), 100 GE; Bluefield-2 DPU (MT42822)
+      - 4x `A30 <https://www.nvidia.com/en-us/data-center/products/a30-gpu/>`__; 1x `A100 <https://www.nvidia.com/en-us/data-center/a100/>`__ 
+      -      
+    * - rg-gpu
+      - quorra2
+      - 2x `AMD EPYC 7502 (Rome) <https://www.amd.com/en/products/cpu/amd-epyc-7502>`__
+      - 256 GB DDR4, 3200 MHz, 16 GB DIMMs
+      - Connect-X 5 (MT27800), 100 GE; Bluefield-2 DPU (MT42822)
+      - 4x `A30 <https://www.nvidia.com/en-us/data-center/products/a30-gpu/>`__
+      -
 
 
 
@@ -53,12 +60,12 @@ Software and Tools
       - Other Compilers
       - MPI
       - Miscellaneous
-    * - RHEL8
-      - 4.18.0
-      - GCC 8.5
-      - ROCm 5.2.0, `AOCC 3.2.0 <https://developer.amd.com/wp-content/resources/57222_AOCC_UG_Rev_3.2.pdf>`__
+    * - Ubuntu 20.04
+      - 5.4.0
+      - GCC 7.5
+      - `CUDA 11.5 <>`__, CUDA 10.2
       - 
-      - AOCL 3.2.0, `ROCm libraries 5.2.0 <https://rocblas.readthedocs.io/en/rocm-5.2.1/>`__, `uProf 3.6 <https://developer.amd.com/amd-uprof/>`__
+      - DOCA 1.4.0079
 
 How do I get to Quorra?
 =========================
@@ -72,17 +79,14 @@ To request an allocation on Quorra using slurm:
 .. code::
 
     //Request an allocation of 1 hr, partition rg-gpu, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-gpu -w quorra
+    salloc -t 1:00:00 -p rg-gpu -w quorra2
+    //SSH to the resource
+    ssh quorra2
 
 MIG
 ---
-See our internal docs for more instructions on using MIG with these GPUs.
+`See our internal docs for more instructions on using MIG with these GPUs here <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/[HPC]-MIG>`__.
 
-Running jobs
-------------
-
-Once you have compiled your code, you can request a longer job to do
-testing.
 
 Useful training material
 ------------------------
