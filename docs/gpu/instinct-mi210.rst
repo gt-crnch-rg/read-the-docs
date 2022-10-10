@@ -73,6 +73,8 @@ To request an allocation on Instinct using slurm:
 
     //Request an allocation of 1 hr, partition rg-gpu, and specify the node name for the server with -w
     salloc -t 1:00:00 -p rg-gpu -w instinct
+    //This step is required since we don't use "interactive_step" with Slurm due to system heterogeneity
+    ssh instinct
 
 Compiling for the MI210 GPUs
 ----------------------------
@@ -82,12 +84,7 @@ Currently we suggest using the ROCm compiler stack to compile or GCC 12+.
 Modules should be available but you may need to update your module path:
 
 .. code::
-
-    //Usually can skip these lines but may be needed if you run into a "bash: module: command not found" error
-    //[]$ source /etc/profile.d/modules.sh
-    //OR
-    //[]$ module use /projects/tools/x86_64/rhel-8/modulefiles/
-    
+      
     []$ module avail
 
     -------------------------------------------- /projects/tools/x86_64/rhel-8/modulefiles -------------------------------------  
