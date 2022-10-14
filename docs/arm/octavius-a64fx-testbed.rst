@@ -2,13 +2,14 @@
 Octavius - A64FX Testbed
 ============
 
-*Last Updated: 10/11/21*
+*Last Updated: 10/14/22*
 
 Current Status
 --------------
 
-Octavius has been updated with the latest Cray Programming Environment
-and Lmod support.
+- Octavius has been updated with the latest Cray Programming Environment and Lmod support.
+
+- Note that we no longer have a "login" node, octavius-login. Please just submit jobs from rg-login!
 
 BUGS / Feature Requests
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -85,15 +86,12 @@ How do I get to Octavius?
 
 As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
-an on-campus connection. Octavius-login is an x86 VM that can be used to
-submit Slurm jobs for interactive compilation, short, and longer runs.
+an on-campus connection. 
 
 The figure below shows the basic outline of all the resources that you
-might interact with on the Arm cluster. The "login" VM for octavius
-provides some basic functionality and scheduling capabilities. Your
-network shared home is available on all nodes listed in this figure,
-although long compilations and tar/untar operations are suggested to use
-local scratch space on VMs or nodes.
+might interact with on the Arm cluster. Your network shared home is available on 
+all nodes listed in this figure, although long compilations and tar/untar operations are 
+suggested to use local scratch space on VMs or nodes.
 
 The Mellanox SB7890 provides an InfiniBand connection to all the nodes
 within this cluster (as well as to flubber3), and
@@ -109,7 +107,7 @@ encouraged to use this framework to compile your code. Clang and GCC are
 also currently available for compilation on the compute nodes.
 
 To compile, you must request a short job (arm-debug queue) since we
-can't currently cross-compile on the x86 login node, octavius-login. By
+can't currently cross-compile on the x86 login node. By
 default, these jobs last an hour and are meant to be used to do
 compilation and basic testing.
 
@@ -117,37 +115,37 @@ For example:
 
 .. code:: 
 
-   [octavius-login]$ sinfo
+   [rg-login]$ sinfo
    PARTITION     AVAIL  TIMELIMIT  NODES  STATE NODELIST
    rg-arm-debug*    up 2-12:00:00      4   idle octavius[1-4]
    rg-arm-short     up 5-00:00:00     16   idle octavius[1-16]
    rg-arm-long      up 15-00:00:0     16   idle octavius[1-16]
 
    #Request an allocation for one hour
-   [octavius-login]$ salloc -q rg-arm-debug -t 01:00:00 -N 1 -n 48 --exclusive
+   [rg-login]$ salloc -q rg-arm-debug -t 01:00:00 -N 1 -n 48 --exclusive
    salloc: Granted job allocation 6
 
    Check that your job has launched.
-   [octavius-login]$ squeue
+   [rg-login]$ squeue
    JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
    6 rg-arm-de     bash  gburdell  R       0:21      1 octavius1
 
    #Launch an interactive job, run your compilation and testing, and then exit the node
    #Note that the -l flag indicates that the interactive job should load local environment scripts and is needed!
-   [octavius-login]$ srun --pty bash -l
+   [rg-login]$ srun --pty bash -l
    gburdell@octavius1:~$ <run_compilation>
    gburdell@octavius1:~$ exit
 
    #Cancel your job if needed (ie, if you have just used a few minutes)
-   [octavius-login]$ scancel 6
-   [octavius-login]:~$$ salloc: Job allocation 6 has been revoked.
+   [rg-login]$ scancel 6
+   [rg-login]:~$$ salloc: Job allocation 6 has been revoked.
 
 To request a specific node you can use the ``-w <nodename>`` flag
 
 .. code:: 
 
-   [octavius-login]$ salloc -q rg-arm-debug -t 01:00:00 -N 1 -n 48 --exclusive -w octavius2
-   [octavius-login]$ squeue
+   [rg-login]$ salloc -q rg-arm-debug -t 01:00:00 -N 1 -n 48 --exclusive -w octavius2
+   [rg-login]$ squeue
                 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
                   203 rg-arm-de     bash  gburdell  R       0:04      1 octavius2
    //srun and execute job
