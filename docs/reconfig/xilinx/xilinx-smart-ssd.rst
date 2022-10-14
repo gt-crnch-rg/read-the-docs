@@ -9,7 +9,7 @@ The `Xilinx SmartSSD <https://www.xilinx.com/applications/data-center/computatio
 
 Smart SSD Getting Started
 =========================
-Right now, our Smart SSD is located in an NVMe slot on flubber4. It needs to be installed in a server since it can get quite hot and it requires an NVMe interface.
+Right now, our Smart SSD is located in an NVMe slot on flubber9. It needs to be installed in a server since it can get quite hot and it requires an NVMe interface.
 
 
 Current Firmware
