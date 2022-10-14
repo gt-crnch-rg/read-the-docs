@@ -94,10 +94,16 @@ all nodes listed in this figure, although long compilations and tar/untar operat
 suggested to use local scratch space on VMs or nodes.
 
 The Mellanox SB7890 provides an InfiniBand connection to all the nodes
-within this cluster (as well as to flubber3), and
+within this cluster as well as to flubber3.
 
-.. figure:: ../figures/armhpc/rg-octavius-overview-2021.png
+.. figure:: ../figures/armhpc/rg-arm-servers-overview.png
+   :height: 300 px
+   :width: 400 px
    :alt: Octavius overview
+   :align: center
+
+   
+   RG Arm Server Overview
 
 Compiling for the A64FX
 -----------------------
