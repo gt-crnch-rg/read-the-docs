@@ -214,9 +214,7 @@ Useful training material
 
 The recent `SVE tutorial <https://jlinford.github.io/sc20-hackathon/>`__
 by Arm is probably the best source for learning how to use SVE with
-A64FX. You can also ask questions in the hackathon channel on the [Arm
-HPC User's Group]
-Slack(\ https://join.slack.com/t/a-hug/shared_invite/zt-it2g9rlv-aQfZsyV7r3T8jEDDSQKFHg).
+A64FX. You can also ask questions in the hackathon channel on the `Arm HPC User Group Slack <https://join.slack.com/t/a-hug/shared_invite/zt-it2g9rlv-aQfZsyV7r3T8jEDDSQKFHg>`__.
 
 `2021 SVE Hackathon for
 Ookami <https://gitlab.com/arm-hpc/training/arm-sve-tools>`__
