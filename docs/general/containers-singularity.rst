@@ -34,3 +34,4 @@ Other Resources
 - `OSC Guide to Running Docker and Singularity Images <https://www.osc.edu/book/export/html/4678>`__
 - `Using Apptainer on a cluster environment <https://docs.hpc.shef.ac.uk/en/latest/bessemer/software/apps/singularity.html#>`__
 - `Running Singularity containers on OLCF <https://docs.olcf.ornl.gov/software/containers_on_summit.html#>`__
+- `Princeton Singularity documentation <https://researchcomputing.princeton.edu/support/knowledge-base/singularity>`__ 
