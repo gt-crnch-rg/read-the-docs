@@ -11,19 +11,33 @@ What do you need to know as background for using SST?
 Tutorials and Training
 *********************
 
-- `Sandia SST Tutorials <http://sst-simulator.org/SSTPages/SSTTopDocTutorial/>`__
-- `Tactical Computing Laboratories (TCL) Fork of SST Tutorial <https://github.com/tactcomplabs/sst-tutorials>`__
-
+- `Sandia SST Tutorials <http://sst-simulator.org/SSTPages/SSTTopDocTutorial/>`__ - shares a list of several recent SST tutorials
+- `Tactical Computing Laboratories (TCL) Fork of SST Tutorial <https://github.com/tactcomplabs/sst-tutorials>`__ - this is a slightly newer version of the standard SST tutorial released in 2021-2022.
 
 Using SST with Singularity
 **************************
 
+TCL has created an initial container build of SST using Singularity that is available in an open-source fashion. This section details how you can use these containers to start running locally, on CRNCH, and on Georgia Tech's large HPC infrastructure, PACE Phoenix. 
+
+`TCL Singularity SST Build <https://github.com/tactcomplabs/sst-containers>`__
 
 Running SST on your local machine
-==========================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Running SST on the CRNCH RG Testbed
-===========================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Running SST on PACE Phoenix
-===========================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+RISC-V with SST
+*********************
+
+
+TBD
+
+Modeling HW Accelerators with SST
+*********************
+
+TBD
