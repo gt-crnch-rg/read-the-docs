@@ -13,16 +13,15 @@ Why are there two versions of Singularity?
 -----------------------------
 Singularity Community Edition (CE) and Apptainer are two different forks of Singularity with very similar functionality but that have a slightly different development philosophy. For more information on how they differ, please see `this wiki page <https://docs.hpc.shef.ac.uk/en/latest/bessemer/software/apps/singularity.html>`__ and these posts from Sylabs on `Singularity open source philosophy <https://sylabs.io/category/open-source/>`__ and on `future Singularity CE plans <https://sylabs.io/2022/02/singularityce-4-0-and-beyond/>`__.
 
-Installing Singularity Locally
---------------------------
-`Singularity CE installation instructions <https://github.com/sylabs/singularity/blob/main/INSTALL.md>`__ support building from source or `RPMs or DEBs for Ubuntu 18.04+ <https://github.com/sylabs/singularity/releases>`__. 
-
-Prerequisites for installation
+Installing Singularity on your Local Machine
 ------------------------------
-- shadow-utils
+Please see our `separate installation page <https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/general/containers-local-installation.rst>`__ for more information on installing Singularity locally. 
 
-For installation on a server platform, we just download an RPM and install it:
-`sudo rpm -ivh singularity-ce-3.10.0-1.el8.x86_64.rpm`
+Running a Singularity container on CRNCH RG
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Running a Singularity container on PACE Phoenix
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Converting a Docker container to a Singularity Image
