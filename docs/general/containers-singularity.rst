@@ -2,11 +2,12 @@
 Singularity
 =======================
 
-Singularity is often used for more high-performance or AI-focused environments, and it has a few key differences from Docker:
+Singularity is often used for more high-performance or AI-focused environments. It has a few key differences from Docker:
 
 - Singularity has traditionally not required any kind of root or sudo privileges to execute. 
-- Singularity containers typically compress all the layers 
+- Singularity containers typically compress all the layers of a built image whereas Docker uses "layers". The tradeoff is that Docker images tend to be much larger, but you can potentially rollback to an earlier version of the container. 
 
+For initial development and a focus on 
 
 Installing Singularity Locally
 --------------------------
@@ -16,7 +17,8 @@ Prerequisites for installation
 ------------------------------
 - shadow-utils
 
-For installation on a server platform, we just download 
+For installation on a server platform, we just download an RPM and install it:
+`sudo rpm -ivh singularity-ce-3.10.0-1.el8.x86_64.rpm`
 
 
 Converting a Docker container to a Singularity Image
