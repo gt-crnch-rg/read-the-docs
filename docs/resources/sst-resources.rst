@@ -17,9 +17,9 @@ Tutorials and Training
 Using SST with Singularity
 **************************
 
-TCL has created an initial container build of SST using Singularity that is available in an open-source fashion. This section details how you can use these containers to start running locally, on CRNCH, and on Georgia Tech's large HPC infrastructure, PACE Phoenix. 
+TCL has created an initial container build of SST using Singularity that is available in an open-source fashion. This section details how you can use these containers to start running locally, on CRNCH, and on Georgia Tech's large HPC infrastructure, PACE Phoenix. We highly suggest you look at their container tutorial which can be found `at this page <https://github.com/jleidel/sst-documentation/blob/Level3Container/Tutorials/Containers.md>`__.
 
-`TCL Singularity SST Build <https://github.com/tactcomplabs/sst-containers>`__
+`TCL Singularity SST Build <https://github.com/tactcomplabs/sst-containers>`__ 
 
 Running SST on your local machine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,9 +33,10 @@ Running SST on PACE Phoenix
 
 RISC-V with SST
 *********************
+There are currently two options for simulating RISC-V style cores in SST:
 
-
-TBD
+- Vanadis
+- Rev
 
 Modeling HW Accelerators with SST
 *********************
