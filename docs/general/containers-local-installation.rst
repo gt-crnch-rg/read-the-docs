@@ -3,6 +3,8 @@ Container Local Installations
 
 This page documents how you can install tools like Docker and Singularity locally to run containers on your laptop or local machine. 
 
+The Pawsey Supercomputing Center has a nice guide on using Singularity with an HPC environment, and they have detailed instructions for `local installation of Singularity <https://pawseysc.github.io/singularity-containers/44-setup-singularity/index.html>`__.
+
 Mac OSX
 -------------------------
 TBD
