@@ -11,7 +11,7 @@ Key Takeaways for using Python on the RG Testbed
 - We also have installed :code:`venv` across most of our servers and as many dev boards as possible.
     - 
 - We do not typically recommend using conda, miniconda, or anaconda as these quickly eat up home directory space. 
-    - However, if you want to use conda or miniconda please consider using your scratch space to store your venvs.
+    - However, if you want to use conda or miniconda please consider `using your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your venvs.
 
 
 Using venv on CRNCH RG
@@ -72,7 +72,7 @@ What's the difference between pip, venv, env, conda, etc?
 Venv
 -------
 
-Venv is the default virtual environment module included since Python 3.3, and it totally replaces pyenv since Python 3.6. Virtualenv has many similarities to venv in terms of its functionality, but we recommend using venv unless you need to use a version of Python older than 3.3. 
+Venv is the default virtual environment module included since Python 3.3, and it totally replaces `pyenv` since Python 3.6. Virtualenv has many similarities to venv in terms of its functionality, but we recommend using venv unless you need to use a version of Python older than 3.3. 
 
 For CRNCH, we recommend using venv or pipenv to set up your own environment. 
 
