@@ -7,16 +7,23 @@ CRNCH RG supports many different flavors of python, but we have some suggested r
 Key Takeaways for using Python on the RG Testbed
 =============
 
-- The default Python is typically 3.8. We do not support Python2 usage as most packages have updated to support Python3.
+- The default Python is typically 3.8. We do not support python 2 usage as most packages have updated to support python 3.
 - We also have installed :code:`venv` across most of our servers and as many dev boards as possible.
-    - 
+    - We recommend to use either :code:`venv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. 
 - We do not typically recommend using conda, miniconda, or anaconda as these quickly eat up home directory space. 
     - However, if you want to use conda or miniconda please consider `using your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your venvs.
 
 
 Using venv on CRNCH RG
 ======================
-TBD - examples of how to use venv to install packages, environments
+
+Creating a new virtual environment
+
+Activating/deactivating an environment
+
+
+
+
 
 What's the difference between pip, venv, env, conda, etc?
 =============
@@ -94,6 +101,11 @@ Resources with more details on differences between different Python packages:
 
 - `Understanding conda and pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
 - `Explaining the many flavors of conda <https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda>`__
+- `OLCF's guide to using conda, which assumes a sitewide installation of conda <https://docs.olcf.ornl.gov/software/python/conda_basics.html>`__.
+
+Poetry
+^^^^^^^^^^^^^^^^
+
 
 Bonus: IPython, IPykernel, and Jupyter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
