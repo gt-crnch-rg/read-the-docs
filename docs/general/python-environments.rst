@@ -21,8 +21,17 @@ Creating a new virtual environment
 
 Activating/deactivating an environment
 
+Installing and using packages:
 
 
+Using pipvenv on CRNCH RG
+======================
+
+Creating a new virtual environment
+
+Activating/deactivating an environment
+
+Installing and using packages:
 
 
 What's the difference between pip, venv, env, conda, etc?
