@@ -4,8 +4,8 @@ Python Environments
 
 CRNCH RG supports many different flavors of python, but we have some suggested rules about using Python and virtual environments.
 
-TLDR Version
-============
+Key Takeaways for using Python on the RG Testbed
+=============
 
 - The default Python is typically 3.8. We do not support Python2 usage as most packages have updated to support Python3.
 - We also have installed :code:`venv` across most of our servers and as many dev boards as possible.
@@ -70,7 +70,18 @@ What's the difference between pip, venv, env, conda, etc?
 
 
 Venv
-^^^^^^^^^^^^^^
+-------
+
+Venv is the default virtual environment module included since Python 3.3, and it totally replaces pyenv since Python 3.6. Virtualenv has many similarities to venv in terms of its functionality, but we recommend using venv unless you need to use a version of Python older than 3.3. 
+
+For CRNCH, we recommend using venv or pipenv to set up your own environment. 
+
+
+
+Pipenv
+------
+
+- `Pipenv & Virtual Environments <https://docs.python-guide.org/dev/virtualenvs/>`__
 
 Pip
 ^^^^^^^^^^^^^^
