@@ -102,6 +102,7 @@ Resources with more details on differences between different Python packages:
 - `Understanding conda and pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
 - `Explaining the many flavors of conda <https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda>`__
 - `OLCF's guide to using conda, which assumes a sitewide installation of conda <https://docs.olcf.ornl.gov/software/python/conda_basics.html>`__.
+- `NERSC's guide on using python with anaconda <https://docs.nersc.gov/development/languages/python/>`__
 
 Poetry
 ^^^^^^^^^^^^^^^^
