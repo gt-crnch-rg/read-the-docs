@@ -9,6 +9,7 @@ TLDR Version
 
 - The default Python is typically 3.8. We do not support Python2 usage as most packages have updated to support Python3.
 - We also have installed :code:`venv` across most of our servers and as many dev boards as possible.
+    - 
 - We do not typically recommend using conda, miniconda, or anaconda as these quickly eat up home directory space. 
     - However, if you want to use conda or miniconda please consider using your scratch space to store your venvs.
 
@@ -20,10 +21,52 @@ TBD - examples of how to use venv to install packages, environments
 What's the difference between pip, venv, env, conda, etc?
 =============
 
-See these resources for more details:
 
-- `Understanding conda and pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
-- `Explaining the many flavors of conda <https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda>`__
+.. list-table:: **Python Environment Tools**
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Tool Name
+      - Supported Python Versions
+      - Purpose
+      - Installed on CRNCH RG
+      - Notes
+    * - pip
+      - All Versions
+      - Default Package installer
+      - Y
+      - 
+    * - pipenv
+      - 
+      - Combines pip and virtualenv
+      - Y
+      - 
+    * - virtualenv
+      - 
+      - 
+      - 
+      - 
+    * - venv
+      - 
+      - 
+      - 
+      - 
+    * - miniconda
+      - 
+      - 
+      - Y
+      - Suggested version of conda to use on RG
+    * - anaconda
+      - 
+      - 
+      - N
+      - Not supported on RG
+    * - poetry
+      - 
+      - 
+      - N
+      - Not supported on RG
 
 
 Venv
@@ -35,6 +78,11 @@ Pip
 Conda
 ^^^^^^^^^^^^^^
 **Note:** We typically don't recommend using anaconda due to the amount of dependencies it pulls into your home directory. If you get to where you need anaconda for a project this is typically some software that should be installed in a project space or system-wide!
+
+Resources with more details on differences between different Python packages:
+
+- `Understanding conda and pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
+- `Explaining the many flavors of conda <https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda>`__
 
 Bonus: IPython, IPykernel, and Jupyter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
