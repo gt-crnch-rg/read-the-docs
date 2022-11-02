@@ -73,8 +73,15 @@ To request an allocation on Instinct using slurm:
 
     //Request an allocation of 1 hr, partition rg-gpu, and specify the node name for the server with -w
     salloc -t 1:00:00 -p rg-gpu -w instinct
-    //This step is required since we don't use "interactive_step" with Slurm due to system heterogeneity
-    ssh instinct
+   
+To request an entire node (and all the memory) you can run:
+
+
+.. code::
+
+    //Request an allocation of with 2 sockets, all cores in each socket, and 2 threads per core, partition rg-gpu, 
+    //specify the node name for the server with -w, and request unlimited memory (otherwise cgroups limits to 1 GB per core)
+    salloc --sockets-per-node=2 --cores-per-socket=64 --threads-per-core=2 -p rg-gpu -w instinct --mem=0 
 
 Compiling for the MI210 GPUs
 ----------------------------
