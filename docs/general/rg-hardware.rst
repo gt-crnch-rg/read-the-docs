@@ -26,34 +26,47 @@ specific experiments. These VMs have limited CPU cores and memory, but
 we can reconfigure them as needed or provide additional resources for
 long-running simulations. Local storage refers to space hosted within
 the VM for /localscratch. Except where noted, all machines are running
-Ubuntu 18.04 LTS.
+RHEL8 or Ubuntu 20.04.
 
-+----------------+-------------+-------------+-------------+-------------+
-| Resource       | CPU         | Memory(GB)  | Local       | Software    |
-|                |             |             | Storage     | and         |
-|                |             |             | (GB)        | Features    |
-+================+=============+=============+=============+=============+
-| octavius-login | 4 core,     | 32          | 340         | Login for   |
-|                | Broadwell   |             |             | the A64FX   |
-|                |             |             |             | cluster     |
-+----------------+-------------+-------------+-------------+-------------+
-| rg-login       | 4 core,     | 8           | 650         | Login node  |
-|                | E312xx      |             |             |             |
-+----------------+-------------+-------------+-------------+-------------+
-| rg-emu-dev     | 4 core,     | 4           | 33          | Emu         |
-|                | E312xx      |             |             | simulator   |
-|                |             |             |             | and tools   |
-+----------------+-------------+-------------+-------------+-------------+
-| rg-fpga-dev    | 4 core,     | 8           | 250         | Ubuntu 18,  |
-| -<1-6>         | E312xx      |             |             | use for     |
-|                |             |             |             | FPGA tools  |
-+----------------+-------------+-------------+-------------+-------------+
-| rg-neuro-dev   | 4 core,     | 8           | 450         | ROS, FPAA   |
-|                | Broadwell   |             |             | tools       |
-+----------------+-------------+-------------+-------------+-------------+
-| rg-quantum-dev | 4 core,     | 8           | 130         | XACC,       |
-|                | Broadwell   |             |             | Qiskit      |
-+----------------+-------------+-------------+-------------+-------------+
+RG Virtual Machines
+--------------------
+.. list-table:: 
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Resource
+      - CPU
+      - Memory (GB)
+      - Local Storage (GB)
+      - Software and Features
+    * - rg-emu-dev
+      - 4 core, E312xx
+      - 4
+      - 33
+      - Emu simulator and tools
+    * - rg-fpga-dev<1-3>
+      - 4 core, E312xx
+      - 12
+      - 250
+      - RHEL 8 VM for FPGA tools
+    * - rg-fpga-dev4
+      - 4 core, E312xx
+      - 12
+      - 250
+      - Ubuntu 20.04 VM for FPGA tools
+    * - rg-neuro-dev
+      - 4 core, Broadwell
+      - 8
+      - 450
+      - ROS, FPAA tools
+    * - rg-quantum-dev
+      - 4 core, Broadwell
+      - 8
+      - 130
+      - XACC, Qiskit
+      
+
 
 RG Physical Machines
 ====================
