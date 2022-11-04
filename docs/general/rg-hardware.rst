@@ -47,12 +47,12 @@ RG Virtual Machines
       - Emu simulator and tools
     * - rg-fpga-dev<1-3>
       - 4 core, E312xx
-      - 12
+      - 16
       - 250
       - RHEL 8 VM for FPGA tools
     * - rg-fpga-dev4
       - 4 core, E312xx
-      - 12
+      - 16
       - 250
       - Ubuntu 20.04 VM for FPGA tools
     * - rg-neuro-dev
