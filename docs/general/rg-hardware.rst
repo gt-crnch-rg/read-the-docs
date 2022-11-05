@@ -94,7 +94,7 @@ Arm HPC
 Near-Memory
 --------------------
 
-The Pathfinder system consists of 2 chassis while the Emu Chick is a one chassis system. 
+The Pathfinder system consists of 4 chassis while the Emu Chick is a one chassis system. We recommend that you use the newer Pathfinder system for your work.
 
 .. list-table:: 
     :widths: auto
@@ -107,18 +107,18 @@ The Pathfinder system consists of 2 chassis while the Emu Chick is a one chassis
       - LCEs
       - Network
       - Notes
+    * - pathfinder (4 chassis)
+      - 32  
+      - 2048
+      - 784
+      - RapidIO 2.0, 10 GE
+      - 
     * - karrawingi (Emu Chick, 1 chassis)
       - 8
       - 512
       - 64
       - RapidIO, 1 GE
       - karrawingi-login
-    * - pathfinder (2 chassis)
-      - 16  
-      - 1024
-      - 392
-      - RapidIO 2.0, 10 GE
-      - 
 
 Neuromorphic/AI
 --------------------
