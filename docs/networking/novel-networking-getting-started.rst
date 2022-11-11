@@ -45,12 +45,12 @@ Currently, the Rogues Gallery hosts the following smart networking hardware.
     * - Intel N6000
       - 
       - 
-      - 
+      - flubber6/7
       -
     * - Xilinx Alveo U50
       - 
       - 
-      - 
+      - flubber1
       -
     * - Xilinx Alveo U280
       - 
