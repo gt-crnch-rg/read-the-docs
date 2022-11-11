@@ -35,8 +35,8 @@ Currently, the Rogues Gallery hosts the following smart networking hardware.
     * - Bluefield-2 DPU
       - Arm A72 CPU
       - 16 GB DRAM
-      - quorra1/2, flubber6/7, kingpin1/2
-      - 2 boards
+      - quorra1/2, flubber6/7, kingpin1/2, flubber10
+      - 1 board in most nodes, 4 in flubber10
     * - InnovaFlex-2
       - 
       - 
