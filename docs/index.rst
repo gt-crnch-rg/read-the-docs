@@ -72,7 +72,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :hidden:
    :glob:
    
-   networking/novel-networking-getting-started.rst
+   novel-networking/novel-networking-getting-started.rst
 
 .. toctree::
    :caption: Quantum Computing
