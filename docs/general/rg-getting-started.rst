@@ -22,17 +22,21 @@ To access Rogues Gallery machines from off campus you need to 1) SSH to testbed 
 
 **Some of the Rogues Gallery machines include:**
 
-Note that all machines have a **.crnch.gatech.edu** suffix
+Note that all machines have a **.crnch.gatech.edu** suffix and some examples include:
 
 -  **rg-login** login VM for off-campus access. Used as a gateway node
 -  **rg-emu-dev:** VM for Emu compilation and simulation
--  **rg-fpga-dev-<1-6>:** VMs for FPGA compilation and simulation
+-  **rg-fpga-dev-<1-4>:** VMs for FPGA compilation and simulation
 -  **rg-neuro-dev:** VM for neuromorphic tools
 -  Please see `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-hardware.html>`__ for a complete list of available machines in the RG testbed
 
 What's this about the VPN?
 --------------------------
-You can access all CRNCH resources using login nodes like rg-login. However, you can also use GT's `VPN <https://faq.oit.gatech.edu/content/how-do-i-get-started-campus-vpn>`__ solution as an alternative to access VMs and nodes directly. Note that this may require that you set up two-factor authentication on your phone and link it with your account name. You shouldn't need to use the VPN to access Rogues Gallery resources and materials, but for special requirements please email us at *crnch-rg-admin@lists.gatech.edu*. External users do not have access to the VPN unless they specifically request it.
+You can access all CRNCH resources using login nodes like rg-login. However, you can also use GT's `VPN <https://faq.oit.gatech.edu/content/how-do-i-get-started-campus-vpn>`__ solution as an alternative to access VMs and nodes directly. Note that this may require that you set up two-factor authentication on your phone and link it with your account name. You shouldn't need to use the VPN to access Rogues Gallery resources and materials, but for special requirements please email us at *crnch-rg-help@cc.gatech.edu*. 
+
+Using the Georgia Tech VPN
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Other Georgia Tech resources like PACE's Phoenix cluster require the usage of the VPN. 
 
 How do I work with *novel architecture of interest X*?
 ------------------------------------------------------
