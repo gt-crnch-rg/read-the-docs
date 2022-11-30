@@ -28,7 +28,7 @@ Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
     * - Xilinx Alveo U250
       - 
       - 
-      - TBD
+      - flubber9
       -
     * - Xilinx Alveo U280
       - 
@@ -38,7 +38,7 @@ Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
     * - Xilinx SmartSSD
       - 
       - 
-      - flubber4
+      - flubber9
       -
     * - AC-510
       - XCVU060 (Pkg FFVA1156)
@@ -84,7 +84,7 @@ See the Reconfigurable Computing Workflow page for more details on the process t
 
 The short version is: 
 
-* For emulation and development, please use the FPGA development VMs, `rg-fpga-dev-<1-6>`.
+* For emulation and development, please use the FPGA development VMs, `rg-fpga-dev-<1-4>`.
 * For GUI-based development, use VNC, ideally with either Slurm or our OOD instance.
 * For final bitstream compilation, request a hardware node using Slurm and run the tools on that node. 
 
