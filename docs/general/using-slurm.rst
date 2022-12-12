@@ -98,6 +98,10 @@ Please consider looking at `PACE's training information <https://docs.pace.gatec
 - squeue - See the status of your jobs. You can also run ``squeue -u <username>`` to just list your jobs.
 - scancel - Used with the ``JOBID`` reported by ``squeue`` to cancel a job.
 
+Options to run jobs include the following commands:
+- salloc_ - request resources from the Slurm scheduler and run a task when resources are ready
+- sbatch_ - create a batch file for later execution of one or more programs
+- srun_ - run parallel tasks across multiple processes. Called after salloc/sbatch.
 
 Slurm General Resources
 =======================
@@ -112,3 +116,5 @@ Slurm General Resources
 -  `University of Maryland Torque versus Moab Guide
    Reference <https://hpcc.umd.edu/hpcc/help/slurm-vs-moab.html>`__
 -  `Princeton Research Computing's Slurm learning resources <https://researchcomputing.princeton.edu/education/external-online-resources/slurm>`__
+-  `Slurm Video Tutorials <https://slurm.schedmd.com/tutorials.html>`__
+
