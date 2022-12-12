@@ -72,7 +72,8 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :hidden:
    :glob:
    
-   novel-networking/novel-networking-getting-started.rst
+   networking/novel-networking-getting-started.rst
+   networking/bluefield2-dpu.rst
 
 .. toctree::
    :caption: Quantum Computing
