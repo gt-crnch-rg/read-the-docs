@@ -67,7 +67,7 @@ Slurm Partitions
       - 12 hours
       - 2
       - flubber[1-3]
-      - Hosts Xilinx FPGAss
+      - Hosts Xilinx FPGAs
     * - rg-smart-nic
       - 12 hours
       - 2
