@@ -38,7 +38,7 @@ System Specifications
       - 
       - 
       - wifi
-      - MangoPi MQ-Pro; MPi-MQ1PH <https://linux-sunxi.org/MangoPi_MQ-Pro>`__
+      - `MangoPi MQ-Pro; MPi-MQ1PH <https://linux-sunxi.org/MangoPi_MQ-Pro>`__
       - 
 
 
