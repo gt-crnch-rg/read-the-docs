@@ -183,7 +183,7 @@ Pipenv Related Documents
 ==============
 - `Pipenv and Virtualenv <https://docs.python-guide.org/dev/virtualenvs/>`__
 - `Pipenv guide <https://realpython.com/pipenv-guide/>`__
-- ` Pipenv vs virtualenv vs conda environment <https://medium.com/@krishnaregmi/pipenv-vs-virtualenv-vs-conda-environment-3dde3f6869ed>`__
+- `Pipenv vs virtualenv vs conda environment <https://medium.com/@krishnaregmi/pipenv-vs-virtualenv-vs-conda-environment-3dde3f6869ed>`_
 
 Pip
 ==============
