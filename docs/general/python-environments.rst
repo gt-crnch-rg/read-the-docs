@@ -205,7 +205,7 @@ Then you can install packages to your local directory as follows. Assuming a sta
        
 Pip Related Documents
 -----------------
-`Python Pip tutorial page <https://python-tutorials.in/python-pip/>`__.
+- `Python Pip tutorial page <https://python-tutorials.in/python-pip/>`__.
 
 Conda
 ===================
