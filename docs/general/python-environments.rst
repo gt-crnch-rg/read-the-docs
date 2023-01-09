@@ -2,6 +2,11 @@
 Python Environments
 ===================
 
+.. note::
+   TLDR: we recommend that you use pipenv on CRNCH environments rather other Python package managers or tools like conda/anaconda. See the pipenv section for more details on usage.
+
+Added High-level Info on CRNCH Python Environments
+===============
 - The default Python is typically 3.8. We do not officially support Python 2 usage as most packages have updated to support Python 3.
     - Look into `2to3 <https://docs.python.org/3/library/2to3.html>`__ if your code is still using Python 2!
 - :code:`virtualenv` and :code:`venv` is installed across most of our servers and as many dev boards as possible.
