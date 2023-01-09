@@ -157,12 +157,31 @@ Installing and using packages
 Pip
 ==============
 
+Pip or the `package installer for python` is the default way to install packages from the Python Package Index, or `PyPI <https://pypi.org/>`__. Depending on the version of Python used, you may need to call it using code::`pip install <packagename>` or code::`python -m pip install <packagename`>. 
+
+Note that best practices specify that you should install packages into a "user-local" directory (normally under code::`~/.local` or your virtual environment folder). You can find this location for your version of Python using the following command.
+
+code:: shell
+
+    $ python3 -m site --user-base
+    /nethome/gburdell/.local
+
+Then you can install packages to your local directory as follows. Assuming a standard Python 3.8 install, the installed files can be found at code::`.local/lib/python3.8/site-packages/`.
+
+code:: shell
+
+    $ pip install --user matplotlib
+       
+Pip Related Documents
+-----------------
+`Python Pip tutorial page <https://python-tutorials.in/python-pip/>`__.
+
 Conda
 ===================
 **Note:** We typically don't recommend using anaconda due to the amount of dependencies it pulls into your home directory. If you get to where you need anaconda for a project this is typically some software that should be installed in a project space or system-wide!
 
-Resources with more details on conda:
-
+Conda Related Documents
+-----------------------
 - `Understanding conda and pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
 - `Explaining the many flavors of conda <https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda>`__
 - `OLCF's guide to using conda, which assumes a sitewide installation of conda <https://docs.olcf.ornl.gov/software/python/conda_basics.html>`__.
