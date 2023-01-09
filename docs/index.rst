@@ -30,7 +30,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :hidden:
    :glob:
    
-   general/rg-python-environments
+   general/python-environments
    general/rg-workflows
    general/using-slurm
    general/using-slurm-examples
