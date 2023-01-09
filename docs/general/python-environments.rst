@@ -11,33 +11,71 @@ Key Takeaways for using Python on the RG Testbed
 - We also have installed :code:`venv` across most of our servers and as many dev boards as possible.
     - We recommend to use either :code:`venv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. 
 - We do not typically recommend using conda, miniconda, or anaconda as these quickly eat up home directory space. 
-    - However, if you want to use conda or miniconda please consider `using your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your venvs.
+    - However, if you want to use conda or miniconda please consider `using miniconda with your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your venvs.
 
 
 Using venv on CRNCH RG
 ======================
+Venv is the default virtual environment module included since Python 3.3, and it totally replaces `pyenv` since Python 3.6. Virtualenv has many similarities to venv in terms of its functionality, but we recommend using venv unless you need to use a version of Python older than 3.3. 
 
-Creating a new virtual environment
+Installing venv
+~~~~~~~~~~~~~~~~
+
+Creating a new virtual environment with venv
+~~~~~~~~~~~~~~~~
 
 Activating/deactivating an environment
+~~~~~~~~~~~~~~~~
 
-Installing and using packages:
-
+Installing and using packages
+~~~~~~~~~~~~~~~~
 
 Using pipvenv on CRNCH RG
 ======================
 
-Creating a new virtual environment
+Installing pipenv
+~~~~~~~~~~~~~~~~
+Using the official installation instructions `here <https://pipenv.pypa.io/en/latest/install/#installing-pipenv>`__:
+
+.. code:: shell
+
+    python3 -m pip install pipenv
+
+Creating a new virtual environment with pipenv
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Activating/deactivating an environment
+.. code:: shell
 
-Installing and using packages:
+    $ pipenv install
+    Creating a virtualenv for this project...
+    Pipfile: /nethome/gburdell/Pipfile
+    Using /usr/bin/python3.8 (3.8.13) to create virtualenv...
+    ⠦ Creating virtual environment...created virtual environment CPython3.8.13.final.0-64 in 2991ms
+      creator CPython3Posix(dest=/nethome/gburdell/.local/share/virtualenvs/gburdell-hxKrwMjp, clear=False, no_vcs_ignore=False, global=False)
+      seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/nethome/gburdell/.local/share/virtualenv)
+        added seed packages: pip==22.3, setuptools==65.5.0, wheel==0.37.1
+        activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+    ✔ Successfully created virtual environment!
+    Virtualenv location: /nethome/gburdell/.local/share/virtualenvs/gburdell-hxKrwMjp
+    Pipfile.lock not found, creating...
+    Locking [dev-packages] dependencies...
+    Locking [packages] dependencies...
+    Updated Pipfile.lock (db4242)!
+    Installing dependencies from Pipfile.lock (db4242)...
+      🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
+    To activate this project's virtualenv, run pipenv shell.
+    Alternatively, run a command inside the virtualenv with pipenv run.
+
+Activating/deactivating an environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Installing and using packages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 What's the difference between pip, venv, env, conda, etc?
 =============
-
 
 .. list-table:: **Python Environment Tools**
     :widths: auto
@@ -85,26 +123,11 @@ What's the difference between pip, venv, env, conda, etc?
       - N
       - Not supported on RG
 
-
-Venv
--------
-
-Venv is the default virtual environment module included since Python 3.3, and it totally replaces `pyenv` since Python 3.6. Virtualenv has many similarities to venv in terms of its functionality, but we recommend using venv unless you need to use a version of Python older than 3.3. 
-
-For CRNCH, we recommend using venv or pipenv to set up your own environment. 
-
-
-
-Pipenv
-------
-
-- `Pipenv & Virtual Environments <https://docs.python-guide.org/dev/virtualenvs/>`__
-
 Pip
-^^^^^^^^^^^^^^
+==============
 
 Conda
-^^^^^^^^^^^^^^
+===================
 **Note:** We typically don't recommend using anaconda due to the amount of dependencies it pulls into your home directory. If you get to where you need anaconda for a project this is typically some software that should be installed in a project space or system-wide!
 
 Resources with more details on differences between different Python packages:
@@ -115,9 +138,10 @@ Resources with more details on differences between different Python packages:
 - `NERSC's guide on using python with anaconda <https://docs.nersc.gov/development/languages/python/>`__
 
 Poetry
-^^^^^^^^^^^^^^^^
-
+===============
+Poetry is a tool for dependency management and packaging similar to pipenv (which combines pip and venv). While we don't currently support it, you may be interested to try it out in your user-local setup. Read more about Poetry at the `official website <https://python-poetry.org/docs/>`__.
 
 Bonus: IPython, IPykernel, and Jupyter
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======================================
 You may see some reference to IPython kernels which switching between virtual environments or especially for Jupyter notebooks. In short, IPython (`see site <https://ipython.org/>`__) is a command shell for interactive Python execution that can be extended for GUI applications and parallel computing. Jupyter is a web-based interactive tool that builds on IPython but also supports many other kernels for languages like Julia and R. You can read more about kernels for Jupyter `at this link <https://docs.jupyter.org/en/latest/projects/kernels.html>`__. 
+
