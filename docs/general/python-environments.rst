@@ -2,13 +2,8 @@
 Python Environments
 ===================
 
-CRNCH RG supports many different flavors of python, but we have some suggested rules about using Python and virtual environments.
-
-Key Takeaways for using Python on the RG Testbed
-=============
-
-- The default Python is typically 3.8. We do not support python 2 usage as most packages have updated to support python 3.
-    - Look into `2to3 <https://docs.python.org/3/library/2to3.html>`__ if your code is still Python2!
+- The default Python is typically 3.8. We do not officially support Python 2 usage as most packages have updated to support Python 3.
+    - Look into `2to3 <https://docs.python.org/3/library/2to3.html>`__ if your code is still using Python 2!
 - :code:`virtualenv` is installed across most of our servers and as many dev boards as possible.
     - We recommend to use either :code:`virtualenv` or :code:`venv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. Note that :code:`venv` and :code:`pip` are default packages for all Python 3.3+ installations.
 - We do not typically recommend using conda, miniconda, or anaconda as these quickly eat up home directory space. 
@@ -180,4 +175,3 @@ Poetry is a tool for dependency management and packaging similar to pipenv (whic
 Bonus: IPython, IPykernel, and Jupyter
 ======================================
 You may see some reference to IPython kernels which switching between virtual environments or especially for Jupyter notebooks. In short, IPython (`see site <https://ipython.org/>`__) is a command shell for interactive Python execution that can be extended for GUI applications and parallel computing. Jupyter is a web-based interactive tool that builds on IPython but also supports many other kernels for languages like Julia and R. You can read more about kernels for Jupyter `at this link <https://docs.jupyter.org/en/latest/projects/kernels.html>`__. 
-
