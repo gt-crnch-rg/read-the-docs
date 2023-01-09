@@ -4,8 +4,8 @@ Python Environments
 
 - The default Python is typically 3.8. We do not officially support Python 2 usage as most packages have updated to support Python 3.
     - Look into `2to3 <https://docs.python.org/3/library/2to3.html>`__ if your code is still using Python 2!
-- :code:`virtualenv` is installed across most of our servers and as many dev boards as possible.
-    - We recommend to use either :code:`virtualenv` or :code:`venv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. Note that :code:`venv` and :code:`pip` are default packages for all Python 3.3+ installations.
+- :code:`virtualenv` and :code:`venv` is installed across most of our servers and as many dev boards as possible.
+    - We recommend to use either :code:`virtualenv` or :code:`venv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. Note that :code:`venv` and :code:`pip` are default packages for all Python 3.3+ installations, and :code:`venv` contains a subset of :code:`virtualenv` functionality.
 - We do not typically recommend using conda, miniconda, or anaconda as these quickly eat up home directory space. 
     - However, if you want to use conda or miniconda please consider `using miniconda with your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your conda environment and venvs. See the example below under the Conda section as a template.
     
@@ -66,14 +66,48 @@ Venv is the default virtual environment module included since Python 3.3, and it
 Creating a new virtual environment with venv
 ---------------
 
+.. code:: shell
+    
+    $ mkdir myproject
+    $ python -m venv myproject
+
 Activating/deactivating an environment
 ---------------
 
+.. code:: shell
+    
+    $ source myproject/bin/activate
+    //To leave type exit  
+    (myproject)gburdell@rg-login:$ exit
+
 Installing and using packages
 ---------------
+Here we demonstrate a basic usage of pip with venv. We highly recommend using pipenv, which provides a more robust combination of pip and virtual environments.
+
+.. code:: shell
+    
+    $ source myproject/bin/activate
+    (myproject)gburdell@rg-login:$ pip install matplotlib
+    Collecting matplotlib
+    Downloading matplotlib-3.6.2-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (9.4 MB)
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.4/9.4 MB 56.5 MB/s eta 0:00:00
+    
+    //Use pip freeze to generate a requirements.txt file which can be used to reinstall a specific environment in the future.
+    pip freeze > requirements.txt
+    (myproject)gburdell@rg-login:~/USERSCRATCH/myproject$ ls
+    bin  include  lib  lib64  pyvenv.cfg  requirements.txt  share
+    (myproject)gburdell@rg-login:~/USERSCRATCH/myproject$ more requirements.txt
+    contourpy==1.0.6
+    ...
+    matplotlib==3.6.2
+    numpy==1.24.1
+    ...
+    six==1.16.0
 
 Using pipvenv on CRNCH RG
 ======================
+
+Pipenv combines the best parts of the pip package manager for Python and virtual environments, as typified by virtualenv and venv. One key difference is that pipenv keeps all of its dependencies for installations in a :code:`Pipfile` that can then be used to regenerate a specific environment. Pipenv uses `TOML syntax <https://toml.io/en/>`__, and one Pipfile can be used in place of multiple requirements.txt files created by Pip with virtual environments. The :code:`Pipfile.lock` file provides a secure hashed record of installations that can be used for future deployments.
 
 Installing pipenv
 ---------------
