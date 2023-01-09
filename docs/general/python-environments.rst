@@ -63,9 +63,6 @@ Using venv on CRNCH RG
 ======================
 Venv is the default virtual environment module included since Python 3.3, and it totally replaces `pyenv` since Python 3.6. Virtualenv has many similarities to venv in terms of its functionality, but we recommend using venv unless you need to use a version of Python older than 3.3. 
 
-Installing venv
----------------
-
 Creating a new virtual environment with venv
 ---------------
 
@@ -89,6 +86,8 @@ Using the official installation instructions `here <https://pipenv.pypa.io/en/la
 Creating a new virtual environment with pipenv
 ---------------
 
+When you run :code:`pipenv install`, it will create a standard virtual environnment and all related pip installs will occur within this user-accessible folder.
+
 .. code:: shell
 
     $ pipenv install
@@ -111,6 +110,11 @@ Creating a new virtual environment with pipenv
       🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
     To activate this project's virtualenv, run pipenv shell.
     Alternatively, run a command inside the virtualenv with pipenv run.
+    
+ If you'd like to create a Python 3.8 environment, use the following syntax. Note that this will overwrite the standard location for your virtualenv
+ 
+.. code:: shell
+    pipenv install pipenv --python 3.8 install
 
 Activating/deactivating an environment
 ---------------
@@ -153,13 +157,40 @@ Installing and using packages
      🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
    To activate this project's virtualenv, run pipenv shell.
    Alternatively, run a command inside the virtualenv with pipenv run.
+   
+To show what packages are installed and their dependencies, you can use :code:`pipenv graph`. Here we show the dependencies for 2to3 and matplotlib.
+
+.. code:: shell
+
+  $ pipenv graph
+  //No dependencies for this package
+  2to3==1.0 
+  //Several dependencies were installed, including numpy
+  matplotlib==3.6.2
+  - contourpy [required: >=1.0.1, installed: 1.0.6]
+    - numpy [required: >=1.16, installed: 1.24.1]
+  - cycler [required: >=0.10, installed: 0.11.0]
+  - fonttools [required: >=4.22.0, installed: 4.38.0]
+  - kiwisolver [required: >=1.0.1, installed: 1.4.4]
+  - numpy [required: >=1.19, installed: 1.24.1]
+  - packaging [required: >=20.0, installed: 23.0]
+  - pillow [required: >=6.2.0, installed: 9.4.0]
+  - pyparsing [required: >=2.2.1, installed: 3.0.9]
+  - python-dateutil [required: >=2.7, installed: 2.8.2]
+    - six [required: >=1.5, installed: 1.16.0]
+
+Pipenv Related Documents
+==============
+- `Pipenv and Virtualenv <https://docs.python-guide.org/dev/virtualenvs/>`__
+- `Pipenv guide <https://realpython.com/pipenv-guide/>`__
+- ` Pipenv vs virtualenv vs conda environment <https://medium.com/@krishnaregmi/pipenv-vs-virtualenv-vs-conda-environment-3dde3f6869ed>`__
 
 Pip
 ==============
 
 Pip or the `package installer for python` is the default way to install packages from the Python Package Index, or `PyPI <https://pypi.org/>`__. Depending on the version of Python used, you may need to call it using code::`pip install <packagename>` or code::`python -m pip install <packagename`>. 
 
-Note that best practices specify that you should install packages into a "user-local" directory (normally under code::`~/.local` or your virtual environment folder). You can find this location for your version of Python using the following command.
+Note that best practices specify that you should install packages into a "user-local" directory (normally under :code:`~/.local` or your virtual environment folder). You can find this location for your version of Python using the following command.
 
 .. code:: shell
 
