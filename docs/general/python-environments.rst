@@ -8,10 +8,11 @@ Key Takeaways for using Python on the RG Testbed
 =============
 
 - The default Python is typically 3.8. We do not support python 2 usage as most packages have updated to support python 3.
-- We also have installed :code:`virtualenv` across most of our servers and as many dev boards as possible.
-    - We recommend to use either :code:`virtualenv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. 
+    - Look into `2to3 <https://docs.python.org/3/library/2to3.html>`__ if your code is still Python2!
+- :code:`virtualenv` is installed across most of our servers and as many dev boards as possible.
+    - We recommend to use either :code:`virtualenv` or :code:`venv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. Note that :code:`venv` and :code:`pip` are default packages for all Python 3.3+ installations.
 - We do not typically recommend using conda, miniconda, or anaconda as these quickly eat up home directory space. 
-    - However, if you want to use conda or miniconda please consider `using miniconda with your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your venvs.
+    - However, if you want to use conda or miniconda please consider `using miniconda with your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your conda environment and venvs.
     
 What's the difference between pip, venv, env, conda, etc?
 =============
@@ -32,7 +33,7 @@ What's the difference between pip, venv, env, conda, etc?
       - Y
       - 
     * - `pipenv <https://pypi.org/project/pipenv/>`__
-      - 
+      - 2+
       - Package, dependency, and environment manager
       - Y
       - Combines pip and virtualenv
@@ -48,14 +49,14 @@ What's the difference between pip, venv, env, conda, etc?
       - venv is a subset of virtualenv installed by default with Python 3.3+
     * - `miniconda <https://docs.conda.io/en/latest/miniconda.html>`__
       - NA
-      - 
+      - Minimalist package and environment manager 
       - N
-      - Suggested version of conda to use on RG
-    * - anaconda
+      - Suggested version of conda to use on RG; Installs its own conda/Python as well as non-Python packages
+    * - `anaconda <https://www.anaconda.com/>`__
       - NA
-      - 
+      - Package and environment manager 
       - N
-      - Not supported on RG
+      - Not supported on RG; Installs its own Python
     * - `poetry <https://python-poetry.org/>`__
       - 3.7+
       - Package and dependency manager
