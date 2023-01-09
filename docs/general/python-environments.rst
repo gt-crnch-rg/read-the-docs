@@ -120,11 +120,44 @@ Creating a new virtual environment with pipenv
 Activating/deactivating an environment
 ---------------
 
+.. code:: shell
+
+   $ pipenv shell
+   Launching subshell in virtual environment...
+    . /nethome/gburdell/.local/share/virtualenvs/gburdell-hxKrwMjp/bin/activate
+   gburdell@rg-login:~$  . /nethome/gburdell/.local/share/virtualenvs/gburdell-hxKrwMjp/bin/activate
+   (gburdell) gburdell@rg-login:~$
+   
+OR use the code::`pipenv run` method
+
+.. code:: shell
+
+   $ python3 --version
+   Python 3.6.8
+   $ pipenv run python3 --version
+   Python 3.8.13
+   
+
 Installing and using packages
 ---------------
 
+.. code:: shell
 
-
+   $ pipenv install 2to3
+   Installing 2to3...
+   Adding 2to3 to Pipfile's [packages]...
+   ✔ Installation Succeeded
+   Pipfile.lock (db4242) out of date, updating to (7d7dfd)...
+   Locking [dev-packages] dependencies...
+   Locking [packages] dependencies...
+   Building requirements...
+   Resolving dependencies...
+   ✔ Success!
+   Updated Pipfile.lock (7d7dfd)!
+   Installing dependencies from Pipfile.lock (7d7dfd)...
+     🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
+   To activate this project's virtualenv, run pipenv shell.
+   Alternatively, run a command inside the virtualenv with pipenv run.
 
 Pip
 ==============
