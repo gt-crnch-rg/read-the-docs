@@ -28,37 +28,37 @@ What's the difference between pip, venv, env, conda, etc?
       - Notes
     * - `pip <https://pypi.org/project/pip/>`__
       - All Versions
-      - Default Package installer
+      - Default package manager
       - Y
       - 
     * - `pipenv <https://pypi.org/project/pipenv/>`__
       - 
-      - Combines pip and virtualenv
+      - Package, dependency, and environment manager
       - Y
-      - 
+      - Combines pip and virtualenv
     * - `virtualenv <https://virtualenv.pypa.io/en/latest/>`__
-      - 
-      - 
-      - 
+      - 2+
+      - Environment manager
+      - Y
       - 
     * - `venv <https://docs.python.org/3/library/venv.html>`__
       - 3.3+
-      - 
-      - 
+      - Environment manager
+      - Y
       - venv is a subset of virtualenv installed by default with Python 3.3+
     * - `miniconda <https://docs.conda.io/en/latest/miniconda.html>`__
-      - 
+      - NA
       - 
       - N
       - Suggested version of conda to use on RG
     * - anaconda
-      - 
+      - NA
       - 
       - N
       - Not supported on RG
     * - `poetry <https://python-poetry.org/>`__
-      - 
-      - 
+      - 3.7+
+      - Package and dependency manager
       - N
       - Not supported on RG
 
@@ -68,22 +68,22 @@ Using venv on CRNCH RG
 Venv is the default virtual environment module included since Python 3.3, and it totally replaces `pyenv` since Python 3.6. Virtualenv has many similarities to venv in terms of its functionality, but we recommend using venv unless you need to use a version of Python older than 3.3. 
 
 Installing venv
-~~~~~~~~~~~~~~~~
+---------------
 
 Creating a new virtual environment with venv
-~~~~~~~~~~~~~~~~
+---------------
 
 Activating/deactivating an environment
-~~~~~~~~~~~~~~~~
+---------------
 
 Installing and using packages
-~~~~~~~~~~~~~~~~
+---------------
 
 Using pipvenv on CRNCH RG
 ======================
 
 Installing pipenv
-~~~~~~~~~~~~~~~~
+---------------
 Using the official installation instructions `here <https://pipenv.pypa.io/en/latest/install/#installing-pipenv>`__:
 
 .. code:: shell
@@ -91,7 +91,7 @@ Using the official installation instructions `here <https://pipenv.pypa.io/en/la
     python3 -m pip install pipenv
 
 Creating a new virtual environment with pipenv
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------
 
 .. code:: shell
 
@@ -117,10 +117,10 @@ Creating a new virtual environment with pipenv
     Alternatively, run a command inside the virtualenv with pipenv run.
 
 Activating/deactivating an environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------
 
 Installing and using packages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------
 
 
 
@@ -132,7 +132,7 @@ Conda
 ===================
 **Note:** We typically don't recommend using anaconda due to the amount of dependencies it pulls into your home directory. If you get to where you need anaconda for a project this is typically some software that should be installed in a project space or system-wide!
 
-Resources with more details on differences between different Python packages:
+Resources with more details on conda:
 
 - `Understanding conda and pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
 - `Explaining the many flavors of conda <https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda>`__
