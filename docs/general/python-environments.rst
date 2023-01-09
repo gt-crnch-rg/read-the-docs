@@ -7,7 +7,7 @@ Python Environments
 - :code:`virtualenv` is installed across most of our servers and as many dev boards as possible.
     - We recommend to use either :code:`virtualenv` or :code:`venv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. Note that :code:`venv` and :code:`pip` are default packages for all Python 3.3+ installations.
 - We do not typically recommend using conda, miniconda, or anaconda as these quickly eat up home directory space. 
-    - However, if you want to use conda or miniconda please consider `using miniconda with your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your conda environment and venvs.
+    - However, if you want to use conda or miniconda please consider `using miniconda with your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your conda environment and venvs. See the example below under the Conda section as a template.
     
 What's the difference between pip, venv, env, conda, etc?
 =============
@@ -210,6 +210,49 @@ Pip Related Documents
 Conda
 ===================
 **Note:** We typically don't recommend using anaconda due to the amount of dependencies it pulls into your home directory. If you get to where you need anaconda for a project this is typically some software that should be installed in a project space or system-wide!
+
+Miniconda Installation and Usage Example
+-----------------------
+This example shows how to use your scratch space to install and use Miniconda. We recommend this since this saves space in your home directory and because full Conda environments do not typically need to be backed up. 
+
+.. code:: shell
+
+   mkdir ~/USERSCRATCH/conda
+   gburdell@rg-login:~/tutorials$ cd ~/USERSCRATCH/conda/
+   gburdell@rg-login:~/USERSCRATCH/conda$ wget https://repo.anaconda.com/miniconda/Miniconda3-py38_22.11.1-1-Linux-x86_64.sh
+   ...
+   ... ‘Miniconda3-py38_22.11.1-1-Linux-x86_64.sh’ saved [64630241/64630241]
+   //This command uses "batch mode" to auto-accept the EULA and installs in a local folder
+   gburdell@rg-login:~/USERSCRATCH/conda$ bash Miniconda3-py38_22.11.1-1-Linux-x86_64.sh -b -p conda3_22.11.1
+   PREFIX=/nethome/gburdell/USERSCRATCH/conda/conda3_22.11.1
+   Unpacking payload ...
+   Installing base environment...
+   Downloading and Extracting Packages
+   ...
+   installation finished.
+
+   //Add the location of miniconda to your path. You should add this to your .bashrc file
+   export PATH=$PATH:~/USERSCRATCH/conda/conda3_22.11.1/bin && export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/USERSCRATCH/conda/conda3_22.11.1/lib
+
+   //Create a new conda environment on your scratch space.
+   conda create --prefix ~/USERSCRATCH/condaenv/ -y
+   Collecting package metadata (current_repodata.json): done
+   Solving environment: done
+
+   ## Package Plan ##
+   environment location: /nethome/gburdell/USERSCRATCH/condaenv
+   
+   Preparing transaction: done
+   Verifying transaction: done
+   Executing transaction: done
+   #
+   # To activate this environment, use
+   #
+   #     $ conda activate /nethome/gburdell/USERSCRATCH/condaenv
+   #
+   # To deactivate an active environment, use
+   #
+   #     $ conda deactivate
 
 Conda Related Documents
 -----------------------
