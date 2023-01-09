@@ -28,7 +28,6 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :caption: RG Workflows
    :maxdepth: 2
    :hidden:
-   :glob:
    
    general/python-environments
    general/rg-workflows
