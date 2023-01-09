@@ -209,11 +209,11 @@ Pip Related Documents
 
 Conda
 ===================
-**Note:** We typically don't recommend using anaconda due to the amount of dependencies it pulls into your home directory. If you get to where you need anaconda for a project this is typically some software that should be installed in a project space or system-wide!
+**Note:** We typically don't recommend using anaconda due to the amount of dependencies it pulls into your home directory. If you get to where you need anaconda for a project this is typically some software that should be installed in a project space or system-wide! Please consider submitting a help ticket especially if you need multiple packages that can't be satisfied with pipenv. 
 
 Miniconda Installation and Usage Example
 -----------------------
-This example shows how to use your scratch space to install and use Miniconda. We recommend this since this saves space in your home directory and because full Conda environments do not typically need to be backed up. 
+With the above caveat in mind, this example shows how to use your scratch space to install and use Miniconda. We recommend this approach since this saves space in your home directory and because full Conda environments do not typically need to be backed up. Note that you can always use :code:`conda env export --from-history>ENV.yml` to back up an installed environment. 
 
 .. code:: shell
 
@@ -235,7 +235,7 @@ This example shows how to use your scratch space to install and use Miniconda. W
    export PATH=$PATH:~/USERSCRATCH/conda/conda3_22.11.1/bin && export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/USERSCRATCH/conda/conda3_22.11.1/lib
 
    //Create a new conda environment on your scratch space.
-   conda create --prefix ~/USERSCRATCH/condaenv/ -y
+   conda create --prefix ~/USERSCRATCH/condaenv/
    Collecting package metadata (current_repodata.json): done
    Solving environment: done
 
