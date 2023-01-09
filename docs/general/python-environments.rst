@@ -8,10 +8,59 @@ Key Takeaways for using Python on the RG Testbed
 =============
 
 - The default Python is typically 3.8. We do not support python 2 usage as most packages have updated to support python 3.
-- We also have installed :code:`venv` across most of our servers and as many dev boards as possible.
-    - We recommend to use either :code:`venv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. 
+- We also have installed :code:`virtualenv` across most of our servers and as many dev boards as possible.
+    - We recommend to use either :code:`virtualenv` with :code:`pip` or :code:`pipenv` to install packages into your local virtual environments. 
 - We do not typically recommend using conda, miniconda, or anaconda as these quickly eat up home directory space. 
     - However, if you want to use conda or miniconda please consider `using miniconda with your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your venvs.
+    
+What's the difference between pip, venv, env, conda, etc?
+=============
+
+.. list-table:: **Python Environment Tools**
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - Tool Name
+      - Supported Python Versions
+      - Purpose
+      - Default on CRNCH RG
+      - Notes
+    * - `pip <https://pypi.org/project/pip/>`__
+      - All Versions
+      - Default Package installer
+      - Y
+      - 
+    * - `pipenv <https://pypi.org/project/pipenv/>`__
+      - 
+      - Combines pip and virtualenv
+      - Y
+      - 
+    * - `virtualenv <https://virtualenv.pypa.io/en/latest/>`__
+      - 
+      - 
+      - 
+      - 
+    * - `venv <https://docs.python.org/3/library/venv.html>`__
+      - 3.3+
+      - 
+      - 
+      - venv is a subset of virtualenv installed by default with Python 3.3+
+    * - `miniconda <https://docs.conda.io/en/latest/miniconda.html>`__
+      - 
+      - 
+      - N
+      - Suggested version of conda to use on RG
+    * - anaconda
+      - 
+      - 
+      - N
+      - Not supported on RG
+    * - `poetry <https://python-poetry.org/>`__
+      - 
+      - 
+      - N
+      - Not supported on RG
 
 
 Using venv on CRNCH RG
@@ -74,54 +123,7 @@ Installing and using packages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-What's the difference between pip, venv, env, conda, etc?
-=============
 
-.. list-table:: **Python Environment Tools**
-    :widths: auto
-    :header-rows: 1
-    :stub-columns: 1
-
-    * - Tool Name
-      - Supported Python Versions
-      - Purpose
-      - Installed on CRNCH RG
-      - Notes
-    * - pip
-      - All Versions
-      - Default Package installer
-      - Y
-      - 
-    * - pipenv
-      - 
-      - Combines pip and virtualenv
-      - Y
-      - 
-    * - virtualenv
-      - 
-      - 
-      - 
-      - 
-    * - venv
-      - 
-      - 
-      - 
-      - 
-    * - miniconda
-      - 
-      - 
-      - Y
-      - Suggested version of conda to use on RG
-    * - anaconda
-      - 
-      - 
-      - N
-      - Not supported on RG
-    * - poetry
-      - 
-      - 
-      - N
-      - Not supported on RG
 
 Pip
 ==============
