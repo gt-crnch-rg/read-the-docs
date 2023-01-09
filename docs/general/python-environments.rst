@@ -161,14 +161,14 @@ Pip or the `package installer for python` is the default way to install packages
 
 Note that best practices specify that you should install packages into a "user-local" directory (normally under code::`~/.local` or your virtual environment folder). You can find this location for your version of Python using the following command.
 
-code:: shell
+.. code:: shell
 
     $ python3 -m site --user-base
     /nethome/gburdell/.local
 
 Then you can install packages to your local directory as follows. Assuming a standard Python 3.8 install, the installed files can be found at code::`.local/lib/python3.8/site-packages/`.
 
-code:: shell
+.. code:: shell
 
     $ pip install --user matplotlib
        
