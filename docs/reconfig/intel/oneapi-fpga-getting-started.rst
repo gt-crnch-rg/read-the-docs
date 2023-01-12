@@ -41,7 +41,7 @@ Currently, the Rogues Gallery hosts the following Intel FPGA hardware.
       - flubber2
       -
     * -  `Bittware 520N-MX <https://www.bittware.com/fpga/520n-mx/>`__
-      - GX2800
+      - MX2100
       - 16 GB HBM
       - flubber3
       -
