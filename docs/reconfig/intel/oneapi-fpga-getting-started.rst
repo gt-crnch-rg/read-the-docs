@@ -25,20 +25,20 @@ Currently, the Rogues Gallery hosts the following Intel FPGA hardware.
       - Hosting Machine
       - Notes
     * - `Bittware IA-840F <https://www.bittware.com/fpga/ia-840f/>`__
-      - 
-      - 
+      - AGF027
+      - 128 GB DDR4
       - flubber10
       - Currently being set up!
-    * - Stratix 10 PAC
-      - 
-      - 
+    * - `Stratix 10 PAC <https://www.intel.com/content/www/us/en/products/sku/193921/intel-fpga-pac-d5005/specifications.html>`__
+      - GX2800
+      - 32 GB DDR4
       - flubber3
       - 
       
     * -  `Bittware 520N <https://www.bittware.com/fpga/520n/>`__
       - GX2800
       - 16 GB DDR4
-      -
+      - flubber2
       -
     * -  `Bittware 520N-MX <https://www.bittware.com/fpga/520n-mx/>`__
       - GX2800
