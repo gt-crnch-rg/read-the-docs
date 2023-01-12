@@ -9,10 +9,10 @@ Acknowledgments
 ---------------
 We appreciate the donation of software licenses from Intel's University Program.
 
-Xilinx FPGA Hardware
+Intel FPGA Hardware
 --------------------
 
-Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
+Currently, the Rogues Gallery hosts the following Intel FPGA hardware.
 
 .. list-table:: **Server-based Hardware**
     :widths: auto
@@ -24,12 +24,43 @@ Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
       - Memory
       - Hosting Machine
       - Notes
+    * - `Bittware IA-840F <https://www.bittware.com/fpga/ia-840f/>`__
+      - 
+      - 
+      - flubber10
+      - Currently being set up!
     * - Stratix 10 PAC
       - 
       - 
       - flubber3
       - 
-    
+      
+    * -  `Bittware 520N <https://www.bittware.com/fpga/520n/>`__
+      - GX2800
+      - 16 GB DDR4
+      -
+      -
+    * -  `Bittware 520N-MX <https://www.bittware.com/fpga/520n-mx/>`__
+      - GX2800
+      - 16 GB HBM
+      - flubber3
+      -
+    * - `Intel Arria10 PAC <https://www.intel.com/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/acceleration-card-arria-10-gx/overview.html>`__
+      - GX1150
+      - 8GB DDR4
+      - flubber2
+      -
+    * - `Bittware 385-A <https://www.bittware.com/fpga/385a/>`__
+      - GX1150
+      - 8 GB DDR3
+      - flubber2
+      - Shared via the GTRI Cipher lab
+    * - `Bittware 385-SoC <https://www.bittware.com/fpga/385a-soc/>`__
+      - SX660 (Arm+GX1150)
+      - 6 GB DDR4
+      - flubber2
+      - Shared via the GTRI CIPHER lab
+
 
 .. list-table:: **Development Board Hardware**
     :widths: auto
@@ -41,12 +72,11 @@ Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
       - Memory
       - Hosting Machine
       - Notes
-    * - TBD
-      - 
-      - 
-      - 
-      - 
-   
+    * - `Intel Arria10 DevKit <https://www.intel.com/content/www/us/en/programmable/products/boards_and_kits/dev-kits/altera/kit-a10-gx-fpga.html>`__
+      - GX1150
+      - 4 GB DDR3 
+      - NA
+      - Available upon request
 
 What tools are available?
 ----------------------------
