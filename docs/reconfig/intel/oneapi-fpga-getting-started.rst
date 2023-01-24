@@ -58,7 +58,7 @@ Currently, the Rogues Gallery hosts the following Intel FPGA hardware.
     * - `Bittware 385-SoC <https://www.bittware.com/fpga/385a-soc/>`__
       - SX660 (Arm+GX1150)
       - 6 GB DDR4
-      - flubber2
+      - flubber3
       - Shared via the GTRI CIPHER lab
 
 
