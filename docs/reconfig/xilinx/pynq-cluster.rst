@@ -4,7 +4,7 @@ PYNQ cluster
 
 .. figure:: ../../figures/images/pynq-z2-cluster.jpg
    :alt: PYNQ Z2 Cluster
-   :scale: 25
+   :scale: 10
 
 Xilinx's Python or PYNQ framework has recently been extended from supporting just PYNQ-branded boards to full devices like the Zynq and Alveo platforms. This means that PYNQ can be used on the Rogues Gallery either with PYNQ branded boards or with specific Zynq or Alveo boards. 
 
