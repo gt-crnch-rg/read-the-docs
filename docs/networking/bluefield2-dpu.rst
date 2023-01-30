@@ -15,5 +15,3 @@ Bluefield-2 Cards
    :alt: OOD Login
 
 
-Related work
-------------
