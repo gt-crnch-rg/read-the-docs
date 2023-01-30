@@ -12,5 +12,5 @@ Bluefield-2 Cards
 ------------
 
 .. image:: ../figures/images/nvidia_bf2_card.png
-   :alt: OOD Login
+   :alt: Bluefield 2 card
    :scale: 25
