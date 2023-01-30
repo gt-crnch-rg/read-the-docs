@@ -2,7 +2,7 @@
 PYNQ cluster
 =============
 
-.. figure:: ../figures/images/pynq-z2-cluster.jpg
+.. figure:: ../../figures/images/pynq-z2-cluster.jpg
    :alt: PYNQ Z2 Cluster
    :scale: 25
 
