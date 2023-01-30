@@ -11,7 +11,6 @@ NVIDIA's Bluefield-2 is the second generation of their Data Processing Unit (DPU
 Bluefield-2 Cards 
 ------------
 
-.. figure:: ../figures/general/ood/ood_login_page.PNG
+.. image:: ../figures/images/nvidia_bf2_card.png
    :alt: OOD Login
-
-
+   :scale: 25
