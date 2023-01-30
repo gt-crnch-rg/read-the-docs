@@ -37,7 +37,7 @@ Accessing the PYNQ cluster
 --------------------------
 The most up-to-date documentation is currently on the CS3220 website. Eventually it will be updated and migrated to this page.
 
-- To access the Synestia VMs see this link `<https://github.com/gt-cs3220/gt-cs3220.github.io/blob/master/access_vm_steps/access_vm_doc.md>`.
+- To access the Synestia VMs see this link `<https://github.com/gt-cs3220/gt-cs3220.github.io/blob/master/access_vm_steps/access_vm_doc.md>`__.
 - To access an FPGA from Synestia, please see this link `<https://github.com/gt-cs3220/gt-cs3220.github.io/blob/master/access_pynq_boards/updated_instructions.md>`__
 
 PYNQ Resources
