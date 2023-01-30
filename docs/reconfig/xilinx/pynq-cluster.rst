@@ -2,7 +2,7 @@
 PYNQ cluster
 =============
 
-.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/231df79ad9e70a0dbcfedad88a5b22b0681b7ea3/docs/figures/images/pynq-z2-cluster.jpg
+.. figure:: ../figures/images/pynq-z2-cluster.jpg
    :alt: PYNQ Z2 Cluster
    :scale: 25
 
