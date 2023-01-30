@@ -2,15 +2,15 @@
 PYNQ cluster
 =============
 
-.. image:: https://github.com/gt-crnch-rg/read-the-docs/blob/231df79ad9e70a0dbcfedad88a5b22b0681b7ea3/docs/figures/images/pynq-z2-cluster.jpg
+.. figure:: https://github.com/gt-crnch-rg/read-the-docs/blob/231df79ad9e70a0dbcfedad88a5b22b0681b7ea3/docs/figures/images/pynq-z2-cluster.jpg
    :alt: PYNQ Z2 Cluster
-   :scale: 50
+   :scale: 25
 
 Xilinx's Python or PYNQ framework has recently been extended from supporting just PYNQ-branded boards to full devices like the Zynq and Alveo platforms. This means that PYNQ can be used on the Rogues Gallery either with PYNQ branded boards or with specific Zynq or Alveo boards. 
 
 PYNQ Cluster
 --------------
-The PYNQ cluster is a fully scheduled and remotely accessible PYNQ-Z2 cluster, which is part of the Rogues Gallery's educational outreach mission.
+The PYNQ cluster is a fully scheduled and remotely accessible PYNQ-Z2 cluster, which is part of the Rogues Gallery's educational outreach mission. As such they are on the `cc.gatech.edu` subnet, and they need to be accessed via the synestia2 VM with Slurm.
 
 .. list-table:: 
     :widths: auto
@@ -32,6 +32,13 @@ The PYNQ cluster is a fully scheduled and remotely accessible PYNQ-Z2 cluster, w
       - 12
       - NA
       - Ubuntu 20.04 VM for FPGA tools
+      
+Accessing the PYNQ cluster
+--------------------------
+The most up-to-date documentation is currently on the CS3220 website. Eventually it will be updated and migrated to this page.
+
+- To access the Synestia VMs see this link `<https://github.com/gt-cs3220/gt-cs3220.github.io/blob/master/access_vm_steps/access_vm_doc.md>`.
+- To access an FPGA from Synestia, please see this link `<https://github.com/gt-cs3220/gt-cs3220.github.io/blob/master/access_pynq_boards/updated_instructions.md>`__
 
 PYNQ Resources
 --------------
