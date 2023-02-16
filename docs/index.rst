@@ -79,6 +79,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :maxdepth: 2
    :hidden:
    :glob:
+   networking/cuquantum-and-qoda.rst
    
 .. toctree::
    :caption: Reconfigurable Computing
