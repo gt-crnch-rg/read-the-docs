@@ -56,6 +56,6 @@ RISC-V images can currently be run with QEMU - we recommend using `standard Ubun
 ISA Simulators
 --------------
 
-- `Spike <>`__
+- `Spike <https://github.com/riscv-software-src/riscv-isa-sim>`__
 - `Dromajo <https://github.com/chipsalliance/dromajo>`__
 
