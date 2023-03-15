@@ -36,11 +36,11 @@ You can verify that the resources have been allocated using the
                   382     debug interact gburdell3  R       0:04      1 octavius1
 
 Finally, you can access the interactive job with a bash shell using
-``srun``:
+``salloc`` and ``ssh``. We no longer recommend using srun based on recent SchedMD guidance.
 
 .. code:: shell
 
-   $ srun --jobid=<JOB_ID_ALLOCATED> --pty bash -i
+   $ salloc --jobid=<JOB_ID_ALLOCATED> --pty bash -i
 
 Typically you do not need to include the "jobid" parameter for ``srun``
 after using ``salloc`` but is included here for illustration.
