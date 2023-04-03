@@ -1,13 +1,13 @@
 =======================
-Singularity
+Singularity / Apptainer
 =======================
 
-Singularity is often used for more high-performance or AI-focused environments. It has a few key differences from Docker:
+Singularity (or Apptainer) is often used for more high-performance or AI-focused environments. It has a few key differences from Docker:
 
 - Singularity has traditionally not required any kind of root or sudo privileges to execute. 
 - Singularity containers typically compress all the layers of a built image whereas Docker uses "layers". The tradeoff is that Docker images tend to be much larger, but you can potentially rollback to an earlier version of the container. 
 
-For initial development and "system oriented" developments, it is typically better to use Docker containers. For HPC systems or for usage on the CRNCH RG testbed Singularity CE is suggested. 
+For initial development and "system oriented" developments, it is typically better to use Docker containers. For HPC systems or for usage on the CRNCH RG testbed Singularity CE or Apptainer is suggested. 
 
 Why are there two versions of Singularity?
 -----------------------------
