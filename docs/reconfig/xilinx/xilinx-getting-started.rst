@@ -34,7 +34,7 @@ Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
       - 
       - 
       - flubber5
-      - 3 boards (1 currently)
+      - 2 boards
     * - Xilinx SmartSSD
       - 
       - 
