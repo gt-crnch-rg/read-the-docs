@@ -235,7 +235,13 @@ should be the following:
 For more information on Open MPI, please go here: `Open
 MPI <https://www.open-mpi.org/>`__
 
+Slurm example commands
+----------------------
+TBD
+
+
 Slurm with MIG
 --------------
+TBD but Slurm does not currently play nicely with MIG
 
 - `NVIDIA's MIG Discovery page <https://gitlab.com/nvidia/hpc/slurm-mig-discovery>`__
