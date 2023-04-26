@@ -63,9 +63,9 @@ Software and Tools
     * - Ubuntu 20.04
       - 5.4.0
       - GCC 7.5
-      - `CUDA 11.5 <>`__, CUDA 10.2
+      - NVIDIA HPC SDK 23.3, CUDA 12.0
       - 
-      - DOCA 1.4.0079
+      - DOCA 1.5.1
 
 How do I get to Quorra?
 =========================
@@ -82,6 +82,16 @@ To request an allocation on Quorra using slurm:
     salloc -t 1:00:00 -p rg-gpu -w quorra2
     //SSH to the resource
     ssh quorra2
+    
+    
+The local modules for NVIDIA HPC SDK should load automatically. However if they do not you can run ". /etc/profile.d/y02_rg_local_modules.sh" to pull in all the local modulepaths.
+
+Using NVIDIA SDK
+=========================
+
+.. code::
+
+    module load nvhpc/23.3
 
 MIG
 ---
