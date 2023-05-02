@@ -20,6 +20,22 @@ Please see our `separate installation page <https://github.com/gt-crnch-rg/read-
 Running a Singularity container on CRNCH RG
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. code:: shell
+
+    apptainer run --nv /projects/tools/x86_64/containers/nvhpc_23.1_devel.sif
+
+.. code:: shell
+
+  bootstrap: docker
+  from: nvcr.io/nvidia/cuquantum-appliance:22.11
+  
+  %labels
+    Maintainer RG Admin
+    Version 22.11
+  %post
+    pip install jupyterlab
+    pip install pipenv
+
 Running a Singularity container on PACE Phoenix
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
