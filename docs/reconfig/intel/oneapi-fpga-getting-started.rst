@@ -96,12 +96,18 @@ There are also toolkits for `HPC <https://software.intel.com/en-us/oneapi/hpc-ki
 
 `Intel's Open Fabric Stack <https://www.intel.com/content/www/us/en/products/details/fpga/platforms/open-fpga-stack.html>`__ is supported for specific Intel-branded boards like the Arria 10 and Stratix 10 PAC cards in the Flubber nodes. 
 
+Online Tutorials
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* `Intel's oneAPI and SYCL tutorials <https://www.intel.com/content/www/us/en/developer/tools/oneapi/training/overview.html>`__ - see the "Essentials of SYCL" and "FPGA Development Flow Using Intel oneAPI Base Toolkit".
+* `A general SYCL tutorial <https://sycl.tech/learn/>`__ - oneAPI is a variant of SYCL with some Intel-specific implementation features added.
+* `SYCL tutorial from SYCLcon 2022 <https://www.youtube.com/watch?v=IeOnlBXTdn4>`__
+
 Useful Documents
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* `oneAPI Programming Guide <https://software.intel.com/en-us/oneapi-programming-guide>`_
-* `Intel FPGA Optimization Guide <https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/2023-1/overview.html>`__
-* `DPC++ book <https://jamesreinders.com/dpcpp/>`_
-* `Intel Github Basekit oneAPI code samples <https://github.com/intel/basekit-code-samples>`_
+* `oneAPI Programming Guide <https://software.intel.com/en-us/oneapi-programming-guide>`_ - a general reference for OneAPI and Intel's implementation of SYCL. 
+* `Intel FPGA Optimization Guide <https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/2023-1/overview.html>`__ - the key reference for optmizing code for Intel FPGAs
+* `DPC++ book <https://link.springer.com/book/10.1007/978-1-4842-5574-2>`_ - An Open Source Data Parallel C++ book
+* `Intel Github OneAPI code samples <https://github.com/oneapi-src/oneAPI-samples>`_
 * `Tech.Decoded webinars <https://techdecoded.intel.io>`_
 
 OneAPI Related Videos and Webinars
