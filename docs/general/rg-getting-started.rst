@@ -53,13 +53,11 @@ Note that all machines have a **.crnch.gatech.edu** suffix and some examples inc
 -  **rg-neuro-dev:** VM for neuromorphic tools
 -  Please see `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-hardware.html>`__ for a complete list of available machines in the RG testbed
 
-What's this about the VPN?
+VPN Requirements (for GT users only)
 --------------------------
-You can access all CRNCH resources using login nodes like rg-login. However, you can also use GT's `VPN <https://faq.oit.gatech.edu/content/how-do-i-get-started-campus-vpn>`__ solution as an alternative to access VMs and nodes directly. Note that this may require that you set up two-factor authentication on your phone and link it with your account name. You shouldn't need to use the VPN to access Rogues Gallery resources and materials, but for special requirements please email us at *crnch-rg-help@cc.gatech.edu*. 
+You can access all CRNCH resources using login nodes like `rg-login` or the Open OnDemand web interface. However, you can also use GT's `VPN <https://faq.oit.gatech.edu/content/how-do-i-get-started-campus-vpn>`__ solution as an alternative to access some VMs and nodes directly. Note that this may require that you set up two-factor authentication on your phone and link it with your account name. You shouldn't need to use the VPN to access Rogues Gallery resources and materials, but for special requirements please email us at *crnch-rg-help@cc.gatech.edu*. 
 
-Using the Georgia Tech VPN
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-Other Georgia Tech resources like PACE's Phoenix cluster require the usage of the VPN. 
+Other Georgia Tech resources like PACE's Phoenix cluster require the usage of the VPN, and you can read more about these requirements at their `site <https://docs.pace.gatech.edu/phoenix_cluster/logon_phnx/>`__
 
 How do I work with *novel architecture of interest X*?
 ------------------------------------------------------
