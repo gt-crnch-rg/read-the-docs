@@ -17,7 +17,7 @@ For GT users, please put your research advisor or down one of the testbed person
 How do I Access RG machines?
 --------------------------------
 
-**NOTE: You should use your GT Passport username and password to access all CRNCH RG nodes and resources!**
+**NOTE: You should use your GT Passport username (e.g, gburdell3) and password to access all CRNCH RG nodes and resources!**
 
 Once you receive a note that your account has been approved, you can test your login to the testbed. To access Rogues Gallery machines from off campus you need to either
 
@@ -31,12 +31,12 @@ For SSH, you should use your Georgia Tech account username and password to log i
 
 .. code:: shell
    
-   <yourmachine>$ ssh <yourusername>@rg-login.crnch.gatech.edu
+   <yourmachine>$ ssh <your-gt-acctname>@rg-login.crnch.gatech.edu
    rg-login.crnch.gatech.edu
    =========================
 
    This is the main RG login node. From this node you can access all CRNCH resources. To see a complete list of available hardware please visit: https://gt-crnch-rg.readthedocs.io/en/main/general/rg-hardware.html
-   <username>@#rg-login$
+   <your-gt-acctname>@#rg-login$
 
 Once you've logged in, you can use Slurm to request other nodes within the testbed. See more information on Slurm at `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm.html>`__.
 
