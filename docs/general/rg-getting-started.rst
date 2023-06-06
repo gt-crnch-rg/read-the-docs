@@ -20,7 +20,7 @@ How do I Access RG machines?
 
 To access Rogues Gallery machines from off campus you need to either
 
-1) SSH to testbed nodes
+1) SSH to the testbed via the login node from a terminal session.
 
 OR
 
