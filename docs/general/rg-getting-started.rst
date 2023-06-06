@@ -13,12 +13,13 @@ For GT users, please put your research advisor or down one of the testbed person
 
 **NOTE:** For GT faculty or staff looking to add new *external* users, it is very helpful to us if you can sponsor the users as `Passport guests <https://support.cc.gatech.edu/faq/how-do-i-sponsor-guest-accounts>`__. Then the above form can be filled out with the external user's guest username which helps to streamline the access process. You can sponsor a guest account with Passport for up to one year and then renew the user if they are still an active collaborator. 
 
+
 How do I Access RG machines?
 --------------------------------
 
 **NOTE: You should use your GT Passport username and password to access all CRNCH RG nodes and resources!**
 
-To access Rogues Gallery machines from off campus you need to either
+Once you receive a note that your account has been approved, you can test your login to the testbed. To access Rogues Gallery machines from off campus you need to either
 
 1) SSH to the testbed via the login node from a terminal session.
 
@@ -37,9 +38,12 @@ For SSH, you should use your Georgia Tech account username and password to log i
    This is the main RG login node. From this node you can access all CRNCH resources. To see a complete list of available hardware please visit: https://gt-crnch-rg.readthedocs.io/en/main/general/rg-hardware.html
    <username>@#rg-login$
 
-Once you've logged in, you can use Slurm to request other nodes within the testbed.
+Once you've logged in, you can use Slurm to request other nodes within the testbed. See more information on Slurm at `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm.html>`__.
 
-**Some of the Rogues Gallery machines include:**
+Note that you can also use VSCode to log into the Rogues Gallery via its terminal functionality. See `this page for more details <https://gt-crnch-rg.readthedocs.io/en/main/general/visual-studio-code.html>`__.
+
+What machines are available in the Rogues Gallery?
+--------------------------------------------------
 
 Note that all machines have a **.crnch.gatech.edu** suffix and some examples include:
 
