@@ -25,20 +25,30 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    general/contributing
 
 .. toctree::
-   :caption: RG Workflows
+   :caption: RG Getting Started Topics
+   :maxdepth: 2
+   :hidden:
+  
+   general/using-slurm
+   general/open-on-demand
+   general/visual-studio-code
+   general/python-environments
+   general/using-jupyter-notebooks
+
+.. toctree::
+   :caption: RG Advanced Topics
    :maxdepth: 2
    :hidden:
    
-   general/python-environments
-   general/rg-workflows
    general/using-scrontab-slurm
-   general/using-slurm
-   general/using-slurm-examples
-   general/open-on-demand
    general/using-gui-with-vnc
-   general/using-gui-with-x2go
-   general/visual-studio-code
-   general/using-jupyter-notebooks
+
+.. toctree::
+   :caption: RG Advanced Topics
+   :maxdepth: 2
+   :hidden:  
+   
+   general/rg-workflows
    
 .. toctree::
    :caption: Novel HPC

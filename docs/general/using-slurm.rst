@@ -2,6 +2,8 @@
 Using Slurm with RG Systems
 ============
 
+See `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm-examples.html>`__ with examples of how to use Slurm to request jobs on the testbed!
+
 What is Job Scheduling and Why Do We Use It?
 --------------------------------------------
 Job scheduling helps us to manage a limited number of novel resources with an active 
