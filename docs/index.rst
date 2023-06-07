@@ -44,7 +44,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    general/using-gui-with-vnc
 
 .. toctree::
-   :caption: RG Advanced Topics
+   :caption: RG Workflows
    :maxdepth: 2
    :hidden:  
    
