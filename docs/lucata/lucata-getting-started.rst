@@ -1,24 +1,31 @@
-*Last updated: 3/24/2022*
-
 Lucata Pathfinder Getting Started
 ============
 
-The Rogues Gallery hosts two systems from Lucata (formerly known as Emu Technology): The Gen1 Emu Chick, an 8-node desktop-style system, and the Lucata Pathfinder, a two-chassis system with 16 nodes and 24 cores in each node for a total of 384 cores. We currently also have 2 Pathfinder chassis on loan from Lucata, which are denoted as PF<2-3>.
+.. figure:: ../figures/lucata/pathfinder_chassis_top.jpg
+   :alt: Lucata Pathfinder Chassis Top View
+   :scale: 10
+
+
+The Rogues Gallery hosts two distinct systems from Lucata (formerly known as Emu Technology): The Gen1 Emu Chick, an 8-node desktop-style system, and the Lucata Pathfinder, a four-chassis system with 16 nodes and 24 cores in each node for a total of 768 cores across the Pathfinder cluster.
 
 Latest Updates
 -------------
-* Slurm will be deployed in Summer 2022.
+* The 23.04 Pathfinder tools have been released and made the default on the Rogues Gallery testbed. See `the 3.2 Programming Guide here <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/main/docs/pathfinder/LucataProgGuide-v3.2.pdf>`__ (RG user account login to GT Github required) for the latest information on this toolset release.
+
+Suggested Background and First Steps
+-------------
+
 
 Using the EMU simulation and compiler tools
 -------------
 
-The current toolset, documentation, and examples are available on the rg-emu-dev VM and other nodes as a module. Note that the Pathfinder currently requires the use of the latest 22.02 tools.
+The current toolset, documentation, and examples are available on the rg-emu-dev VM and other nodes as a module. Note that it is recommended to use the latest version of the Pathfinder toolset.
 
 
 * **rg-login.crnch.gatech.edu**: primary login VM for Rogue’s Gallery. Use this VM to log in to another node for testing and simulation from off campus.
 * **rg-emu-dev.crnch.gatech.edu**: VM for **Lucata compilation and simulation**
+* **hawksbill.crnch.gatech.edu**: Large-memory, general-purpose node for larger Lucata-based simulations
 * **pf<0-3>.crnch.gatech.edu**: Lucata Pathfinder chassis for HW execution
-* **karrawingi-login.crnch.gatech.edu**: The main EMU Chick node, used for login and transferring files to a specific node/set of nodes. **NOTE:** You cannot run any code on this node and will need to copy your code to n0-n7 on the Emu Chick machine. 
 
 Lucata Workflow
 --------------
