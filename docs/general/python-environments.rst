@@ -75,15 +75,23 @@ Creating a new virtual environment with venv
     
     $ mkdir myproject
     $ python -m venv myproject
+    # OR to create a specific Python version venv use the following command instead
+    $ mkdir my311project
+    $ python3.11 -m venv my311project
+    
 
 Activating/deactivating an environment
 ---------------
 
 .. code:: shell
     
-    $ source myproject/bin/activate
+    $> source myproject/bin/activate
     //To leave type exit  
     (myproject)gburdell@rg-login:$ exit
+    //For our 3.11 version venv above
+    $> source my311project/bin/activate
+    (my311project) gburdell@rg-login:~$ python -V
+    Python 3.11.2
 
 Installing and using packages
 ---------------
