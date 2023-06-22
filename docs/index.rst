@@ -105,6 +105,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    reconfig/vortex/vortex-riscv-gpgpu
    reconfig/xilinx/vitis_ai
    reconfig/intel/oneapi-fpga-getting-started
+   reconfig/intel/oneapi-fpga-crnch-workflow
    reconfig/fpga_power_measurement
 
 .. toctree::
