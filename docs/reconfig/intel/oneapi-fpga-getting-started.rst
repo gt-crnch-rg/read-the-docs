@@ -14,6 +14,8 @@ There are several resources for using oneAPI both online and at Georgia Tech men
 3) Work through Tier 1 and 2 of the `OneAPI FPGA code samples tutorial <https://www.intel.com/content/www/us/en/developer/articles/code-sample/explore-dpcpp-through-intel-fpga-code-samples.html>`__. Learning about the basics up to loop unrolling is highly recommended.
 4) Test out your own code, using the `Intel FPGA optimization guide <https://www.intel.com/content/www/us/en/docs/oneapi-fpga-add-on/optimization-guide/2023-1/overview.html>`__ as a reference!
 
+See more details on a workflow for testing out emulation and building bitstreams with RG platforms at `this page <>`__.
+
 Acknowledgments
 ---------------
 We appreciate the donation of software licenses from Intel's University Program.
