@@ -64,6 +64,8 @@ $> cd Tutorials/Features/loop_unroll/
 
 //Replace the `selector_v;` constructors as follows with `selector();`
 ```
+loop_unroll$ vim src/loop_unroll.cpp
+...
 #if FPGA_SIMULATOR
   //auto selector = sycl::ext::intel::fpga_simulator_selector_v;
   auto selector = sycl::ext::intel::fpga_simulator_selector();
@@ -134,9 +136,17 @@ PASSED: The results are correc
 ```
 
 ## Simulation with ModelSim and Questa
-Right now we don't support this.
+Right now we don't support this step since we don't .
 
 ## Investigating the Optimization Report
+
+```
+make report
+[ 50%] Building CXX object src/CMakeFiles/loop_unroll_report.a.dir/loop_unroll.cpp.o
+[100%] Linking CXX executable ../loop_unroll_report.a
+[100%] Built target loop_unroll_report.a
+[100%] Built target report
+```
 
 ## Building an FPGA Bitstream
 
