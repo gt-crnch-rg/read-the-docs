@@ -60,10 +60,10 @@ $> cd oneAPI-samples/DirectProgramming/C++SYCL_FPGA/
 $> cd Tutorials/Features/loop_unroll/
 ```
 
-**NOTE:** Right now you have to edit the main source file to change how selectors are defined. This seems to be a bug with newer toolchains.
+**NOTE:** Right now you have to manually edit the main source file to change how selector constructors are defined. This seems to be a bug with newer toolchains.
 
+//Replace the `selector_v;` constructors as follows with `selector();`
 ```
-//Replace the _v selector constructors as follows.
 #if FPGA_SIMULATOR
   //auto selector = sycl::ext::intel::fpga_simulator_selector_v;
   auto selector = sycl::ext::intel::fpga_simulator_selector();
