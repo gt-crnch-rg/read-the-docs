@@ -2,7 +2,7 @@
 
 Here we will detail how to run one of the Intel OneAPI samples as a guide for how to use the Intel FPGAs on the CRNCH Rogues Gallery.
 
-We will use the public [sycl-fpga-vector repo](https://github.com/gt-crnch-rg/sycl-fpga-vector-add) as an example, but we also recommend selecting one of the official OneAPI DirectProgramming examples from [this repo](https://www.intel.com/content/www/us/en/developer/articles/code-sample/explore-dpcpp-through-intel-fpga-code-samples.html). This workflow roughly follows the [`fpga_compile` example](https://github.com/oneapi-src/oneAPI-samples/tree/master/DirectProgramming/C%2B%2BSYCL_FPGA/Tutorials/GettingStarted/fpga_compile) from the code samples.
+We recommend selecting one of the official OneAPI DirectProgramming examples from [this repo](https://www.intel.com/content/www/us/en/developer/articles/code-sample/explore-dpcpp-through-intel-fpga-code-samples.html). This workflow roughly follows the [`fpga_compile` example](https://github.com/oneapi-src/oneAPI-samples/tree/master/DirectProgramming/C%2B%2BSYCL_FPGA/Tutorials/GettingStarted/fpga_compile) from the code samples.
 
 ## General Workflow
 
@@ -20,7 +20,6 @@ We will use the public [sycl-fpga-vector repo](https://github.com/gt-crnch-rg/sy
 | flubber3    | Stratix 10 HBM, S10       |  Bittware 520N-MX, Intel S10 PAC               |
 | flubber9    | Agilex               |   Bittware IA-840F              |
 --------------------------------------------------------
-
 
 ## FPGA Emulation
 
