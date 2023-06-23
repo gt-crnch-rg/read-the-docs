@@ -59,7 +59,7 @@ $> cd oneAPI-samples/DirectProgramming/C++SYCL_FPGA/
 $> cd Tutorials/Features/loop_unroll/
 ```
 
-NOTE: Right now you have to edit the main source file to change how selectors are defined:
+**NOTE:** Right now you have to edit the main source file to change how selectors are defined. This seems to be a bug with newer toolchains.
 
 ```
 //Replace the _v selector constructors as follows.
@@ -73,6 +73,7 @@ NOTE: Right now you have to edit the main source file to change how selectors ar
   //auto selector = sycl::ext::intel::fpga_emulator_selectorv_;
   auto selector = sycl::ext::intel::fpga_emulator_selector();
 #endif
+```
 
 Then use cmake and make to run the FPGA simulation step. 
 
