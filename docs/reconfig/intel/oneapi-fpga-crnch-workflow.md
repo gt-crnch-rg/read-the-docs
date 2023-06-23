@@ -50,13 +50,29 @@ Then source the Intel OneAPI tools to compile your code:
 
 ```
 
-Checkout the sample codes and jump to the loop unrolling example
+Checkout the sample codes and jump to the loop unrolling example. We suggest using your `USERSCRATCH` directory since it is faster NVMe storage. 
 ```
-$> git clone https://github.com/oneapi-src/oneAPI-samples.git
+$> cd USERSCRATCH
+USERSCRATCH$> git clone https://github.com/oneapi-src/oneAPI-samples.git
 //Go to the top-level of the FPGA tutorial codes
 $> cd oneAPI-samples/DirectProgramming/C++SYCL_FPGA/
 $> cd Tutorials/Features/loop_unroll/
 ```
+
+NOTE: Right now you have to edit the main source file to change how selectors are defined:
+
+```
+//Replace the _v selector constructors as follows.
+#if FPGA_SIMULATOR
+  //auto selector = sycl::ext::intel::fpga_simulator_selector_v;
+  auto selector = sycl::ext::intel::fpga_simulator_selector();
+#elif FPGA_HARDWARE
+  //auto selector = sycl::ext::intel::fpga_selector_v;
+  auto selector = sycl::ext::intel::fpga_selector();
+#else  // #if FPGA_EMULATOR
+  //auto selector = sycl::ext::intel::fpga_emulator_selectorv_;
+  auto selector = sycl::ext::intel::fpga_emulator_selector();
+#endif
 
 Then use cmake and make to run the FPGA simulation step. 
 
