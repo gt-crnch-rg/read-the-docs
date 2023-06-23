@@ -56,6 +56,7 @@ $> cd USERSCRATCH
 USERSCRATCH$> git clone https://github.com/oneapi-src/oneAPI-samples.git
 //Go to the top-level of the FPGA tutorial codes
 $> cd oneAPI-samples/DirectProgramming/C++SYCL_FPGA/
+//Go to the directory for the loop unrolling tutorial
 $> cd Tutorials/Features/loop_unroll/
 ```
 
@@ -75,8 +76,6 @@ $> cd Tutorials/Features/loop_unroll/
 #endif
 ```
 
-Then use cmake and make to run the FPGA simulation step. 
-
 You can check the available board support packages using the aoc command: 
 ```
 aoc -list-boards
@@ -92,9 +91,11 @@ Board list:
      Memories:      device, host
 ```
 
-Then target the Intel PAC Stratix 10 board
+Then use cmake and make to run the FPGA simulation step targeting the S10 board
+
 ```
-@rg-fpga-dev1:loop_unroll/build$ cmake .. -DFPGA_DEVICE=pac_s10
+@rg-fpga-dev1:loop_unroll$ mkdir build && cd build
+loop_unroll/build$ cmake .. -DFPGA_DEVICE=pac_s10
 -- Configuring the design with the following target: pac_s10
 -- Configuring done
 -- Generating done
