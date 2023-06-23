@@ -71,7 +71,7 @@ $> cd Tutorials/Features/loop_unroll/
   //auto selector = sycl::ext::intel::fpga_selector_v;
   auto selector = sycl::ext::intel::fpga_selector();
 #else  // #if FPGA_EMULATOR
-  //auto selector = sycl::ext::intel::fpga_emulator_selectorv_;
+  //auto selector = sycl::ext::intel::fpga_emulator_selector_v;
   auto selector = sycl::ext::intel::fpga_emulator_selector();
 #endif
 ```
