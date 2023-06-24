@@ -106,7 +106,7 @@ loop_unroll/build$ cmake .. -DFPGA_DEVICE=pac_s10
 
 And compile the emulation target with make
 ```
-$> make fpga_emu
+loop_unroll/build$ make fpga_emu
 [ 50%] Building CXX object src/CMakeFiles/loop_unroll.fpga_emu.dir/loop_unroll.cpp.o
 [100%] Linking CXX executable ../loop_unroll.fpga_emu
 [100%] Built target loop_unroll.fpga_emu
@@ -140,13 +140,22 @@ Right now we don't support this step since we don't .
 
 ## Investigating the Optimization Report
 
+As with the emulation step, you can generate an optimization report which provides useful statistics about your design for a particular board. This is run as follows:
+
 ```
-make report
+loop_unroll/build$ make report
 [ 50%] Building CXX object src/CMakeFiles/loop_unroll_report.a.dir/loop_unroll.cpp.o
 [100%] Linking CXX executable ../loop_unroll_report.a
 [100%] Built target loop_unroll_report.a
 [100%] Built target report
 ```
+
+To look at your report on the CRNCH servers, it is probably easiest to use the Open OnDemand session. To do this, you can:
+
+1) Log into the Open OnDemand instance at rg-ood.crnch.gatech.edu using the instructions [shared here](https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html).
+2) Click on the Reconfig tab and select "Virtual Desktop".
+3) Hit "Launch" on the next page and wait for your VNC session to start.
+4) Then use the GUI to navigate to your report (it will be located at `loop_unroll/build/loop_unroll_report.prj/reports/report.html`).
 
 ## Building an FPGA Bitstream
 
