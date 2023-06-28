@@ -6,17 +6,21 @@ This page describes using the "Vivado Flow" with Alveo boards as well as other p
 Most of the relevant documentation for "custom" flows can be found at this `Xilinx support link <https://support.xilinx.com/s/article/71754?language=en_US>`__.
 
 **VERY IMPORTANT NOTE**
+
 The Alveo boards are mostly restricted to Vitis programming flow in other centers. It is IMPERATIVE that you do not program HBM-enabled Alveo boards incorrectly as they will need to be RMAed to be fixed. This is ultimately a Xilinx "documentation bug", but we have had this happen to 2-3 of our cards which causes long downtimes 
 
-This bug is described in [Support Article 72926](https://support.xilinx.com/s/article/72926). The important note is that you need to follow the 2 steps listed:
+This bug is described in `Support Article 72926 <https://support.xilinx.com/s/article/72926>`__. The important note is that you need to follow the 2 steps listed:
 
-```
-//We have done Step 1.
-2. In the Vivado design, connect pin D32 to the CATTRIP output from the HBM IP or connect to GND
-3. Add the following constraints (do not include the pulldown constraint if connecting to the CATTRIP output from the HBM IP):
-```
+1. In the Vivado design, connect pin D32 to the CATTRIP output from the HBM IP or connect to GND
+2. Add the following constraints (do not include the pulldown constraint if connecting to the CATTRIP output from the HBM IP):
 
-If you do happen to fail to follow these instructions, we can try the steps on the [Alveo Debugging Page](https://xilinx.github.io/Alveo-Cards/master/debugging/build/html/docs/card-not-recognized.html). However, we have had to RMA several of our U280s in the past 1-2 years due to this bug and user error.
+.. code::
+
+  set_property PACKAGE_PIN D32              [get_ports "HBM_CATTRIP"];# Bank  75 VCCO - VCC1V8   - IO_L17P_T2U_N8_AD10P_75
+  set_property IOSTANDARD  LVCMOS18         [get_ports "HBM_CATTRIP"];# Bank  75 VCCO - VCC1V8   - IO_L17P_T2U_N8_AD10P_75
+  set_property PULLDOWN TRUE                      [get_ports "HBM_CATTRIP"];
+
+If you do happen to fail to follow these instructions, we can try the steps on the `Alveo Debugging Page <https://xilinx.github.io/Alveo-Cards/master/debugging/build/html/docs/card-not-recognized.html>`__. However, we have had to RMA several of our U280s in the past 1-2 years due to this bug and user error.
 
 Alveo Documentation
 ~~~~~~~~~~~~~~~~~~~
@@ -26,12 +30,12 @@ We have moved the Alveo documentation, XDC (constraint files), and related tools
 General Locations of Board Files
 --------------------------------
 
-Xilinx now posts their board files in a Github repos for the [Board Store](https://github.com/Xilinx/XilinxBoardStore] and [Vivado example designs](https://github.com/Xilinx/XilinxCEDStore).
+Xilinx now posts their board files in a Github repos for the `Board Store <https://github.com/Xilinx/XilinxBoardStore>`__ and `Vivado example designs <https://github.com/Xilinx/XilinxCEDStore>`__.
 
 U50 Boards
 ^^^^^^^^^^
 
-Vivado Flow requires a special Alveo programming cable that is attached via USB to the host server. Detailed in the [Alveo Programming Cable Guide](https://www.xilinx.com/content/dam/xilinx/support/documents/boards_and_kits/accelerator-cards/ug1377-alveo-programming-cable-user-guide.pdf).
+Vivado Flow requires a special Alveo programming cable that is attached via USB to the host server. This is detailed in the `Alveo Programming Cable Guide <https://docs.xilinx.com/r/en-US/ug1377-alveo-programming-cable-user-guide>`__.
 
 TBD - need links to the user guide and programming guide
 
