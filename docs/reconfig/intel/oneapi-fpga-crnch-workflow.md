@@ -14,7 +14,7 @@ We recommend selecting one of the official OneAPI DirectProgramming examples fro
 
 ### Which machines can support this flow?
 
-| Server Name | Devices              | Specific Boards |
+| Server Name | Intel FPGA model     | FPGA Accelerator Platform Name |
 | ----------- | -------------------- | --------------- |
 | flubber2    | Arria 10, Stratix 10 (S10) |  Bittware 385, Bittware 520N |
 | flubber3    | Stratix 10 HBM, S10       |  Bittware 520N-MX, Intel S10 PAC               |
