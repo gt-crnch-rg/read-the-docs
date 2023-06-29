@@ -116,9 +116,15 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    
    riscv/rg-riscv-hardware.rst
    reconfig/vortex/vortex-riscv-gpgpu.rst
+
+.. toctree::
+   :caption: Techfee Systems
+   :maxdepth: 2
+   :hidden:
+   :glob:
    
-
-
+   gpu/frozone-omnipath.rst
+   
 .. toctree::
    :caption: Miscellaneous
    :maxdepth: 2
