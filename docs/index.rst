@@ -123,7 +123,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :hidden:
    :glob:
    
-   gpu/frozone-omnipath.rst
+   techfee/frozone-omnipath.rst
    
 .. toctree::
    :caption: Miscellaneous
