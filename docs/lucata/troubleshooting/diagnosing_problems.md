@@ -41,7 +41,7 @@ There are a few things in the output that you should pay attention to:
 
 If you need to reconfigure the system, see these pages:   
 - [System-Reconfiguration](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/config_and_running/system_reconfig.md) 
-- [Bringing up a multichassis system]([https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/multichassis_start.md](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/config_and_running/multichassis_start.md)
+- [Bringing up a multichassis system](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/config_and_running/multichassis_start.md)
 
 ### Are SRIO ports running well?
 Use
@@ -113,7 +113,7 @@ For more information, see this page: [Running programs with emu_multinode_exec](
 
 ### Manually terminating a program
 
-If you suspect a program is hung and would like to terminate a program, the best thing to do is to use
+If you suspect a program is hung and would like to terminate a program, the best thing to do is to open another terminal (via tmux or screen) and run:
 ```
 emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tool --start_checkpointing'
 ```
