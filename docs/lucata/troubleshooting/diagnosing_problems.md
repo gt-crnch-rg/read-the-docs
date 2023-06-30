@@ -41,7 +41,7 @@ There are a few things in the output that you should pay attention to:
 
 If you need to reconfigure the system, see these pages:   
 - [System-Reconfiguration](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/config_and_running/system_reconfig.md) 
-- [Bringing up a multichassis system](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/multichassis_start.md)
+- [Bringing up a multichassis system]([https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/multichassis_start.md](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/config_and_running/multichassis_start.md)
 
 ### Are SRIO ports running well?
 Use
