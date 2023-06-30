@@ -115,7 +115,7 @@ For more information, see this page: [Running programs with emu_multinode_exec](
 
 If you suspect a program is hung and would like to terminate a program, the best thing to do is to use
 ```
-emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tools --start_checkpointing'
+emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tool --start_checkpointing'
 ```
 to gracefully terminate a program.  This will take a few seconds to do, but it generally terminate the program cleanly.
 
@@ -137,7 +137,7 @@ Check to make sure **ALL** `emu_init`, `emu_memory_check`, `emu_multinode_exec`,
 ```
 emu_system_cmd -p -s {0..#(N-1)} -- 'pkill -9 emu.*handler'
 ```
-will kill all of the `emu_handler_and_loader` and `emu_seq_handler_background` processes (the `.*` is a regexp to match them).  **Note that a more graceful exit using `emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tools --start_checkpointing'` is always preferred**
+will kill all of the `emu_handler_and_loader` and `emu_seq_handler_background` processes (the `.*` is a regexp to match them).  **Note that a more graceful exit using `emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tool --start_checkpointing'` is always preferred**
 
 If you don't think a reboot is necessary, you should ensure the following files aren't around:
 ```
