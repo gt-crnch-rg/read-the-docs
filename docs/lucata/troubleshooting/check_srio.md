@@ -1,3 +1,5 @@
+**NOTE:** As a normal user, you should not have to check SRIO status. Please ask an admin if you think this needs to be checked.
+
 There are functions in `emu_chassis_start` and `emu_chassis_reconfig` that will handle the SRIO link checking automatically.  The result of the checking can be found in `/var/log/emutechnology/check_srio_links.log`
 
 On the chassis controller, use `emu_switch_diagnostic --port_error_status -1` to check the error status registers of all of the SRIO switch chips.  If the errors were transient and occurred during initialization and were not cleared, they can be cleared manually by using `emu_switch_diagnostic --clear_port_errors -1`
