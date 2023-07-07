@@ -68,11 +68,8 @@ To request an allocation on Kingping using slurm:
 
 .. code::
 
-    //Request an allocation of 1 hr, partition rg-gpu, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-gpu -w quorra2
-  
-    
-The local modules for NVIDIA HPC SDK should load automatically. However if they do not you can run ". /etc/profile.d/y02_rg_local_modules.sh" to pull in all the local modulepaths.
+    //Request an allocation of 1 hr, partition rg-hpc, and specify the node name for the server with -w
+    salloc -t 1:00:00 -p rg-hpc -w kingpin1
 
 Using NVIDIA SDK
 =========================
