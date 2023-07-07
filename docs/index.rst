@@ -60,7 +60,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    gpu/quorra-ampere-bf
    hpc/violet-spr-cxl.rst
    arm/octavius-a64fx-testbed.rst
-   arm/kingpin-ampere.rst
+   arm/kingpin-nvidia-devkit.rst
   
 .. toctree::
    :caption: Lucata Pathfinder
