@@ -58,6 +58,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    
    gpu/instinct-mi210.rst
    gpu/quorra-ampere-bf
+   hpc/violet-spr-cxl.rst
    arm/octavius-a64fx-testbed.rst
    arm/kingpin-ampere.rst
   
