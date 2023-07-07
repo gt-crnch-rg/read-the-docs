@@ -161,9 +161,17 @@ To look at your report on the CRNCH servers, it is probably easiest to use the O
 
 Request an allocation on a larger server node with an appropriate amount of memory
 
+Here we are requesting 12 cores on flubber 3, 64 GB of RAM, and a time limit of 8 hours.
 ```
-salloc -p rg-intel-fpga-hw --nodes=1 --ntasks-per-node=1 --nodelist flubber3 --time=01:00:00
+salloc -p rg-intel-fpga-hw --nodes=1 --ntasks-per-node=12 --mem=64G --nodelist flubber3 --time=08:00:00
+salloc: Pending job allocation 67109590
+salloc: job 67109590 queued and waiting for resources
+salloc: job 67109590 has been allocated resources
+salloc: Granted job allocation 67109590
+salloc: Nodes flubber3 are ready for job
+flubber3:~$
 ```
+Switch to your working directory, make sure you've sourced the Intel OneAPI tools, and then run `make fpga`. Note this step will likely take a long time to complete - up to 1-2 hours for smaller designs.
 
 ## Profiling on FPGA with vTune 
 This is a more advanced topic that we will add at a later date.
