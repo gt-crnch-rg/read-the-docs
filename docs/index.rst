@@ -42,6 +42,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    
    general/using-scrontab-slurm
    general/using-gui-with-vnc
+   general/ci-runners
 
 .. toctree::
    :caption: RG Workflows
