@@ -1,5 +1,5 @@
 =============
-Continuous Integration and Delivery (CI/CD) Support
+CI/CD Support
 =============
 
 We have set up a new VM, `rg-ci-workflow1`, which can be used to host Github runners that launch Slurm jobs on the novel architecture within the Rogues Gallery. 
