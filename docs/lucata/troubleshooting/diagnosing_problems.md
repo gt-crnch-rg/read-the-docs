@@ -119,7 +119,12 @@ emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tool --start_checkpointing'
 ```
 to gracefully terminate a program.  This will take a few seconds to do, but it generally terminate the program cleanly.
 
-If you are using a script to run `emu_multinode_exec`, you should kill that script **first** before checkpointing.
+If you are running a multinode program, you need to checkpoint on all the chassis you are running on. So for a 32-node multinode run, you should instead use:
+
+```
+emu_system_cmd -p -c {0..3} -n {0..7} -- 'emu_diagnostic_tool --start_checkpointing'
+```
+If you are using a separate BASH script to run `emu_multinode_exec`, you should kill that script **first** before checkpointing.
 If you do not kill the script first and it attempts to start more `emu_multinode_exec` jobs, this may interfere with your checkpointing efforts. 
 
 ### Cleaning up when checkpoint fails
