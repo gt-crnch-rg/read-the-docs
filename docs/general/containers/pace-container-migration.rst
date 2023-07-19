@@ -8,7 +8,8 @@ Once you've tested that your container works correctly on CRNCH, you can request
 
 1) Scan your image with Syft and Grype to provide an analysis of any vulnerabilities that need to be fixed.
     - Consider whether you want to fix vulnerabilities and update your container, as needed. Note it is not required to fix all reported vulnerabilities!
-2) Push your image to PACE's Quay instance (may require permission or help from a CRNCH admin).
+2) Push your image to PACE's Quay instance (may require permission or help from a CRNCH admin). 
+    - You can pull public images from PACE's Quay instance `here <https://quay.io/organization/pace-gatech>`__.
 3) Run your image on PACE Phoenix using their instance of Apptainer. 
 
 Why are we scanning containers?
