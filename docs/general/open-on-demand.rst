@@ -103,7 +103,9 @@ Troubleshooting
     - Try to relaunch the job. This may just be related to small OOD bugs.
     
 2) When opening a VNC or Virtual Desktop session, you get the error "Failed to establish a websocket connection".
-    - Clear the cache in your web browser, relogin and try to launch the job again. Specifically you may need to clear your cookies for gatech.edu domains. 
+    - Clear the cache in your web browser, relogin and try to launch the job again. Specifically you may need to clear your cookies for gatech.edu domains.
+
+3) If you are having trouble copying and pasting text from your local machine to the VNC window, please try opening the VNC session using Chrome. Firefox security policies seems to limit copy-paste to webpages using JavaScript.
 
 More Resources
 ^^^^^^^^^^^^^^
