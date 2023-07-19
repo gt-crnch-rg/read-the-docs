@@ -17,7 +17,7 @@ TBD
 Intel's VTune
 ==================================
 
-Intel's VTune can be used for CPU, FPGA, and Intel GPU platforms along with MPI-based codes. See more information on using vTune `here <>`__.
+Intel's VTune can be used for CPU, FPGA, and Intel GPU platforms along with MPI-based codes. See more information on using vTune `here <https://gt-crnch-rg.readthedocs.io/en/main/tools/vtune-profiler.html>`__.
 
 Likwid
 ==================================
