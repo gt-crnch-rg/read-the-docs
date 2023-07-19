@@ -21,15 +21,28 @@ Though Grype can directly scan a .sif file, it’s useful to have a separate SBO
 
 To run Syft and Grype, you can log into `hawksbill`, which has both of these tools installed.
 
-1) Run Syft
+1) Run Syft - note this might take a while for a large image. This example image is about 2.0 GB and it took Syft 30 minutes to run. 
 
 .. code:: shell
 
-  syft singularity:sstpackage-13.0.0-centos8.sif -o cyclonedx-json=sstpackage-13.0.0-centos8.sbom.cdx.json
-  ✔ Parsed image                                                                                                                      sha256:7ae0752769d49f59036ff4d98ada680fbc5ffeb32a9f023d95c19951bbfacff2
-  ⠸ Cataloging packages             [2 packages]
-   
-2) Run Grype
+ hawksbill$> syft singularity:sstpackage-13.0.0-centos8.sif -o cyclonedx-json=sstpackage-13.0.0-centos8.sbom.cdx.json
+  ✔ Parsed image                                       sha256:7ae0752769d49f59036ff4d98ada680fbc5ffeb32a9f023d95c19951bbfacff2
+  ✔ Cataloged packages              [526 packages]
+ 
+2) Run Grype - this runs much quicker once an SBOM is generated. Here we generate a human-readable JSON vulnerability report.
 
 .. code:: shell
+
+  hawksbill$> grype sbom:sstpackage-13.0.0-centos8.sbom.cdx.json --output json > sstpackage.vul.json
+  ✔ Vulnerability DB        [no update available]
+  New version of grype is available: 0.64.1 (currently running: 0.64.0)
+  ✔ Scanning image...       [966 vulnerabilities]
+    ├── 17 critical, 61 high, 466 medium, 414 low, 0 negligible (8 unknown)
+    └── 107 fixed
+
+Alternatively, you can export the report in CycloneDX format.
+
+.. code:: shell
+
+  grype sbom:sstpackage-13.0.0-centos8.sbom.cdx.json --output cyclonedx-json > sstpackage.vul.cdx.json
 
