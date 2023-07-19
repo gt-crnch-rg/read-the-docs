@@ -100,3 +100,8 @@ To test that VTune is set up correctly, you can run the self checker to run a va
 VTune Sampler Drivers for Linux Targets
 ~~~~~~~~~~~~~~~~~~~~                                                                                               
 The `Sampling Drivers <https://software.intel.com/content/www/us/en/develop/documentation/vtune-help/top/installation/sep-driver.html>`__ are not strictly required as VTune will use the Linux Perf tools to query counters. However, if the sampling drivers are installed they provide driver-based access to Intel performance counters and they can be limited to specific user groups.
+
+
+Additional Resources
+--------------------  
+- `PACE's Guide for using VTune on Phoenix <https://docs.pace.gatech.edu/slurm-software/vtune/>`__
