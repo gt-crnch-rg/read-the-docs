@@ -17,3 +17,8 @@ Hardware Updates
 ~~~~~~~~~~~~~~~~
 - `Violet nodes <https://gt-crnch-rg.readthedocs.io/en/main/novel-hpc/violet-spr-cxl.html>`__ have been added as a new research resource with Sapphire Rapids CPUs.
 - Bittware 840F Agilex FPGA card has been installed in flubber8.
+
+Documentation Updates
+~~~~~~~~~~~~~~~~
+- `VTune profiling page added <https://gt-crnch-rg.readthedocs.io/en/main/tools/vtune-profiler.html>`__
+- `Container migration to PACE page added <https://gt-crnch-rg.readthedocs.io/en/main/containers/pace-container-migration.html>`__
