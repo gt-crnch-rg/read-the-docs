@@ -7,8 +7,13 @@ Part of the Rogues Gallery focus is on supporting novel architectures with a pat
 Once you've tested that your container works correctly on CRNCH, you can request to have it deployed on PACE using the following process:
 
 1) Scan your image with Syft and Grype to provide an analysis of any vulnerabilities that need to be fixed.
+    - Consider whether you want to fix vulnerabilities and update your container, as needed. Note it is not required to fix all reported vulnerabilities!
 2) Push your image to PACE's Quay instance (may require permission or help from a CRNCH admin).
 3) Run your image on PACE Phoenix using their instance of Apptainer. 
+
+Why are we scanning containers?
+-----------------------------
+There is a new push by the US `Cyberinfrastructure & Infrastructure Security Agency (CISA) <https://en.wikipedia.org/wiki/Cybersecurity_and_Infrastructure_Security_Agency>`__ and `National Telecommunications and Information Administration (NTIA) <https://en.wikipedia.org/wiki/National_Telecommunications_and_Information_Administration>`__ to know more about what software dependencies an application has. One way to do this is to build and share a "Software Bill of Materials" (SBOM) that accurately represents all the dependencies of a container or application. This SBOM can then be used with tools like Grype to review reported vulnerabilities.  
 
 Step 1 - Scanning your Image
 ----------------------------
@@ -46,3 +51,23 @@ Alternatively, you can export the report in CycloneDX format.
 
   grype sbom:sstpackage-13.0.0-centos8.sbom.cdx.json --output cyclonedx-json > sstpackage.vul.cdx.json
 
+.. note::  
+
+  You will likely find that your container has a good number of vulnerabilities with many that are related to Python packages. Currently, you are not required to fix these vulnerabilities, but it is a good idea to use containers with updated OS and application images. 
+
+Step 2 - Push Image to PACE Quay instance
+----------------------------
+
+This step currently requires the assistance of a CRNCH admin who has access to the PACE Quay instance. Please `submit a help ticket <https://crnch-rg.cc.gatech.edu/crnch-rg-help/>`__ along with your SBOM for this step of the process. 
+
+Step 3 - Use Your Container with PACE
+----------------------------
+
+TBD
+
+Additional Resources
+--------------------
+
+- `Software Bill of Materials - CISA <https://www.cisa.gov/sbom>`__
+- `Sandra Gittlen, "Ultimate Guide to SBOMs", 2022. <https://about.gitlab.com/blog/2022/10/25/the-ultimate-guide-to-sboms/>`__
+- `Vulnerability Exploit eXchange - NTIA summary <https://ntia.gov/files/ntia/publications/vex_one-page_summary.pdf>`__
