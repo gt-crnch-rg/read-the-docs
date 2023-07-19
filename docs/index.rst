@@ -23,6 +23,8 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    general/mailing-list-help-tickets
    general/vendor-forums
    general/contributing
+   general/testbed-release-notes
+
 
 .. toctree::
    :caption: RG Getting Started Topics
