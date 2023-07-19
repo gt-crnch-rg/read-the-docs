@@ -1,5 +1,5 @@
 ==============
-Rogues Gallery Release Notes
+Testbed Release Notes
 ==============
 
 This page provides a high-level update on hardware and software that has been added or updated. 
