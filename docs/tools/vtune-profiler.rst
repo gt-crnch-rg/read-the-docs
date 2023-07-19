@@ -16,11 +16,38 @@ VTune is available with the OneAPI tool installations, which can be loaded using
   frozone1 ~]# module load vtune/latest
   Loading vtune version 2023.0.0
 
-While VTune is a GUI-based tool that can be run from a `Virtual Desktop session using Open OnDemand <https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html>`__, it also has a command-line interface that can be used to perform detailed analysis of applications.
+While VTune is a GUI-based tool that can be run from a `Virtual Desktop session using Open OnDemand <https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html>`__, it also has a command-line interface that can be used to perform detailed analysis of applications. Running `vtune -help` will show information on different examples you can run.
+
+As an example, we can use vtune to collect information about general application performance. 
 
 .. code:: shell
-  
 
+  $> vtune -collect performance-snapshot ./spatter -pUNIFORM:8:1
+  vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r  /net/netscratch/crunch3/spatter/build_omp_intel/r002ps -command stop.
+
+  Running Spatter version 0.4
+  Compiler: SPAT_C_NAME ver. 2023.0.0
+  Compiler Location: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.0/compiler/2023.0.0/1/bin/icx
+  Backend: OPENMP
+  Aggregate Results? YES
+
+  ...
+  #VTune will then share some high-level insights on the application. 
+  IPC: 0.687
+     | The IPC may be too low. This could be caused by issues such as memory
+     | stalls, instruction starvation, branch misprediction or long latency
+     | instructions. Explore the other hardware-related metrics to identify what
+     | is causing low IPC.
+     |
+  DP GFLOPS: 0.000
+  Average CPU Frequency: 2.910 GHz
+  Logical Core Utilization: 28.0% (35.776 out of 128)
+     | The metric value is low, which may signal a poor logical CPU cores
+     | utilization. Consider improving physical core utilization as the first step
+     |  and then look at opportunities to utilize logical cores, which in some cases
+     | can improve processor throughput and overall performance of multi-threaded
+     | applications.
+   
 
 Support for FPGA Profiling
 --------------------------
