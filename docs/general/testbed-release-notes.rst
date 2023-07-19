@@ -10,9 +10,10 @@ July 2023
 Software Updates
 ~~~~~~~~~~~~~~~~
 - OneAPI 2023.1 Base and HPC Toolkits have been installed system-wide. 
-- New modulefiles added for Quartus FPGA tools available on relevant systems.
+- New modulefiles added for Quartus FPGA tools available on relevant nodes.
 - `New VM for CI workflows <https://gt-crnch-rg.readthedocs.io/en/main/general/ci-runners.html>`__ has been added to the testbed.
 - ROCm 5.6 installed on `instinct <https://gt-crnch-rg.readthedocs.io/en/main/gpu/instinct-mi210.html>`__.
+- Lucata Pathfinder Toolkit 27.03 has been installed for relevant nodes.
 
 Hardware Updates
 ~~~~~~~~~~~~~~~~
