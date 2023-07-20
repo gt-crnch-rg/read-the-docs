@@ -198,8 +198,16 @@ Then run `make fpga`. Note this step will likely take a long time to complete - 
 ```
 flubber3$> make fpga
 [100%] Linking CXX executable ../loop_unroll.fpga
-warning: -reuse-exe file '/nethome/jyoung9/USERSCRATCH/doe_projects/sandia-fpga/oneAPI-samples/DirectProgramming/C++SYCL_FPGA/Tutorials/Features/loop_unroll/build/loop_unroll.fpga' not found; ignored
+warning: -reuse-exe file '../oneAPI-samples/DirectProgramming/C++SYCL_FPGA/Tutorials/Features/loop_unroll/build/loop_unroll.fpga' not found; ignored
 aoc: Compiling for FPGA. This process may take several hours to complete.  Prior to performing this compile, be sure to check the reports to ensure the design will meet your performance targets.  If the reports indicate performance targets are not being met, code edits may be required.  Please refer to the oneAPI FPGA Optimization Guide for information on performance tuning applications for FPGAs.
+[100%] Built target loop_unroll.fpga
+[100%] Built target fpga
+```
+
+You then should be able to run your code on the FPGA itself:
+```
+./loop_unroll.fpga
+Input Array Size:  67108864
 ```
 
 ## Profiling on FPGA with vTune 
