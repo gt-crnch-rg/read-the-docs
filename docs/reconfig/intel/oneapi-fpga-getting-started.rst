@@ -38,8 +38,8 @@ Currently, the Rogues Gallery hosts the following Intel FPGA hardware.
     * - `Bittware IA-840F <https://www.bittware.com/fpga/ia-840f/>`__
       - AGF027
       - 128 GB DDR4
-      - flubber10
-      - Currently being set up!
+      - flubber8
+      - 
     * - `Stratix 10 PAC <https://www.intel.com/content/www/us/en/products/sku/193921/intel-fpga-pac-d5005/specifications.html>`__
       - GX2800
       - 32 GB DDR4
