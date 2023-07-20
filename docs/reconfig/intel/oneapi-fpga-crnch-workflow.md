@@ -36,9 +36,9 @@ salloc: Nodes rg-fpga-dev1 are ready for job
 gburdell@rg-fpga-dev1:~$
 ```
 
-Then source the Intel OneAPI tools to compile your code:
+Then source the Intel OneAPI tools to compile your code. Here we are using the latest tools, but you should also be able to use the 2022.2 toolset. 
 ```
-. /tools/intel/oneapi/2023.0/setvars.sh
+. /tools/intel/oneapi/2023.1/setvars.sh
  
 :: initializing oneAPI environment ...
    bash: BASH_VERSION = 4.4.20(1)-release
@@ -47,7 +47,6 @@ Then source the Intel OneAPI tools to compile your code:
 ....
 :: vtune -- latest
 :: oneAPI environment initialized ::
-
 ```
 
 Checkout the sample codes and jump to the loop unrolling example. We suggest using your `USERSCRATCH` directory since it is faster NVMe storage. 
@@ -78,36 +77,52 @@ loop_unroll$ vim src/loop_unroll.cpp
 #endif
 ```
 
-You can check the available board support packages using the aoc command: 
+You can check the available board support packages using the aoc command. Before doing that, we will want to set the environment to add the Bittware 520N-MX board.
+
 ```
-aoc -list-boards
+#Add the environment for the newer Bittware board
+$> . /tools/reconfig/intel/init_env_bittware_pcie.sh
+
+$> aoc -list-boards
 Board list:
-  pac_a10 (default)
-     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.0/compiler/2023.0.0/linux/lib/oclfpga/board/intel_a10gx_pac
+  p520_hpc_m210h_g3x16 (default)
+     Board Package: /projects/tools/x86_64/rhel-8/intel-quartus/2020.4/hld/board/bittware_pcie/s10mx
+     Memories:      HBM0, HBM1, HBM2, HBM3, HBM4, HBM5, HBM6, HBM7, HBM8, HBM9, HBM10, HBM11, HBM12, HBM13, HBM14, HBM15, HBM16, HBM17, HBM18, HBM19, HBM20, HBM21, HBM22, HBM23, HBM24, HBM25, HBM26, HBM27, HBM28, HBM29, HBM30, HBM31
+
+  p520_max_m210h_g3x16
+     Board Package: /projects/tools/x86_64/rhel-8/intel-quartus/2020.4/hld/board/bittware_pcie/s10mx
+     Memories:      HBM0, HBM1, HBM2, HBM3, HBM4, HBM5, HBM6, HBM7, HBM8, HBM9, HBM10, HBM11, HBM12, HBM13, HBM14, HBM15, HBM16, HBM17, HBM18, HBM19, HBM20, HBM21, HBM22, HBM23, HBM24, HBM25, HBM26, HBM27, HBM28, HBM29, HBM30, HBM31
+     Channels:      kernel_input_ch0, kernel_output_ch0, kernel_input_ch1, kernel_output_ch1, kernel_input_ch2, kernel_output_ch2, kernel_input_ch3, kernel_output_ch3
+
+  pac_a10
+     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.1/compiler/2023.1.0/linux/lib/oclfpga/board/intel_a10gx_pac
 
   pac_s10
-     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.0/compiler/2023.0.0/linux/lib/oclfpga/board/intel_s10sx_pac
+     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.1/compiler/2023.1.0/linux/lib/oclfpga/board/intel_s10sx_pac
 
   pac_s10_usm
-     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.0/compiler/2023.0.0/linux/lib/oclfpga/board/intel_s10sx_pac
-     Memories:      device, host
+     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.1/compiler/2023.1.0/linux/lib/oclfpga/board/intel_s10sx_pac
 ```
 
 Then use cmake and make to run the FPGA simulation step targeting the S10 board
 
 ```
 @rg-fpga-dev1:loop_unroll$ mkdir build && cd build
-loop_unroll/build$ cmake .. -DFPGA_DEVICE=pac_s10
--- Configuring the design with the following target: pac_s10
+#You can change the device here to another board to investigate different designs
+loop_unroll/build$ cmake .. -DFPGA_DEVICE=p520_hpc_m210h_g3x16
+-- The CXX compiler identification is IntelLLVM 2023.1.0
+...
+-- Configuring the design with the following target: p520_hpc_m210h_g3x16
 -- Configuring done
 -- Generating done
--- Build files have been written to: ... /oneAPI-samples/DirectProgramming/C++SYCL_FPGA/Tutorial...
+-- Build files have been written to: .../oneAPI-samples/DirectProgramming/C++SYCL_FPGA/Tutorials/Features/loop_unroll/build
 ```
 
 And compile the emulation target with make
 ```
 loop_unroll/build$ make fpga_emu
 [ 50%] Building CXX object src/CMakeFiles/loop_unroll.fpga_emu.dir/loop_unroll.cpp.o
+... Lots of SYCL deprecation warnings you can ignore...
 [100%] Linking CXX executable ../loop_unroll.fpga_emu
 [100%] Built target loop_unroll.fpga_emu
 [100%] Built target fpga_emu
@@ -116,27 +131,28 @@ loop_unroll/build$ make fpga_emu
 You can then run this emulated application and check its output.
 
 ```
+$> ./loop_unroll.fpga_emu
 Input Array Size:  67108864
 Running on device: Intel(R) FPGA Emulation Device
-unroll_factor 1 kernel time : 122.209 ms
-Throughput for kernel with unroll_factor 1: 0.549 GFlops
+unroll_factor 1 kernel time : 321.431 ms
+Throughput for kernel with unroll_factor 1: 0.209 GFlops
 Running on device: Intel(R) FPGA Emulation Device
-unroll_factor 2 kernel time : 91.457 ms
-Throughput for kernel with unroll_factor 2: 0.734 GFlops
+unroll_factor 2 kernel time : 313.827 ms
+Throughput for kernel with unroll_factor 2: 0.214 GFlops
 Running on device: Intel(R) FPGA Emulation Device
-unroll_factor 4 kernel time : 97.858 ms
-Throughput for kernel with unroll_factor 4: 0.686 GFlops
+unroll_factor 4 kernel time : 87.778 ms
+Throughput for kernel with unroll_factor 4: 0.765 GFlops
 Running on device: Intel(R) FPGA Emulation Device
-unroll_factor 8 kernel time : 115.720 ms
-Throughput for kernel with unroll_factor 8: 0.580 GFlops
+unroll_factor 8 kernel time : 80.566 ms
+Throughput for kernel with unroll_factor 8: 0.833 GFlops
 Running on device: Intel(R) FPGA Emulation Device
-unroll_factor 16 kernel time : 101.993 ms
-Throughput for kernel with unroll_factor 16: 0.658 GFlops
-PASSED: The results are correc
+unroll_factor 16 kernel time : 85.225 ms
+Throughput for kernel with unroll_factor 16: 0.787 GFlops
+PASSED: The results are correct
 ```
 
 ## Simulation with ModelSim and Questa
-Right now we don't support this step since we don't .
+Right now we don't support this step.
 
 ## Investigating the Optimization Report
 
@@ -159,7 +175,7 @@ To look at your report on the CRNCH servers, it is probably easiest to use the O
 
 ## Building an FPGA Bitstream
 
-Request an allocation on a larger server node with an appropriate amount of memory
+Request an allocation on a larger server node with an appropriate amount of memory.
 
 Here we are requesting 12 cores on flubber 3, 64 GB of RAM, and a time limit of 8 hours.
 ```
@@ -171,7 +187,20 @@ salloc: Granted job allocation 67109590
 salloc: Nodes flubber3 are ready for job
 flubber3:~$
 ```
-Switch to your working directory, make sure you've sourced the Intel OneAPI tools, and then run `make fpga`. Note this step will likely take a long time to complete - up to 1-2 hours for smaller designs.
+Switch to your working directory and make sure you've sourced the Intel OneAPI tools and the Bittware environment variables:
+
+```
+flubber3$> . /tools/intel/oneapi/2023.1/setvars.sh# Source environment for the Bittware 520N-MX board
+flubber3$> . /tools/reconfig/intel/init_env_bittware_pcie.sh
+```
+Then run `make fpga`. Note this step will likely take a long time to complete - up to 1-2 hours for smaller designs.
+
+```
+flubber3$> make fpga
+[100%] Linking CXX executable ../loop_unroll.fpga
+warning: -reuse-exe file '/nethome/jyoung9/USERSCRATCH/doe_projects/sandia-fpga/oneAPI-samples/DirectProgramming/C++SYCL_FPGA/Tutorials/Features/loop_unroll/build/loop_unroll.fpga' not found; ignored
+aoc: Compiling for FPGA. This process may take several hours to complete.  Prior to performing this compile, be sure to check the reports to ensure the design will meet your performance targets.  If the reports indicate performance targets are not being met, code edits may be required.  Please refer to the oneAPI FPGA Optimization Guide for information on performance tuning applications for FPGAs.
+```
 
 ## Profiling on FPGA with vTune 
 This is a more advanced topic that we will add at a later date.
