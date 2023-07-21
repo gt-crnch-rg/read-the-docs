@@ -23,6 +23,8 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    general/mailing-list-help-tickets
    general/vendor-forums
    general/contributing
+   general/testbed-release-notes
+
 
 .. toctree::
    :caption: RG Getting Started Topics
@@ -42,6 +44,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    
    general/using-scrontab-slurm
    general/using-gui-with-vnc
+   general/ci-runners
 
 .. toctree::
    :caption: RG Workflows
@@ -49,7 +52,8 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :hidden:  
    
    general/rg-workflows
-   
+   tools/profilers
+
 .. toctree::
    :caption: Novel HPC
    :maxdepth: 2
