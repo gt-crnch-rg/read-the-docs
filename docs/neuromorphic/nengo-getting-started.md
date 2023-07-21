@@ -13,8 +13,10 @@
         <li> Nengo should already be installed using the neuro environment. If not, run the command pip install nengo.
         <li> Navigate to the directory where you want to save the nengo files.
         <li> Inside the terminal run the command "nengo"
+        <li> This will open up a server running nengo
     </ul>
-3. Running a basic Nengo example - what is the "Hello World" for Nengo. We can use exisitng repos and examples and demonstrate how to run them on our cluster.
+    //ADD PICTURES OF NENGO GUI
+3. Running a basic Nengo example - what is the "Hello World" for Nengo. We can use existing repos and examples and demonstrate how to run them on our cluster.
 
 ## Using Nengo-Gui and Nengo with Notebooks
 
