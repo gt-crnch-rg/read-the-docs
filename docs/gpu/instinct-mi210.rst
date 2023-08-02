@@ -117,6 +117,7 @@ Useful training material
 ------------------------
 
 - `OmniTrace <https://amdresearch.github.io/omnitrace/>`__ - AMD's newest tracing and profiling tool.
+- `Introduction to Profiling Tools for AMD Hardware <https://gpuopen.com/learn/amd-lab-notes/amd-lab-notes-profilers-readme/>`__ - this article has a great breakdown of when to use specific profilers. OmniTrace and uProf are the newest profiling tools.
 
 Vendor-provided Documents and Resources
 ---------------------------------------
