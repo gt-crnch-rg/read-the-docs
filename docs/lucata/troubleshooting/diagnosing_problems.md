@@ -153,3 +153,30 @@ If you don't think a reboot is necessary, you should ensure the following files 
 /dev/shm//x10_device_semaphore
 ```
 A reboot is usually required if you encountered PCIe read completion timeouts, downed SRIO ports, hard checkpoint failures, crashed kernel driver.  A reset may often take care of lost memory transactions, hung programs w/ lock contention, or other software bugs.
+
+## Are the hostnames set up correctly?
+
+Sometimes when you reconfigure the system, you get an error that the hostnames cannot be set correctly. 
+
+```
+[ERROR]: n13: ssh: Could not resolve hostname n13: Name or service not known
+c2: n11: ssh: Could not resolve hostname n11: Name or service not known
+```
+
+To fix this you can run the following command as root:
+```
+root@pathfinder0:~# emu_system_init_config -c 4 -t pathfinder-s
+c1: Launching emu_chassis_init_config with args: pathfinder-s 8                                                                                                                               c0: Launching emu_chassis_init_config with args: pathfinder-s 8
+c3: Launching emu_chassis_init_config with args: pathfinder-s 8
+c1: Running 'mkdir -p /etc/emutechnology; mkdir -p /var/lock; touch /var/lock/emu_needs_reconfigured.lock; echo pathfinder-s > /etc/emutechnology/SystemType; slot-id > /etc/emutechnology/NodeId' in parallel on n[0,1,2,3,4,5,6,7]...
+c0: Running 'mkdir -p /etc/emutechnology; mkdir -p /var/lock; touch /var/lock/emu_needs_reconfigured.lock; echo pathfinder-s > /etc/emutechnology/SystemType; slot-id > /etc/emutechnology/NodeId' in parallel on n[0,1,2,3,4,5,6,7]...
+...
+c3: ################################################################
+c3:
+c3: SSH key update Completed on Wed Aug  2 22:25:23 EDT 2023!
+c3: Users should remove the entries for nodes in the known_hosts
+c3: file in their .ssh directory
+c3:
+c3: ################################################################
+[STATUS]: emu_system_init_config complete.
+```
