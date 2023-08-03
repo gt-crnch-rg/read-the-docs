@@ -6,8 +6,6 @@ This is a continuation of [running programs and diagnosing problems](https://git
 
 `emu_node_cmd`, `emu_system_cmd`, `emu_chassis_get_configs`, `emu_chassis_get_versions`, `emu_chassis_start` are failing because it can't reach some nodes.  Now what?
 
-First, calm yourself down.  Let's see what's going on
-
 ### Are the node boards on the network?
 Use 
 ```
