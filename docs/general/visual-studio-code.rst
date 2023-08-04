@@ -1,12 +1,16 @@
 Visual Studio Code
 ========================
 
-**Note:** For remote GUI applications, we currently recommend using `Open OnDemand <https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html>`__.
+.. note::
+    For remote GUI applications, we currently recommend using `Open OnDemand <https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html>`__.
 
 You are welcome to use `Visual Studio Code (VS Code or VSC) <https://code.visualstudio.com/>`__
 along with the `Remote Development Extension Pack <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack>`__
 to SSH to Rogues Gallery resources. This allows you to navigate folders
 and edit code with the power and convenience of VS Code and its many excellent extensions.
+
+.. warning::
+    We highly recommend that you add a jump host to hawksbill and run VS Code from that node since it has a large amount of memory. Please see this page about setting up SSH jump hosts.
 
 Recommended Extensions Include: 
 
