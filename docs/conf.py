@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'CRNCH Rogues Gallery'
-copyright = u'2020, CRNCH'
+copyright = u'2023, CRNCH'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
