@@ -6,6 +6,8 @@ SSH Keys
 
 We highly recommend that you generate and use a newer ed25519 or RSA key to connect to the Rogues Gallery testbed. Note that your private key should only be readable by you if you put it in your `/nethome/<username>/.ssh/` folder. 
 
+Remember that to log in to a remote server, your *public* key needs to be added to the remote server's `authorized_keys`. You can use tools like `ssh-copy-id` to add your public key to the testbed.
+
 .. note:: 
 
   To make your setup even more secure, we recommend generating two SSH keys: 1) one on your local machine that you use to connect to the   
@@ -14,13 +16,14 @@ We highly recommend that you generate and use a newer ed25519 or RSA key to conn
   without exposing it to potential attackers. 
 
 - `Generating new SSH keys <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent>`__
+- `ssh-copy-id and authorized_keys <https://www.ssh.com/academy/ssh/copy-id>`__
 
 SSH Keys for Github repos
 ~~~~~~~~~~~~~~
 We strongly encourage you to read up about how to use SSH keys or personal access tokens with your Github repositories, as these are key tools for pulling code from remote repos and pushing changes and updates. 
 
 - `Github SSH Keys <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>`__
-- `Github Personal Access Tokens (required for https actions and using GT Github outside of the VPN) <>`__
+- `Github Personal Access Tokens (required for https actions and using GT Github outside of the VPN) <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>`__
 
 SSH Config Files
 ----------------
