@@ -40,7 +40,7 @@ The example below shows how to add an SSH key to log in to `rg-login` and also a
 .. code::
 
   #Add to your .ssh/config. This example uses an SSH key
-  Host rglogin
+  Host rg-login
   HostName rg-login.crnch.gatech.edu
         User gburdell
         IdentityFile ~/.ssh/id_rsa
@@ -54,7 +54,7 @@ Usage of each of these jump hosts would look similar to the following commands:
 
 .. code::
 
-  <local laptop/terminal>:~$ ssh rglogin
+  <local laptop/terminal>:~$ ssh rg-login
   ....
   Last login: ....
   gburdell@rg-login:~$ exit
