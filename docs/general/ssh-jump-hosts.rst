@@ -4,6 +4,30 @@ SSH Keys and SSH Jump Hosts
 SSH Keys
 --------------
 
+We highly recommend that you generate and use a newer ed25519 or RSA key to connect to the Rogues Gallery testbed. Note that your private key should only be readable by you if you put it in your `/nethome/<username>/.ssh/` folder. 
+
+.. note:: 
+
+  To make your setup even more secure, we recommend generating two SSH keys: 1) one on your local machine that you use to connect to the   
+  testbed and 2) a separate key that you put in your testbed `/nethome` .ssh folder and that is used just to SSH around to other nodes 
+  within the testbed. In this way, your private SSH key on your local machine can be used to log into more than one testbed or service 
+  without exposing it to potential attackers. 
+
+- `Generating new SSH keys <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent>`__
+
+SSH Keys for Github repos
+~~~~~~~~~~~~~~
+We strongly encourage you to read up about how to use SSH keys or personal access tokens with your Github repositories, as these are key tools for pulling code from remote repos and pushing changes and updates. 
+
+- `Github SSH Keys <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>`__
+- `Github Personal Access Tokens (required for https actions and using GT Github outside of the VPN) <>`__
+
+SSH Config Files
+----------------
+You can set options like keys, login parameters, or short aliases for specific remote nodes in the Rogues Gallery cluster or other related testbeds using a user-specified config file, located at `~/.ssh/config`. 
+
+Read more about SSH configuration files `here <https://www.ssh.com/academy/ssh/config>`__.
+
 SSH Jump Hosts
 --------------
 You can add an `SSH jump host <https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts>`__ to your SSH config file to allow applications to jump to a secondary node for use with `VNC <https://gt-crnch-rg.readthedocs.io/en/main/general/using-gui-with-vnc.html>`__ or `Visual Studio Code <https://gt-crnch-rg.readthedocs.io/en/main/general/visual-studio-code.html>`__. Note that this guide assumes that you have an active session on the target compute node - you may need to make a `Slurm reservation <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm.html>`__ for a specific compute server. 
