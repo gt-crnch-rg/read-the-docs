@@ -10,7 +10,7 @@ to SSH to Rogues Gallery resources. This allows you to navigate folders
 and edit code with the power and convenience of VS Code and its many excellent extensions.
 
 .. warning::
-    We highly recommend that you add a jump host to `hawksbill` and run VS Code from that node rather than on the login node, `rg-login`. Please see this page about setting up SSH jump hosts for this purpose.
+    We highly recommend that you add a jump host to `hawksbill` and run VS Code from that node rather than on the login node, `rg-login`. Please see `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/ssh-jump-hosts.html>`__ about setting up SSH jump hosts for this purpose.
 
 Recommended Extensions Include: 
 
