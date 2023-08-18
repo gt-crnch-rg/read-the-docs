@@ -4,6 +4,20 @@ Testbed Release Notes
 
 This page provides a high-level update on hardware and software that has been added or updated. 
 
+August 2023
+---------  
+
+Software Updates
+~~~~~~~~~~~~~~~~
+- Open OnDemand 3.0.1 installed and deployed (upgrading from 2.0.32)
+
+Hardware Updates
+~~~~~~~~~~~~~~~~
+
+Documentation Updates
+~~~~~~~~~~~~~~~~
+- `VS Code instructions updated along with instructions for SSH jump host usage <https://gt-crnch-rg.readthedocs.io/en/main/general/visual-studio-code.html>`__
+
 July 2023
 ---------  
 
