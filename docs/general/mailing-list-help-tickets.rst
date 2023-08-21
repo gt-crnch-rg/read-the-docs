@@ -77,7 +77,7 @@ recommend the following for asking a clear suggestion:
    cases, sharing a huge log file for a full application is not useful
    to you or to the maintainers of a particular system. See this page on
    creating an effective MWE: `MWE
-   overview <https://github.com/gt-crnch-rg/fc-with-rg-vip/blob/main/docs/%5BDevelopment%5D-Minimal-Reproducible-Examples.md>`__
+   overview <https://github.com/gt-crnch-rg/fc-with-rg-vip/blob/gh-pages/docs/development/%5BDevelopment%5D-Minimal-Reproducible-Examples.md>`__
 
 4. Don't just state "Feature X doesn't work!". We'll ask you more
    follow-up questions so it's best to share more detail initially to
