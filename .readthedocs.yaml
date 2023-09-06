@@ -19,5 +19,7 @@ sphinx:
   # Fail on all warnings to avoid broken references
   fail_on_warning: false
 
+requirements_file: docs/requirements.txt
+
 formats:
     - pdf
