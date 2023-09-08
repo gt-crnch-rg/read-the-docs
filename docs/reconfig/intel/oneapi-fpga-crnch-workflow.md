@@ -38,7 +38,7 @@ gburdell@rg-fpga-dev1:~$
 
 Then source the Intel OneAPI tools to compile your code. Here we are using the latest tools, but you should also be able to use the 2022.2 toolset. 
 ```
-. /tools/intel/oneapi/2023.1/setvars.sh
+. /tools/intel/oneapi/2023.0/setvars.sh
  
 :: initializing oneAPI environment ...
    bash: BASH_VERSION = 4.4.20(1)-release
@@ -95,13 +95,13 @@ Board list:
      Channels:      kernel_input_ch0, kernel_output_ch0, kernel_input_ch1, kernel_output_ch1, kernel_input_ch2, kernel_output_ch2, kernel_input_ch3, kernel_output_ch3
 
   pac_a10
-     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.1/compiler/2023.1.0/linux/lib/oclfpga/board/intel_a10gx_pac
+     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.0/compiler/2023.0.0/linux/lib/oclfpga/board/intel_a10gx_pac
 
   pac_s10
-     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.1/compiler/2023.1.0/linux/lib/oclfpga/board/intel_s10sx_pac
+     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.0/compiler/2023.0.0/linux/lib/oclfpga/board/intel_s10sx_pac
 
   pac_s10_usm
-     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.1/compiler/2023.1.0/linux/lib/oclfpga/board/intel_s10sx_pac
+     Board Package: /net/projects/tools/x86_64/rhel-8/intel-oneapi/2023.0/compiler/2023.0.0/linux/lib/oclfpga/board/intel_s10sx_pac
 ```
 
 Then use cmake and make to run the FPGA simulation step targeting the S10 board
@@ -110,7 +110,7 @@ Then use cmake and make to run the FPGA simulation step targeting the S10 board
 @rg-fpga-dev1:loop_unroll$ mkdir build && cd build
 #You can change the device here to another board to investigate different designs
 loop_unroll/build$ cmake .. -DFPGA_DEVICE=p520_hpc_m210h_g3x16
--- The CXX compiler identification is IntelLLVM 2023.1.0
+-- The CXX compiler identification is IntelLLVM 2023.0.0
 ...
 -- Configuring the design with the following target: p520_hpc_m210h_g3x16
 -- Configuring done
@@ -190,7 +190,7 @@ flubber3:~$
 Switch to your working directory and make sure you've sourced the Intel OneAPI tools and the Bittware environment variables:
 
 ```
-flubber3$> . /tools/intel/oneapi/2023.1/setvars.sh# Source environment for the Bittware 520N-MX board
+flubber3$> . /tools/intel/oneapi/2023.0/setvars.sh# Source environment for the Bittware 520N-MX board
 flubber3$> . /tools/reconfig/intel/init_env_bittware_pcie.sh
 ```
 Then run `make fpga`. Note this step will likely take a long time to complete - up to 1-2 hours for smaller designs.
