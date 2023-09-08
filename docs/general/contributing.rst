@@ -26,7 +26,9 @@ How do I update existing documentation?
 
 | 1) Fork this repo. 
 | 2) Find the page you are looking to update and make your edits.
-| 3) Commit *and* push to your fork and initiate a pull request. 
+| 3) Add the page to the index file.
+| 4) Build the code to test your code locally (requires Python and sphinx).
+| 5) Commit *and* push to your fork and initiate a pull request. 
 
 How do I contribute new documentation?
 --------------------------------------
