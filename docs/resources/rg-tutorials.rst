@@ -1,6 +1,6 @@
-=====================
+==============================
 CRNCH Rogues Gallery Tutorials
-=====================
+==============================
 
 This page contains a list of all the recent tutorials that the CRNCH Rogues Gallery has helped to host. For most of these, we have posted any presentations on their respective Github pages under the gt-crnch-rg organization. 
 

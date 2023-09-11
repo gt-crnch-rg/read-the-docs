@@ -1,9 +1,9 @@
-============
+========================
 Violet - Sapphire Rapids
-============
+========================
 
 What's Interesting About This Hardware?
-==============
+=======================================
 The Violet servers use Intel Sapphire Rapids along with PCI Express 5.0 to support high-bandwidth accelerators as well as the new Compute Xpress Link (CXL) technology. Violet1 also hosts CRNCH's H100 PCIe GPU in partnership with `Dr. Bryngelson's lab <https://comp-physics.group/>`__.
 
 Current Status
@@ -40,7 +40,7 @@ MI250x GPUs deployed in `ORNL's Frontier <https://www.olcf.ornl.gov/frontier/>`_
 server has two Milan CPUs, 512 GB of DDR4 memory, and a Connect-X 6 networking card.
 
 Software and Tools
-=====================
+==================
 
 .. list-table::
     :widths: auto
@@ -61,7 +61,7 @@ Software and Tools
       - 
 
 How do I get to Violet?
-=========================
+=======================
 
 As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
@@ -84,7 +84,7 @@ To request an entire node (and all the memory) you can run:
     salloc --sockets-per-node=2 --cores-per-socket=64 --threads-per-core=2 -p rg-hpc -w violet1 --mem=0 
 
 Compiling for the Violet SPR CPUs
----------------------------------------
+---------------------------------
 
 TBD
 

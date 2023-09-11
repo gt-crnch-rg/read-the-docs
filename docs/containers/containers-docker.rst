@@ -12,15 +12,15 @@ We use the instructions from the `Docker website <https://docs.docker.com/engine
     $ sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 What is important to know about running Docker containers?
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - `How to use volumes <https://docs.docker.com/storage/volumes/>`__ - these are folders that can be migrated between Docker instances (as opposed to bind-mounted folders).
 
 Security issues with Docker
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Docker versions before 19.03 require root permissions to run correctly, which has led to the rise of "rootless" container technologies like Podman. For new Docker installations (>= 19.03), you can enable `rootless mode operation <https://docs.docker.com/engine/security/rootless/>`__ to allow for running with needing root permissions. Note that the docker group implies that users in this group have root-level access with respect to running Docker containers.
 
 Docker FAQ
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
 - How do you avoid bindmounting into the container?
     - It seems like we should use the --mount flag and Docker volumes. See `this page <https://docs.docker.com/storage/bind-mounts/>`__ for more info. 
 - How can you create a custom container with the needed packages for an application? For example, what if we need openssl or other libraries on the DGX?

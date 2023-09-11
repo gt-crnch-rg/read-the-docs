@@ -1,9 +1,9 @@
-============
+===============================
 Kingpin - NVIDIA DevKit Systems
-============
+===============================
 
 Acknowledgments
-==============
+===============
 The Kingpin nodes are hoteled hardware sponsored by the `Habanero research group <https://habanero.cc.gatech.edu/>`__ led by Dr. Sarkar. This means this group has priority on this hardware via a separate queue but it can be used when not in use by this group.
 
 Current Status
@@ -34,10 +34,11 @@ System Specifications
       - 
       - 
       -
+      -
       -      
     
 Software and Tools
-=====================
+===================
 
 .. list-table::
     :widths: auto
@@ -58,7 +59,7 @@ Software and Tools
       - DOCA 1.5.1
 
 How do I get to the Kingpin nodes?
-=========================
+==================================
 
 As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
@@ -72,7 +73,7 @@ To request an allocation on Kingping using slurm:
     salloc -t 1:00:00 -p rg-hpc -w kingpin1
 
 Using NVIDIA SDK
-=========================
+================
 
 .. code::
 

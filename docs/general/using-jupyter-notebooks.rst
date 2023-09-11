@@ -19,7 +19,7 @@ to create a remote server and you can then run your notebook within a
 browser in that remote terminal session.
 
 Using jump hosts to access Jupyter notebooks
---------------------
+--------------------------------------------
 
 Note that these techniques will let you use "port forwarding" to forward
 the Jupyter notebook to your local machine.

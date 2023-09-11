@@ -1,9 +1,9 @@
-============
+===================================
 Getting Started with Rogues Gallery
-============
+===================================
 
 How do I request an account on the Rogues Gallery (RG)?
---------------------------------------------------
+-------------------------------------------------------
 
 Users should request a new account using our form on the CRNCH page `here <http://crnch.gatech.edu/request-rogues-access>`__. Note that it may take 2-3 business days for your account to be added after you are approved. 
 
@@ -15,7 +15,7 @@ For GT users, please put your research advisor or down one of the testbed person
 
 
 How do I Access RG machines?
---------------------------------
+----------------------------
 
 **NOTE: You should use your GT Passport username (e.g, gburdell3) and password to access all CRNCH RG nodes and resources!**
 
@@ -54,7 +54,7 @@ Note that all machines have a **.crnch.gatech.edu** suffix and some examples inc
 -  Please see `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-hardware.html>`__ for a complete list of available machines in the RG testbed
 
 VPN Requirements (for GT users only)
---------------------------
+------------------------------------
 You can access all CRNCH resources using login nodes like `rg-login` or the Open OnDemand web interface. However, you can also use GT's `VPN <https://faq.oit.gatech.edu/content/how-do-i-get-started-campus-vpn>`__ solution as an alternative to access some VMs and nodes directly. Note that this may require that you set up two-factor authentication on your phone and link it with your account name. You shouldn't need to use the VPN to access Rogues Gallery resources and materials, but for special requirements please email us at *crnch-rg-help@cc.gatech.edu*. 
 
 Other Georgia Tech resources like PACE's Phoenix cluster require the usage of the VPN, and you can read more about these requirements at their `site <https://docs.pace.gatech.edu/phoenix_cluster/logon_phnx/>`__

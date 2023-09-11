@@ -1,11 +1,18 @@
-==============
+=====================
 Testbed Release Notes
-==============
+=====================
 
 This page provides a high-level update on hardware and software that has been added or updated. 
 
+September 2023
+--------------  
+
+Hardware Updates
+~~~~~~~~~~~~~~~~
+- Rudi2, an AGX Orin Devkit, has been added to the testbed
+
 August 2023
----------  
+-----------  
 
 Software Updates
 ~~~~~~~~~~~~~~~~
@@ -15,7 +22,7 @@ Hardware Updates
 ~~~~~~~~~~~~~~~~
 
 Documentation Updates
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 - `VS Code instructions updated along with instructions for SSH jump host usage <https://gt-crnch-rg.readthedocs.io/en/main/general/visual-studio-code.html>`__
 
 July 2023
@@ -36,7 +43,7 @@ Hardware Updates
 - Bittware 840F Agilex FPGA card has been installed in flubber8.
 
 Documentation Updates
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 - `VTune profiling page added <https://gt-crnch-rg.readthedocs.io/en/main/tools/vtune-profiler.html>`__
 - `Container migration to PACE page added <https://gt-crnch-rg.readthedocs.io/en/main/containers/pace-container-migration.html>`__
 

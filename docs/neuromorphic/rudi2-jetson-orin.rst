@@ -1,9 +1,9 @@
-============
+=======================
 Rudi2 - Jetson AGX Orin
-============
+=======================
 
 What's Interesting About This Hardware?
-==============
+=======================================
 
 Current Status
 ==============
@@ -35,7 +35,7 @@ System Specifications
       -       
 
 Software and Tools
-=====================
+==================
 
 .. list-table::
     :widths: auto
@@ -56,7 +56,7 @@ Software and Tools
       - 
 
 How do I get to rudi2?
-=========================
+======================
 
 As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
@@ -71,9 +71,8 @@ To request an allocation on rudi2 using slurm:
    
 
 Using NVIDIA Jetson Developer Kit Modules
----------------------------------------
+---------------`--------------------------
 - `NVIDIA Jetson Developer Kit User Guide <https://docs.nvidia.com/jetson/archives/r35.1/DeveloperGuide/index.html>`__
 
 Vendor-provided Documents and Resources
 ---------------------------------------
-

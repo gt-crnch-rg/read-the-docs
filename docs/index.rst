@@ -24,7 +24,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    general/vendor-forums
    general/contributing
    general/testbed-release-notes
-
+   authors.rst
 
 .. toctree::
    :caption: RG Getting Started Topics
@@ -97,6 +97,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :maxdepth: 2
    :hidden:
    :glob:
+   
    quantum/cuquantum.rst
    
 .. toctree::
@@ -110,7 +111,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    reconfig/xilinx/pynq-cluster
    reconfig/xilinx/xilinx-smart-ssd
    reconfig/vortex/vortex-riscv-gpgpu
-   reconfig/xilinx/vitis_ai
+   reconfig/xilinx/xilinx-ml-tools
    reconfig/intel/oneapi-fpga-getting-started
    reconfig/intel/oneapi-fpga-crnch-workflow
    reconfig/fpga_power_measurement

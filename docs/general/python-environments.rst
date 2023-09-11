@@ -6,7 +6,7 @@ Python Environments
    TLDR: we recommend that you use pipenv on CRNCH environments rather other Python package managers or tools like conda/anaconda. See the pipenv section for more details on usage.
 
 FAQs on CRNCH Python Environments
-===============
+=================================
 - The default Python is typically 3.8. We do not officially support Python 2 usage as most packages have updated to support Python 3.
     - Look into `2to3 <https://docs.python.org/3/library/2to3.html>`__ if your code is still using Python 2!
 - :code:`virtualenv` and :code:`venv` is installed across most of our servers and as many dev boards as possible.
@@ -15,7 +15,7 @@ FAQs on CRNCH Python Environments
     - However, if you want to use conda or miniconda please consider `using miniconda with your scratch space folder <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__ to store your conda environment and venvs. See the example below under the Conda section as a template.
     
 What's the difference between pip, venv, env, conda, etc?
-=============
+=========================================================
 
 .. list-table:: **Python Environment Tools**
     :widths: auto
@@ -69,7 +69,7 @@ Using venv on CRNCH RG
 Venv is the default virtual environment module included since Python 3.3, and it totally replaces `pyenv` since Python 3.6. Virtualenv has many similarities to venv in terms of its functionality, but we recommend using venv unless you need to use a version of Python older than 3.3. 
 
 Creating a new virtual environment with venv
----------------
+--------------------------------------------
 
 .. code:: shell
     
@@ -81,7 +81,7 @@ Creating a new virtual environment with venv
     
 
 Activating/deactivating an environment
----------------
+--------------------------------------
 
 .. code:: shell
     
@@ -94,7 +94,7 @@ Activating/deactivating an environment
     Python 3.11.2
 
 Installing and using packages
----------------
+-----------------------------
 Here we demonstrate a basic usage of pip with venv. We highly recommend using pipenv, which provides a more robust combination of pip and virtual environments.
 
 .. code:: shell
@@ -118,12 +118,12 @@ Here we demonstrate a basic usage of pip with venv. We highly recommend using pi
     six==1.16.0
 
 Using pipvenv on CRNCH RG
-======================
+=========================
 
 Pipenv combines the best parts of the pip package manager for Python and virtual environments, as typified by virtualenv and venv. One key difference is that pipenv keeps all of its dependencies for installations in a :code:`Pipfile` that can then be used to regenerate a specific environment. Pipenv uses `TOML syntax <https://toml.io/en/>`__, and one Pipfile can be used in place of multiple requirements.txt files created by Pip with virtual environments. The :code:`Pipfile.lock` file provides a secure hashed record of installations that can be used for future deployments.
 
 Installing pipenv
----------------
+-----------------
 Using the official installation instructions `here <https://pipenv.pypa.io/en/latest/install/#installing-pipenv>`__:
 
 .. code:: shell
@@ -131,7 +131,7 @@ Using the official installation instructions `here <https://pipenv.pypa.io/en/la
     python3 -m pip install pipenv
 
 Creating a new virtual environment with pipenv
----------------
+----------------------------------------------
 
 When you run :code:`pipenv install`, it will create a standard virtual environnment and all related pip installs will occur within this user-accessible folder.
 
@@ -161,10 +161,11 @@ When you run :code:`pipenv install`, it will create a standard virtual environnm
  If you'd like to create a Python 3.8 environment, use the following syntax. Note that this will overwrite the standard location for your virtualenv
  
 .. code:: shell
+
     pipenv install pipenv --python 3.8 install
 
 Activating/deactivating an environment
----------------
+--------------------------------------
 
 .. code:: shell
 
@@ -185,7 +186,7 @@ OR use the code::`pipenv run` method
    
 
 Installing and using packages
----------------
+-----------------------------
 
 .. code:: shell
 
@@ -227,13 +228,13 @@ To show what packages are installed and their dependencies, you can use :code:`p
     - six [required: >=1.5, installed: 1.16.0]
 
 Pipenv Related Documents
-==============
+========================
 - `Pipenv and Virtualenv <https://docs.python-guide.org/dev/virtualenvs/>`__
 - `Pipenv guide <https://realpython.com/pipenv-guide/>`__
 - `Pipenv vs virtualenv vs conda environment <https://medium.com/@krishnaregmi/pipenv-vs-virtualenv-vs-conda-environment-3dde3f6869ed>`_
 
 Pip
-==============
+===
 
 Pip or the `package installer for python` is the default way to install packages from the Python Package Index, or `PyPI <https://pypi.org/>`__. Depending on the version of Python used, you may need to call it using code::`pip install <packagename>` or code::`python -m pip install <packagename`>. 
 
@@ -251,15 +252,15 @@ Then you can install packages to your local directory as follows. Assuming a sta
     $ pip install --user matplotlib
        
 Pip Related Documents
------------------
+---------------------
 - `Python Pip tutorial page <https://python-tutorials.in/python-pip/>`__.
 
 Conda
-===================
+=====
 **Note:** We typically don't recommend using anaconda due to the amount of dependencies it pulls into your home directory. If you get to where you need anaconda for a project this is typically some software that should be installed in a project space or system-wide! Please consider submitting a help ticket especially if you need multiple packages that can't be satisfied with pipenv. 
 
 Miniconda Installation and Usage Example
------------------------
+----------------------------------------
 With the above caveat in mind, this example shows how to use your scratch space to install and use Miniconda. We recommend this approach since this saves space in your home directory and because full Conda environments do not typically need to be backed up. Note that you can always use :code:`conda env export --from-history>ENV.yml` to back up an installed environment. 
 
 .. code:: shell
@@ -309,7 +310,7 @@ Conda Related Documents
 - `NERSC's guide on using python with anaconda <https://docs.nersc.gov/development/languages/python/>`__
 
 Poetry
-===============
+======
 Poetry is a tool for dependency management and packaging similar to pipenv (which combines pip and venv). While we don't currently support it, you may be interested to try it out in your user-local setup. Read more about Poetry at the `official website <https://python-poetry.org/docs/>`__.
 
 Bonus: IPython, IPykernel, and Jupyter

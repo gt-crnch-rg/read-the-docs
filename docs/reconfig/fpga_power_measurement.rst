@@ -1,6 +1,6 @@
-============
+======================
 FPGA Power Measurement
-============
+======================
 
 One of the big benefits of using an FPGA to accelerate computation is
 the potential power savings that can be realized over another

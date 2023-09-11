@@ -1,16 +1,12 @@
 *Last updated: 3/24/2022*
 
 Lucata Pathfinder Getting Started
-============
+=================================
 
 The Rogues Gallery hosts two systems from Lucata (formerly known as Emu Technology): The Gen1 Emu Chick, an 8-node desktop-style system, and the Lucata Pathfinder, a two-chassis system with 16 nodes and 24 cores in each node for a total of 384 cores. We currently also have 2 Pathfinder chassis on loan from Lucata, which are denoted as PF<2-3>.
 
-Latest Updates
--------------
-* Slurm will be deployed in Summer 2022.
-
 Using the EMU simulation and compiler tools
--------------
+-------------------------------------------
 
 The current toolset, documentation, and examples are available on the rg-emu-dev VM and other nodes as a module. Note that the Pathfinder currently requires the use of the latest 22.02 tools.
 
@@ -21,7 +17,7 @@ The current toolset, documentation, and examples are available on the rg-emu-dev
 * **karrawingi-login.crnch.gatech.edu**: The main EMU Chick node, used for login and transferring files to a specific node/set of nodes. **NOTE:** You cannot run any code on this node and will need to copy your code to n0-n7 on the Emu Chick machine. 
 
 Lucata Workflow
---------------
+---------------
 
 .. figure:: ../figures/lucata/lucata_workflow_diagram.png
    :alt: Rogues Gallery Hardware
@@ -40,7 +36,7 @@ As shown in the figure above, the suggested Lucata workflow combines 1) x86 func
 
 
 Tutorials and Training
--------------
+----------------------
 
 Please check out the recent `PEARC21 tutorial <https://github.com/gt-crnch-rg/pearc-tutorial-2021>`__
 for official training material for the Pathfinder systems. There are also some examples and related tools 

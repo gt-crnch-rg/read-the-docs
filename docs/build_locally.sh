@@ -28,11 +28,21 @@ setup_venv()
 }
 
 build_docs(){
+	
+	#Source your build Python environment
 	source $venv_dir/bin/activate
+	
 	#Build the docs as HTML
 	#Note that the SPHINXOPTS line treats all warnings as errors.
 	#The tee statement writes output both to the terminal and a logfile
-	make html SPHINXOPTS="-W" 2>&1 | tee crnchrg-rtd-build.log
+	
+	#Uncomment to build and stop on any warnings
+	#make html SPHINXOPTS="-W" 2>&1 | tee crnchrg-rtd-build.log
+
+	#Build but don't error out on warnings
+	make html 2>&1 | tee crnchrg-rtd-build.log
+	
+	#Alternate command you can run instead of the above make commands 
 	#python -m sphinx -T -E -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html
 }
 

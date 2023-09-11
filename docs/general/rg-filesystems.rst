@@ -1,6 +1,6 @@
-============
+==========================
 Rogues Gallery Filesystems
-============
+==========================
 
 *Note*: We strongly encourage you to do compilation (especially for
 FPGAs) using ``/netscratch`` and back up your project files to the

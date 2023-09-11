@@ -1,8 +1,9 @@
+==============================
 Xilinx FPGAs - Getting Started
---------------------
+==============================
 
 Acknowledgments
-====================
+===============
 We appreciate the donation of 2x Alveo U280 boards and licenses from Xilinx's University Program as well as the donation of an AC-510 and AC-511 HMC chip from Micron.
 
 Xilinx FPGA Hardware
@@ -95,7 +96,7 @@ Xilinx Software
 Please see the specifc pages on using `Vitis (standard flow) <https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/reconfig/xilinx/xilinx-fpga-crnch-workflow.md>`__, `Vivado flow (advanced) <https://gt-crnch-rg.readthedocs.io/en/main/reconfig/xilinx/xilinx-vivado-flow.html>`__, or frameworks for SmartNics like OpenNIC.
 
 Vitis vs. Vivado vs..
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 Xilinx released the Vitis SW and HW focused framework officially in 2020 to complement existing tools like Vivado (for RTL-based designs), and replace existing tools like SDx (for OpenCL-based designs). However, it is still somewhat confusing as to which tool you might want to use for which situation. This `issue on the Vitis Tutorials repo <https://github.com/Xilinx/Vitis-Tutorials/issues/73>`__ includes an insightful table from Víctor Vilches which we have included and modified slightly.
 
@@ -121,7 +122,7 @@ Xilinx released the Vitis SW and HW focused framework officially in 2020 to comp
       - Uses HLS and frameworks to develop AI constructs/kernels
 
 Supported Versions of Xilinx Tools
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 With that in mind, we support the following versions of Xilinx software on our testbed:
 

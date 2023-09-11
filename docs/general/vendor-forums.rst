@@ -12,7 +12,7 @@ Intel FPGA
 * Intel's general support resources site can be found `here <https://www.intel.com/content/www/us/en/programmable/support/support-resources.html>`__.
 
 OneAPI
------------
+------
 * Intel has a `community forum for OneAPI <https://community.intel.com/t5/Intel-oneAPI-Toolkits/ct-p/oneapi>`__ and also a Discord that they use for workshops and tutorials.
 
 Xilinx FPGA
@@ -21,7 +21,7 @@ Xilinx FPGA
 * `Community portal <https://www.xilinx.com/community.html>`__ - Includes link to forums and open-source designs
 
 RISC-V Forums
------------
+-------------
 * `Chipyard Google Group <https://groups.google.com/g/chipyard/>`__ - for Chipyard-specific issues
 * `RISC-V Hardware Development Google Group <RISC-V HW Dev>`__
 
@@ -30,19 +30,19 @@ RISC-V Forums
 * `Chisel Community Resources <https://www.chisel-lang.org/community.html>`__
 
 Lucata Corporation 
------------
+------------------
 * Check out the CRNCH RG Slack!
 * Lucata has a private issue tracker on Github, if you have bugs to report. Please ask about this in the Teams channel, and we will help you post your issue.
 
 Neuromorphic Computing
------------
+----------------------
 * `Nengo forum <https://forum.nengo.ai/>`__
 
 Mellanox Networking
------------
+-------------------
 * `Community forum <https://community.mellanox.com/s/>`__
 
 Arm 
------------
+---
 * `Community forum <https://community.arm.com/>`__
 * `Arm HPC User Group Slack <https://join.slack.com/t/a-hug/shared_invite/zt-jj7d6hsl-etZunIu5aaVd7RT05fg8Nw>`__

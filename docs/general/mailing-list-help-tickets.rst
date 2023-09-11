@@ -1,10 +1,10 @@
-============
+=================================
 Mailing Lists and Requesting Help
-============
+=================================
 
 
 Help and Mailing List FAQs 
---------------
+--------------------------
 
 -  `Request access to the MS Teams   group <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__.  If you are external to GT, please send us a ticket to add you.
 
@@ -17,13 +17,13 @@ Help and Mailing List FAQs
 -  The main CRNCH help ticket email address is   crnch-rg-help@cc.gatech.edu. We would prefer if you use the webform but the email address is ok if you include your GT username (e.g., gburdell3 for George Burdell).
 
 Help for the CRNCH Rogues Gallery
---------------
+---------------------------------
 
 The Rogues Gallery testbed is rapidly growing along with its support structures. In general, we try to respond to help tickets within 1 business day of your request. Note that the admins and researchers for this project work 9-6 ET Monday-Friday, so any requests outside of this timeframe will be delayed at least until the next business day. Tickets
 submitted over the weekend or on any GT holidays will be evaluated on the following business day. Please note that Georgia Tech is officially closed for the last week of each calendar year for the Christmas holiday.
 
 How do I request help?
---------------
+----------------------
 
 The Rogues Gallery uses a Request Tracker (RT) based ticketing system. You can submit tickets ideally via the `webform <https://crnch.gatech.edu/crnch-rg-help>`__ or alternatively using the email address, crnch-rg-help@cc.gatech.edu. We would request that you submit a help ticket for anything that is not a discussion or
 minor clarification question. This helps us track specific issues for users and also is important as a metric for our funded testbed project.
@@ -84,7 +84,7 @@ recommend the following for asking a clear suggestion:
    get your question answered in a prompt fashion.
 
 Rogues Gallery Mailing Lists and Teams Group
---------------
+--------------------------------------------
 
 There are mailing lists for general user notifications and updates as
 well as sub-lists for each large area of research within the Rogues

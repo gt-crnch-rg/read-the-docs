@@ -1,6 +1,6 @@
-============
+===========================
 What is the Rogues Gallery?
-============
+===========================
 The Rogues Gallery is a shared, open-access testbed run by the `Center for Research into Novel Computing Hierarchies (CRNCH) <www.crnch.gatech.edu>`__ at Georgia Tech. 
 This testbed is focused on supporting "post-Moore"architectures, tools, and software. The RG testbed is currently funded by NSF's Community CISE Research Infrastructure (CCRI) program as NSF
 award #\ `2016701 <https://www.nsf.gov/awardsearch/showAward?AWD_ID=2016701>`__ starting in September 2020. The Rogues Gallery was started as a Georgia
@@ -27,10 +27,10 @@ next-generation networking. |RG Enabled Research Pillars|
 .. |RG Enabled Research Pillars| image:: ../figures/general/RG_CCRI_Enabled_Research_Pillars.png
 
 Who are the users?
-==============================
+==================
 Anyone in the US can request an account for the CRNCH Rogues Gallery testbed with priority for
 CISE researchers, students, and industry partners.
 
 How do I acknowledge the use of Rogues Gallery resources?
-===================================
+=========================================================
 Please see our `project page <https://crnch-rg.cc.gatech.edu/rogues-gallery-citation/>`__ on citing the usage of the Rogues Gallery. This helps us acknowledge NSF and other support and assists in the growth of the testbed!
