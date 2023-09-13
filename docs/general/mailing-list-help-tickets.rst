@@ -12,7 +12,7 @@ Help and Mailing List FAQs
       Teams. Most of the Lucata discussion currently uses this Slack. Just note that since we are on a free plan that old conversations are not saved.
 
 -  `How to use the help ticket webform at
-   www.crnch.gatech.edu/crnch-rg-help <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-help-webform-examples.html>`__
+   https://crnch-rg.cc.gatech.edu/crnch-rg-help/ <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-help-webform-examples.html>`__
 
 -  The main CRNCH help ticket email address is   crnch-rg-help@cc.gatech.edu. We would prefer if you use the webform but the email address is ok if you include your GT username (e.g., gburdell3 for George Burdell).
 
