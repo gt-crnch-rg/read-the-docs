@@ -2,7 +2,7 @@
 Rogues Gallery Help Webform Examples
 ====================================
 
-This page shows some simple examples of how to fill out the [help ticket webform](https://crnch.gatech.edu/crnch-rg-help) to request certain features. Your ticket should have at the minimum:
+This page shows some simple examples of how to fill out the [help ticket webform](https://crnch-rg.cc.gatech.edu/crnch-rg-help/) to request certain features. Your ticket should have at the minimum:
 
 1. What machine(s) are you experiencing the problem on?
 2. What is some short output from the command being run and the error output? If the output is longer or GUI based you can also share a logfile as text using the upload button. 
