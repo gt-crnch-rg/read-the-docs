@@ -159,7 +159,7 @@ Neuromorphic/AI
       - `Jetson Xavier NX Developer Kit <https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit>`__
       
 Reconfigurable and Novel Networking
---------------------
+-----------------------------------
 	
 .. list-table:: 
     :widths: auto
@@ -272,7 +272,7 @@ RISC-V
       - SiFive Unmatched motherboard
 
 Simulation and Tutorial Machines
---------------------
+--------------------------------
 	
 .. list-table:: 
     :widths: auto

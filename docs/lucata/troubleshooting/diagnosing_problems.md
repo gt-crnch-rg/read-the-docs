@@ -40,8 +40,8 @@ There are a few things in the output that you should pay attention to:
 3. If the link speed is shown, check that the links are running at the speed you want. 
 
 If you need to reconfigure the system, see these pages:   
-- [System-Reconfiguration](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/system_reconfig.md) 
-- [Bringing up a multichassis system](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/multichassis_start.md)
+- [System-Reconfiguration](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/config_and_running/system_reconfig.md) 
+- [Bringing up a multichassis system](https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/lucata/config_and_running/multichassis_start.md)
 
 ### Are SRIO ports running well?
 Use
@@ -113,13 +113,18 @@ For more information, see this page: [Running programs with emu_multinode_exec](
 
 ### Manually terminating a program
 
-If you suspect a program is hung and would like to terminate a program, the best thing to do is to use
+If you suspect a program is hung and would like to terminate a program, the best thing to do is to open another terminal (via tmux or screen) and run:
 ```
-emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tools --start_checkpointing'
+emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tool --start_checkpointing'
 ```
 to gracefully terminate a program.  This will take a few seconds to do, but it generally terminate the program cleanly.
 
-If you are using a script to run `emu_multinode_exec`, you should kill that script **first** before checkpointing.
+If you are running a multinode program, you need to checkpoint on all the chassis you are running on. So for a 32-node multinode run, you should instead use:
+
+```
+emu_system_cmd -p -c {0..3} -n {0..7} -- 'emu_diagnostic_tool --start_checkpointing'
+```
+If you are using a separate BASH script to run `emu_multinode_exec`, you should kill that script **first** before checkpointing.
 If you do not kill the script first and it attempts to start more `emu_multinode_exec` jobs, this may interfere with your checkpointing efforts. 
 
 ### Cleaning up when checkpoint fails
@@ -137,7 +142,7 @@ Check to make sure **ALL** `emu_init`, `emu_memory_check`, `emu_multinode_exec`,
 ```
 emu_system_cmd -p -s {0..#(N-1)} -- 'pkill -9 emu.*handler'
 ```
-will kill all of the `emu_handler_and_loader` and `emu_seq_handler_background` processes (the `.*` is a regexp to match them).  **Note that a more graceful exit using `emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tools --start_checkpointing'` is always preferred**
+will kill all of the `emu_handler_and_loader` and `emu_seq_handler_background` processes (the `.*` is a regexp to match them).  **Note that a more graceful exit using `emu_system_cmd -p -s {0..#(N-1)} -- 'emu_diagnostic_tool --start_checkpointing'` is always preferred**
 
 If you don't think a reboot is necessary, you should ensure the following files aren't around:
 ```
@@ -148,3 +153,30 @@ If you don't think a reboot is necessary, you should ensure the following files 
 /dev/shm//x10_device_semaphore
 ```
 A reboot is usually required if you encountered PCIe read completion timeouts, downed SRIO ports, hard checkpoint failures, crashed kernel driver.  A reset may often take care of lost memory transactions, hung programs w/ lock contention, or other software bugs.
+
+## Are the hostnames set up correctly?
+
+Sometimes when you reconfigure the system, you get an error that the hostnames cannot be set correctly. 
+
+```
+[ERROR]: n13: ssh: Could not resolve hostname n13: Name or service not known
+c2: n11: ssh: Could not resolve hostname n11: Name or service not known
+```
+
+To fix this you can run the following command as root:
+```
+root@pathfinder0:~# emu_system_init_config -c 4 -t pathfinder-s
+c1: Launching emu_chassis_init_config with args: pathfinder-s 8                                                                                                                               c0: Launching emu_chassis_init_config with args: pathfinder-s 8
+c3: Launching emu_chassis_init_config with args: pathfinder-s 8
+c1: Running 'mkdir -p /etc/emutechnology; mkdir -p /var/lock; touch /var/lock/emu_needs_reconfigured.lock; echo pathfinder-s > /etc/emutechnology/SystemType; slot-id > /etc/emutechnology/NodeId' in parallel on n[0,1,2,3,4,5,6,7]...
+c0: Running 'mkdir -p /etc/emutechnology; mkdir -p /var/lock; touch /var/lock/emu_needs_reconfigured.lock; echo pathfinder-s > /etc/emutechnology/SystemType; slot-id > /etc/emutechnology/NodeId' in parallel on n[0,1,2,3,4,5,6,7]...
+...
+c3: ################################################################
+c3:
+c3: SSH key update Completed on Wed Aug  2 22:25:23 EDT 2023!
+c3: Users should remove the entries for nodes in the known_hosts
+c3: file in their .ssh directory
+c3:
+c3: ################################################################
+[STATUS]: emu_system_init_config complete.
+```

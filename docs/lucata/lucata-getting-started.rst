@@ -1,5 +1,5 @@
 Lucata Pathfinder Getting Started
-============
+=================================
 
 .. figure:: ../figures/lucata/pathfinder_chassis_top.jpg
    :alt: Lucata Pathfinder Chassis Top View
@@ -9,15 +9,16 @@ Lucata Pathfinder Getting Started
 The Rogues Gallery hosts two distinct systems from Lucata (formerly known as Emu Technology): The Gen1 Emu Chick, an 8-node desktop-style system, and the Lucata Pathfinder, a four-chassis system with 16 nodes and 24 cores in each node for a total of 768 cores across the Pathfinder cluster.
 
 Latest Updates
--------------
+--------------
 * The 23.07 Pathfinder tools have been released and made the default on the Rogues Gallery testbed. See `the 3.3 Programming Guide here <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/3c24efe56e9442207a8058a8b233d05bef53ef57/docs/pathfinder/Lucata-Pathfinder-Programming-Guide-v3.3.pdf>`__ (RG user account login to GT Github required) for the latest information on this toolset release.
 
 Suggested Background and First Steps
--------------
+------------------------------------
+We suggest that you familiarize yourself with the Cilk programming language and Cilk syntax using the `OpenCilk tutorials <https://www.opencilk.org/doc/tutorials/introduction-to-cilk-programming/>`__.
 
 
 Using the EMU simulation and compiler tools
--------------
+-------------------------------------------
 
 The current toolset, documentation, and examples are available on the rg-emu-dev VM and other nodes as a module. Note that it is recommended to use the latest version of the Pathfinder toolset.
 
@@ -28,7 +29,7 @@ The current toolset, documentation, and examples are available on the rg-emu-dev
 * **pf<0-3>.crnch.gatech.edu**: Lucata Pathfinder chassis for HW execution
 
 Lucata Workflow
---------------
+---------------
 
 .. figure:: ../figures/lucata/lucata_workflow_diagram.png
    :alt: Rogues Gallery Hardware
@@ -47,7 +48,7 @@ As shown in the figure above, the suggested Lucata workflow combines 1) x86 func
 
 
 Tutorials and Training
--------------
+----------------------
 
 Please check out the recent `Pathfinder tutorial <https://github.com/gt-crnch-rg/lucata-pathfinder-tutorial>`__
 for official training material for the Pathfinder systems. There are also some examples and related tools 

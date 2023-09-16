@@ -1,9 +1,9 @@
-============
+====================
 Instinct - AMD MI210
-============
+====================
 
 Acknowledgments
-==============
+===============
 We greatly appreciate the donation of this test platform from AMD to `Dr. Spencer Bryngelson <https://comp-physics.group/>`__, a CRNCH faculty member working on computational fluid dynamics (CFD) codes including `MFC <https://mflowcode.github.io/>`__.
 
 Current Status
@@ -40,7 +40,7 @@ MI250x GPUs deployed in `ORNL's Frontier <https://www.olcf.ornl.gov/frontier/>`_
 server has two Milan CPUs, 512 GB of DDR4 memory, and a Connect-X 6 networking card.
 
 Software and Tools
-=====================
+==================
 
 .. list-table::
     :widths: auto
@@ -56,9 +56,9 @@ Software and Tools
     * - RHEL8
       - 4.18.0
       - GCC 8.5
-      - ROCm 5.2.0, `AOCC 3.2.0 <https://developer.amd.com/wp-content/resources/57222_AOCC_UG_Rev_3.2.pdf>`__
+      - ROCm 5.6.0, `AOCC 4.0.0 <https://developer.amd.com/wp-content/resources/57222_AOCC_UG_Rev_3.2.pdf>`__
       - 
-      - AOCL 3.2.0, `ROCm libraries 5.2.0 <https://rocblas.readthedocs.io/en/rocm-5.2.1/>`__, `uProf 3.6 <https://developer.amd.com/amd-uprof/>`__
+      - AOCL 3.2.0, `ROCm libraries 5.6.0 <https://rocblas.readthedocs.io/en/rocm-5.6.0/>`__, `uProf 4.0 <https://developer.amd.com/amd-uprof/>`__
 
 How do I get to Instinct?
 =========================
@@ -95,16 +95,16 @@ Modules should be available but you may need to update your module path:
     []$ module avail
 
     -------------------------------------------- /projects/tools/x86_64/rhel-8/modulefiles -------------------------------------  
-   aocc/3.2.0    aocl/aocc-3.2.0    aocl/gcc-3.2.0 (D)    rocm/5.2.0
+   aocc/3.2.0    aocl/aocc-3.2.0    aocl/gcc-3.2.0 (D)    rocm/5.6.0
     
-    []$ module load rocm/5.2.0
+    []$ module load rocm/5.6.0
     []$ which hipcc
-    /opt/rocm-5.2.0/bin/hipcc
+    /opt/rocm-5.6.0/bin/hipcc
    
 Useful ROCm tools include hipcc, amdclang, aompcc, amdflang, rocgdb, and rocprof. 
 
 Running OpenACC with GCC13
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 Alex Woods has compiled GCC13 for testing OpenACC on the Instinct GPU, and we have put his script in the internal docs `here <https://github.gatech.edu/crnch-rg/rogues-docs/blob/master/hpc/amd-gpu/build-gcc13-amdgpu.sh>`__ When compiling with the new gcc install, add the flags :code:`-fopenacc -foffload-options=-march=gfx90a` for the Instinct MI2XX GPUs. Note that performance will likely be slow. 
 
 Running jobs
@@ -117,6 +117,7 @@ Useful training material
 ------------------------
 
 - `OmniTrace <https://amdresearch.github.io/omnitrace/>`__ - AMD's newest tracing and profiling tool.
+- `Introduction to Profiling Tools for AMD Hardware <https://gpuopen.com/learn/amd-lab-notes/amd-lab-notes-profilers-readme/>`__ - this article has a great breakdown of when to use specific profilers. OmniTrace and uProf are the newest profiling tools.
 
 Vendor-provided Documents and Resources
 ---------------------------------------

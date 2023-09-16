@@ -1,9 +1,9 @@
 Lucata Pathfinder FAQs
-============
+======================
 This page details answers to some commonly asked questions about the Lucata Pathfinder system. 
 
 What are the detailed specs for GT's Pathfinder systems?
--------------
+--------------------------------------------------------
 GT currently hosts a four-chassis Pathfinder system which has 32 nodes in total with 8 in each chassis. The nodes are connected directly via RapidIO links. 
 
 * Stationary cores per node/chassis: 1/8

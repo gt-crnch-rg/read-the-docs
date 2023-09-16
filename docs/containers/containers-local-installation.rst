@@ -6,12 +6,12 @@ This page documents how you can install tools like Docker and Singularity locall
 The Pawsey Supercomputing Center has a nice guide on using Singularity with an HPC environment, and they have detailed instructions for `local installation of Singularity <https://pawseysc.github.io/singularity-containers/44-setup-singularity/index.html>`__.
 
 Mac OSX
--------------------------
+-------
 TBD
 
 
 Installing Singularity Locally
---------------------------
+------------------------------
 `Singularity CE installation instructions <https://github.com/sylabs/singularity/blob/main/INSTALL.md>`__ support building from source or `RPMs or DEBs for Ubuntu 18.04+ <https://github.com/sylabs/singularity/releases>`__. 
 
 Prerequisites for installation

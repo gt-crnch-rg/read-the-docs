@@ -1,8 +1,9 @@
+==============================
 Xilinx FPGAs - Getting Started
---------------------
+==============================
 
 Acknowledgments
-====================
+===============
 We appreciate the donation of 2x Alveo U280 boards and licenses from Xilinx's University Program as well as the donation of an AC-510 and AC-511 HMC chip from Micron.
 
 Xilinx FPGA Hardware
@@ -33,8 +34,8 @@ Currently, the Rogues Gallery hosts the following Xilinx FPGA hardware.
     * - Xilinx Alveo U280
       - 
       - 
-      - flubber5
-      - 2 boards
+      - flubber<4-5>
+      - 1 board; 2 boards
     * - Xilinx SmartSSD
       - 
       - 
@@ -80,22 +81,22 @@ Documentation and Related Repositories
 Accessing the Rogues Gallery Xilinx FPGAs
 =========================================
 
-See the Reconfigurable Computing Workflow page for more details on the process to use this hardware.
+See the `Xilinx FPGA Workflow page here <https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/reconfig/xilinx/xilinx-fpga-crnch-workflow.md>`__ for more details on the process to use this hardware.
 
 The short version is: 
 
 * For emulation and development, please use the FPGA development VMs, `rg-fpga-dev-<1-4>`.
-* For GUI-based development, use VNC, ideally with either Slurm or our OOD instance.
+* For GUI-based development, use VNC, ideally with either Slurm or our `OOD instance <https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html>`__.
 * For final bitstream compilation, request a hardware node using Slurm and run the tools on that node. 
 
 
 Xilinx Software 
 ===============
 
-Please see the specifc pages on using Vitis (standard flow), `Vivado flow (advanced) <>`__, or frameworks for SmartNics like OpenNIC.
+Please see the specifc pages on using `Vitis (standard flow) <https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/reconfig/xilinx/xilinx-fpga-crnch-workflow.md>`__, `Vivado flow (advanced) <https://gt-crnch-rg.readthedocs.io/en/main/reconfig/xilinx/xilinx-vivado-flow.html>`__, or frameworks for SmartNics like OpenNIC.
 
 Vitis vs. Vivado vs..
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 Xilinx released the Vitis SW and HW focused framework officially in 2020 to complement existing tools like Vivado (for RTL-based designs), and replace existing tools like SDx (for OpenCL-based designs). However, it is still somewhat confusing as to which tool you might want to use for which situation. This `issue on the Vitis Tutorials repo <https://github.com/Xilinx/Vitis-Tutorials/issues/73>`__ includes an insightful table from Víctor Vilches which we have included and modified slightly.
 
@@ -121,7 +122,7 @@ Xilinx released the Vitis SW and HW focused framework officially in 2020 to comp
       - Uses HLS and frameworks to develop AI constructs/kernels
 
 Supported Versions of Xilinx Tools
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 With that in mind, we support the following versions of Xilinx software on our testbed:
 
@@ -167,51 +168,27 @@ You can either use the licensing center from the GUI version of a tool like Viva
 
 .. code-block::
 
-   lmutil lmstat -a -c 2100@toolbox.crnch.gatech.edu
+    lmutil lmstat -a -c 2100@toolbox.crnch.gatech.edu
 
-   mutil - Copyright (c) 1989-2016 Flexera Software LLC. All Rights Reserved.
-   Flexible License Manager status on Mon 4/5/2021 21:37
+    lmutil - Copyright (c) 1989-2016 Flexera Software LLC. All Rights Reserved.
+    Flexible License Manager status on Mon 4/5/2021 21:37
 
-   License server status: 2100@toolbox
-       License file(s) on toolbox: /tools/reconfig/licenses/xilinx_vivado_july2020.lic:
+    License server status: 2100@toolbox
+        License file(s) on toolbox: /tools/reconfig/licenses/xilinx_vivado_july2020.lic:
 
-      toolbox: license server UP (MASTER) v11.14.1
+    toolbox: license server UP (MASTER) v11.14.1
 
-   Vendor daemon status (on toolbox):
+    Vendor daemon status (on toolbox):
 
-      xilinxd: UP v11.14.1
+        xilinxd: UP v11.14.1
 
-   Feature usage info:
+    Feature usage info:
 
-   Users of Vivado_System_Edition:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of SDK:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of ChipScopePro_SIOTK:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of ChipscopePro:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of ISE:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of SysGen:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of XPS:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of PartialReconfiguration:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of Simulation:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of Implementation:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of Analyzer:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of HLS:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of Synthesis:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of ISIM:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-
-   Users of PlanAhead:  (Total of 15 licenses issued;  Total of 0 licenses in use)
+    Users of Vivado_System_Edition:  (Total of 15 licenses issued;  Total of 0 licenses in use)
+    Users of SDK:  (Total of 15 licenses issued;  Total of 0 licenses in use)
+    ...
+    Users of HLS:  (Total of 15 licenses issued;  Total of 0 licenses in use)
+    ...
 
 Getting started with AWS for development
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -235,4 +212,4 @@ Xilinx has a program for faculty and staff that seems to provide discounts on Al
 
 Xilinx Machine Learning Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* `Xilinx ML page <[Reconfig]-Xilinx-ML-Tools>`_
+* `Xilinx ML page (TBD) <tbd.html>`_

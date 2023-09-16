@@ -1,6 +1,6 @@
-============
+========================
 Octavius - A64FX Testbed
-============
+========================
 
 *Last Updated: 10/14/22*
 
@@ -76,7 +76,7 @@ To use the latest Arm 22.0.2 compilers, you may need to update your modulepath (
    Alternatively:  $ export MODULEPATH=$MODULEPATH:/net/projects/tools/aarch64/rhel-8/arm-allinea/arm-compiler/22.0.2/modulefiles
 
 Tools - Arm Instruction Emulator
-^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ArmIE is a DynamoRio front-end that allows for testing and evaluating SVE instructions on hardware that may not support the latest Arm ISA. As an example, you can use ArmIE to instrument your code with "regions of interest" and then print out instruction counts or the numbers and types of different operations (e.g., gather/scatter or load/stores).
 
 For more information on using ArmIE, see this `Getting Started page <https://developer.arm.com/documentation/102190/22-0/Get-started/Get-started-with-Arm-Instruction-Emulator>`__ and `this tutorial page <https://developer.arm.com/documentation/102190/22-0/Tutorials/Analyze-Scalable-Vector-Extension--SVE--applications-with-Arm-Instruction-Emulator?lang=en>`__.
@@ -162,11 +162,12 @@ Using modules
 By default octavius uses LMOD. Use the standard ``module avail`` and ``module load`` commands. If you don't see all the modules you can try to source our script which will update your MODULEPATH environment variable.
 
 .. code::
+
    //Shows how to source this script to add all available module paths
    $ . /tools/armhpc/init_modules_slurm_octavius_manual.sh
    $ module avail
 
-This would produce the following output (elided for clarity)::
+   This would produce the following output (elided for clarity)::
 
    --------------------------------------------------------- /opt/cray/pe/perftools/default/modulefiles ---------------------------------------------------------
    perftools-lite-events    perftools-lite-gpu    perftools-lite-hbm    perftools-lite-loops    perftools-lite    perftools-preload    perftools

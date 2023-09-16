@@ -1,6 +1,6 @@
+===================================
 Smart Networking  - Getting Started
---------------------
-
+===================================
  
 The Rogues Gallery supports three types of novel networking:
 
@@ -9,11 +9,11 @@ The Rogues Gallery supports three types of novel networking:
 * 5G networking testbed equipment
 
 Acknowledgments
-====================
+===============
 We appreciate the donation of several Bluefield-2 boards from NVIDIA.
 
 Smart Networking Hardware
-====================
+=========================
 
 Currently, the Rogues Gallery hosts the following smart networking hardware.
 

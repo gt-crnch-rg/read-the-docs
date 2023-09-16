@@ -8,7 +8,7 @@ resources for common simulators, tutorials, and benchmarks that can be
 used with simulators or cloud-based quantum systems.
 
 What fundamentals do you need to get started with quantum computing research?
--------------------------
+-----------------------------------------------------------------------------
 
 -  You need a good base knowledge of `linear
    algebra <https://community.qiskit.org/textbook/ch-prerequisites/linear_algebra.html>`__
@@ -106,7 +106,7 @@ Based in part on Scaffold compiler tools and Qiskit.
 DWAVE <https://arcb.csc.ncsu.edu/~mueller/qc/qc-tut/>`__
 
 Quantum Algorithms and Survey Papers
-*************************
+************************************
 
 `Next Steps in Quantum Computing: Computer Science’s
 Role <https://cra.org/ccc/wp-content/uploads/sites/2/2018/11/Next-Steps-in-Quantum-Computing.pdf>`__
@@ -146,7 +146,7 @@ XACC (ORNL)
    Examples <https://github.com/eclipse/xacc/tree/master/python/examples>`__
 
 Quantum Hardware Testbeds and Resources
-*************************
+***************************************
 
 -  `IBM
    Q <https://www.ibm.com/quantum-computing/technology/experience/>`__
@@ -156,13 +156,12 @@ Quantum Hardware Testbeds and Resources
    SDK <https://www.rigetti.com/>`__
 -  `DWave Leap (quantum annealing) <https://www.dwavesys.com/take-leap>`__
 
---------------
 
 While the above resources are considered primary resources, the
 following links are provided as additional resources.
 
 Introductory videos about quantum computing
-*************************
+*******************************************
 
 These videos might provide a good high-level introduction to quantum
 computing and were put together from the IEEE Quantum Computing

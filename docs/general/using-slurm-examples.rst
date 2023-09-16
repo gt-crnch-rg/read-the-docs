@@ -118,7 +118,7 @@ For more information on ``sbatch``, please go here: `Slurm
 sbatch <https://slurm.schedmd.com/sbatch.html>`__.
 
 Slurm Batch Run Job with MPI
-------------------------
+----------------------------
 
 Batch run jobs using MPI (Message Passing Interface) can also be run
 with Slurm on the Rogues Gallery testbed.

@@ -1,9 +1,9 @@
-============
+===========================
 Quorra - NVIDIA Ampere GPUs
-============
+===========================
 
 Acknowledgments
-==============
+===============
 Quorra1 is also funded via GT's Techfee program, so usage for this server is reserved for coursework (when requested by instructors or students). Please read more about Techfee hardware `on this page <https://crnch-rg.cc.gatech.edu/tech-fee-hosted-equipment/>`__
 
 Current Status
@@ -47,7 +47,7 @@ System Specifications
 
 
 Software and Tools
-=====================
+===================
 
 .. list-table::
     :widths: auto
@@ -68,7 +68,7 @@ Software and Tools
       - DOCA 1.5.1
 
 How do I get to Quorra?
-=========================
+=======================
 
 As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
@@ -79,19 +79,20 @@ To request an allocation on Quorra using slurm:
 .. code::
 
     //Request an allocation of 1 hr, partition rg-gpu, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-gpu -w quorra2
+    salloc -t 1:00:00 -p rg-gpu -w quorra2 -G 1
     //SSH to the resource
     ssh quorra2
     
     
 To request just one GPU - specify the type like A30, A100, or H100.
 .. code::
+    
     salloc -GH100 -prg-gpu
     
 The local modules for NVIDIA HPC SDK should load automatically. However if they do not you can run ". /etc/profile.d/y02_rg_local_modules.sh" to pull in all the local modulepaths.
 
 Using NVIDIA SDK
-=========================
+================
 
 .. code::
 

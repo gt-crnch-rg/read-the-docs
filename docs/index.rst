@@ -23,6 +23,8 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    general/mailing-list-help-tickets
    general/vendor-forums
    general/contributing
+   general/testbed-release-notes
+   authors.rst
 
 .. toctree::
    :caption: RG Getting Started Topics
@@ -42,6 +44,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    
    general/using-scrontab-slurm
    general/using-gui-with-vnc
+   general/ci-runners
 
 .. toctree::
    :caption: RG Workflows
@@ -49,7 +52,8 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :hidden:  
    
    general/rg-workflows
-   
+   tools/profilers
+
 .. toctree::
    :caption: Novel HPC
    :maxdepth: 2
@@ -58,8 +62,9 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    
    gpu/instinct-mi210.rst
    gpu/quorra-ampere-bf
+   novel-hpc/violet-spr-cxl.rst
    arm/octavius-a64fx-testbed.rst
-   arm/kingpin-ampere.rst
+   arm/kingpin-nvidia-devkit.rst
   
 .. toctree::
    :caption: Lucata Pathfinder
@@ -76,6 +81,8 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :hidden:
    :glob:
 
+   neuromorphic/rudi2-jetson-orin.rst
+
 .. toctree::
    :caption: Novel Networking
    :maxdepth: 2
@@ -90,6 +97,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :maxdepth: 2
    :hidden:
    :glob:
+   
    quantum/cuquantum.rst
    
 .. toctree::
@@ -103,8 +111,9 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    reconfig/xilinx/pynq-cluster
    reconfig/xilinx/xilinx-smart-ssd
    reconfig/vortex/vortex-riscv-gpgpu
-   reconfig/xilinx/vitis_ai
+   reconfig/xilinx/xilinx-ml-tools
    reconfig/intel/oneapi-fpga-getting-started
+   reconfig/intel/oneapi-fpga-crnch-workflow
    reconfig/fpga_power_measurement
 
 .. toctree::
@@ -115,9 +124,15 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    
    riscv/rg-riscv-hardware.rst
    reconfig/vortex/vortex-riscv-gpgpu.rst
+
+.. toctree::
+   :caption: Techfee Systems
+   :maxdepth: 2
+   :hidden:
+   :glob:
    
-
-
+   techfee/frozone-omnipath.rst
+   
 .. toctree::
    :caption: Miscellaneous
    :maxdepth: 2

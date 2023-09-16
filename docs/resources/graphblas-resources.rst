@@ -1,5 +1,6 @@
+===================
 GraphBLAS Resources
-============================
+===================
 
 Why Bother using Linear Algebra packages?
 -----------------------------------------
@@ -16,7 +17,7 @@ Basic Linear Algebra Subprograms (BLAS) is a specification that prescribes a set
 
 
 Why do we need a BLAS for Graphs? 
----------------
+---------------------------------
 Graph problems are challenging to program due to irregular access patterns, poor locality, and difficulty in caching and parallelization.
 Further, contemporary computer architectures are good at processing linear and hierarchical data structures, such as lists, stacks, or trees, and a massive amount of random data access is required, CPU has frequent cache misses, and implementing parallelism is difficult.
 
@@ -36,7 +37,7 @@ A key insight behind this work is that when a graph is represented by a sparse i
 In the implementation of GraphBLAS, graphs are encoded as sparse adjacency matrices and use vector/matrix operations to express graph algorithms.
 
 How should I get started learning about GraphBLAS?
-----------------------
+--------------------------------------------------
 There are a wide variety of resources `GraphBLAS-Pointers repo <https://github.com/GraphBLAS/GraphBLAS-Pointers>`__. The following listed resources (with stars) are likely the best place to start. We suggest the videos followed by Gábor's tutorial. 
 
 Suggested Videos
@@ -50,10 +51,10 @@ Tutorials
 - `HPEC 2021 Hand-on Tutorial Using Docker <https://github.com/GraphBLAS-Tutorials/HPEC21-Tutorial>`__ - this tutorial allows you to run on your laptop and follow along. 
 
 Other Suggested Papers/Talks
-^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - GraphBLAS Wikipedia page
 - `Lucata GraphBLAS introduction <https://www.slideshare.net/jasonriedy/lagraph-20211013>`__
 
 What should I do now that I know more about GraphBLAS?
-----------------
+------------------------------------------------------
 We suggest that you use this new GraphBLAS expertise with the Lucata Pathfinder system. Please see this page for specific information on running GraphBLAS with the Pathfinder. 

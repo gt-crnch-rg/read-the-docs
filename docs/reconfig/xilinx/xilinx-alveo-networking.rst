@@ -33,7 +33,7 @@ Programming via JTAG (micro-USB) interface.
 
 IMPORTANT!! Bear in mind `this <https://www.xilinx.com/support/answers/72926.html>`_ issue before programming the U280 via the custom Vivado flow. Otherwise, the board may lock-up.
 
-Program Alveo U280 through Vivado Hardware Manager. See `here <https://www.xilinx.com/support/answers/71763.html>`_ for instructions.
+Program Alveo U280 through Vivado Hardware Manager. See `this link <https://www.xilinx.com/support/answers/71763.html>`_ for instructions.
 
 After programming:
 
@@ -57,4 +57,4 @@ There are many ways to do this:
   Revert to golden image via Micro USB - JTAG connection and Vivado Hardware Manager (see link below)
   (cold reboot required)
 
-Please see `here <https://www.xilinx.com/support/answers/71757.html>`_ for further instructions and/or alternatives.
+Please see `this page <https://www.xilinx.com/support/answers/71757.html>`_ for further instructions and/or alternatives.

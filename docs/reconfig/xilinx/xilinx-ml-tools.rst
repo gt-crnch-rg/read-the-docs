@@ -44,10 +44,10 @@ Run the docker image - **note you should not need to pull a new Docker image as 
    $./docker_run.sh xilinx/vitis-ai:latest
    #Accept the terms for the container
 
-===========================================
-
-__      ___ _   _                   _____
-
+    ===========================================
+    
+    __      ___ _   _                   _____
+    
     __      ___ _   _                   _____
     \ \    / (_) | (_)            /\   |_   _|
      \ \  / / _| |_ _ ___ ______ /  \    | |
@@ -55,20 +55,20 @@ __      ___ _   _                   _____
        \  /  | | |_| \__ \     / ____ \ _| |_
         \/   |_|\__|_|___/    /_/    \_\_____|
 
-============================================
+    ============================================
 
-`Docker Image Version: latest
-Build Date: Mon Nov 16 10:46:01 MST 2020
-VAI_ROOT=/opt/vitis_ai
-For TensorFlow Workflows do:
-  conda activate vitis-ai-tensorflow
-For Caffe Workflows do:
-  conda activate vitis-ai-caffe
-For Neptune Workflows do:
-  conda activate vitis-ai-neptune
-More detail on conda packages included in container: /opt/vitis_ai/conda/conda_packages.txt
-More detail on other 3rd party package source included in container: https://www.xilinx.com/products/design-tools/guest-resources.html
-flubber3:/workspace$`
+   `Docker Image Version: latest
+   Build Date: Mon Nov 16 10:46:01 MST 2020
+   VAI_ROOT=/opt/vitis_ai
+   For TensorFlow Workflows do:
+    conda activate vitis-ai-tensorflow
+   For Caffe Workflows do:
+    conda activate vitis-ai-caffe
+   For Neptune Workflows do:
+    conda activate vitis-ai-neptune
+   More detail on conda packages included in container: /opt/vitis_ai/conda/conda_packages.txt
+   More detail on other 3rd party package source included in container: https://www.xilinx.com/products/design-tools/guest-resources.html
+   flubber3:/workspace$`
 
 Xilinx Support for TVM
 ---------------------------------
