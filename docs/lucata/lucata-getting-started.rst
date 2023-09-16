@@ -10,7 +10,7 @@ The Rogues Gallery hosts two distinct systems from Lucata (formerly known as Emu
 
 Latest Updates
 -------------
-* The 23.04 Pathfinder tools have been released and made the default on the Rogues Gallery testbed. See `the 3.2 Programming Guide here <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/main/docs/pathfinder/LucataProgGuide-v3.2.pdf>`__ (RG user account login to GT Github required) for the latest information on this toolset release.
+* The 23.07 Pathfinder tools have been released and made the default on the Rogues Gallery testbed. See `the 3.3 Programming Guide here <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/3c24efe56e9442207a8058a8b233d05bef53ef57/docs/pathfinder/Lucata-Pathfinder-Programming-Guide-v3.3.pdf>`__ (RG user account login to GT Github required) for the latest information on this toolset release.
 
 Suggested Background and First Steps
 -------------
@@ -33,7 +33,7 @@ Lucata Workflow
 .. figure:: ../figures/lucata/lucata_workflow_diagram.png
    :alt: Rogues Gallery Hardware
 
-When getting started, we highly recommend checking out the `Lucata Pathfinder Programming Manual <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/main/docs/pathfinder/Lucata-Pathfinder-Programming-Guide-v2.0.0-2202-tools.pdf>`__ (*requires GT Github login*) and read through Chapters 1,2,3, 5.1, 6, and 7. This will give you a basic understanding of the Cilk-based workflow and Lucata-specific APIs and tools. 
+When getting started, we highly recommend checking out the `Lucata Pathfinder Programming Manual <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/3c24efe56e9442207a8058a8b233d05bef53ef57/docs/pathfinder/Lucata-Pathfinder-Programming-Guide-v3.3.pdf>`__ (*requires GT Github login*) and read through Chapters 1,2,3, 5.1, 6, and 7. This will give you a basic understanding of the Cilk-based workflow and Lucata-specific APIs and tools. 
 
 As shown in the figure above, the suggested Lucata workflow combines 1) x86 functionality testing, 2) simulation of code on a VM, 3) execution on a single node of the Pathfinder system, and 4) execution on multiple nodes and chassis.
 
@@ -49,13 +49,11 @@ As shown in the figure above, the suggested Lucata workflow combines 1) x86 func
 Tutorials and Training
 -------------
 
-Please check out the recent `PEARC21 tutorial <https://github.com/gt-crnch-rg/pearc-tutorial-2021>`__
+Please check out the recent `Pathfinder tutorial <https://github.com/gt-crnch-rg/lucata-pathfinder-tutorial>`__
 for official training material for the Pathfinder systems. There are also some examples and related tools 
-shared in a Github repo at https://github.gatech.edu/crnch-rg/emu-common.
-Please feel free to branch and fork as makes sense for your research.
+shared in a Github repo at https://github.gatech.edu/crnch-rg/emu-common (requires login). Please feel free to branch and fork as makes sense for your research.
 
-Eric Hein has also contributed a nice micro-benchmark that uses serial
-and recursive spawn. `Micro benchmark <https://github.gatech.edu/crnch-rg/emu-microbench>`__
+Eric Hein has also contributed a nice micro-benchmark that uses serial and recursive spawn. `Micro benchmark <https://github.gatech.edu/crnch-rg/emu-microbench>`__
 
 
 Other resources:
