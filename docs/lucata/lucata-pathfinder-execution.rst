@@ -1,7 +1,6 @@
-*Last updated: 4/07/2022*
-
+===========================
 Lucata Pathfinder Execution
-============
+===========================
 
 Following our workflow guide for the Lucata Pathfinder platform, you will normally work through the following phases:
 1) Running code on an x86 machine with the memoryweb library
@@ -13,7 +12,7 @@ Following our workflow guide for the Lucata Pathfinder platform, you will normal
 Here we go through the last 3 steps in more detail. 
 
 Checking the status of the system:
-------------------------
+----------------------------------
 
 Check all nodes in the system to see if it is multi-chassis, single-chassis, or single-node
 
@@ -31,13 +30,13 @@ Check all nodes in the system to see if it is multi-chassis, single-chassis, or 
     c3: Chassis Switch Initialization Status = initialized.
 
 Single Node PF Execution
--------------
+------------------------
 
 Multi-node PF Execution
--------------
+-----------------------
 
 Multiple-chassis PF Execution
--------------
+-----------------------------
 
 Reconfiguring the system 
 ~~~~~~~~~~~~~~~~~~~~~~~~

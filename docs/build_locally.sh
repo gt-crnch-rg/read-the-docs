@@ -1,21 +1,51 @@
 #!/bin/bash
 #This script shows how to build and look at the docs locally.
-#Assumes Ubuntu 20.04 or 22.04 as the base OS
+#Assumes Ubuntu 20.04 or 22.04 as the base OS; tested on Mac OSX 13
 
-sudo apt install python3.10 python3.10-venv
+#Uncomment this line if you need to debug this script
+#set -x
 
-python3.10 -m venv rtd-project
-source rtd-project/bin/activate
-python -m pip install --upgrade --no-cache-dir pip setuptools
-python -m pip install --upgrade --no-cache-dir pillow mock alabaster commonmark recommonmark sphinx sphinx-rtd-theme readthedocs-sphinx-ext jinja2
+#Global variable to point to your Python venv for compiling docs
+venv_dir="$HOME/crnchrg-rtd-venv"
 
-##Update the packages using a requirements.txt file
-python -m pip install --exists-action=w --no-cache-dir -r docs/requirements.txt
+#Create and update Python venv, if needed 
+setup_venv()
+{
 
-#Clone the repo
-git clone --depth 1 https://github.com/gt-crnch-rg/read-the-docs
-cd read-the-docs/docs
+	# Check if the venv directory exists
+	if [ -d "$venv_dir" ]; 
+	then
+    		echo "Virtual environment is already set up at $venv_dir"
+	else    		
+		echo "Creating virtual environment at $venv_dir and updating pip packages"
+		python3 -m venv $venv_dir
+		python -m pip install --upgrade --no-cache-dir pip setuptools
+		python -m pip install --upgrade --no-cache-dir pillow mock alabaster commonmark recommonmark sphinx sphinx-rtd-theme readthedocs-sphinx-ext jinja2
 
-#Build the docs as HTML
-make html
-#python -m sphinx -T -E -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html
+		##Update the packages using a requirements.txt file
+		python -m pip install --exists-action=w --no-cache-dir -r requirements.txt
+	fi
+}
+
+build_docs(){
+	
+	#Source your build Python environment
+	source $venv_dir/bin/activate
+	
+	#Build the docs as HTML
+	#Note that the SPHINXOPTS line treats all warnings as errors.
+	#The tee statement writes output both to the terminal and a logfile
+	
+	#Uncomment to build and stop on any warnings
+	#make html SPHINXOPTS="-W" 2>&1 | tee crnchrg-rtd-build.log
+
+	#Build but don't error out on warnings
+	make html 2>&1 | tee crnchrg-rtd-build.log
+	
+	#Alternate command you can run instead of the above make commands 
+	#python -m sphinx -T -E -b html -d _build/doctrees -D language=en . $READTHEDOCS_OUTPUT/html
+}
+
+### Run selected functions ###
+setup_venv
+build_docs

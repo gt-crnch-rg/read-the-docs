@@ -1,6 +1,6 @@
-###########
+##########################
 Using Containers with PACE
-###########
+##########################
 
 Part of the Rogues Gallery focus is on supporting novel architectures with a path to scaling up computation to larger resources, like `Georgia Tech's Phoenix cluster <https://docs.pace.gatech.edu/phoenix_cluster/gettingstarted_phnx/>`__. This is one of the reasons we support Apptainer (aka, Singularity), and we look to provide a path to running larger jobs, especially for scalable applications or simulation tools like ML workflows or architectural simulators like SST.
 
@@ -13,7 +13,7 @@ Once you've tested that your container works correctly on CRNCH, you can request
 3) Run your image on PACE Phoenix using their instance of Apptainer. 
 
 Why are we scanning containers?
------------------------------
+-------------------------------
 There is a new push by the US `Cyberinfrastructure & Infrastructure Security Agency (CISA) <https://en.wikipedia.org/wiki/Cybersecurity_and_Infrastructure_Security_Agency>`__ and `National Telecommunications and Information Administration (NTIA) <https://en.wikipedia.org/wiki/National_Telecommunications_and_Information_Administration>`__ to know more about what software dependencies an application has. One way to do this is to build and share a "Software Bill of Materials" (SBOM) that accurately represents all the dependencies of a container or application. This SBOM can then be used with tools like Grype to review reported vulnerabilities.  
 
 Step 1 - Scanning your Image
@@ -57,12 +57,12 @@ Alternatively, you can export the report in CycloneDX format.
   You will likely find that your container has a good number of vulnerabilities with many that are related to Python packages. Currently, you are not required to fix these vulnerabilities, but it is a good idea to use containers with updated OS and application images. 
 
 Step 2 - Push Image to PACE Quay instance
-----------------------------
+-----------------------------------------
 
 This step currently requires the assistance of a CRNCH admin who has access to the PACE Quay instance. Please `submit a help ticket <https://crnch-rg.cc.gatech.edu/crnch-rg-help/>`__ along with your SBOM for this step of the process. 
 
 Step 3 - Use Your Container with PACE
-----------------------------
+-------------------------------------
 
 TBD
 

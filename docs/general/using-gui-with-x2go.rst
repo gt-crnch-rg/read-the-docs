@@ -1,5 +1,5 @@
 GUI Applications with x2Go (Legacy)
-==================================
+===================================
 
 .. note::
    x2go is considered a legacy option for CRNCH RG as we migrate to use `Open OnDemand <https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html>`__. We strongly encourage you to use VNC instead of x2go or test out Open OnDemand for your application.
@@ -80,7 +80,7 @@ primary clipboard). Make sure to fully restart your x2go client (kill
 via command-line, if needed) to see the change.
 
 x2Go Installation
-------------
+-----------------
 
 On Ubuntu, installation is relatively easy. You may want to install
 xfce-desktop if you have not already done so for VNC sessions.

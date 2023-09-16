@@ -1,6 +1,6 @@
-============
+===========================
 Using Slurm with RG Systems
-============
+===========================
 
 See `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm-examples.html>`__ with examples of how to use Slurm to request jobs on the testbed!
 
@@ -24,7 +24,7 @@ What Slurm queues are available?
 You can check the current status of all queues by using ``sinfo --federation`` on any RG node. The Pathfinder runs as a `"federated" Slurm cluster <https://slurm.schedmd.com/federation.html>`__ since it has a different host environment than the other RG nodes.
 
 Slurm Partitions
---------------------
+----------------
 .. list-table:: 
     :widths: auto
     :header-rows: 1
@@ -82,7 +82,7 @@ Slurm Partitions
       - Used to run Jupyter notebooks for tutorials, data analysis    
 
 How do I get started with Slurm on RG?
---------------------------------
+--------------------------------------
 We suggest that you first check out the following Slurm "Getting Started" resources from LLNL
 if you have not used a batch submission system before. 
 
@@ -101,9 +101,9 @@ Please consider looking at `PACE's training information <https://docs.pace.gatec
 - scancel - Used with the ``JOBID`` reported by ``squeue`` to cancel a job.
 
 Options to run jobs include the following commands:
-- salloc_ - request resources from the Slurm scheduler and run a task when resources are ready
-- sbatch_ - create a batch file for later execution of one or more programs
-- srun_ - run parallel tasks across multiple processes. Called after salloc/sbatch.
+- salloc - request resources from the Slurm scheduler and run a task when resources are ready
+- sbatch - create a batch file for later execution of one or more programs
+- srun - run parallel tasks across multiple processes. Called after salloc/sbatch.
 
 Slurm General Resources
 =======================
@@ -119,4 +119,3 @@ Slurm General Resources
    Reference <https://hpcc.umd.edu/hpcc/help/slurm-vs-moab.html>`__
 -  `Princeton Research Computing's Slurm learning resources <https://researchcomputing.princeton.edu/education/external-online-resources/slurm>`__
 -  `Slurm Video Tutorials <https://slurm.schedmd.com/tutorials.html>`__
-

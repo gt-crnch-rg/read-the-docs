@@ -1,6 +1,6 @@
-=============
+===============
 Bluefield-2 DPU
-=============
+===============
 
 .. image:: ../figures/images/nvidia_bf2_card.png
    :alt: Bluefield 2 card

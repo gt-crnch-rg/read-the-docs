@@ -44,7 +44,7 @@ TBD - need links to the HBM
 U50 has a reference design but it's pretty large. If it's useful we should link it here. 
 
 U280 Boards
-^^^^^^^^^^
+^^^^^^^^^^^
 
 Vivado flow requires a USB programming cable to be connected into the card. 
 

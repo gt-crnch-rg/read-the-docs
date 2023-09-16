@@ -1,8 +1,9 @@
+===========================
 SSH Keys and SSH Jump Hosts
-========================
+===========================
 
 SSH Keys
---------------
+--------
 
 We highly recommend that you generate and use a newer ed25519 or RSA key to connect to the Rogues Gallery testbed. Note that your private key should only be readable by you if you put it in your `/nethome/<username>/.ssh/` folder. 
 
@@ -19,7 +20,7 @@ Remember that to log in to a remote server, your *public* key needs to be added 
 - `ssh-copy-id and authorized_keys <https://www.ssh.com/academy/ssh/copy-id>`__
 
 SSH Keys for Github repos
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 We strongly encourage you to read up about how to use SSH keys or personal access tokens with your Github repositories, as these are key tools for pulling code from remote repos and pushing changes and updates. 
 
 - `Github SSH Keys <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>`__
@@ -77,6 +78,4 @@ Note that you can even use scp or rsync since the utilizes the same ssh config f
   test1
 
   sent 143 bytes  received 42 bytes  123.33 bytes/sec
-  total size is 19  speedup is 0.10
-
-  
+  total size is 19  speedup is 0.10 

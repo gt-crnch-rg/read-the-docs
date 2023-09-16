@@ -1,8 +1,8 @@
 Neuromorphic Computing Resources
-============================
+================================
 
 What do you need to know as background for neuromorphic research?
-*****************
+*****************************************************************
 * Machine learning concepts
     * What is a deep neural network?
     * How do methods like stochastic gradient descent work?
@@ -14,13 +14,13 @@ Undergraduate students in this area have suggested the following resources as be
 * The How to Build a Brain Book by Chris Eliasmith
 
 Suggested Background for Georgia Tech Undergrads
---------------------------------
+------------------------------------------------
 * A background in data structures and machine learning concepts (CS 1332 and 4641)
 * Special topics courses like `"Computation and the Brain" <https://computationandbrain.wordpress.com/>`__ (CS8803-CAB) when offered
 * Courses from the `neuroscience undergraduate track <https://catalog.gatech.edu/courses-undergrad/neur/>`__ like "Principles in Neuroscience" (NEURO 2001) would likely also be helpful but may require more of a biomedical background.
 
 Additional Background and Related Topics
---------------------------------
+----------------------------------------
 
 Dr. Sam Shapero (GTRI researcher working with LCA and related signal processing topics) suggests understanding the following topics for neuromorphic computing research:
 
@@ -65,7 +65,7 @@ Survey Papers
 * `Spiking Neural Networks Hardware Implementations and Challenges: A Survey <https://dl.acm.org/doi/10.1145/3304103>`__ - a hardware focused survey from 2019
 
 Reports on Neuromorphic Trends
-****************************
+******************************
 These reports published in the US provide insight into the state-of-the-art and perspective on challenges and future research areas for neuromorphic computing.
 
 1. `Neuromorphic Computing – Architectures, Models, and Applications Workshop,
