@@ -82,6 +82,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :glob:
 
    neuromorphic/rudi2-jetson-orin.rst
+   neuromorphic/tensorflow-getting-started.md
 
 .. toctree::
    :caption: Novel Networking
@@ -157,4 +158,5 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    resources/graphblas-resources
    resources/neuromorphic-computing-resources
    resources/quantum-computing-resources
+   resources/reconfigurable-computing-resources
    resources/related-testbeds.rst
