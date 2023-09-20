@@ -1,12 +1,15 @@
 name: "Pull Request Docs Check"
-on: 
-- pull_request
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  docs:
-    runs-on: ubuntu-latest
+  build-docs-sphinx:
+    runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "../../docs/"
+    - uses: actions/checkout@v2
+    - name: Build-Docs
+      run: cd docs && ./build_locally.sh
