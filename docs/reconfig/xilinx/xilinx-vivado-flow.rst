@@ -37,7 +37,11 @@ U50 Boards
 
 Vivado Flow requires a special Alveo programming cable that is attached via USB to the host server. This is detailed in the `Alveo Programming Cable Guide <https://docs.xilinx.com/r/en-US/ug1377-alveo-programming-cable-user-guide>`__.
 
-Find the `User Guide here <https://docs.xilinx.com/r/en-US/ug1371-u50-reconfig-accel>`__
+
+User and Programming Guides
+----------------------------
+* U50 User Guide: https://docs.xilinx.com/r/en-US/ug1371-u50-reconfig-accel/Introduction
+* U280 User Guide: https://docs.xilinx.com/r/en-US/ug1314-alveo-u280-reconfig-accel
 
 TBD - need links to the HBM
 

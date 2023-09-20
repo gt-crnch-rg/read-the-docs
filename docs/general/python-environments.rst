@@ -128,6 +128,9 @@ Using the official installation instructions `here <https://pipenv.pypa.io/en/la
 
 .. code:: shell
 
+    #Optionally, you may want to make sure your pip is up-to-date
+    python3 -m pip install --upgrade pip
+    #Install pipenv using pip; you can ignore any DEPRECATION notices for now
     python3 -m pip install pipenv
 
 Creating a new virtual environment with pipenv
@@ -163,6 +166,9 @@ When you run :code:`pipenv install`, it will create a standard virtual environnm
 .. code:: shell
 
     pipenv install pipenv --python 3.8 install
+    #To install new packages use the following syntax
+    pipenv install matplotlib pandas
+   
 
 Activating/deactivating an environment
 --------------------------------------

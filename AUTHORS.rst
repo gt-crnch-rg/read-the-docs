@@ -1,5 +1,6 @@
-Authors
--------
+========================
+RG Documentation Authors
+========================
 
 Current maintainers:
 --------------------

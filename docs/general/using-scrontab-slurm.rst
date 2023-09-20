@@ -1,4 +1,4 @@
-=============-===========
+=========================
 Using Scrontab with Slurm 
 =========================
 
@@ -12,8 +12,8 @@ What is Scrontab?
     
 Note that the scrontab format follows that of crontab and cron. You can use sites like `crontab.guru <https://crontab.guru/>`__ to help define your scrontab rules.
 
-TBD
----
+ScronTab Todos
+--------------
 - note where scrontab has to live in user directory and any tmp directory suggestions
 - any scrontab limitations
 - how do we know if scrontab is enabled?

@@ -1,6 +1,6 @@
-*Last updated: 11/16/20*
-
-Please feel free to edit if you find good resources! 
+===============
+Xilinx ML Tools
+===============
 
 We have been notified by Xilinx that `Vitis-AI <https://github.com/Xilinx/Vitis-AI>`_ is the preferred framework going forward.
 
