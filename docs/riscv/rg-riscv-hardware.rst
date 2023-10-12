@@ -12,8 +12,7 @@ Current Status
 
 BUGS / Feature Requests
 =======================
-- Physical devices are currently being set up with our standard load-out. 
-- The MangoPi device currently does not support shared home due to its networking setup. 
+- Physical devices are currently being set up with our standard load-out.  
 
 System Specifications
 =====================
