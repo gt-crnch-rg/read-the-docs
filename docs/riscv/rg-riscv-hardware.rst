@@ -38,9 +38,9 @@ System Specifications
     * - johnny-rv5-2
       - 1 core `Allwinner D1 <https://linux-sunxi.org/D1>`__
       - 1 GB DDR3
-      - Wifi
+      - 1 GB Ethernet
       - `MangoPi MQ-Pro; MPi-MQ1PH <https://linux-sunxi.org/MangoPi_MQ-Pro>`__
-      - No shared nethome/scratch
+      - 
     * - johnny-rv5-3
       - 2xU74 cores 
       - 8 GB LPDDR4
@@ -49,13 +49,68 @@ System Specifications
       - Currently being deployed
 
 
+
+
 Software and Tools
 ==================
 RISC-V images can currently be run with QEMU - we recommend using `standard Ubuntu RISC-V images <https://ubuntu.com/download/risc-v>`__ or `SiFive's Freedom Unleashed SDK <https://github.com/sifive/freedom-u-sdk/releases>`__.
 
-ISA Simulators
---------------
+Software and Tools
+===================
 
+.. list-table::
+    :widths: auto
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - node Name
+      - Distro
+      - Kernel
+      - Standard Compilers
+      - MPI
+      - Miscellaneous
+    * - johnny-rv5-1
+      - Ubuntu 22.04
+      - 5.4.0
+      - GCC 9.0
+      - 
+      - 
+    * - johnny-rv5-2
+      - Armbian 22.08.0
+      - 5.19.0
+      - GCC 11.3
+      - 
+      - 
+
+Requesting RISC-V resources
+===========================
+
+As with most CRNCH resources, you need to either log in via the gateway
+node, rg-login, or access the system from the campus network via VPN or
+an on-campus connection. 
+
+To request an allocation on johnny-rv5-1 using slurm:
+
+.. code::
+
+    //Request an allocation of 1 hr, partition rg-hpc, and specify the node name for the server with -w
+    salloc -t 1:00:00 -p rg-hpc -w johnny-rv5-1
+    //SSH to the resource
+    ssh johnny-rv5-1
+
+johnny-rv5-1 added notes
+------------------------
+
+
+Guides and Resources
+====================
+- `SiFive Unmatched Getting Started Guide <https://starfivetech.com/uploads/hifive-unmatched-getting-started-guide-v1p2.pdf>`__
+
+Advanced Guides
+===============
+- `SiFive Unmatched Debugging and Installation (Requires GT login) <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BRISC-V%5D-SiFive-Unmatched-Debugging-and-Install>`__
+
+Other Tools
+-----------
 - `Spike <https://github.com/riscv-software-src/riscv-isa-sim>`__
 - `Dromajo <https://github.com/chipsalliance/dromajo>`__
-
