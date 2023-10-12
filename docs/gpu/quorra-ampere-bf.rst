@@ -63,9 +63,9 @@ Software and Tools
     * - Ubuntu 20.04
       - 5.4.0
       - GCC 7.5
-      - NVIDIA HPC SDK 23.3, CUDA 12.0
+      - NVIDIA HPC SDK 23.9, CUDA 12.0
       - 
-      - DOCA 1.5.1
+      - DOCA 2.1.0
 
 How do I get to Quorra?
 =======================
@@ -96,7 +96,7 @@ Using NVIDIA SDK
 
 .. code::
 
-    module load nvhpc/23.3
+    module load nvhpc/23.9
 
 MIG
 ---
