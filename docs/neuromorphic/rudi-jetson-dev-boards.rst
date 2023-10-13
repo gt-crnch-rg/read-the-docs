@@ -1,5 +1,5 @@
 =======================
-Rudi2 - Jetson AGX Orin
+Rudi - Jetson Dev Boards
 =======================
 
 What's Interesting About This Hardware?
@@ -22,17 +22,26 @@ System Specifications
     :stub-columns: 1
 
     * - Queues
+      - Node Name
       - CPU
       - Memory (GB)
       - Network
       - Cards
       - Notes
     * - rg-neuro
+      - rudi1
       - 
       - 
       - 
       - 
-      -       
+      -
+    * - rg-neuro
+      - rudi2
+      - 
+      - 
+      - 
+      - 
+      -
 
 Software and Tools
 ==================
