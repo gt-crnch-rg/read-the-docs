@@ -81,7 +81,8 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :hidden:
    :glob:
 
-   neuromorphic/rudi2-jetson-orin.rst
+   neuromorphic/rudi-jetson-dev-boards.rst
+   neuromorphic/nvidia-jetpack-pytorch.rst
    neuromorphic/tensorflow-getting-started.md
 
 .. toctree::
