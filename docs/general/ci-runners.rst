@@ -25,13 +25,13 @@ We recommend that you review Github's documentation on `self-hosted runners <htt
 
 .. figure:: ../figures/general/ci_cd/github_self_hosted_runner.jpg
    :alt: Github CI/CD Self-hosted Runner
-   :scale: 10
+   :scale: 30
 
 5) Configure and run the `run.sh` workflow script.
 
 .. figure:: ../figures/general/ci_cd/github_self_hosted_runner_config.jpg
    :alt: Github CI/CD Self-hosted Runner
-   :scale: 10
+   :scale: 30
 
 6) Go to your workflow and add a new self-hosted runner section. 
 7) Create an SBatch file to launch and run your tests on your target architecture.
