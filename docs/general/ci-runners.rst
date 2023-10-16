@@ -25,13 +25,14 @@ We recommend that you review Github's documentation on `self-hosted runners <htt
 
 .. figure:: ../figures/general/ci_cd/github_self_hosted_runner.jpg
    :alt: Github CI/CD Self-hosted Runner
-   :scale: 30
+   :scale: 60
 
 5) Configure and run the `run.sh` workflow script.
+    - Note that run.sh will only listen for connections while your session is open. You would need to use `nohup` or `tmux` to keep it running for a longer period of time.
 
 .. figure:: ../figures/general/ci_cd/github_self_hosted_runner_config.jpg
    :alt: Github CI/CD Self-hosted Runner
-   :scale: 30
+   :scale: 60
 
 6) Go to your workflow and add a new self-hosted runner section. 
 7) Create an SBatch file to launch and run your tests on your target architecture.
