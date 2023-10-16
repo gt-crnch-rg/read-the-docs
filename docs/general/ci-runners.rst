@@ -20,14 +20,15 @@ We recommend that you review Github's documentation on `self-hosted runners <htt
 1) Test that your code runs under a standard Slurm job using your desired CRNCH resource.
 2) Go to your repos page and create a new Linux-based self-hosted runner. 
       - As an example, your runner page might be at `https://github.com/organizations/<yourorg>/settings/actions/runners/new`.  
-3) Create a folder under `/projects/ci-runners/<your_project>` for your specific runner. Download your runner files to this directory
-4) Configure and run the `run.sh` workflow script.
-5) Go to your workflow and add a new self-hosted runner section. 
-6) Create an SBatch file to launch and run your tests on your target architecture.
+3) SSH to the `rg-ci-workflow1` VM.  
+4) Create a folder under `/projects/ci-runners/<your_project>` for your specific runner. Download your runner files to this directory
+5) Configure and run the `run.sh` workflow script.
+6) Go to your workflow and add a new self-hosted runner section. 
+7) Create an SBatch file to launch and run your tests on your target architecture.
     - We use Slurm SBatch files to launch jobs on targeted architecture nodes. See the table below for example build.yml and sbatch files
     - Update the logfile name in the sbatch file to point to your runner project directory, ie, `/projects/ci-runners/<your_project>/runner-cuda-test-%j.out`.
     - Note that your sbatch file needs to live within your repo, so please don't put any private key or other information in the batchfile.
-7) Initiate a run of your new workflow with the self-hosted runner.
+8) Initiate a run of your new workflow with the self-hosted runner.
     - Check that the sbatch job runs and completes correctly.
     - It may take up to 10 minutes to run for CUDA jobs. 
 
