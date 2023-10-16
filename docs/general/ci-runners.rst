@@ -57,4 +57,4 @@ Resources
 ^^^^^^^^^^^^^^
 
 - `Setting up Github self-hosted runners <https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners>`__
-- `Self-hosted runner services <https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/configuring-the-self-hosted-runner-application-as-a-service>__
+- `Self-hosted runner services <https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/configuring-the-self-hosted-runner-application-as-a-service>`__
