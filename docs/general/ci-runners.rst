@@ -22,7 +22,17 @@ We recommend that you review Github's documentation on `self-hosted runners <htt
       - As an example, your runner page might be at `https://github.com/organizations/<yourorg>/settings/actions/runners/new`.  
 3) SSH to the `rg-ci-workflow1` VM.  
 4) Create a folder under `/projects/ci-runners/<your_project>` for your specific runner. Download your runner files to this directory
+
+.. figure:: ../figures/general/ci_cd/github_self_hosted_runner.jpg
+   :alt: Github CI/CD Self-hosted Runner
+   :scale: 10
+
 5) Configure and run the `run.sh` workflow script.
+
+.. figure:: ../figures/general/ci_cd/github_self_hosted_runner_config.jpg
+   :alt: Github CI/CD Self-hosted Runner
+   :scale: 10
+
 6) Go to your workflow and add a new self-hosted runner section. 
 7) Create an SBatch file to launch and run your tests on your target architecture.
     - We use Slurm SBatch files to launch jobs on targeted architecture nodes. See the table below for example build.yml and sbatch files
