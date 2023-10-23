@@ -47,6 +47,28 @@ Installing Your Self-hosted Runner as a Service
 -----------------------------------------------
 Once you have verified that your runner completes correctly, RG admins can help to install it as a service. Please submit a ticket to get your runner added as a service!
 
+.. note::
+
+    Github runners will deregister themselves if a job is not run every 14 days. To avoid this, we encourage you both to register your runner as a service and also set up your Github workflow file to run on a schedule of once a week (see example below).
+
+Scheduling Github actions to run on a schedule
+----------------------------------------------
+Github workflows can be executed when code is pushed to the repo, but you can also specify that a service or runner executes a job every so often using `schedules <https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onschedule>`__. 
+
+These jobs use cron-style syntax where you specify the 1) minute 2) hour 3) day of the month 4) month of the year and 5) day of the week. Using a `*` specifies that the job runs every minute/hour/day, etc. Learn more about cron syntax by looking at cron expression generators like this one `<https://crontab.cronhub.io/>`__.
+
+One nice feature of the Github web editor is that it will help you interpret your schedule when you mouse over the specific cron-related string. You can use this tool to check that your expected schedule matches what you expect. We suggest that you run your self-hosted runner *once a week* to make sure it doesn't deregister itself.
+
+.. figure:: ../figures/general/ci_cd/github_schedule_run.jpg
+   :alt: Github CI/CD Workflow Schedule
+   :scale: 60
+
+To see if your scheduled event is working, you can check the output of your Github actions and check for a "Scheduled" build event
+
+.. figure:: ../figures/general/ci_cd/github_scheduled_run_output.png
+   :alt: Github CI/CD Scheduled Action Output
+   :scale: 60
+
 Examples of Projects Using RG Self-Hosted Runners
 -------------------------------------------------
 
