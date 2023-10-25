@@ -29,3 +29,7 @@ Docker FAQ
     -It seems you need to go and look at the tags for a specific container to see the contents of a DockerFile. Here is an example for an older release of `SST <https://hub.docker.com/layers/jwilso/sstalphacontainer/10.1.0_alpha/images/sha256-dea8f6f21573aa36cbc567a48add538a7c2c34d6987b5668a1c7aaf6ea2814d2?context=explore>`__.
 - Can I become root inside a container to add packages/make updates to a container? 
     - Technically yes, but it's not recommended.
+
+Resources
+~~~~~~~~~
+- `ETH CSCS Docker Summer School <https://github.com/eth-cscs/containers-hands-on/tree/master/esiwace2-summer-school-2020>`__
