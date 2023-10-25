@@ -36,6 +36,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    general/visual-studio-code
    general/python-environments
    general/using-jupyter-notebooks
+   containers/containers
 
 .. toctree::
    :caption: RG Advanced Topics
