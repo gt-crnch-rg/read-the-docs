@@ -59,6 +59,7 @@ Set up fakeroot to build containers as a non-root user (this may require some ad
     $> INFO:    Detected Singularity user configuration directory
 
 Then build your image. Here we are using USERSCRATCH on `hawksbill`.
+
 .. code:: shell
 
     USERSCRATCH$> git clone https://github.gatech.edu/crnch-rg/container-defs.git
@@ -70,6 +71,11 @@ Then build your image. Here we are using USERSCRATCH on `hawksbill`.
     Copying blob f0412dfb1aae done  
     Copying blob 20d547ab5eb5 done
     ...
+    Successfully installed distlib-0.3.7 filelock-3.12.4 pipenv-2023.10.24 setuptools-68.2.2 virtualenv-20.24.6
+    WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+    INFO:    Adding labels
+    INFO:    Creating SIF file...
+    INFO:    Build complete: cuquantum-23.06.sif
 
 Running a Singularity container on PACE Phoenix
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
