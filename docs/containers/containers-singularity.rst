@@ -24,21 +24,56 @@ Running a Singularity container on CRNCH RG
 
     apptainer run --nv /projects/tools/x86_64/containers/nvhpc_23.1_devel.sif
 
+
+Building your own Singularity container
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+
+    You may need some help setting up fakeroot to build Singularity containers. Please reach out to the testbed admins for assistance. 
+
+You can start from a Singularity `.def` file like one of the ones in our `GT Github container-defs repo (GT login required) <https://github.gatech.edu/crnch-rg/container-defs>`__ 
+
+Example .def file for cuQuantum - `see the file here in our repo <https://github.gatech.edu/crnch-rg/container-defs/blob/main/quantum/cuquantum/cuquantum-23.06.def>`__:
+
 .. code:: shell
 
-  bootstrap: docker
-  from: nvcr.io/nvidia/cuquantum-appliance:22.11
-  
-  %labels
-    Maintainer RG Admin
-    Version 22.11
-  %post
-    pip install jupyterlab
-    pip install pipenv
+    bootstrap: docker
+    from: nvcr.io/nvidia/cuquantum-appliance:23.06
+
+    %labels
+        Maintainer RG Admin
+        Version 23.06
+
+    %post
+        pip install jupyterlab
+        pip install pipenv
+
+To build this container, we highly recommend you use `/project` space or `USERSCRATCH` rather than your home directory. We also suggest using a dev VM (ie, `rg-fpga-dev1`, `rg-emu-dev`) or `hawksbill` to build your new image.
+
+Set up fakeroot to build containers as a non-root user (this may require some admin assistance. 
+
+.. code:: shell
+
+    $> sudo apptainer config fakeroot --add gburdell
+    $> INFO:    Detected Singularity user configuration directory
+
+Then build your image. Here we are using USERSCRATCH on `hawksbill`.
+.. code:: shell
+
+    USERSCRATCH$> git clone https://github.gatech.edu/crnch-rg/container-defs.git
+    USERSCRATCH$> cd container-defs/quantum/cuquantum
+    # Note this step may take a while to run
+    cuquantum$> apptainer build cuquantum-23.06.sif cuquantum-23.06.def
+    INFO:    Starting build...
+    Getting image source signatures
+    Copying blob f0412dfb1aae done  
+    Copying blob 20d547ab5eb5 done
+    ...
 
 Running a Singularity container on PACE Phoenix
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+TBD
 
 Converting a Docker container to a Singularity Image
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,6 +82,7 @@ NASA's HPC organization has a nice guide on several techniques to convert Docker
 
 Other Resources
 ~~~~~~~~~~~~~~~
+- `Singularity tutorial <https://github.com/Singularity-tutorial/Singularity-tutorial.github.io>`__
 - `OSC Guide to Running Docker and Singularity Images <https://www.osc.edu/book/export/html/4678>`__
 - `Using Apptainer on a cluster environment <https://docs.hpc.shef.ac.uk/en/latest/bessemer/software/apps/singularity.html#>`__
 - `Running Singularity containers on OLCF <https://docs.olcf.ornl.gov/software/containers_on_summit.html#>`__
