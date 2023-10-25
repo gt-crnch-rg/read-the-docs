@@ -22,8 +22,15 @@ Running a Singularity container on CRNCH RG
 
 .. code:: shell
 
-    apptainer run --nv /projects/tools/x86_64/containers/nvhpc_23.1_devel.sif
+    apptainer run --nv /projects/tools/x86_64/containers/cuquantum-23.06.sif
+    ...
+    ================================
+    == NVIDIA cuQuantum Appliance ==
+    ================================
 
+    NVIDIA cuQuantum Appliance 23.06
+    Copyright (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
+    Apptainer>
 
 Building your own Singularity container
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
