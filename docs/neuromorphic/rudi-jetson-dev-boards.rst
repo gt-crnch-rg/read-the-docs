@@ -109,4 +109,4 @@ Using NVIDIA Jetson Developer Kit Modules
 
 Vendor-provided Documents and Resources
 ---------------------------------------
-- `Power optimization with Jetson boards - NVIDIA blog <https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/>`
+- `Power optimization with Jetson boards - NVIDIA blog <https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/>`__
