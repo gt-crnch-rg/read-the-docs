@@ -104,8 +104,9 @@ Jetson boards don't support nvidia-smi commands, so you need to use the `tegrast
     #Ctrl-C to stop
 
 Using NVIDIA Jetson Developer Kit Modules
----------------`--------------------------
+-----------------------------------------
 - `NVIDIA Jetson Developer Kit User Guide <https://docs.nvidia.com/jetson/archives/r35.1/DeveloperGuide/index.html>`__
 
 Vendor-provided Documents and Resources
 ---------------------------------------
+- `Power optimization with Jetson boards - NVIDIA blog <https://developer.nvidia.com/blog/power-optimization-with-nvidia-jetson/>`
