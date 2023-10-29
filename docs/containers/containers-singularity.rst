@@ -93,6 +93,43 @@ Converting a Docker container to a Singularity Image
 
 NASA's HPC organization has a nice guide on several techniques to convert Docker images to Singularity Image Files (SIF). Please see it `here <https://www.nas.nasa.gov/hecc/support/kb/converting-docker-images-to-singularity-for-use-on-pleiades_643.html>`__. 
 
+As an example, we can use a recent Dockerfile example for the Vortex tutorial: 
+
+.. code:: shell
+
+    # Build from a DockerFile
+    docker build -t vortex_micro23:latest .
+    [+] Building 53.2s (16/16) FINISHED
+    => [internal] load build definition from Dockerfile                                                                               
+    ...                                                                                                                               
+     => => writing image sha256:8e992d22010e9eada1aa9723068da6d2d27e0ed25bbef55a2d00e939fc0fb5d2   0.0s
+     => => naming to docker.io/library/vortex_micro23:latest                                       0.0s
+
+    #Then we check for the Docker image in the docker daemon
+    $> docker images | grep vortex
+    REPOSITORY        TAG               IMAGE ID       CREATED          SIZE
+    vortex_micro23    latest            8e992d22010e   33 seconds ago   1.03GB
+
+    #Then convert the Dockerfile to an Apptainer image
+    root@flubber1:/localscratch/jyoung9# apptainer build vortex_micro23.sif docker-daemon://vortex_micro23:latest
+    ...
+    INFO:    Creating SIF file...
+    INFO:    Build complete: vortex_micro23.sif
+
+Alternatively, you can use tools like spython to convert definition files and build directly from a Singularity definition file.
+
+.. code:: shell
+    pip3 install spython 
+    
+    # Save the Dockerfile to a Singularity .def file
+    spython recipe Dockerfile &> Singularity.def
+
+    INFO:    Starting build...
+    Getting image source signatures
+    ...    
+    INFO:    Creating SIF file...
+    INFO:    Build complete: vortex_micro23.sif
+
 Other Resources
 ~~~~~~~~~~~~~~~
 - `Singularity tutorial <https://github.com/Singularity-tutorial/Singularity-tutorial.github.io>`__
