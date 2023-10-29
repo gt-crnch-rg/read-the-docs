@@ -16,6 +16,9 @@ CharlieCloud
 ------------
 TBD
 
+Local Installation
+------------------
+See `this page <https://gt-crnch-rg.readthedocs.io/en/main/containers/containers-local-installation.html>`__ for information on installing Docker and Singularity on your laptop or local desktop.
 
 Useful resources
 ~~~~~~~~~~~~~~~~~
