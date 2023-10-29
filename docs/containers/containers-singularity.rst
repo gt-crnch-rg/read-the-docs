@@ -32,6 +32,14 @@ Running a Singularity container on CRNCH RG
     Copyright (c) NVIDIA CORPORATION & AFFILIATES.  All rights reserved.
     Apptainer>
 
+
+You can also "bind" your scratch directory or host toolchains to your container environment using `--bind <host_dir>:<container_dir>`. Note that your normal `/nethome` should be accessible since you are running the container as a normal user. 
+
+.. code:: shell
+
+    # Bind your CRNCH scratch directory inside your container 
+    apptainer run --bind ~/USERSCRATCH:/scratch  /projects/tools/x86_64/containers/cuquantum-23.06.sif
+
 Building your own Singularity container
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -132,6 +140,7 @@ Alternatively, you can use tools like spython to convert definition files and bu
 
 Other Resources
 ~~~~~~~~~~~~~~~
+- `HSF Software Carpentry Apptainer tutorial <https://hsf-training.github.io/hsf-training-singularity-webpage/>`__
 - `Singularity tutorial <https://github.com/Singularity-tutorial/Singularity-tutorial.github.io>`__
 - `OSC Guide to Running Docker and Singularity Images <https://www.osc.edu/book/export/html/4678>`__
 - `Using Apptainer on a cluster environment <https://docs.hpc.shef.ac.uk/en/latest/bessemer/software/apps/singularity.html#>`__
