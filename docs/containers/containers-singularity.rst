@@ -15,7 +15,7 @@ Singularity Community Edition (CE) and Apptainer are two different forks of Sing
 
 Installing Singularity on your Local Machine
 --------------------------------------------
-Please see our `separate installation page <https://github.com/gt-crnch-rg/read-the-docs/blob/main/docs/general/containers-local-installation.rst>`__ for more information on installing Singularity locally. 
+Please see our `separate installation page <https://gt-crnch-rg.readthedocs.io/en/main/containers/containers-local-installation.html>`__ for more information on installing Singularity locally. 
 
 Running a Singularity container on CRNCH RG
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
