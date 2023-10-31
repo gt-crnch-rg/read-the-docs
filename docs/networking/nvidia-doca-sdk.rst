@@ -192,14 +192,85 @@ Debugging
 ---------
 
 Job Result
+^^^^^^^^^^
+
+The user can retrieve the result of an RDMA job using ``doca_workq_progress_retrieve()``. The user must provide a ``doca_event`` struct with a ``result.ptr`` field pointing to an allocated ``doca_rdma_result``, as seen below.
+
+.. code-block:: cpp
+
+  struct doca_event event = {0};
+  struct doca_rdma_result rdma_result;
+  memset(&rdma_result, 0, sizeof(rdma_result)); 
+
+  event.result.ptr = (void *)(&rdma_result);
+  doca_workq_progress_retrieve(workq, &event, DOCA_WORKQ_RETRIEVE_FLAGS_NONE);
+
+More information about the workq operating modes can be seen in the `documentation <https://docs.nvidia.com/doca/sdk/rdma-programming-guide/index.html#waiting-for-job-completion>`_.
+
+Once the RDMA job progress is retrieved, the ``doca_rdma_result`` struct is populated with information on the job:
+
+* ``result`` holds a ``doca_error_t`` representing the job result.
+* ``opcode`` holds the opcode of the corresponding job for a completed receive job (e.g. Write, Send).
+* ``immediate_data`` holds the 32-bit immediate data send from the remote side in the case of a ``opcode`` of a Send With Immediate or Write With Immediate job (``DOCA_RDMA_OPCODE_RECV_SEND_WITH_IMM, DOCA_RDMA_OPCODE_RECV_WRITE_WITH_IMM``).
 
 State
+^^^^^
+
+The DOCA RDMA library also provides the following values to describe the state of the RDMA instance, allowing the user to determine the connection status of the RDMA instances and errors.
+
+.. code-block:: cpp
+
+  enum doca_rdma_state {
+      DOCA_RDMA_STATE_RESET = 0,
+      DOCA_RDMA_STATE_INIT,
+      DOCA_RDMA_STATE_CONNECTED,
+      DOCA_RDMA_STATE_ERROR,
+  };
 
 -------------------------
-Environment Configuration
+Environment Setup
 -------------------------
 
-Section 5 usage
+Configuring DOCA RDMA Instances
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Prior to executing RDMA jobs, the RDMA context must be properly configured:
+
+#. First ensure the device is suitable for the RDMA job type to be executed. This can be done using ``doca_devinfo_list_create()`` to see all DOCA devices, and querying for their capabilities using ``doca_rdma_get_*(struct doca_devinfo *, ...)`` or using ``doca_rdma_job_get_supported()`` to determine compatibility with RDMA job types.
+#. An RDMA instance must be created using ``doca_rdma_create()``, which will have a context obtained by ``doca_rdma_as_ctx()``. Optionally, the default properties of the instance can be modified using ``doca_rdma_set_<property>()`` and ``doca_rdma_get_<property>(struct doca_rdma *, …)`` functions. 
+#. The chosen device must be added to the RDMA context using ``doca_ctx_dev_add()``.
+#. Use ``doca_ctx_start()`` to start the RDMA context, which updates the instance to the ``DOCA_RDMA_STATE_INIT`` state.
+#. Export each RDMA instance to the remote side to a blob by using ``doca_rdma_export()``.
+#. Transfer the blob to the opposite side out-of-band (OOB) and provide it as input to the ``doca_rdma_connect()`` function on that side. Once connected, the state of the RDMA instance updates to ``DOCA_RDMA_STATE_CONNECTED`` and it is ready to start running jobs. 
+
+
+Configuring DOCA Core Objects
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Using DOCA RDMA requires initializing a few DOCA Core objects as well.
+
+* Executing any RDMA job requires a workq. This can be created using ``doca_workq_create()`` and subsequently added to the RDMA context using ``doca_ctx_workq_add()``. More information on the workq's event-driven and polling modes can be seen `here <https://docs.nvidia.com/doca/sdk/rdma-programming-guide/index.html#workq>`_.
+* Any job in which data is passed between devices requires a memory map to be created on each side using ``doca_mmap_create()``. To configure the memory map (MMAP), perform the following:
+
+  #. Add the chosen device to the memory map using ``doca_mmap_dev_add()``.
+  #. The relevant memory map properties must be set. For example, setting the memory range of the MMAP is mandatory and can be done using ``doca_mmap_set_memrang()``.
+  #. Set the MMAP's permissions according to the required permissions for RDMA operations using ``doca_mmap_set_permissions()``. See the below section on permissions for further details. Note that executing RDMA operations requires the memory map's permissions to include ``DOCA_ACCESS_LOCAL_READ_WRITE`` (from ``enum doca_access_flags``); to allow remote access to the memory region of the memory map, the relevant RDMA permission from the ``enum doca_access_flags`` must be set according to the RDMA jobs to be executed.
+  #. Start the MMAP so it is ready to use by calling ``doca_mmap_start()``.
+
+* To allow remote memory access for the memory map, it must be exported using ``doca_mmap_export_rdma()`` and passed to the remote side (the side requesting the remote RDMA operation). The remote side must also create an MMAP from the exported blob (referred to as remote MMAP from here on) using ``doca_mmap_create_from_export()``.
+* Executing jobs in which data is passed between devices also requires the requester to create a buffer inventory using ``doca_buf_inventory_create()``, which can be started using ``doca_buf_inventory_start()``.
+
+Permissions
+^^^^^^^^^^^
+
+Executing various RDMA jobs require different permissions on both sides of the connection. See `here <https://docs.nvidia.com/doca/sdk/rdma-programming-guide/index.html#summary-of-necessary-permissions-for-rdma-operations>`_ for a summary of the required permissions for various operations.
+
+RDMA Job Cycle and Clean Up
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After initializing the objects and connection as described above, RDMA jobs can be executed on the instance. See `this link <https://docs.nvidia.com/doca/sdk/rdma-programming-guide/index.html#rdma-job-cycle>`_ for further information on the job cycle of RDMA jobs. 
+
+After all jobs have been executed, follow `these steps <https://docs.nvidia.com/doca/sdk/rdma-programming-guide/index.html#clean-up>`_ for freeing up the allocated resources for the RDMA instance.
 
 --------
 Examples
