@@ -6,6 +6,14 @@ NVIDIA DOCA SDK
 DOCA Resources
 ==============
 
+Note that the DOCA code samples get installed with the DOCA SDK on the host device and on the BlueField itself and can be found under `/opt/mellanox/doca/samples`.
+
+.. code:: 
+
+  >$ ls /opt/mellanox/doca/samples/
+  common.c  doca_apsh          doca_common    doca_dma  doca_dpi             doca_flow  doca_regex  doca_telemetry
+  common.h  doca_comm_channel  doca_compress  doca_dpa  doca_erasure_coding  doca_rdma  doca_sha    flexio
+
 ======================
 Using DOCA Compression
 ======================
