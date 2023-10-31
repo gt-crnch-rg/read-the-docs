@@ -2,8 +2,10 @@
 NVIDIA DOCA SDK
 ===============
 
+This page points to some of the more useful DOCA SDK examples and sample codes. We encourage you to check out the `DOCA Programming Guides Overview <https://docs.nvidia.com/doca/sdk/programming-guides-overview/index.html>`__ for full guidance on how to use DOCA-specific features. 
+
 ==============
-DOCA Resources
+DOCA Samples
 ==============
 
 Note that the DOCA code samples get installed with the DOCA SDK on the host device and on the BlueField itself and can be found under `/opt/mellanox/doca/samples`.
@@ -13,6 +15,17 @@ Note that the DOCA code samples get installed with the DOCA SDK on the host devi
   >$ ls /opt/mellanox/doca/samples/
   common.c  doca_apsh          doca_common    doca_dma  doca_dpi             doca_flow  doca_regex  doca_telemetry
   common.h  doca_comm_channel  doca_compress  doca_dpa  doca_erasure_coding  doca_rdma  doca_sha    flexio
+
+There are also a set of applications that make use of DOCA on the DPU under `/opt/mellanox/doca/applications/`. Read more about them under the `Reference Applications section <https://docs.nvidia.com/doca/sdk/index.html#reference-applications>`__.
+
+.. code:: 
+
+  >$ ls /opt/mellanox/doca/applications/
+  VERSION                  dma_copy                      file_scan          l4_ovs_firewall    secure_channel
+  allreduce                dns_filter                    firewall           meson.build        simple_fwd_vnf
+  app_shield_agent         east_west_overlay_encryption  ips                meson_options.txt  switch
+  application_recognition  file_compression              ipsec_security_gw  nat                url_filter
+  common                   file_integrity                l2_reflector       pcc                yara_inspection
 
 ======================
 Using DOCA Compression
