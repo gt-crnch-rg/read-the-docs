@@ -75,7 +75,9 @@ Multi-node PF Execution
 1) Check that the configuration matches what you expect.
 2) Go to the first node of the first multinode chassis (typically `pathfinder0->n0`) and launch your job. 
 
- #Running from pathfinder2
+.. code:: 
+
+    #Running from pathfinder2
     n0$> emu_multinode_exec 0 -- hello-world-spawn.mwx
     [STATUS]: Checking nodes to ensure ok to run...
     [STATUS]: Copying hello-world-spawn.mwx to nodes.
