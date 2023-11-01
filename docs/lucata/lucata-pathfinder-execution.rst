@@ -11,6 +11,22 @@ Following our workflow guide for the Lucata Pathfinder platform, you will normal
 
 Here we go through the last 3 steps in more detail. 
 
+Precursor
+---------
+
+This page assumes that your application runs correctly with emusim.x: 
+
+.. code:: shell
+
+    rg-emu-dev$> emusim.x --total_nodes 2 -m 24 -- hello-world-spawn.mwx
+
+        SystemC 2.3.3-Accellera --- Jul 13 2023 18:00:55
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+    Hello, world!
+
+    Info: /OSCI/SystemC: Simulation stopped by user.
+
 Checking the status of the system:
 ----------------------------------
 
@@ -29,6 +45,16 @@ Check all nodes in the system to see if it is multi-chassis, single-chassis, or 
     c3: n7:         Core clock is at 180 MHz, GC clock is at 225 MHz
     c3: Chassis Switch Initialization Status = initialized.
 
+Note that we also have a helper script that gets updated with the current status of the system that can be run from other nodes:
+
+```
+/projects/tools/lucata/pathfinder_current_status.sh
+Chassis 0 is in multinode (LN 0..7)
+Chassis 1 is in multinode (LN 8..15)
+Chassis 2 is in multinode (LN 0..7)
+Chassis 3 is in multinode (LN 0..7)
+```
+
 Single Node PF Execution
 ------------------------
 
@@ -38,7 +64,6 @@ Multi-node PF Execution
 Multiple-chassis PF Execution
 -----------------------------
 
-Reconfiguring the system 
+Troubleshooting
 ~~~~~~~~~~~~~~~~~~~~~~~~
-Please ask an admin to reconfigure the system if your Slurm job fails to run. 
-emu_system_reconfig -n 8 -s
+See our `dedicated page for common issues and troubleshooting <>`__. In many cases, these can be resolved via reconfiguration by the admins or Slurm tooling.
