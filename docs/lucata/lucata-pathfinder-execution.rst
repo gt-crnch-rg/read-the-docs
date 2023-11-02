@@ -116,4 +116,4 @@ Multiple-chassis PF Execution
 
 Troubleshooting
 ~~~~~~~~~~~~~~~~~~~~~~~~
-See our `dedicated page for common issues and troubleshooting <>`__. In many cases, these can be resolved via reconfiguration by the admins or Slurm tooling.
+See our `dedicated page for common issues and troubleshooting <https://gt-crnch-rg.readthedocs.io/en/main/lucata/lucata-pathfinder-troubleshooting.html>`__. In many cases, these can be resolved via reconfiguration by the admins or via Slurm reconfiguration.
