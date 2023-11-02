@@ -41,8 +41,11 @@ As shown in the figure above, the suggested Lucata workflow combines 1) x86 func
 1. Compile your code on rg-emu-dev using <memoryweb.h>  and emu-cc.sh to target x86 execution. This will run the Cilk code and emulate any data allocations specified by the Lucata APIs.
 2. Simulate code on rg-emu-dev. Do debugging and initial verification here but note that simulation is slow! If you need to use a machine with more memory you can use hawksbill.crnch.gatech.edu
 3. Profile your code with the simulator for small input sets.
-4. Make a reservation on the Google Calendar for the Pathfinder to run jobs. We also use our Slack channel to reserve time on the Pathfinder 
-5. Run your job on a single Pathfinder node (**SN<0-7>**. Verify its correctness.
+4. Make a reservation on the Google Calendar for the Pathfinder to run jobs. We also use our Slack channel to reserve time on the Pathfinder. 
+
+See `this page <https://gt-crnch-rg.readthedocs.io/en/main/lucata/lucata-pathfinder-execution.html>`__ for examples of running on the Pathfinder hardware.
+
+5. Run your job on a single Pathfinder node (**SN<0-7>**) and verify correctness. 
 6. Run your job on a single Pathfinder chassis (8 nodes PF<0-1>).
 7. Run your job on multiple Pathfinder chassis (2 chassis).
 
@@ -50,12 +53,9 @@ As shown in the figure above, the suggested Lucata workflow combines 1) x86 func
 Tutorials and Training
 ----------------------
 
-Please check out the recent `Pathfinder tutorial <https://github.com/gt-crnch-rg/lucata-pathfinder-tutorial>`__
-for official training material for the Pathfinder systems. There are also some examples and related tools 
-shared in a Github repo at https://github.gatech.edu/crnch-rg/emu-common (requires login). Please feel free to branch and fork as makes sense for your research.
+Please check out the recent `Pathfinder tutorial <https://github.com/gt-crnch-rg/lucata-pathfinder-tutorial>`__for official training material for the Pathfinder systems. 
 
-Eric Hein has also contributed a nice micro-benchmark that uses serial and recursive spawn. `Micro benchmark <https://github.gatech.edu/crnch-rg/emu-microbench>`__
-
+There are also some microbench examples and related tools `shared in a Github repo <https://github.gatech.edu/crnch-rg/emu-microbench-mirror>`__ (requires GT login). Please feel free to branch and fork as makes sense for your research.
 
 Other resources:
 ----------------
