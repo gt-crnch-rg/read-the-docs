@@ -21,27 +21,16 @@ Current Topic Areas:
 -  Quantum
 -  Related - all related work
 
-How do I update existing documentation?
----------------------------------------
 
-| 1) Fork this repo. 
-| 2) Find the page you are looking to update and make your edits.
-| 3) Add the page to the index file.
-| 4) Build the code to test your code locally (requires Python and sphinx).
-| 5) Commit *and* push to your fork and initiate a pull request. 
 
 How do I contribute new documentation?
 --------------------------------------
 
 | 1) Fork this repo. 
 | 2) Find the folder you are looking to update and create a new page
-  with the following titleformat: *[Topic
-  Area]-my-new-documentation-page*. 
-|  \* As an example, creating a new page for reconfigurable resources
-  might have a title like: *[Reconfig]-Using-Vitis-for-AI.rst*
-|  \* Note that you may need to create your page with the appropriate
-  .rst suffix name and then edit it to get appropriate
-  formatting in the browser. You can check basic format of commits in the Github web interface.
+  with the following titleformat: `[Topic Area]-my-new-documentation-page` 
+|  - As an example, creating a new page for reconfigurable resources might have a title like: `[Reconfig]-Using-Vitis-for-AI.rst`
+|  - Note that you may need to create your page with the appropriate .rst suffix name and then edit it to get appropriate formatting in the browser. You can check basic format of commits in the Github web interface.
 | 3) Commit *and* push to your fork and initiate a pull request. 
 
 What should my documentation contain?
