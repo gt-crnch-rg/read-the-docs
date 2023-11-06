@@ -27,6 +27,10 @@ This page assumes that your application compiles and runs correctly with emusim.
 
     Info: /OSCI/SystemC: Simulation stopped by user.
 
+.. note::
+
+   You should set up SSH keys for your account before running on the Pathfinder hardware. This is needed since `emu_multinode_exec` will launch jobs across multiple nodes in the Pathfinder cluster. Please see our `SSH page <https://gt-crnch-rg.readthedocs.io/en/main/general/ssh-jump-hosts.html>`__ for more details if you haven't done this before. 
+
 Checking the status of the system:
 ----------------------------------
 
@@ -113,6 +117,31 @@ Multiple-chassis PF Execution
     [STATUS]: Moving concatenated logs with PID=9328 into /nethome/gburdell/USERSCRATCH/lucata.
     [STATUS]: Checking mn_exec_usr.9328.log for problems...
     [STATUS]: Checking mn_exec_sys.9328.log for problems...
+
+Using the local SSDs for fast storage
+-------------------------------------
+
+All nodes in the Pathfinder cluster are connected to our shared `/nethome` and `/netscratch` which are connected via 10 and 40 Gigabit Ethernet to the Pathfinder cluster. However, each of the 32 nodes in the system also has a 900 GB SSD that is typically available under `/data` on each node. You might want to use this to load a piece of your data set during a Pathfinder run rather than using network-based storage. 
+
+To use this localscratch, please follow the following steps with the `emu_system_cmd` which is a wrapper for pdsh. 
+
+.. code:: shell
+
+    emu_system_cmd -s -p {0..31} -- 'mkdir -p /data/<your_username>'
+    Running 'mkdir -p /data/<gburdell' in parallel on sn[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]...
+
+You can then copy your data to each folder using tools like `pdcp`.
+
+To check how much space is available on each node, you can use the same command with `df`. Note that the `data` folder is just placed under the root directory on each node. 
+
+.. code:: shell
+
+    emu_system_cmd -s -p {0..31} -- 'df -h /'
+    ...
+    # This will print information on all nodes
+    ...
+    sn9: Filesystem      Size  Used Avail Use% Mounted on
+    sn9: /dev/root       916G  392G  479G  45% /
 
 Troubleshooting
 ~~~~~~~~~~~~~~~~~~~~~~~~
