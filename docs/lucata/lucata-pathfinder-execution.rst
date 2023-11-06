@@ -128,9 +128,18 @@ To use this localscratch, please follow the following steps with the `emu_system
 .. code:: shell
 
     emu_system_cmd -s -p {0..31} -- 'mkdir -p /data/<your_username>'
-    Running 'mkdir -p /data/<gburdell' in parallel on sn[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]...
+    Running 'mkdir -p /data/<your_username>' in parallel on sn[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]...
 
 You can then copy your data to each folder using tools like `pdcp`.
+
+.. code:: shell
+
+    gburdell@pathfinder0: pdcp -pr -w sn[0-31] my_test_data /data/gburdell/.  
+
+    #Then you can use emu_system_cmd or pdsh to check that your data is resident locally
+    gburdell@pathfinder0:~/USERSCRATCH$ emu_system_cmd -s -p {0..31} -- 'ls -all /data/gburdell'
+    Running 'ls -all /data/gburdell' in parallel on sn[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]...
+    sn0: -rw-r----- 1 gburdell gtperson        0 Nov  6 14:24 my_test_data
 
 To check how much space is available on each node, you can use the same command with `df`. Note that the `data` folder is just placed under the root directory on each node. 
 
