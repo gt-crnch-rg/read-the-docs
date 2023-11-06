@@ -14,7 +14,30 @@ Remember that to log in to a remote server, your *public* key needs to be added 
   To make your setup even more secure, we recommend generating two SSH keys: 1) one on your local machine that you use to connect to the   
   testbed and 2) a separate key that you put in your testbed `/nethome` .ssh folder and that is used just to SSH around to other nodes 
   within the testbed. In this way, your private SSH key on your local machine can be used to log into more than one testbed or service 
-  without exposing it to potential attackers. 
+  withoutexposing it to potential attackers. 
+
+As a simple example, please use the following syntax to generate a "local" SSH key for your account 
+
+.. code::
+
+  #Generate a new SSH key
+  rg-login$ ssh-keygen -t ed25519
+  
+  ssh-keygen -t ed25519 
+  Generating public/private ed25519 key pair.
+  #Hit enter to save as default
+  Enter file in which to save the key (<user_nethome>/.ssh/id_ed25519):
+  #It's ok to not use a passphrase for "local" launching of jobs on systems like the Pathfinder
+  Enter passphrase (empty for no passphrase):
+  Enter same passphrase again:
+  Your identification has been saved in <user_nethome>/.ssh/id_ed25519).
+  .. Added details about your key
+
+  #Add your public key to your authorized_keys file
+  rg-login$ ssh-copy-id rg-login.crnch.gatech.edu
+  #Enter your password and then check that your pubkey is in <user_nethome>/.ssh/authorized_keys
+
+Review these resources if you are not familiar with SSH keys!
 
 - `Generating new SSH keys <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent>`__
 - `ssh-copy-id and authorized_keys <https://www.ssh.com/academy/ssh/copy-id>`__
