@@ -74,6 +74,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :glob:
 
    lucata/lucata-getting-started
+   lucata/lucata-pathfinder-execution
    lucata/lucata-faq
 
 .. toctree::
