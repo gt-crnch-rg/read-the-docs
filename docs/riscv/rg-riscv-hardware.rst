@@ -40,12 +40,12 @@ System Specifications
       - 1 GB Ethernet
       - `MangoPi MQ-Pro; MPi-MQ1PH <https://linux-sunxi.org/MangoPi_MQ-Pro>`__
       - 
-    * - johnny-rv5-3
+    * - johnny-rv5-4
       - 2xU74 cores 
       - 8 GB LPDDR4
       - 1 GB Ethernet
       - `StarFive VisionFive (V1) <https://www.starfivetech.com/en/site/boards>`__
-      - Currently being deployed
+      - 
 
 
 
@@ -78,6 +78,12 @@ Software and Tools
       - Armbian 22.08.0
       - 5.19.0
       - GCC 11.3
+      - 
+      - 
+    * - johnny-rv5-4
+      - Ubuntu 22.04
+      - 6.2.0
+      - GCC 11.4
       - 
       - 
 
