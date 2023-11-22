@@ -103,7 +103,15 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :glob:
    
    quantum/cuquantum.rst
-   
+
+.. toctree::
+   :caption: ModSim and Chip Design
+   :maxdepth: 2
+   :hidden:
+   :glob:
+
+   reconfig/chisel/firesim-chipyard
+
 .. toctree::
    :caption: Reconfigurable Computing
    :maxdepth: 2
