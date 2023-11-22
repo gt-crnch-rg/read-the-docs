@@ -92,6 +92,21 @@ Then build your image. Here we are using USERSCRATCH on `hawksbill`.
     INFO:    Creating SIF file...
     INFO:    Build complete: cuquantum-23.06.sif
 
+Testing your container build with writable containers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+While provided containers are typically immutable (non-writable), you can test out the functionality of your container using a `sandbox environment <https://apptainer.org/docs/user/main/quick_start.html#sandbox-directories>`__. This process involves: 1) Creating a sandbox directory from an existing .def or Dockerfile, 2) Running the container as a writable sandbox, and 3) Finalizing your container as immutable for deployment. 
+
+.. code:: shell
+
+    # Create a sandbox from a standard Docker Ubuntu definition
+    apptainer build --sandbox ubuntu_sandbox/ docker://ubuntu
+    apptainer shell --writable ubuntu_sandbox
+    # Test out changes, apt-get and test workflow
+
+    # Then you can build from this sandbox directory to create your final image
+    apptainer build final_ubuntu_container.sif ubuntu_sandbox
+
+
 Running a Singularity container on PACE Phoenix
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 TBD
