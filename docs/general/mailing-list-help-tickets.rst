@@ -2,14 +2,12 @@
 Mailing Lists and Requesting Help
 =================================
 
-
 Help and Mailing List FAQs 
 --------------------------
 
 -  `Request access to the MS Teams   group <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__.  If you are external to GT, please send us a ticket to add you.
 
-   -  We also have a CRNCH RG Slack workspace `here <https://join.slack.com/t/gt-crnch-rg/shared_invite/zt-velklwgm-Bfh~IXesIM2uhrLs~y8s_w>`__ if you have trouble connecting to
-      Teams. Most of the Lucata discussion currently uses this Slack. Just note that since we are on a free plan that old conversations are not saved.
+   -  We also have a CRNCH RG Slack workspace `here <https://join.slack.com/t/gt-crnch-rg/shared_invite/zt-velklwgm-Bfh~IXesIM2uhrLs~y8s_w>`__ if you have trouble connecting to Teams. Most of the Lucata discussion currently uses this Slack. Just note that since we are on a free plan that old conversations are not saved.
 
 -  `How to use the help ticket webform at
    https://crnch-rg.cc.gatech.edu/crnch-rg-help/ <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-help-webform-examples.html>`__
@@ -101,18 +99,7 @@ To subscribe/unsubscribe from a mailing list please use this `SYMPA FAQ
 page <https://faq.oit.gatech.edu/content/how-do-i-subscribe-or-unsubscribe-mailing-list>`__.
 Note that most lists are closed to external users.
 
--  crnch-rg-users@lists.gatech.edu - general user list. Mainly used for
-   announcements and very high-level discussion.
-
--  crnch-rg-fpga@lists.gatech.edu - Discussion of FPGA and reconfigurable computing
-
--  crnch-rg-nearmem@lists.gatech.edu - Discussion of the Emu system and near-memory computing hardware like HBM, HMC, and NVDIMM
-
--  crnch-rg-networking@lists.gatech.edu - Discussion of in-network computing, FPGA networking, and edge computing/5G
-
--  crnch-rg-neuro-sysml@lists.gatech.edu - Discussion of neuromorphic computing and systems for machine learning
-
--  crnch-rg-quantum@lists.gatech.edu - Discussion of quantum computing
+-  crnch-rg-users@groups.gatech.edu - general user list. Mainly used for announcements and very high-level discussion.
 
 Vendor Forums
 -------------
