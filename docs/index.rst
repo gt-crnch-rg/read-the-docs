@@ -17,11 +17,11 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :hidden:
 
    general/rogues-gallery-overview
+   general/mailing-list-help-tickets
+   general/submit-a-ticket
    general/rg-getting-started
    general/rg-hardware 
    general/rg-filesystems
-   general/mailing-list-help-tickets
-   general/vendor-forums
    general/contributing
    general/testbed-release-notes
    authors.rst
