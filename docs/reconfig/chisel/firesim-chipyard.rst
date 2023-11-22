@@ -82,3 +82,5 @@ environment.
    Apptainer> bash
    #And reactivate the FireSim environment
    (base) gburdell@hawksbill:~$ conda activate firesim
+
+Note that ChipYard can be found under `/root/firesim/target-design/chipyard` in this container.
