@@ -1,5 +1,6 @@
-Firesim Usage with Containers on Georgia Tech resources
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================
+Firesim and ChipYard
+====================
 
 This page builds off the Docker instructions from Farzad Fatollahi-Fard at LBL that can be `found publicly here <https://socks.lbl.gov/cag/bxe/-/wikis/Docker-Image>`__. Farzad was
 kind enough to share his Dockerfile which can be found on our container repo `here <https://github.gatech.edu/crnch-rg/container-defs/blob/main/firesim_chipyard/firesim_1.16.0>`__ (requires login).
