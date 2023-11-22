@@ -2,8 +2,10 @@
 Firesim and ChipYard
 ====================
 
-This page builds off the Docker instructions from Farzad Fatollahi-Fard at LBL that can be `found publicly here <https://socks.lbl.gov/cag/bxe/-/wikis/Docker-Image>`__. Farzad was
-kind enough to share his Dockerfile which can be found on our container repo `here <https://github.gatech.edu/crnch-rg/container-defs/blob/main/firesim_chipyard/firesim_1.16.0>`__ (requires login).
+.. note:: 
+   This page builds off the Docker instructions from Farzad Fatollahi-Fard at LBL that can be `found publicly here <https://socks.lbl.gov/cag/bxe/-/wikis/Docker-Image>`__. Please review these instructions and note there are some minor differences with our use of Apptainer, which you can review `here <https://gt-crnch-rg.readthedocs.io/en/main/containers/containers-singularity.html>`__
+
+Farzad was kind enough to share his Dockerfile which can be found on our container repo `here <https://github.gatech.edu/crnch-rg/container-defs/blob/main/firesim_chipyard/firesim_1.16.0>`__ (requires login).
 
 FireSim 1.16 uses ChipYard 1.9.0 so building FireSim will enable using ChipYard as well. 
 
@@ -60,8 +62,19 @@ container:
 .. code-block::
 
    Apptainer> conda activate firesim
-   (firesim) gburdell@hawksbill:~$
+   # Switch to the root firesim directory
+   (firesim) gburdell@hawksbill:~$ cd /root/firesim
+   # Set up paths for ChipYard and FireMarshal
+   (firesim) gburdell@hawksbill:~$ source source-env.sh
+   /root/firesim$ source source-env.sh
+   Activating FireSim Conda Environment...
+   Sourcing FireSim Environment...
+   Navigating to Chipyard Directory...
+   Sourcing Chipyard Environment...
+   (/root/firesim/target-design/chipyard/.conda-env) gburdell@hawksbill:/root/firesim/target-design/chipyard$
 
+Errors with Activating the Environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If you get an error, this may be because you have existing conda
 environment support in your home directory, which was mapped into the
 container. To fix this reinitialize and then activate the firesim
@@ -82,5 +95,3 @@ environment.
    Apptainer> bash
    #And reactivate the FireSim environment
    (base) gburdell@hawksbill:~$ conda activate firesim
-
-Note that ChipYard can be found under `/root/firesim/target-design/chipyard` in this container.
