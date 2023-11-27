@@ -144,6 +144,7 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    :glob:
    
    techfee/frozone-omnipath.rst
+   techfee/dash-spr-max-smartnic.rst
    
 .. toctree::
    :caption: Miscellaneous
