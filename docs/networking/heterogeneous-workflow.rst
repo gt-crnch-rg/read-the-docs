@@ -1,6 +1,6 @@
-===============
+======================================
 Heterogeneous Workflow with Bluefields
-===============
+======================================
 
 Working with Bluefields and host machines with differing architectures introduces development
 peculiarities that must be dealt with.
@@ -57,4 +57,6 @@ version of these libraries is loaded for each hardware architecture.
     source /tmp/hpcx/hpcx-init.sh
     hpcx_load
 
-TODO: Show how above example het slurm job now runs with the above in the bashrc.
+To be added
+-----------
+- This page will be updated with information to show how the Slurm job runs with this bashrc.
