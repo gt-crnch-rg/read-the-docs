@@ -34,21 +34,20 @@ System Specifications
       - Memory (GB)
       - Network
       - Notes
-    * - rg-smart-nic
+    * - rg-hpc
       - quorra1-bf2-mgt
       - quorra1
       - 
       - 
       - 
       -      
-    * - rg-smart-nic
-      - dash3-bf3
-      - quorra1
+    * - rg-hpc
+      - dash<1-4>-bf3
+      - `dash<1-4> <https://gt-crnch-rg.readthedocs.io/en/main/techfee/dash-spr-max-smartnic.html>`__
       - Cortex-A78AE, 16 core
       - 32 GB DDR4, dual channel
       - 
-      - Temporary home until dash3 comes online
-
+      - 
 
 
 Software and Tools
@@ -72,16 +71,44 @@ Software and Tools
       - 
       - DOCA 2.2.0
 
+Networking Configuration
+==================
+
+The management ports on the BlueField-3 DPUs are connected to a 1 Gigabit Ethernet switch, while the network ports are connected to our `Cisco 9336 100 Gigabit Ethernet switch <https://www.cisco.com/c/en/us/support/switches/nexus-9336c-fx2-switch/model.html#~tab-specs>`__.
+
+
+Key Resources to Get Started
+============================
+- Check out the recent `Supercomputing 2023 tutorial on SmartNICs <https://github.com/gt-crnch-rg/>`__ for an overview of different ways to use BlueFields.
+    - See an example of using a `heterogeneous workflow on the host and DPU <https://gt-crnch-rg.readthedocs.io/en/main/networking/bf-heterogeneous-workflow.html>`__
+    - Check out recent work by BSC researchers on `using OpenMP offloading with BlueField DPUs <https://gt-crnch-rg.readthedocs.io/en/main/networking/dpu-openmp-offload.html>`__
+- See the `DOCA SDK page <https://gt-crnch-rg.readthedocs.io/en/main/networking/nvidia-doca-sdk.html>`__ for information on using DOCA features with the BlueField devices.
+
 How to Access BlueField Cards
 =============================
 
 As with most CRNCH resources, you need to either log in via the gateway node, rg-login, or access the system from the campus network via VPN or an on-campus connection.
 
-To request an allocation using slurm:
+To request an allocation using slurm, you can run the following for your desired resource:
 
-//Request an allocation of 1 hr, partition rg-smart-nice, and specify the node name for the server with -w
-salloc -t 1:00:00 -p rg-smart-nic -w dash3-bf3
-//SSH to the resource
-ssh dash3-bf3
+.. code::
 
+   //Request an allocation of 1 hr, partition rg-smart-nic, and specify the node name for the server with -w
+   salloc -t 1:00:00 -p rg-smart-nic -w dash3-bf3
+   //SSH to the resource
+   ssh dash3-bf3
 
+Additional BlueField Resources
+------------------------------
+
+- `DPU BF3 User Guide <https://docs.nvidia.com/networking/display/bf3dpuvpi>`__
+- `DPU BF2 Ethernet User Guide <https://docs.nvidia.com/networking/display/bluefield2dpuenug>`__
+- `DPU Software Guide <https://docs.nvidia.com/networking/display/bluefielddpubspv422/bluefield+software+overview>`__
+
+Related BlueField Publications
+---------------------------------------
+
+- `BluesMPI: Efficient MPI Non-blocking Alltoall Offloading Designs on Modern BlueField Smart NICs <https://dl.acm.org/doi/abs/10.1007/978-3-030-78713-4_2>`__
+- `Battle of the BlueFields–An In-Depth Comparison of the BlueField-2 and BlueField-3 SmartNICs, HotInterconnects 2023 <https://ieeexplore.ieee.org/document/10287294>`__
+- `Characterizing Lossy and Lossless Compression on Emerging BlueField DPU Architectures, HotInterconnects 2023 <https://ieeexplore.ieee.org/document/10287290>`__
+- `Hypersparse Traffic Matrix Construction using GraphBLAS on a DPU <https://arxiv.org/abs/2310.18334>`__
