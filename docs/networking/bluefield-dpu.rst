@@ -10,7 +10,7 @@ NVIDIA's BlueField Data Processing Unit has both a high-speed InfiniBand/Etherne
 
 Acknowledgments
 ===============
-Dr. Young and Dr. Bryngelson have received several BF2 cards which are hosted in the Rogues Gallery via `NVIDIA's Academic Hardware Grant program <https://nvidia.my.site.com/HardwareGrant/s/Application>`.
+Dr. Young and Dr. Bryngelson have received several BF2 cards which are hosted in the Rogues Gallery via `NVIDIA's Academic Hardware Grant program <https://nvidia.my.site.com/HardwareGrant/s/Application>`__.
 
 Current Status
 ==============
@@ -35,13 +35,20 @@ System Specifications
       - Network
       - Notes
     * - rg-hpc
-      - quorra1-bf2-mgt
-      - quorra1
+      - quorra<1-2>-bf2-mgt
+      - quorra<1-2>
       - 
       - 
       - 
-      -      
-    * - rg-hpc
+      -
+    * - rg-smart-nic
+      - kingpin<1-2>-bf2-mgt-<a-b>
+      - kingpn<1-2>
+      - 
+      - 
+      - 
+      -
+    * - rg-smart-nic
       - dash<1-4>-bf3
       - `dash<1-4> <https://gt-crnch-rg.readthedocs.io/en/main/techfee/dash-spr-max-smartnic.html>`__
       - Cortex-A78AE, 16 core
