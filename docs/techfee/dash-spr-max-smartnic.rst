@@ -2,13 +2,20 @@
 Dash - Sapphire Rapids Max
 ==========================
 
+CRNCH RG has four dash nodes, `dash<1-4>`.
+
+Acknowledgments
+===============
+
+The Dash systems are funded via GT's Techfee program, so usage for these servers are prioritized for coursework (when requested by instructors or students). Please read more about Techfee hardware `on this page <https://crnch-rg.cc.gatech.edu/tech-fee-hosted-equipment/>`__.
+
 What's Interesting About This Hardware?
 =======================================
-The Dash servers use Intel Sapphire Rapids Max along with PCI Express 5.0 to support SmartNIC accelerators. CRNCH RG has four dash nodes, `dash<1-4>`.
+The Dash servers use Intel Sapphire Rapids Max along with PCI Express 5.0 to support SmartNIC accelerators. Each node also has some SmartNIC related accelerators with `dash<1-2>` having AMD Alveo U280 SmartNICs and `dash<3-4>` having Napa:Tech NT200 SmartNICs.
 
 Current Status
 ==============
-
+We are currently focused on getting the BlueField-3 DPUs fully set up and documented and will update this page with more information on using the Alveo and Napa:Tech cards in the near future. 
 
 BUGS / Feature Requests
 -----------------------
@@ -36,7 +43,6 @@ System Specifications
       - Dash 1-2 have an Alveo U280; Dash 3-4 have Silicom DPUs
       -       
 
-
 Software and Tools
 ==================
 
@@ -57,6 +63,13 @@ Software and Tools
       - 
       - 
       - 
+
+For more information on using DOCA on these nodes, please see our dedicated DOCA SDK page.
+
+Networking Configuration
+==================
+
+The management ports on the BlueField-3 DPUs are connected to a 1 Gigabit Ethernet switch, while the network ports are connected to our `Cisco 9336 100 Gigabit Ethernet switch <https://www.cisco.com/c/en/us/support/switches/nexus-9336c-fx2-switch/model.html#~tab-specs>`__.
 
 How do I get to Dash?
 =======================
@@ -82,5 +95,4 @@ To request an entire node (and all the memory) you can run:
 
 Vendor-provided Documents and Resources
 ---------------------------------------
-
 - `Intel Xeon CPU Max Series Configuration and Tuning Guide  <https://www.intel.com/content/www/us/en/content-details/769060/intel-xeon-cpu-max-series-configuration-and-tuning-guide.html>`__ - Intel's tuning guide for this CPU architecture
