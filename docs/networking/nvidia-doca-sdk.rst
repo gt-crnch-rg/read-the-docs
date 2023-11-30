@@ -27,13 +27,11 @@ There are also a set of applications that make use of DOCA on the DPU under `/op
   application_recognition  file_compression              ipsec_security_gw  nat                url_filter
   common                   file_integrity                l2_reflector       pcc                yara_inspection
 
-======================
-Using DOCA Compression
-======================
-
 ===============
 Using DOCA RDMA
 ===============
+*See the `DOCA RDMA Programming Guide <https://docs.nvidia.com/doca/sdk/rdma-programming-guide/index.html#waiting-for-job-completion>`__ for more detailed information.*
+
 The DOCA RDMA library allows the user to directly access the memory of remote machines without CPU interruptions, for fewer context switches for I/O operations. DOCA RDMA consists of two connected sides, and feature the folllowing jobs:
 
 * `Receive <receive_>`_ 
@@ -297,4 +295,78 @@ After all jobs have been executed, follow `these steps <https://docs.nvidia.com/
 Examples
 --------
 
-To be completed
+DOCA is already installed on the ``dash3`` host and BlueField-3 nodes. DOCA comes with a number of example scripts for trying out the RDMA capabilities; these can be viewed at the following location:
+
+.. code:: 
+
+  >$ ls /opt/mellanox/doca/samples/doca_rdma
+
+To build one of these samples:
+
+.. code:: 
+
+  >$ cd /opt/mellanox/doca/samples/doca_rdma/<sample_name>
+  >$ meson build
+  >$ ninja -C build
+
+For example, to run and get more information about the ``doca_rdma_write_requester`` sample, we can first build the sample as described above and run ``./build/doca_rdma_write_requester -h`` to print a help synopsis on usage and flags.
+
+======================
+Using DOCA Compression
+======================
+*See the `DOCA Compress Programming Guide <https://docs.nvidia.com/doca/sdk/compress-programming-guide/index.html#introduction>`__ for more detailed information.*
+
+The DOCA Compress library allows users to execute compression and decompression operations on DOCA buffers using hardware acceleration. These buffers may reside in either DPU or host memory.
+
+For the BlueField-3, this library supports decompress operations using the deflate and LZ4 algorithms.
+
+DOCA Compress supports both local compress (the data resides in the node) and remote compress (the BlueField-3 is able to access the host memory to be used as a target or source for compression).
+
+As with DOCA RDMA, DOCA Compress relies heavily on the DOCA core library. The debugging steps and DOCA core objects (e.g. memory map, workq) mentioned in the previous section are largely applicable to DOCA Compress as well, and more information can be seen in the programming guide linked above.
+
+----
+Jobs
+----
+
+The API features two DOCA Compress job structures, ``struct doca_compress_deflate_job`` and ``struct doca_compress_lz4_job`` for the deflate and lz4 algorihtms respectively.
+
+.. code-block:: cpp
+
+  struct {
+	  struct doca_job base;               /**< Common job data. */
+	  struct doca_buf *dst_buff;          /**< Destination data buffer. */
+	  struct doca_buf const *src_buff;    /**< Source data buffer. */
+	  uint64_t *output_chksum;
+  };
+
+Note that for lz4 decompress jobs, the source data buffer must reside in local memory.
+
+For both lz4 decompress and deflate decompress jobs, the following fields must be set:
+
+.. code-block:: cpp
+
+  doca_job.type = DOCA_DECOMPRESS_DEFLATE_JOB; // For Deflate algorithm
+  // For lz4 algorithm, use doca_job.type = DOCA_DECOMPRESS_LZ4_JOB;
+  doca_job.flags = DOCA_JOB_FLAGS_NONE;
+  doca_job.ctx = doca_compress_as_ctx(doca_compress_inst);
+
+--------
+Examples
+--------
+
+DOCA is already installed on the ``dash3`` host and BlueField-3 nodes. DOCA comes with a number of example scripts for trying out the Compress capabilities; these can be viewed at the following location:
+
+.. code:: 
+
+  >$ ls /opt/mellanox/doca/samples/doca_compress
+
+To build one of these samples:
+
+.. code:: 
+
+  >$ cd /opt/mellanox/doca/samples/doca_compress/<sample_name>
+  >$ meson build
+  >$ ninja -C build
+
+For example, to run and get more information about the ``doca_compress_deflate`` sample, we can first build the sample as described above and run ``./build/doca_compress_deflate -h`` to print a help synopsis on usage and flags.
+
