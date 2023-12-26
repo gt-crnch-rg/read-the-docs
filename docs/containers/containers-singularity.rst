@@ -139,9 +139,10 @@ As an example, we can use a recent Dockerfile example for the Vortex tutorial:
     INFO:    Creating SIF file...
     INFO:    Build complete: vortex_micro23.sif
 
-Alternatively, you can use tools like spython to convert definition files and build directly from a Singularity definition file.
+Alternatively, you can use tools like `spython <https://pypi.org/project/spython/>`__ to convert definition files and build directly from a Singularity definition file.
 
 .. code:: shell
+
     pip3 install spython 
     
     # Save the Dockerfile to a Singularity .def file
