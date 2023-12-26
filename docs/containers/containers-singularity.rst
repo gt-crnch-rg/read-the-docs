@@ -45,7 +45,7 @@ Building your own Singularity container
 
 .. note::
 
-    You may need some help setting up fakeroot to build Singularity containers. Please reach out to the testbed admins for assistance. 
+    Users can build containers using fakeroot, so you shouldn't need sudo access to create a new container. However, you may need some help `setting up fakeroot to build Singularity containers <https://apptainer.org/docs/admin/1.2/user_namespace.html#adding-a-fakeroot-mapping>`__. Please reach out to the testbed admins for assistance. 
 
 You can start from a Singularity `.def` file like one of the ones in our `GT Github container-defs repo (GT login required) <https://github.gatech.edu/crnch-rg/container-defs>`__ 
 
