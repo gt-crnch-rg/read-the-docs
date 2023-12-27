@@ -64,9 +64,11 @@ Example .def file for cuQuantum - `see the file here in our repo <https://github
         pip install jupyterlab
         pip install pipenv
 
-To build this container, we highly recommend you use `/project` space or `USERSCRATCH` rather than your home directory. We also suggest using a dev VM (ie, `rg-fpga-dev1`, `rg-emu-dev`) or `hawksbill` to build your new image.
+.. note::
 
-Set up fakeroot to build containers as a non-root user (this may require some admin assistance. 
+    To build this container, we highly recommend you use `USERSCRATCH` or `/localscratch` rather than your home directory. We also suggest using the nodes `hawksbill` or `frozone1` to build your new image as both of these nodes have a large `/localscratch` space. You should be able to create a new directory with your username in this local space to use it.  
+
+Set up fakeroot to build containers as a non-root user (this will require some admin assistance). 
 
 .. code:: shell
 
