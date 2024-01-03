@@ -83,8 +83,8 @@ Slurm Partitions
 
 How do I get started with Slurm on RG?
 --------------------------------------
-We suggest that you first check out the following Slurm "Getting Started" resources from LLNL
-if you have not used a batch submission system before. 
+We suggest that you first check out the following Slurm "Quick Start" resources from LLNL
+if you have not used a batch submission system before. Find them `here and below in the resources section <https://hpc.llnl.gov/banks-jobs/running-jobs/slurm-quick-start-guide>`__.
 
 Then please check out our RG Slurm Examples page and the RG Workflows page for architecture of interest and specific commands to run for these systems.
 
