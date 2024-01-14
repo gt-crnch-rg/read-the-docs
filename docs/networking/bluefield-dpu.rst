@@ -34,21 +34,21 @@ System Specifications
       - Memory (GB)
       - Network
       - Notes
-    * - rg-hpc
+    * - rg-nextgen-hpc
       - quorra<1-2>-bf2-mgt
       - quorra<1-2>
       - 
       - 
       - 
       -
-    * - rg-smart-nic
+    * - rg-nextgen-hpc
       - kingpin<1-2>-bf2-mgt-<a-b>
       - kingpn<1-2>
       - 
       - 
       - 
       -
-    * - rg-smart-nic
+    * - rg-nextgen-hpc
       - dash<1-4>-bf3
       - `dash<1-4> <https://gt-crnch-rg.readthedocs.io/en/main/techfee/dash-spr-max-smartnic.html>`__
       - Cortex-A78AE, 16 core
@@ -76,7 +76,7 @@ Software and Tools
       - GCC 11.4
       - 
       - 
-      - DOCA 2.2.0
+      - `DOCA 2.5.0 <https://docs.nvidia.com/doca/sdk/nvidia+doca+release+notes/index.html>`__
 
 Networking Configuration
 ==================
