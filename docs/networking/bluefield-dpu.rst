@@ -100,10 +100,17 @@ To request an allocation using slurm, you can run the following for your desired
 
 .. code::
 
-   //Request an allocation of 1 hr, partition rg-smart-nic, and specify the node name for the server with -w
-   salloc -t 1:00:00 -p rg-smart-nic -w dash3-bf3
-   //SSH to the resource
-   ssh dash3-bf3
+   //Request an allocation of 1 hr, partition rg-nextgen-hpc, and specify the node name for the server with -w
+   //If we request dash3 and dash3-bf3
+   salloc -t 1:00:00 -p rg-nextgen-hpc -w dash3,dash3-bf3
+   //Your job would start on dash3, in this instance
+   gburdell@dash3:~$
+
+Remember that if you just request the node but don't specify number of cores or tasks that you will receive 1 CPU core per node. To avoid this you can use the `--exclusive` flag to reserve the entire node or the following to reserve a few cores:
+
+.. code::
+
+   salloc -t 1:00:00 -p rg-nextgen-hpc -w dash3,dash3-bf3 --ntasks=8 --cpus-per-task=4
 
 Additional BlueField Resources
 ------------------------------
