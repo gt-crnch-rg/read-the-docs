@@ -2,11 +2,11 @@
 Smart Networking  - Getting Started
 ===================================
  
-The Rogues Gallery supports three types of novel networking:
+The Rogues Gallery supports several types of novel networking:
 
 * FPGA-based network devices
 * CPU-based smart network devices
-* 5G networking testbed equipment
+
 
 Acknowledgments
 ===============
@@ -37,6 +37,11 @@ Currently, the Rogues Gallery hosts the following smart networking hardware.
       - 16 GB DRAM
       - quorra1/2, flubber6/7, kingpin1/2, flubber10
       - 1 board in most nodes, 4 in flubber10
+    * - Bluefield-3 DPU
+      - Arm  CPU
+      - 32 GB DRAM
+      - dash1, dash<3-4>
+      - 
     * - InnovaFlex-2
       - 
       - 
@@ -57,8 +62,8 @@ Currently, the Rogues Gallery hosts the following smart networking hardware.
       - 
       - flubber5
       - 
-    * - 5G equipment (TBD)
+    * - NapaTech N200A02
       -
-      -
+      - dash3/4
       -
       -
