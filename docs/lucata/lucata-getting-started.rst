@@ -10,7 +10,7 @@ The Rogues Gallery hosts two distinct systems from Lucata (formerly known as Emu
 
 Latest Updates
 --------------
-* The 23.07 Pathfinder tools have been released and made the default on the Rogues Gallery testbed. See `the 3.3 Programming Guide here <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/3c24efe56e9442207a8058a8b233d05bef53ef57/docs/pathfinder/Lucata-Pathfinder-Programming-Guide-v3.3.pdf>`__ (RG user account login to GT Github required) for the latest information on this toolset release.
+* The 24.01 Pathfinder tools have been released and made the default on the Rogues Gallery testbed. See `the 3.3 Programming Guide here <https://github.gatech.edu/crnch-rg/rg-lucata-pathfinder/blob/3c24efe56e9442207a8058a8b233d05bef53ef57/docs/pathfinder/Lucata-Pathfinder-Programming-Guide-v3.3.pdf>`__ (RG user account login to GT Github required) for the latest information on this toolset release.
 
 Suggested Background and First Steps
 ------------------------------------
