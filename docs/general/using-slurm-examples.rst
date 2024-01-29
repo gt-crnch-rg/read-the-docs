@@ -19,8 +19,10 @@ Here is an example allocating one node (octavius1) on the A64FX cluster to the "
 
 .. code:: shell
 
-   $ salloc -p rg-arm-debug --nodes=1 --ntasks-per-node=1 --nodelist octavius1 --time=01:00:00
-   salloc: Granted job allocation 382
+   $ salloc -p rg-nextgen-hpc --nodes=1 --ntasks-per-node=1 --nodelist octavius1 --time=01:00:00
+     ...
+     salloc: Nodes octavius1 are ready for job 
+     gburdell@octavius1:~$
 
 Note that for the "account" parameter for ``salloc`` that you should use
 your GT user account for the Newell cluster. Also note that after
@@ -35,22 +37,21 @@ You can verify that the resources have been allocated using the
                 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
                   382     debug interact gburdell3  R       0:04      1 octavius1
 
-Finally, you can access the interactive job with a bash shell using
-``salloc`` and ``ssh``. We no longer recommend using srun based on recent SchedMD guidance.
+Note that on some nodes running ``salloc`` may not automatically give you an interactive shell. In this case, please connect to your job using the JOBID.
 
 .. code:: shell
 
    $ salloc --jobid=<JOB_ID_ALLOCATED> --pty bash -i
 
-Typically you do not need to include the "jobid" parameter for ``srun``
-after using ``salloc`` but is included here for illustration.
+Typically you do not need to include the "jobid" parameter for ``srun`` after using ``salloc`` but is included here for illustration.
 
-Interactive jobs can also be run with Slurm using just one ``srun``
-command:
+Interactive jobs can also be run with Slurm using ``srun`` command:
 
 .. code:: shell
 
-   $ srun -p debug  --nodes=1 --ntasks-per-node=1 --time=01:00:00 --pty bash -i
+   $ srun -p rg-dev  --nodes=1 --ntasks-per-node=1 --time=01:00:00 --pty bash -i 
+     ...
+     gburdell@hawksbill:~$
 
 For more information on ``salloc``, please go here: `Slurm
 salloc <https://slurm.schedmd.com/salloc.html>`__.
@@ -70,32 +71,22 @@ file named "batch-job-example.batch" with the following content:
 .. code:: shell
 
    #!/bin/bash
-
    # Partition for the job:
    #SBATCH -p debug
-
-   # Account to run the job:
-   #SBATCH --account=<NAME_OF_MY_ACCCOUNT>
-
    # Multithreaded (SMP) job: must run on one node
    #SBATCH --nodes=1
-
    # The name of the job:
    #SBATCH --job-name="batch-job-example"
-
    # Maximum number of tasks/CPU cores used by the job:
    #SBATCH --ntasks=1
    #SBATCH --cpus-per-task=8
-
    # The amount of memory in megabytes per process in the job:
    #SBATCH --mem=32768
-
    # The maximum running time of the job in days-hours:mins:sec
    #SBATCH --time=0-1:0:00
-
    #SBATCH -o batch-job-example-output-%j
 
-   # Run hostname command
+   # Run hostname command on the allocated node
    hostname
 
 Then run the example with ``sbatch``:
@@ -112,10 +103,9 @@ example, the output should be the following:
 .. code:: shell
 
    $ more batch-job-example-output-383
-   newell1.cc.gatech.edu
+   quorra1
 
-For more information on ``sbatch``, please go here: `Slurm
-sbatch <https://slurm.schedmd.com/sbatch.html>`__.
+For more information on ``sbatch``, please go here: `Slurm sbatch <https://slurm.schedmd.com/sbatch.html>`__.
 
 Slurm Batch Run Job with MPI
 ----------------------------
@@ -171,27 +161,18 @@ following content:
 
    # Partition for the job:
    #SBATCH -p debug
-
-   # Account to run the job:
-   #SBATCH --account=<NAME_OF_MY_ACCCOUNT>
-
    # Multithreaded (SMP) job: must run on one node
    #SBATCH --nodes=2
-   #SBATCH --nodelist=newell1,newell2
-
+   #SBATCH --nodelist=quorra1,quorra2
    # The name of the job:
    #SBATCH --job-name="mpi-batch-job-example"
-
    # Maximum number of tasks/CPU cores used by the job:
    #SBATCH --ntasks=2
    #SBATCH --cpus-per-task=8
-
    # The amount of memory in megabytes per process in the job:
    #SBATCH --mem=32768
-
    # The maximum running time of the job in days-hours:mins:sec
    #SBATCH --time=0-1:0:00
-
    #SBATCH -o mpi-batch-job-example-output-%j
 
    # Source .bashrc file
@@ -206,9 +187,7 @@ following content:
    mpicc mpi-hello-world.c -o mpi-hello-world
    mpirun mpi-hello-world
 
-Be sure to change the "account" parameter to your GT user account.
-
-Note that the 2 nodes used in the example (newell1 and newell2) are
+Note that the 2 nodes used in the example (quorra1,quorra2) are
 specified in the batch file using the "nodelist" parameter.
 
 Also note that Open MPI (version 4.4.1) is loaded using ``module`` in
@@ -229,19 +208,35 @@ should be the following:
 .. code:: shell
 
    $ more mpi-batch-job-example-output-384
-   Hello world from processor newell1.cc.gatech.edu, rank 0 out of 2 processors
-   Hello world from processor newell2.cc.gatech.edu, rank 1 out of 2 processors
+   Hello world from processor quorra1.cc.gatech.edu, rank 0 out of 2 processors
+   Hello world from processor quorra2.cc.gatech.edu, rank 1 out of 2 processors
 
-For more information on Open MPI, please go here: `Open
-MPI <https://www.open-mpi.org/>`__
+For more information on Open MPI, please go here: `Open MPI <https://www.open-mpi.org/>`__
 
-Slurm example commands
-----------------------
-TBD
+Other RG-specific Slurm example commands
+-------------------------------------------
+
+Request an interactive job on a specific node
 
 
-Slurm with MIG
---------------
-TBD but Slurm does not currently play nicely with MIG
 
-- `NVIDIA's MIG Discovery page <https://gitlab.com/nvidia/hpc/slurm-mig-discovery>`__
+Request exclusive access on a node (use primarily for benchmarking, NOT for debugging)
+
+Request a GPU (but not any specific node)
+
+Request a development VM (but no specific VM)
+
+
+
+
+Common Slurm Issues
+-------------------
+
+My GPU doesn't show up under 
+
+My job is only running on one core / has too little memory!
+
+My MPI job crashes when running with Slurm sbatch but runs in an interactive session with ssh
+
+
+
