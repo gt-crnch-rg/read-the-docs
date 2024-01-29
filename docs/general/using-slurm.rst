@@ -40,46 +40,26 @@ Slurm Partitions
       - 32
       - c0n[0-7],c1n[0-7],c2n[0-7],c3n[0-7]
       - Lucata Pathfinder system
-    * - rg-arm-debug
-      - 4 hours
-      - 4
-      - octavius[1-4]
-      - Used to compile/profile code
-    * - rg-arm-long
-      - 12 hours
-      - 16
-      - octavius[1-16]
-      - Used for longer running jobs      
-    * - rg-gpu
+    * - rg-dev
       - 12 hours
       - 7
-      - frozone[1-4],instinct,quorra[1-2]
-      - Different types of GPU-focused nodes for classes and neuromorphic research
-    * - rg-hpc
+      - hawksbill,rg-emu-dev,rg-fpga-dev[1-4],rg-neuro-dev
+      - Development VMs and a large-memory node for notebooks (hawksbill)
+    * - rg-nextgen-hpc
       - 12 hours
-      - 3
-      - flubber[8-10]
-      - General HPC nodes      
-    * - rg-intel-fpga-hw
-      - 12 hours
-      - 2
-      - flubber[2-3]
-      - Hosts Intel FPGAs
-    * - rg-xilinx-fpga-hw
+      - 
+      - dash[1-4],dash1-bf3,dash3-bf3,das4-bf3,flubber[6-7],frozone[1-4],instinct,johnny-rv5-1,kingpin[1-2],octavius[1-16],violet[1-2]
+      - General HPC nodes with a variety of GPUs and SmartNICs       
+    * - rg-neuro
       - 12 hours
       - 2
-      - flubber[1-3]
-      - Hosts Xilinx FPGAs
-    * - rg-smart-nic
+      - rudi[1-2]
+      - NVIDIA Jetson and related neuromorphic platforms
+    * - rg-fpga
       - 12 hours
-      - 2
-      - flubber[6-7]
-      - SmartNIC nodes      
-    * - notebook
-      - 12 hours
-      - 1
-      - hawksbill
-      - Used to run Jupyter notebooks for tutorials, data analysis    
+      - 7
+      - flubber[1-3];[4-5];[8-9]
+      - Hosts Intel and Xilinx FPGAs
 
 How do I get started with Slurm on RG?
 --------------------------------------
@@ -103,7 +83,7 @@ Please consider looking at `PACE's training information <https://docs.pace.gatec
 Options to run jobs include the following commands:
 - salloc - request resources from the Slurm scheduler and run a task when resources are ready
 - sbatch - create a batch file for later execution of one or more programs
-- srun - run parallel tasks across multiple processes. Called after salloc/sbatch.
+- srun - run parallel tasks across multiple processes. Can sometimes be called after salloc/sbatch.
 
 Slurm General Resources
 =======================
