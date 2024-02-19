@@ -26,8 +26,8 @@ We recommend selecting one of the official Xilinx Vitis 2022.1 tutorial examples
 First we request a "development" node to run CPU-based execution and simulation. Note that we can use Xilinx tools across different VMs and servers, so we do some basic testing and debugging using a VM with the appropriate tools. 
 
 ```
-//Request a node from the rg-fpga-dev partition which has all the VMs
-salloc -p rg-fpga-dev --nodes=1 --ntasks-per-node=2 --time=01:00:00
+//Request a node from the rg-dev partition which has all the VMs
+salloc -p rg-dev --nodes=1 --ntasks-per-node=2 --time=01:00:00
 salloc: Pending job allocation 67109553
 ...
 salloc: Granted job allocation 67109553
@@ -47,7 +47,7 @@ Request an allocation on a larger server node with an appropriate amount of memo
 
 Here we are requesting 12 cores on flubber 3, 64 GB of RAM, and a time limit of 8 hours.
 ```
-salloc -p rg-xilinx-fpga-hw --nodes=1 --ntasks-per-node=12 --mem=64G --nodelist flubber4 --time=08:00:00
+salloc -p rg-fpga --nodes=1 --ntasks-per-node=12 --mem=64G --nodelist flubber4 --time=08:00:00
 salloc: Pending job allocation 67109590
 salloc: job 67109590 queued and waiting for resources
 salloc: job 67109590 has been allocated resources
