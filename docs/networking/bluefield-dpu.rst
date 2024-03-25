@@ -17,7 +17,7 @@ Current Status
 
 BUGS / Feature Requests
 -----------------------
-- Some cards are likely to move hosts as we reimage machines to better support running DPUs.
+- We are planning to install additional BF3 DPUs into the dash nodes as they become available.
 
 System Specifications
 =====================
@@ -74,9 +74,9 @@ Software and Tools
     * - Ubuntu 22.04
       - 5.15.0
       - GCC 11.4
+      - OpenMPI 4.1.6, HPC-X 2.17, 2.18
       - 
-      - 
-      - `DOCA 2.5.0 <https://docs.nvidia.com/doca/sdk/nvidia+doca+release+notes/index.html>`__
+      - `DOCA 2.6.0 <https://docs.nvidia.com/doca/sdk/nvidia+doca+release+notes/index.html>`__
 
 Networking Configuration
 ==================
@@ -111,6 +111,26 @@ Remember that if you just request the node but don't specify number of cores or 
 .. code::
 
    salloc -t 1:00:00 -p rg-nextgen-hpc -w dash3,dash3-bf3 --ntasks=8 --cpus-per-task=4
+
+Using Software Modules
+===========================================
+
+.. code::
+
+   gburdell@dash3-bf3:~$ module use /projects/tools/aarch64/ubuntu-22.04/modulefiles/
+   gburdell@dash3-bf3:~$ module avail
+
+   -------------------- /projects/tools/aarch64/ubuntu-22.04/modulefiles --------------
+   hpcx/2.17/hpcx-debug-ompi    hpcx/2.17/hpcx-mt-ompi    hpcx/2.17/hpcx-ompi       
+   hpcx/2.17/hpcx-prof-ompi     hpcx/2.17/hpcx-stack      openmpi/4.1.6
+   hpcx/2.17/hpcx-debug         hpcx/2.17/hpcx-mt         hpcx/2.17/hpcx-rebuild    
+   hpcx/2.17/hpcx-prof          hpcx/2.17/hpcx (D)
+
+
+Using the High-Speed Interface for MPI jobs
+===========================================
+
+TBD
 
 Additional BlueField Resources
 ------------------------------
