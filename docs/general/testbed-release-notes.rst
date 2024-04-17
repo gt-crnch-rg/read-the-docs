@@ -4,6 +4,21 @@ Testbed Release Notes
 
 This page provides a high-level update on hardware and software that has been added or updated. 
 
+April 2024
+--------------  
+
+Hardware Updates
+~~~~~~~~~~~~~~~~
+- L40s GPUs added to dash nodes
+- A100 GPU moved to violet2
+- BlueField-3 DPUs added to violet and dash nodes
+- U280s added to dash nodes
+
+Software Updates
+~~~~~~~~~~~~~~~~
+- Open OnDemand 3.1.4 installed and deployed (upgrading from 3.0.1)
+- Lava notebook installed for hawksbill and rg-neuro-dev
+
 September 2023
 --------------  
 
