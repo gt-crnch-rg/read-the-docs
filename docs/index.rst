@@ -20,7 +20,8 @@ For updated status on the testbed please see our Spring 2022 talk [`Slides <http
    general/mailing-list-help-tickets
    general/submit-a-ticket
    general/rg-getting-started
-   general/rg-hardware 
+   general/rg-hardware
+   general/rg-software
    general/rg-filesystems
    general/contributing
    general/testbed-release-notes
