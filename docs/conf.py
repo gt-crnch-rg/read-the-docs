@@ -109,6 +109,7 @@ html_theme_options = {
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     'vcs_pageview_mode': '',
+    # Use GT gold for navigation header
     'style_nav_header_background': '#B3A369',
     # Toc options
     'collapse_navigation': True,
