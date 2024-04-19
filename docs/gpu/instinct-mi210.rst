@@ -56,9 +56,9 @@ Software and Tools
     * - RHEL8
       - 4.18.0
       - GCC 8.5
-      - ROCm 5.6.0, `AOCC 4.0.0 <https://developer.amd.com/wp-content/resources/57222_AOCC_UG_Rev_3.2.pdf>`__
+      - ROCm 6.1.0, `AOCC 4.0.0 <https://developer.amd.com/wp-content/resources/57222_AOCC_UG_Rev_3.2.pdf>`__
       - 
-      - AOCL 3.2.0, `ROCm libraries 5.6.0 <https://rocblas.readthedocs.io/en/rocm-5.6.0/>`__, `uProf 4.0 <https://developer.amd.com/amd-uprof/>`__
+      - AOCL 3.2.0, `ROCm libraries 6.1.0 <https://rocblas.readthedocs.io/en/rocm-6.1.0/>`__, `uProf 4.2 <https://developer.amd.com/amd-uprof/>`__
 
 How do I get to Instinct?
 =========================
@@ -95,11 +95,11 @@ Modules should be available but you may need to update your module path:
     []$ module avail
 
     -------------------------------------------- /projects/tools/x86_64/rhel-8/modulefiles -------------------------------------  
-   aocc/3.2.0    aocl/aocc-3.2.0    aocl/gcc-3.2.0 (D)    rocm/5.6.0
+   aocc/3.2.0    aocl/aocc-3.2.0    aocl/gcc-3.2.0 (D)    rocm/6.1.0
     
-    []$ module load rocm/5.6.0
+    []$ module load rocm/6.1.0
     []$ which hipcc
-    /opt/rocm-5.6.0/bin/hipcc
+    /opt/rocm-6.1.0/bin/hipcc
    
 Useful ROCm tools include hipcc, amdclang, aompcc, amdflang, rocgdb, and rocprof. 
 
