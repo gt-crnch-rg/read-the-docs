@@ -92,6 +92,12 @@ Software and Tools
       - GCC 11.4
       - 
       - 
+    * - johnny-rv5-5
+      - Fedora 38
+      - 6.1.22
+      - GCC 13.2.1
+      - 
+      - 
 
 Requesting RISC-V resources
 ===========================
@@ -100,22 +106,21 @@ As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
 an on-campus connection. 
 
-To request an allocation on johnny-rv5-1 using slurm:
+To request an allocation on johnny-rv5-1 using Slurm:
 
 .. code::
 
     //Request an allocation of 1 hr, partition rg-hpc, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-hpc -w johnny-rv5-1
+    salloc -t 1:00:00 -p rg-nextgen-hpc -w johnny-rv5-1
     //SSH to the resource
     ssh johnny-rv5-1
 
-johnny-rv5-1 added notes
-------------------------
 
 
 Guides and Resources
 ====================
 - `SiFive Unmatched Getting Started Guide <https://starfivetech.com/uploads/hifive-unmatched-getting-started-guide-v1p2.pdf>`__
+- `Milk-V Pioneer Getting Started Guide <https://milkv.io/docs/pioneer/getting-started>`__
 
 Advanced Guides
 ===============
