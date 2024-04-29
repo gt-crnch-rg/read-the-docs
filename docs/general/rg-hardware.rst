@@ -289,7 +289,13 @@ RISC-V
       - 8 GB LPDDR4
       - 1 GB Ethernet
       - `StarFive VisionFive (V1) <https://www.starfivetech.com/en/site/boards>`__
-      - 
+      -
+    * - johnny-rv5-5
+      - `SOPHON SG2042 SoC <https://en.sophgo.com/product/introduce/sg2042.html>`__, (64-core C920, RVV 0.71) 
+      - 128 GB DDR4
+      - 1 GB Ethernet
+      - `Milk-V Pioneer system <https://milkv.io/pioneer>`__
+      - Contains AMD R5 230 GPU (2014 era GPU)
 
 Simulation and Tutorial Machines
 --------------------------------
