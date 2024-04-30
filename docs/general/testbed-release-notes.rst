@@ -9,6 +9,7 @@ April 2024
 
 Hardware Updates
 ~~~~~~~~~~~~~~~~
+- Milk-V Pioneer system added to techfee and RISC-V partitions
 - L40s GPUs added to dash nodes
 - A100 GPU moved to violet2
 - BlueField-3 DPUs added to violet and dash nodes
@@ -18,6 +19,14 @@ Software Updates
 ~~~~~~~~~~~~~~~~
 - Open OnDemand 3.1.4 installed and deployed (upgrading from 3.0.1)
 - Lava notebook installed for hawksbill and rg-neuro-dev
+
+March 2024
+--------------
+
+Software Updates
+~~~~~~~~~~~~~~~~
+- DOCA 2.6 installed on BlueField-3 DPUs
+- NVHPC 24.3 SDK deployed clusterwide for CUDA 11 and CUDA 12
 
 September 2023
 --------------  
