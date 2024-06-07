@@ -17,7 +17,7 @@ Current Status
 
 BUGS / Feature Requests
 -----------------------
-- We are planning to install additional BF3 DPUs into the dash nodes as they become available.
+- Modules and high-speed interfaces may need some modifications to be fully functional. 
 
 System Specifications
 =====================
@@ -35,7 +35,7 @@ System Specifications
       - Network
       - Notes
     * - rg-nextgen-hpc
-      - quorra<1-2>-bf2-mgt
+      - quorra<1-2>-bf2-1
       - quorra<1-2>
       - 
       - 
@@ -49,7 +49,7 @@ System Specifications
       - 
       -
     * - rg-nextgen-hpc
-      - dash<1-4>-bf3
+      - dash<1-4>-bf3-<1-2>
       - `dash<1-4> <https://gt-crnch-rg.readthedocs.io/en/main/techfee/dash-spr-max-smartnic.html>`__
       - Cortex-A78AE, 16 core
       - 32 GB DDR4, dual channel
@@ -76,7 +76,7 @@ Software and Tools
       - GCC 11.4
       - OpenMPI 4.1.6, HPC-X 2.17, 2.18
       - 
-      - `DOCA 2.6.0 <https://docs.nvidia.com/doca/sdk/nvidia+doca+release+notes/index.html>`__
+      - `DOCA 2.7.0 <https://docs.nvidia.com/doca/sdk/nvidia+doca+release+notes/index.html>`__
 
 Networking Configuration
 ==================
@@ -102,7 +102,7 @@ To request an allocation using slurm, you can run the following for your desired
 
    //Request an allocation of 1 hr, partition rg-nextgen-hpc, and specify the node name for the server with -w
    //If we request dash3 and dash3-bf3
-   salloc -t 1:00:00 -p rg-nextgen-hpc -w dash3,dash3-bf3
+   salloc -t 1:00:00 -p rg-nextgen-hpc -w dash3,dash3-bf3-1
    //Your job would start on dash3, in this instance
    gburdell@dash3:~$
 
@@ -110,15 +110,15 @@ Remember that if you just request the node but don't specify number of cores or 
 
 .. code::
 
-   salloc -t 1:00:00 -p rg-nextgen-hpc -w dash3,dash3-bf3 --ntasks=8 --cpus-per-task=4
+   salloc -t 1:00:00 -p rg-nextgen-hpc -w dash3,dash3-bf3-1 --ntasks=8 --cpus-per-task=4
 
 Using Software Modules
 ===========================================
 
 .. code::
 
-   gburdell@dash3-bf3:~$ module use /projects/tools/aarch64/ubuntu-22.04/modulefiles/
-   gburdell@dash3-bf3:~$ module avail
+   gburdell@dash3-bf3-1:~$ module use /projects/tools/aarch64/ubuntu-22.04/modulefiles/
+   gburdell@dash3-bf3-1:~$ module avail
 
    -------------------- /projects/tools/aarch64/ubuntu-22.04/modulefiles --------------
    hpcx/2.17/hpcx-debug-ompi    hpcx/2.17/hpcx-mt-ompi    hpcx/2.17/hpcx-ompi       
