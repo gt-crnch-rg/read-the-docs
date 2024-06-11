@@ -22,6 +22,12 @@ BUGS / Feature Requests
 System Specifications
 =====================
 
+The following figure shows the output from lstopo for this system. 
+
+.. figure:: ../figures/novel-hpc/p10_denali_lstopo.png
+   :alt: Denali P10 lstopo figure
+
+
 .. list-table:: 
     :widths: auto
     :header-rows: 1
@@ -34,7 +40,7 @@ System Specifications
       - Cards
       - Notes
     * - rg-nextgen-hpc
-      - 1x `IBM Power E1080 <>`__
+      - 1x `IBM Power 10 DCM-EPGW variant, 2.9 G  <https://en.wikipedia.org/wiki/Power10>`__
       - 512 GB DDR4
       - Connect-X 5
       - 
@@ -70,7 +76,7 @@ As with most CRNCH resources, you need to either log in via the gateway
 node, rg-login, or access the system from the campus network via VPN or
 an on-campus connection. 
 
-To request an allocation on Violet using slurm:
+To request an allocation using slurm:
 
 .. code::
 
@@ -80,9 +86,4 @@ To request an allocation on Violet using slurm:
 
 Vendor-provided Documents and Resources
 ---------------------------------------
-
-
-
-Resources
----------
 - `Matrix-Multiply Assist (MMA) Best Practices Guide <https://www.redbooks.ibm.com/redpapers/pdfs/redp5612.pdf>`__
