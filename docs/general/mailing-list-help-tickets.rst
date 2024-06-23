@@ -81,6 +81,20 @@ recommend the following for asking a clear suggestion:
    follow-up questions so it's best to share more detail initially to
    get your question answered in a prompt fashion.
 
+Specific Issues with Open OnDemand
+----------------------------------
+If you are having issues with using the Open OnDemand interface or VNC usage, please share the following additional information.
+
+1. What app are you using? Ex: "VNC CRNCH Desktop"
+
+2. What is the Session ID? This will usually be something like `f9d4be0d-xxxx-xxxxx-xxxx` that is shown on each card.
+
+3. Is there any output from the `output.log`? You can access this from the session output by clicking on the Session ID. 
+
+Specific Issues with Visual Studio Code
+---------------------------------------
+We are looking to deploy a local instance of VS Code that can be run on compute nodes. In the meantime, debugging support for VS Code is "best effort". That is, we may not know exactly why your VS Code session works or does not work since it is heavily dependent on your local configuration. 
+
 Rogues Gallery Mailing Lists and Teams Group
 --------------------------------------------
 
