@@ -72,7 +72,7 @@ To request an allocation on dash using slurm:
 .. code::
 
     //Request an allocation of 1 hr, partition rg-hpc, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-nextgen-hpc -w hopper
+    salloc -t 1:00:00 -p rg-nextgen-hpc -G H200:1
   
 
 Vendor-provided Documents and Resources
