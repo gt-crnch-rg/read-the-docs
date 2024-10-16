@@ -83,7 +83,7 @@ To request an allocation on dash using slurm:
 .. code::
 
     //Request an allocation of 1 hr, partition rg-hpc, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-hpc -w dash3
+    salloc -t 1:00:00 -p rg-nextgen-hpc -w dash3
    
 To request an entire node (and all the memory) you can run:
 
@@ -91,7 +91,7 @@ To request an entire node (and all the memory) you can run:
 
     //Request an allocation of with 2 sockets, all cores in each socket, and 2 threads per core, partition rg-hpc, 
     //specify the node name for the server with -w, and request unlimited memory (otherwise cgroups limits to 1 GB per core)
-    salloc --sockets-per-node=2 --cores-per-socket=64 --threads-per-core=2 -p rg-hpc -w dash3 --mem=0 
+    salloc --sockets-per-node=2 --cores-per-socket=64 --threads-per-core=2 -p rg-nextgen-hpc -w dash3 --mem=0 
 
 Vendor-provided Documents and Resources
 ---------------------------------------
