@@ -3,6 +3,8 @@ Contributing to this Documentation
 
 We welcome and appreciate your comments and contributions to this documentation. Often, we rely on a mix of vendor support and community support for novel architectures and in many cases *you* are the expert just by starting to work with this new, novel architecture or software stack. This page presents some suggestions for contributing your own documentation. 
 
+**TLDR:** To contribute your content to these docs, please open a PR at our GitHub site (`https://github.com/gt-crnch-rg/read-the-docs <https://github.com/gt-crnch-rg/read-the-docs>`__), and we will follow up to get your contributions incorporated!
+
 What is the process for contributing documentation?
 ###################################################
 To contribute documentation, you should write an rst-formatted file related to your topic and submit it via `pull request to this repository <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_. We will also eventually have a form where you can upload and submit new documentation to be posted in a simplified fashion.
