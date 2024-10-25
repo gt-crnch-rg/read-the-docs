@@ -7,6 +7,8 @@ The CRNCH RG testbed supports the usage of OpenMP offloading using ODOS, develop
 ODOS Basics
 -----------
 
+ODOS has been prebuilt for users and can be loaded using the following commands:
+
 
 Using ODOS on the CRNCH RG Testbed
 ----------------------------------
