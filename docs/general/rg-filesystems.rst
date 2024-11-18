@@ -4,7 +4,7 @@ Rogues Gallery Filesystems
 
 *Note*: We strongly encourage you to do compilation (especially for
 FPGAs) using ``/netscratch`` and back up your project files to the
-backed up "nethome" or ``/home/<username`` directory. Code should
+backed up "nethome" or ``/nethome/<username`` directory. Code should
 additionally be backed up to a Github repo - remember the policy of
 keeping two separate copies of all important code/data!
 
@@ -16,7 +16,7 @@ Quotas
 
 We have the following quotas for users, subject to future modifications:
 
--  ``/home`` - 50 GB is provided to each user and is backed up using ZFS
+-  ``/nethome`` - 50 GB is provided to each user and is backed up using ZFS
    snapshots and RAID.
 
 -  ``/project`` - Quotas vary but are typically in the 200 GB range
@@ -30,7 +30,7 @@ Data retention policies
 
 -  Backups are provided via a standard fileserver with RAID and ZFS
    snapshot backups. *However*, we do not guarantee data backups and we
-   recommend you use Github or GT Github for code backups and `GT's Box
+   recommend you use GitHub or GT GitHub for code backups and `GT's Box
    service <https://gatech.account.box.com/login>`__ or `PACE-provided
    storage <https://docs.pace.gatech.edu/storage/storage_guide/>`__ for
    large data backups.
@@ -42,7 +42,7 @@ Data retention policies
 -  Scratch data will be *purged* after 120 days without user
    modification from both ``/localscratch`` and ``/netscratch``. Note
    that scratch explicitly is not backed up, and we cannot restore
-   deleted files.
+   any deleted files from scratch spaces.
 
 Storage on CRNCH Systems
 ========================
