@@ -99,7 +99,7 @@ Examples of Projects Using RG Self-Hosted Runners
       - CRNCH RG Jobfile
     * - Spatter
       - NVIDIA GPU
-      - `Spatter build.yml <https://github.com/hpcgarage/spatter/blob/main/.github/workflows/build.yml>`__
+      - `Spatter build.yml <https://github.com/hpcgarage/spatter/blob/main/.github/workflows/build-cuda.yml>`__
       - `Spatter Batchfile <https://github.com/hpcgarage/spatter/blob/main/tests/misc/run-crnch-cuda.sh>`__
 
 
