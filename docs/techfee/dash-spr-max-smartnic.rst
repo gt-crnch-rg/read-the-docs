@@ -36,7 +36,7 @@ System Specifications
       - Network
       - Cards
       - Notes
-    * - rg-hpc
+    * - rg-nextgen-hpc
       - 2x `Intel 9468 (Sapphire Rapids Max) <https://www.intel.com/content/www/us/en/products/sku/232596/intel-xeon-cpu-max-9468-processor-105m-cache-2-10-ghz/specifications.html>`__
       - 512 GB DDR5, 4800 MHz, 32 GB DIMMs; 64 GB HBM memory
       - BlueField 3 DPU, 10 GE
@@ -82,14 +82,14 @@ To request an allocation on dash using slurm:
 
 .. code::
 
-    //Request an allocation of 1 hr, partition rg-hpc, and specify the node name for the server with -w
+    //Request an allocation of 1 hr, partition rg-nextgen-hpc, and specify the node name for the server with -w
     salloc -t 1:00:00 -p rg-nextgen-hpc -w dash3
    
 To request an entire node (and all the memory) you can run:
 
 .. code::
 
-    //Request an allocation of with 2 sockets, all cores in each socket, and 2 threads per core, partition rg-hpc, 
+    //Request an allocation of with 2 sockets, all cores in each socket, and 2 threads per core, partition rg-nextgen-hpc, 
     //specify the node name for the server with -w, and request unlimited memory (otherwise cgroups limits to 1 GB per core)
     salloc --sockets-per-node=2 --cores-per-socket=64 --threads-per-core=2 -p rg-nextgen-hpc -w dash3 --mem=0 
 

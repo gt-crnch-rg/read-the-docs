@@ -28,7 +28,7 @@ System Specifications
       - Network
       - Cards
       - Notes
-    * - rg-gpu
+    * - rg-nextgen-hpc
       - 2x `AMD EPYC 7713 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7713>`__
       - 512 GB DDR4, 3200 MHz, 32 GB DIMMs
       - Connect-X 6 (MT28908), 10 GE
@@ -71,17 +71,17 @@ To request an allocation on Instinct using slurm:
 
 .. code::
 
-    //Request an allocation of 1 hr, partition rg-gpu, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-gpu -w instinct
+    //Request an allocation of 1 hr, partition rg-nextgen-hpc, and specify the node name for the server with -w
+    salloc -t 1:00:00 -p rg-nextgen-hpc -w instinct
    
 To request an entire node (and all the memory) you can run:
 
 
 .. code::
 
-    //Request an allocation of with 2 sockets, all cores in each socket, and 2 threads per core, partition rg-gpu, 
+    //Request an allocation of with 2 sockets, all cores in each socket, and 2 threads per core, partition rg-nextgen-hpc, 
     //specify the node name for the server with -w, and request unlimited memory (otherwise cgroups limits to 1 GB per core)
-    salloc --sockets-per-node=2 --cores-per-socket=64 --threads-per-core=2 -p rg-gpu -w instinct --mem=0 
+    salloc --sockets-per-node=2 --cores-per-socket=64 --threads-per-core=2 -p rg-nextgen-hpc -w instinct --mem=0 
 
 Compiling for the MI210 GPUs
 ----------------------------

@@ -69,8 +69,8 @@ To request an allocation on Kingping using slurm:
 
 .. code::
 
-    //Request an allocation of 1 hr, partition rg-hpc, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-hpc -w kingpin1
+    //Request an allocation of 1 hr, partition rg-nextgen-hpc, and specify the node name for the server with -w
+    salloc -t 1:00:00 -p rg-nextgen-hpc -w kingpin1
 
 Using NVIDIA SDK
 ================

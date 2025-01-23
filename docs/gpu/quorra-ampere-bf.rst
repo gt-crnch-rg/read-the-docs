@@ -29,14 +29,14 @@ System Specifications
       - Network
       - Cards
       - Notes
-    * - rg-gpu
+    * - rg-nextgen-hpc
       - quorra1
       - 2x `AMD EPYC 7502 (Rome) <https://www.amd.com/en/products/cpu/amd-epyc-7502>`__
       - 256 GB DDR4, 3200 MHz, 16 GB DIMMs
       - Connect-X 5 (MT27800), 100 GE; Bluefield-2 DPU (MT42822)
       - 4x `A30 <https://www.nvidia.com/en-us/data-center/products/a30-gpu/>`__; 1x `H100 <https://www.nvidia.com/en-us/data-center/h100/>`__ 
       -      
-    * - rg-gpu
+    * - rg-nextgen-hpc
       - quorra2
       - 2x `AMD EPYC 7502 (Rome) <https://www.amd.com/en/products/cpu/amd-epyc-7502>`__
       - 256 GB DDR4, 3200 MHz, 16 GB DIMMs
@@ -78,8 +78,8 @@ To request an allocation on Quorra using slurm:
 
 .. code::
 
-    //Request an allocation of 1 hr, partition rg-gpu, and specify the node name for the server with -w
-    salloc -t 1:00:00 -p rg-gpu -w quorra2 -G 1
+    //Request an allocation of 1 hr, partition rg-nextgen-hpc, and specify the node name for the server with -w
+    salloc -t 1:00:00 -p rg-nextgen-hpc -w quorra2 -G 1
     //SSH to the resource
     ssh quorra2
     
@@ -87,7 +87,7 @@ To request an allocation on Quorra using slurm:
 To request just one GPU - specify the type like A30, A100, or H100.
 .. code::
     
-    salloc -GH100 -prg-gpu
+    salloc -GH100 -prg-nextgen-hpc
     
 The local modules for NVIDIA HPC SDK should load automatically. However if they do not you can run ". /etc/profile.d/y02_rg_local_modules.sh" to pull in all the local modulepaths.
 

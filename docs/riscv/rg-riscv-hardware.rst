@@ -110,7 +110,7 @@ To request an allocation on johnny-rv5-1 using Slurm:
 
 .. code::
 
-    //Request an allocation of 1 hr, partition rg-hpc, and specify the node name for the server with -w
+    //Request an allocation of 1 hr, partition rg-nextgen-hpc, and specify the node name for the server with -w
     salloc -t 1:00:00 -p rg-nextgen-hpc -w johnny-rv5-1
     //SSH to the resource
     ssh johnny-rv5-1
