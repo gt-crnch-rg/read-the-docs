@@ -5,14 +5,16 @@ Mailing Lists and Requesting Help
 Help and Mailing List FAQs 
 --------------------------
 
--  `Request access to the MS Teams   group <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__.  If you are external to GT, please send us a ticket to add you.
+- Submit a help ticket using our dedicated webform at `https://crnch-rg.cc.gatech.edu/crnch-rg-help/ <https://crnch-rg.cc.gatech.edu/crnch-rg-help/>`__.
+    -  `Help Request Webform Examples <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-help-webform-examples.html>`__
 
-   -  We also have a CRNCH RG Slack workspace `here <https://join.slack.com/t/gt-crnch-rg/shared_invite/zt-velklwgm-Bfh~IXesIM2uhrLs~y8s_w>`__ if you have trouble connecting to Teams. Most of the Lucata discussion currently uses this Slack. Just note that since we are on a free plan that old conversations are not saved.
 
--  `How to use the help ticket webform at
-   https://crnch-rg.cc.gatech.edu/crnch-rg-help/ <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-help-webform-examples.html>`__
+-  The main CRNCH help ticket email address is crnch-rg-help@cc.gatech.edu. 
+    - We would prefer if you use the webform but the email address is ok if you include your GT username (e.g., gburdell3 for George Burdell).
 
--  The main CRNCH help ticket email address is   crnch-rg-help@cc.gatech.edu. We would prefer if you use the webform but the email address is ok if you include your GT username (e.g., gburdell3 for George Burdell).
+-  `Ask questions on the MS Teams group (GT users) <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__.  If you are external to GT, please use the Slack workspace.
+
+-  Ask questions on CRNCH RG Slack `here <https://join.slack.com/t/gt-crnch-rg/shared_invite/zt-velklwgm-Bfh~IXesIM2uhrLs~y8s_w>`__. Note that since we are on a free plan that old conversations are not saved.
 
 Help for the CRNCH Rogues Gallery
 ---------------------------------
@@ -23,7 +25,7 @@ submitted over the weekend or on any GT holidays will be evaluated on the follow
 How do I request help?
 ----------------------
 
-The Rogues Gallery uses a Request Tracker (RT) based ticketing system. You can submit tickets ideally via the `webform <https://crnch.gatech.edu/crnch-rg-help>`__ or alternatively using the email address, crnch-rg-help@cc.gatech.edu. We would request that you submit a help ticket for anything that is not a discussion or
+The Rogues Gallery uses a Request Tracker (RT) based ticketing system. You can submit tickets ideally via the `webform <https://crnch-rg.cc.gatech.edu/crnch-rg-help/>`__ or alternatively using the email address, crnch-rg-help@cc.gatech.edu. We would request that you submit a help ticket for anything that is not a discussion or
 minor clarification question. This helps us track specific issues for users and also is important as a metric for our funded testbed project.
 
 That said, the general process for asking for help is:
@@ -35,10 +37,6 @@ That said, the general process for asking for help is:
 2. Ask a clarification question in the related MS Teams group. For
    example, if you are working with Alveo boards you may want to post
    your question in the ``fpga-xilinx`` channel on Teams.
-
-   -  Alternatively, if you are not able to use Teams you can post your
-      question on the related mailing list. So for Alveo boards, this
-      would be ``crnch-rg-reconfig@lists.gatech.edu``
 
 3. During discussion on the Teams or email group we may move your
    question to the ticketing system or a private conversation if it is
@@ -91,29 +89,10 @@ If you are having issues with using the Open OnDemand interface or VNC usage, pl
 
 3. Is there any output from the `output.log`? You can access this from the session output by clicking on the Session ID. 
 
-Specific Issues with Visual Studio Code
----------------------------------------
-We are looking to deploy a local instance of VS Code that can be run on compute nodes. In the meantime, debugging support for VS Code is "best effort". That is, we may not know exactly why your VS Code session works or does not work since it is heavily dependent on your local configuration. 
-
-Rogues Gallery Mailing Lists and Teams Group
---------------------------------------------
-
-There are mailing lists for general user notifications and updates as
-well as sub-lists for each large area of research within the Rogues
-Gallery testbed infrastructure.
-
-Please note that the MS Teams group for `CRNCH Rogues
-Gallery <https://teams.microsoft.com/l/team/19%3acbae4953c30a44caad4afd4ef00e64be%40thread.tacv2/conversations?groupId=dfbaab66-ec98-4d00-9e91-ce166bc95432&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083>`__ may be the quickest way to post questions. However, the GT "SYMPA" mailing lists can also be used for discussion and will be used for
-subarea-specific announcements.
-
 Mailing lists
 -------------
 
-To subscribe/unsubscribe from a mailing list please use this `SYMPA FAQ
-page <https://faq.oit.gatech.edu/content/how-do-i-subscribe-or-unsubscribe-mailing-list>`__.
-Note that most lists are closed to external users.
-
--  crnch-rg-users@groups.gatech.edu - general user list. Mainly used for announcements and very high-level discussion.
+GT is currently reevaluating how it implements mailing lists. Please use Slack or Teams instead to ask your questions. 
 
 Vendor Forums
 -------------
