@@ -1,26 +1,27 @@
 Contributing to this Documentation
 ==================================
 
-We welcome and appreciate your comments and contributions to this documentation. Often, we rely on a mix of vendor support and community support for novel architectures and in many cases *you* are the expert just by starting to work with this new, novel architecture or software stack. This page presents some suggestions for contributing your own documentation. 
+We welcome and appreciate your comments and contributions to this documentation. Often, we rely on a mix of vendor support and community support for novel architectures and in many cases *you* are the expert just by starting to work with this new, novel architecture or software stack. This page presents some suggestions for contributing your own documentation.
+
+The associated repository for these ReadTheDocs can be found at `https://github.com/gt-crnch-rg/read-the-docs <https://github.com/gt-crnch-rg/read-the-docs>`__.
 
 What is the process for contributing documentation?
 ###################################################
-To contribute documentation, you should write an rst-formatted file related to your topic and submit it via `pull request to this repository <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_. We will also eventually have a form where you can upload and submit new documentation to be posted in a simplified fashion.
+To contribute documentation, you should write an rst-formatted file related to your topic and submit it via `pull request to the main ReadTheDocs repository <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_.
 
 All read-the-docs documentation uses `Restructered Text <https://sublime-and-sphinx-guide.readthedocs.io/en/latest/glossary_terms.html#term-rst>`_, so we ask that you write documentation in this format or convert Markdown files for your pull requests. However, we can also accept updates in Markdown format and integrate them into this repo.
 
 Current Topic Areas:
 --------------------
 
--  Emu/Lucata
 -  Getting Started - general topics needed to get started with RG
 -  Miscellaneous
+-  Near-memory - CXL, Lucata, other memory accelerators
 -  Networking - in-network computing, 5G, and edge.
 -  Neuromorphic and Novel Systems for ML
 -  Reconfig - all FPGA-related documentation
 -  Quantum
 -  Related - all related work
-
 
 
 How do I contribute new documentation?
