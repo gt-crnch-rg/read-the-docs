@@ -119,6 +119,15 @@ html_theme_options = {
     'titles_only': False
 	}
 
+# Add an "Edit this page" link on each RTD page.
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "gt-crnch-rg", # Username
+    "github_repo": "read-the-docs", # Repo name
+    "github_version": "main", # Version
+    "conf_py_path": "/docs/", # Path in the checkout to the docs root
+}
+
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
 
