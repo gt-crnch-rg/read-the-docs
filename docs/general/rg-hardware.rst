@@ -290,11 +290,11 @@ Simulation and Tutorial Machines
       - Memory (GB)
       - Network
       - Notes
-    * - hawksbill
-      - 4x `Intel E7-4820 <https://ark.intel.com/content/www/us/en/ark/products/53675/intel-xeon-processor-e74820-18m-cache-2-00-ghz-5-86-gts-intel-qpi.html>`__
+    * - crush
+      - 4x `Intel E5-4620 v4 <https://www.intel.com/content/www/us/en/products/sku/93800/intel-xeon-processor-e54620-v4-25m-cache-2-10-ghz/specifications.html>`__
       - 1024 DDR3
-      - 1 GE
-      - Used for Jupyter notebooks
+      - 10 GE
+      - Used for Jupyter notebooks, containers, and simulations
 
 Rogues Gallery Networking
 =========================
