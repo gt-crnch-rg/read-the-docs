@@ -21,7 +21,7 @@ is targeted.
 What Slurm queues are available?
 --------------------------------
 
-You can check the current status of all queues by using ``sinfo --federation`` on any RG node. The Pathfinder runs as a `"federated" Slurm cluster <https://slurm.schedmd.com/federation.html>`__ since it has a different host environment than the other RG nodes.
+You can check the current status of all queues by using ``sinfo`` on any RG node.
 
 Slurm Partitions
 ----------------
@@ -35,30 +35,20 @@ Slurm Partitions
       - Nodes
       - Node List
       - Notes
-    * - rg-pathfinder
-      - No limit
-      - 32
-      - c0n[0-7],c1n[0-7],c2n[0-7],c3n[0-7]
-      - Lucata Pathfinder system
-    * - rg-dev
-      - 12 hours
-      - 7
-      - hawksbill,rg-emu-dev,rg-fpga-dev[1-4],rg-neuro-dev
-      - Development VMs and a large-memory node for notebooks (hawksbill)
     * - rg-nextgen-hpc
-      - 12 hours
-      - 
-      - dash[1-4],dash1-bf3,dash3-bf3,das4-bf3,flubber[6-7],frozone[1-4],instinct,johnny-rv5-1,kingpin[1-2],octavius[1-16],violet[1-2]
+      - 24 hours
+      - 38
+      - dash[1-4],flubber[6-7,10],flubber10-bf2-[1-4],frozone[1-2],hopper[1-4],instinct,johnny-rv5-[1-2,5],kingpin[1-2],octavius[1-8],quorra[1-2],rg-uwing-[1-2],violet[1-2],violet1-bf3-1
       - General HPC nodes with a variety of GPUs and SmartNICs       
     * - rg-neuro
-      - 12 hours
-      - 2
-      - rudi[1-2]
+      - 24 hours
+      - 7
+      - brainard-[1-3]cable1,magpie5-1,rudi[2-3]
       - NVIDIA Jetson and related neuromorphic platforms
     * - rg-fpga
-      - 12 hours
+      - 24 hours
       - 7
-      - flubber[1-3];[4-5];[8-9]
+      - flubber[1-5,8-9]
       - Hosts Intel and Xilinx FPGAs
 
 How do I get started with Slurm on RG?
@@ -77,13 +67,13 @@ Important Slurm Commands
 Please consider looking at `PACE's training information <https://docs.pace.gatech.edu/training/slurm-orientation/>`__ for Slurm as well.
 
 - `sinfo <https://slurm.schedmd.com/sinfo.html>`__ - See status of queues and what is active/idle. 
-- squeue - See the status of your jobs. You can also run ``squeue -u <username>`` to just list your jobs.
-- scancel - Used with the ``JOBID`` reported by ``squeue`` to cancel a job.
+- `squeue <https://slurm.schedmd.com/squeue.html>`__ - See the status of your jobs. You can also run ``squeue -u <username>`` to just list your jobs.
+- `scancel <https://slurm.schedmd.com/scancel.html>`__ - Used with the ``JOBID`` reported by ``squeue`` to cancel a job.
 
 Options to run jobs include the following commands:
-- salloc - request resources from the Slurm scheduler and run a task when resources are ready
-- sbatch - create a batch file for later execution of one or more programs
-- srun - run parallel tasks across multiple processes. Can sometimes be called after salloc/sbatch.
+- `salloc <https://slurm.schedmd.com/salloc.html>`__ - request resources from the Slurm scheduler and run a task when resources are ready
+- `sbatch <https://slurm.schedmd.com/sbatch.html>`__ - create a batch file for later execution of one or more programs
+- `srun <https://slurm.schedmd.com/srun.html>`__ - run parallel tasks across multiple processes. Can sometimes be called after salloc/sbatch.
 
 Slurm General Resources
 =======================
