@@ -232,7 +232,8 @@ Request a development VM (but no specific VM)
 Common Slurm Issues
 -------------------
 
-My GPU doesn't show up under 
+My GPU doesn't show up under my allocated job!
+- Make sure that you are using the right flags to request a node. Typically you need to add `-G <num_gpus` to your salloc/sbatch command to get a GPU allocated.
 
 My job is only running on one core / has too little memory!
 
