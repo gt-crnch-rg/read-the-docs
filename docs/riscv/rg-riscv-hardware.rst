@@ -40,7 +40,7 @@ System Specifications
       - 1 GB Ethernet
       - `MangoPi MQ-Pro; MPi-MQ1PH <https://linux-sunxi.org/MangoPi_MQ-Pro>`__
       - 
-    * - johnny-rv5-4
+    * - johnny-rv5-3
       - 2xU74 cores 
       - 8 GB LPDDR4
       - 1 GB Ethernet
@@ -86,7 +86,7 @@ Software and Tools
       - GCC 11.3
       - 
       - 
-    * - johnny-rv5-4
+    * - johnny-rv5-3
       - Ubuntu 22.04
       - 6.2.0
       - GCC 11.4
