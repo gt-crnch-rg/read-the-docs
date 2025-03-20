@@ -133,7 +133,7 @@ Important Slurm Commands
 Please consider looking at `PACE's training information <https://docs.pace.gatech.edu/training/slurm-orientation/>`__ for Slurm as well.
 
 - `sinfo <https://slurm.schedmd.com/sinfo.html>`__ - See status of queues and what is active/idle. 
-- `scontrol l<https://slurm.schedmd.com/scontrol.html>`__ - shows node or job information
+- `scontrol <https://slurm.schedmd.com/scontrol.html>`__ - shows node or job information
 - `squeue <https://slurm.schedmd.com/squeue.html>`__ - See the status of your jobs. You can also run ``squeue -u <username>`` to just list your jobs.
 - `scancel <https://slurm.schedmd.com/scancel.html>`__ - Used with the ``JOBID`` reported by ``squeue`` to cancel a job.
 
