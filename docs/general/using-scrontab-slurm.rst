@@ -38,7 +38,7 @@ This can lead to incomplete tasks and data corruption if not properly managed.
 
 Resource Contention Handling
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-When the necessary resource is busy, scrontab doesn't fail silently—it sets a minimum start time for the job and queues it.
+When the necessary resource is busy, scrontab doesn't fail silently — it sets a minimum start time for the job and queues it.
 However, this queuing behavior might delay execution in unexpected ways, so it's critical to ensure that your resource availability is well planned.
 
 Scrontab File Location and TMP Directory
@@ -49,7 +49,3 @@ Similarly, you must define a proper temporary directory (e.g., ``$TMPDIR`` or ``
 Verification
 ~~~~~~~~~~~~
 Run ``scrontab -l`` to list the current entries. A non-empty output confirms that scrontab is active and correctly set up.
-
-ScronTab Todos
---------------
-- design an example of using scrontab to pull data from a site like IBM's Q Experience.
