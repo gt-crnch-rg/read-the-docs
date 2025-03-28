@@ -11,12 +11,14 @@ Running ``scrontab`` in the terminal opens the editor. The directives are ``SCRO
 For example the following snippet that runs ``myslurmtask.job`` at 11:00 AM every day for 2 nodes.
 
 .. code:: shell
+
     #SCRON --ntasks-per-node=2
     0 11 * * * $HOMEDIR/myslurmtask.job
 
 This runs ``myslurmtask.job`` every 2 minutes.
 
 .. code:: shell
+
     #SCRON --ntasks-per-node=2
     */2 * * * * $HOMEDIR/myslurmtask.job
 
