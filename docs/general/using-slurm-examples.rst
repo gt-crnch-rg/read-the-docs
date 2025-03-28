@@ -85,9 +85,18 @@ Other RG-specific Slurm example commands
 
 Request an interactive job on a specific node
 
+.. code:: shell
+   $ salloc -p rg-nextgen-hpc -w frozone4
+
 Request exclusive access on a node (use primarily for benchmarking, NOT for debugging)
 
+.. code:: shell
+   $ salloc --exclusive
+
 Request a GPU using the Slurm "feature" flag (not any specific node)
+
+.. code:: shell
+   $ salloc -p rg-nextgen-hpc -w frozone4 --gres gpu:a100
 
 Request a development VM (but no specific VM)
 
