@@ -95,6 +95,21 @@ Then please check out our RG Slurm Examples page and the RG Workflows page for a
 - `RG Slurm Examples <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm-examples.html>`__
 - `RG Workflows <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-workflows.html>`__
 
+Important Slurm Commands
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please consider looking at `PACE's training information <https://docs.pace.gatech.edu/training/slurm-orientation/>`__ for Slurm as well.
+
+- `sinfo <https://slurm.schedmd.com/sinfo.html>`__ - See status of queues and what is active/idle. 
+- `scontrol <https://slurm.schedmd.com/scontrol.html>`__ - shows node or job information
+- `squeue <https://slurm.schedmd.com/squeue.html>`__ - See the status of your jobs. You can also run ``squeue -u <username>`` to just list your jobs.
+- `scancel <https://slurm.schedmd.com/scancel.html>`__ - Used with the ``JOBID`` reported by ``squeue`` to cancel a job.
+
+Options to run jobs include the following commands:
+- `salloc <https://slurm.schedmd.com/salloc.html>`__ - request resources from the Slurm scheduler and run a task when resources are ready
+- `sbatch <https://slurm.schedmd.com/sbatch.html>`__ - create a batch file for later execution of one or more programs
+- `srun <https://slurm.schedmd.com/srun.html>`__ - run parallel tasks across multiple processes. Can sometimes be called after salloc/sbatch.
+
 Here we go through some basic examples and uscases.
 
 So far we discussed about how to figure out which resources are available within the SLURM nodes. Now we talk about
@@ -175,20 +190,10 @@ the results to the file ``slurm-{SLURM_JOBID}.out`` in the current working direc
 Please refer to `Using Slurm Examples <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm-examples.html>`__ and
 `Slurm Batch Jobs <https://gt-crnch-rg.readthedocs.io/en/main/general/slurm-batch-jobs.html>`__ for more examples.
 
-Important Slurm Commands
-~~~~~~~~~~~~~~~~~~~~~~~~
+Using scrontab
+~~~~~~~~~~~~~~
 
-Please consider looking at `PACE's training information <https://docs.pace.gatech.edu/training/slurm-orientation/>`__ for Slurm as well.
-
-- `sinfo <https://slurm.schedmd.com/sinfo.html>`__ - See status of queues and what is active/idle. 
-- `scontrol <https://slurm.schedmd.com/scontrol.html>`__ - shows node or job information
-- `squeue <https://slurm.schedmd.com/squeue.html>`__ - See the status of your jobs. You can also run ``squeue -u <username>`` to just list your jobs.
-- `scancel <https://slurm.schedmd.com/scancel.html>`__ - Used with the ``JOBID`` reported by ``squeue`` to cancel a job.
-
-Options to run jobs include the following commands:
-- `salloc <https://slurm.schedmd.com/salloc.html>`__ - request resources from the Slurm scheduler and run a task when resources are ready
-- `sbatch <https://slurm.schedmd.com/sbatch.html>`__ - create a batch file for later execution of one or more programs
-- `srun <https://slurm.schedmd.com/srun.html>`__ - run parallel tasks across multiple processes. Can sometimes be called after salloc/sbatch.
+Please refer to `Using Slurm Examples <https://gt-crnch-rg.readthedocs.io/en/main/general/using-scrontab-slurm.html>`__
 
 Slurm General Resources
 =======================
