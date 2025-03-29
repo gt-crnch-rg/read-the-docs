@@ -51,12 +51,12 @@ Software and Tools
       - Other Compilers
       - MPI
       - Miscellaneous
-    * - RHEL 8
-      - 5.4.0
-      - GCC 7.5
-      - NVIDIA HPC SDK 23.3, CUDA 12.0
+    * - Ubuntu 22.04
+      - 6.8.0 (low latency)
+      - GCC 11.4.0
+      - NVIDIA HPC SDK 24.9, CUDA 12.8
       - 
-      - DOCA 1.5.1
+      - DOCA 2.10
 
 How do I get to the Kingpin nodes?
 ==================================
@@ -77,5 +77,6 @@ Using NVIDIA SDK
 
 .. code::
 
-    module load nvhpc/23.5
+    module use /projects/tools/aarch64/ubuntu-22.04/nvhpc-24.9/modulefiles/
+    module load nvhpc/24.9
 
