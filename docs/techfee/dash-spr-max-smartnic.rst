@@ -40,7 +40,7 @@ System Specifications
       - 2x `Intel 9468 (Sapphire Rapids Max) <https://www.intel.com/content/www/us/en/products/sku/232596/intel-xeon-cpu-max-9468-processor-105m-cache-2-10-ghz/specifications.html>`__
       - 512 GB DDR5, 4800 MHz, 32 GB DIMMs; 64 GB HBM memory
       - BlueField 3 DPU, 10 GE
-      - Dash 1-2 have an Alveo U280; Dash 3-4 have Silicom DPUs
+      - Dash 1-2 have an Alveo U280 and L40s; Dash 3-4 have Silicom DPUs and Intel Max 1100 GPUs
       -       
 
 Software and Tools
@@ -92,6 +92,23 @@ To request an entire node (and all the memory) you can run:
     //Request an allocation of with 2 sockets, all cores in each socket, and 2 threads per core, partition rg-nextgen-hpc, 
     //specify the node name for the server with -w, and request unlimited memory (otherwise cgroups limits to 1 GB per core)
     salloc --sockets-per-node=2 --cores-per-socket=64 --threads-per-core=2 -p rg-nextgen-hpc -w dash3 --mem=0 
+
+To request an Intel GPU (dash 3/4):
+
+.. code::
+
+    gburdell@rg-login:~$ salloc -prg-nextgen-hpc -wdash3 -Gmax_1100:1
+    gburdell@dash3:~$ xpu-smi discovery
+    +-----------+--------------------------------------------------------------------------------------+
+    | Device ID | Device Information                                                                   |
+    +-----------+--------------------------------------------------------------------------------------+
+    | 0         | Device Name: Intel(R) Data Center GPU Max 1100                                       |
+    |           | Vendor Name: Intel(R) Corporation                                                    |
+    |           | SOC UUID: 00000000-0000-0018-0000-002f0bda8086                                       |
+    |           | PCI BDF Address: 0000:18:00.0                                                        |
+    |           | DRM Device: /dev/dri/card0                                                           |
+    |           | Function Type: physical                                                              |
+    +-----------+--------------------------------------------------------------------------------------+    
 
 Vendor-provided Documents and Resources
 ---------------------------------------
