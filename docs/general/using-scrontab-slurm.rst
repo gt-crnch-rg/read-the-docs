@@ -29,25 +29,25 @@ Scrontab Quickstart
 -------------------
 
 Scrontab vs. sbatch Job IDs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Scrontab reuses the same job ID for repeated tasks, unlike sbatch which generates a unique job ID for each submission.
 This design flaw means that if your command writes output to a fixed file, it will overwrite the previous output unless you explicitly configure it to append or use unique filenames.
 
 Job Execution and Interruption
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If a job is still running when the next scheduled instance is triggered, the running job is forcefully terminated to allow the new job to start.
 This can lead to incomplete tasks and data corruption if not properly managed.
 
 Resource Contention Handling
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 When the necessary resource is busy, scrontab doesn't fail silently — it sets a minimum start time for the job and queues it.
 However, this queuing behavior might delay execution in unexpected ways, so it's critical to ensure that your resource availability is well planned.
 
 Scrontab File Location and TMP Directory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 For scrontab to be detected and executed, the scrontab file must reside in the user directory, typically as ``$HOME/scrontab`` or ``$HOME/.scrontab``. Placing it elsewhere can result in silent failures.
 Similarly, you must define a proper temporary directory (e.g., ``$TMPDIR`` or ``$HOME/tmp``) for temporary files or logs. Neglecting this can cause permission issues or clutter your filesystem with unmanaged files.
 
 Verification
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 Run ``scrontab -l`` to list the current entries. A non-empty output confirms that scrontab is active and correctly set up.
