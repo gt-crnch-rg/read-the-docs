@@ -24,8 +24,18 @@ What Slurm queues are available?
 You can check the current status of all queues by using ``sinfo`` on any RG node. It will also show
 the state of the resource where ``idle`` means that the node is available for a new job, ``alloc``
 indicates that the node is fully allocated so that no new jobs will run. ``mixed`` means that only
-some of the hardware is allocated to a user, so it may be able to accept new jobs. The following table
-shows the currently available nodes within the cluster.
+some of the hardware is allocated to a user, so it may be able to accept new jobs. This example shows
+a demonstration of nodes in these different states
+
+.. code::
+
+     ~$ sinfo
+     PARTITION   AVAIL TIMELIMIT   NODES  STATE NODELIST
+     rg-dev*        up 1-01:00:00      1  idle  crush
+     rg-nextgen-hpc up 1-00:00:00      1  mix   violet1
+     rg-nextgen-hpc up 1-00:00:00      1  alloc frozone1
+
+The following table shows the currently available nodes within the cluster.
 
 Slurm Partitions
 ----------------
@@ -56,10 +66,11 @@ Slurm Partitions
       - Hosts Intel and Xilinx FPGAs
 
 To get per node information, you can use ``scontrol show node [nodename]`` for example, we can query information about
-frozone1
+frozone1:
 
 .. code:: shell
-   gburdell3@rg-login:~$ scontrol show node frozone1
+
+   ~# scontrol show node frozone1
    NodeName=frozone1 Arch=x86_64 CoresPerSocket=32
       CPUAlloc=0 CPUEfctv=128 CPUTot=128 CPULoad=0.00
       AvailableFeatures=x86,xeon8352y,rhel,nvidia-gpu
@@ -76,29 +87,39 @@ frozone1
       AllocTRES=
       CurrentWatts=0 AveWatts=0
 
-This includes OS and hardware information about the node of interest. ``CfgTRES`` indicates how much resources are available,
-and ``AllocTRES`` is how much is currently allocated in the server. Frozone1 in the above figure was idle at the time so 
-``CfgTRES`` and ``AllocTRES`` shows that it is fully available.
+This includes OS and hardware information about the node of interest. ``CfgTRES`` indicates how many resources are available,
+and ``AllocTRES`` is how much is currently allocated to user jobs. Frozone1 in the above figure was idle at the time so 
+``CfgTRES`` and ``AllocTRES`` shows that all resources are fully available.
 
-``scontrol show job [jobid] -d `` is a useful command that shows CPU id and Gres (Generic Resource) id as well. Since Rouges Gallery
+``scontrol show job [jobid] -d`` is a useful command that shows CPU ID and Gres (Generic Resource) id as well. Since the Rogues Gallery
 is a testbed of novel architectures, here it has many instances of Gres, which may be GPUs, FPGAs, etc.
 
-``scontrol show part`` shows default allocation of memory per core, default time, etc. for each partition.
+``scontrol show part`` shows the default allocation of memory per core, default time, etc. for each partition. For example, looking at the FPGA partition shows that a job will get 1 GB of memory per CPU code (`DefMemPerCPU`) and that there are different GRES resources like Alveo and Intel FPGAs.
+
+.. code:: shell
+
+      ~# scontrol show node frozone1
+      PartitionName=rg-fpga
+      ... elided for clarity ...
+      Nodes=flubber[1-5,8-9]
+      ......
+      State=UP TotalCPUs=680 TotalNodes=7 SelectTypeParameters=NONE
+      JobDefaults=(null)
+      DefMemPerCPU=1024 MaxMemPerNode=UNLIMITED
+      TRES=cpu=680,mem=2500000M,node=7,billing=680,gres/fpga=7,gres/fpga:alveou280=3,gres/fpga:alveou50=2,gres/fpga:arria10=1,gres/fpga:stratix10=1
 
 How do I get started with Slurm on RG?
 --------------------------------------
-We suggest that you first check out the following Slurm "Quick Start" resources from LLNL
-if you have not used a batch submission system before. Find them `here and below in the resources section <https://hpc.llnl.gov/banks-jobs/running-jobs/slurm-quick-start-guide>`__.
+We suggest that you first check out the following Slurm "Quick Start" resources from LLNL, especially if you have not used a batch submission system before. Find them `here and below in the resources section <https://hpc.llnl.gov/banks-jobs/running-jobs/slurm-quick-start-guide>`__.
 
 Then please check out our RG Slurm Examples page and the RG Workflows page for architecture of interest and specific commands to run for these systems.
 
 - `RG Slurm Examples <https://gt-crnch-rg.readthedocs.io/en/main/general/using-slurm-examples.html>`__
+- `RG Slurm Batch Jobs <https://gt-crnch-rg.readthedocs.io/en/main/general/slurm-batch-jobs.html>`__
 - `RG Workflows <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-workflows.html>`__
 
 Important Slurm Commands
 ~~~~~~~~~~~~~~~~~~~~~~~~
-
-Please consider looking at `PACE's training information <https://docs.pace.gatech.edu/training/slurm-orientation/>`__ for Slurm as well.
 
 - `sinfo <https://slurm.schedmd.com/sinfo.html>`__ - See status of queues and what is active/idle. 
 - `scontrol <https://slurm.schedmd.com/scontrol.html>`__ - shows node or job information
@@ -110,8 +131,9 @@ Options to run jobs include the following commands:
 - `sbatch <https://slurm.schedmd.com/sbatch.html>`__ - create a batch file for later execution of one or more programs
 - `srun <https://slurm.schedmd.com/srun.html>`__ - run parallel tasks across multiple processes. Can sometimes be called after salloc/sbatch.
 
-Here we go through some basic examples and uscases.
 
+Running Jobs with Slurm
+-----------------------
 So far we discussed about how to figure out which resources are available within the SLURM nodes. Now we talk about
 how to submit jobs to use them. Most of the time it can be done in three ways, ``salloc``, ``sbatch``, and ``scrontab``.
 
@@ -122,10 +144,12 @@ settings, where ``rg-dev`` is the default partition and ``crush`` is the only no
 which has the current slurm job id. Inside the allocation given by vanilla ``salloc``, we can query the job information as follows
 
 .. code:: shell
+
    gburdell3@rg-login:~$ salloc
    salloc: Granted job allocation 23014
    salloc: Waiting for resource configuration
    salloc: Nodes crush are ready for job
+
    [gburdell3@crush ~]$ scontrol show job $SLURM_JOBID -d
    JobId=23014 JobName=interactive
       UserId=gburdell3(0000000) GroupId=gtother(0000) MCS_label=N/A
@@ -154,7 +178,7 @@ which has the current slurm job id. Inside the allocation given by vanilla ``sal
       Command=/bin/sh
       WorkDir=/nethome/gburdell3
 
-We can see here that the default number of CPUs is 2, rather than 1 because of Hyperthreading (2 hardware threads per physical core), and 1GB of memory.
+We can see here that the default number of CPUs is 2, rather than 1 because of Hyperthreading (2 hardware threads per physical core), and 1 GB of memory.
 An important note is that SLURM relies on Cgroups to limit allocation to use only available resources. When an allocation attempts to use more memory
 than it is allocated, in this case 1GB, the session will be terminated. Therefore, specifying the required amount of memory is needed when allocating a
 node by passing ``--mem=4G`` along with ``salloc``. ``salloc --mem=0`` gives the maximum available memory within the node to the session. This is required
@@ -193,11 +217,12 @@ Please refer to `Using Slurm Examples <https://gt-crnch-rg.readthedocs.io/en/mai
 Using scrontab
 ~~~~~~~~~~~~~~
 
-Please refer to `Using Slurm Examples <https://gt-crnch-rg.readthedocs.io/en/main/general/using-scrontab-slurm.html>`__
+Please refer to `Using Slurm Scrontab <https://gt-crnch-rg.readthedocs.io/en/main/general/using-scrontab-slurm.html>`__
 
 Slurm General Resources
 =======================
 
+-  `PACE's Slurm training information <https://gatech.service-now.com/technology?id=kb_article_view&sysparm_article=KB0041998>`__  (Requires GT Login)
 -  `Slurm Quickstart User Guide <https://slurm.schedmd.com/quickstart.html>`__
 -  `LLNL Slurm User
    Manual <https://hpc.llnl.gov/banks-jobs/running-jobs/slurm-user-manual>`__
