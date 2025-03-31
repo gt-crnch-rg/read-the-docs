@@ -6,7 +6,7 @@ Slurm Batch Run Job
 
 Batch jobs can also be run with Slurm on the Rogues Gallery testbed.
 
-Here is a simple example that you can run on the quorra cluster that
+Here is a simple example that you can run on the cluster that
 runs the command ``hostname`` and outputs it to a file. Create a text
 file named "batch-job-example.batch" with the following content:
 
@@ -14,7 +14,7 @@ file named "batch-job-example.batch" with the following content:
 
    #!/bin/bash
    # Partition for the job:
-   #SBATCH -p debug
+   #SBATCH -p rg-dev
    # Multithreaded (SMP) job: must run on one node
    #SBATCH --nodes=1
    # The name of the job:
@@ -45,7 +45,7 @@ example, the output should be the following:
 .. code:: shell
 
    $ more batch-job-example-output-383
-   quorra1
+   crush
 
 For more information on ``sbatch``, please go here: `Slurm sbatch <https://slurm.schedmd.com/sbatch.html>`__.
 
