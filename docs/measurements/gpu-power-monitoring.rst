@@ -68,14 +68,7 @@ You can also find a complete working example of this code in the script located 
 Using DCGM
 ~~~~~~~~~~
 
-DCGM offers a higher-level interface for GPU monitoring and management. An example of using DCGM to measure power can often be found within Slurm prolog scripts used in high-performance computing environments. These scripts are executed before a job starts and can be used to gather information about the allocated resources.
-
-.. code-block:: bash
-
-   less /projects/slurm/scripts/prolog
-   less /projects/slurm/scripts/epilog
-
-The Slurm prolog script initializes DCGM monitoring at the beginning of a job, and the epilog script stops monitoring and saves the collected data at the end of the job.
+DCGM offers a higher-level interface for GPU monitoring and management. DCGM is often integrated into workload management systems like Slurm to automatically collect GPU monitoring data for jobs. This is commonly done using Slurm prolog and epilog scripts, which are executed by Slurm before and after a job runs, respectively. The Slurm prolog script initializes DCGM monitoring at the beginning of a job, and the epilog script stops monitoring and saves the collected data at the end of the job.
 The output of the DCGM monitoring is then saved to files.
 
 **Prolog Script Examples:**
@@ -182,37 +175,4 @@ This command will likely output various power-related metrics for all Intel GPUs
 Using intel-smi
 ~~~~~~~~~~~~~~~
 
-Consider using `intel-smi` for Intel GPU power reporting on `dash3`. The `intel-smi` tool is another command-line utility for managing and monitoring Intel GPUs. You can find more information about it here: `https://github.com/nicejunjie/intel-smi`. Depending on the features and support provided by `intel-smi` for your specific Intel GPU model, it might offer more detailed power reporting capabilities compared to `xpu-smi`. You might need to install `intel-smi` separately if it's not already available on your system.
-
-IPMI Commands for Power Monitoring
-==================================
-
-The Intelligent Platform Management Interface (IPMI) is a hardware-level interface that allows for out-of-band management of servers. You can use `ipmi-oem` commands to retrieve power-related information from the server's baseboard management controller (BMC).
-
-.. code-block:: bash
-
-   man ipmi-oem
-
-This command will display the manual page for `ipmi-oem`, providing information about its usage and available options.
-
-.. code-block:: bash
-
-   sudo ipmi-oem IntelNM get-node-manager-statistics mode globalpower
-
-This command queries Intel Node Manager for global power statistics. Here is an example output
-
-.. code-block:: text
-
-   Current Power                                                                                                                                                                                       : 575 Watts
-   Minimum Power                                                                                                                                                                                       : 13 Watts
-   Maximum Power                                                                                                                                                                                       : 1017 Watts
-   Average Power                                                                                                                                                                     1192196 seconds    579 Watts
-   Statistics Reporting Period
-   Policy / Global Administrative State                                                                                                                                     In Progress                 : Enabled
-   Measurements State
-
-.. code-block:: bash
-
-   sudo ipmi-oem IntelNM get-node-manager-statistics mode globalpower
-
-Remember to consult any README files or documentation that might be included with the scripts for specific instructions or prerequisites.
+Consider using intel-smi for Intel GPU power reporting on the dash nodes which have Intel GPUs. The intel-smi tool is another command-line utility for managing and monitoring Intel GPUs. You can find more information about it here: https://github.com/nicejunjie/intel-smi and request access via a help ticket.
