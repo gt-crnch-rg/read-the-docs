@@ -10,6 +10,12 @@ You also have the option to test RISC-V platforms with `QEMU <https://www.qemu.o
 Current Status
 ==============
 
+We are working to bring online the following hardware as part of our futurama cluster:
+
+- Milk-V Jupiter boards
+- P550 boards
+- Esperanto ETSOC-1
+
 BUGS / Feature Requests
 =======================
 - Physical devices are currently being set up with our standard load-out.  
