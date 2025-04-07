@@ -10,18 +10,3 @@ Using Vortex with Rogues Gallery
 ================================
 
 You can run the Vortex toolchain and simulation on multiple nodes within RG including the `rg-fgpa-dev` VMs, Intel, and Xilinx flubber nodes. Note that the Xilinx port of Vortex is currently in progress, so here we focus on using Vortex with the Intel FPGA nodes (flubber<1-3>).
-
-
-Vortex Installation Dependencies
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Normally we suggest that you use the prebuilt toolchain which includes a RISC-V cross-compiler. 
-
-For Ubuntu:
-
-For RHEL8:
-
-
-Vortex Software Toolchain
-=========================
-TBD 
