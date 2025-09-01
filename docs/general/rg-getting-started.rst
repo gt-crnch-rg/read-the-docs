@@ -48,9 +48,7 @@ What machines are available in the Rogues Gallery?
 Note that all machines have a **.crnch.gatech.edu** suffix and some examples include:
 
 -  **rg-login** login VM for off-campus access. Used as a gateway node
--  **rg-emu-dev:** VM for Emu compilation and simulation
--  **rg-fpga-dev-<1-4>:** VMs for FPGA compilation and simulation
--  **rg-neuro-dev:** VM for neuromorphic tools
+-  **crush:** large-memory server for notebooks and compilation of tools
 -  Please see `this page <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-hardware.html>`__ for a complete list of available machines in the RG testbed
 
 VPN Requirements (for GT users only)
@@ -97,7 +95,7 @@ What are some best practices for using the RG hardware?
 -------------------------------------------------------
 
 1. Make sure to back your code up, preferably with a GT Github or external Github repository. While we do have a `shared filesystem <https://gt-crnch-rg.readthedocs.io/en/main/general/rg-filesystems.html>`__, this can possibly experience a hardware failure.
-2. Use tmux or screen on the login and development VMs, especially when running tests.
+2. Use tmux or screen on the login node, especially when running tests.
 
 How do I ask for assistance? Is there a mailing list?
 -----------------------------------------------------
