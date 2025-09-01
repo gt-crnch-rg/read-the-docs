@@ -5,8 +5,12 @@ Rudi - Jetson Dev Boards
 What's Interesting About This Hardware?
 =======================================
 
+The Jetson devices combine Arm CPU cores and a small NVIDIA GPU along with AI and edge-focused software stacks. 
+
 Current Status
 ==============
+
+rudi1 is currently not available and needs to be reimaged.
 
 BUGS / Feature Requests
 -----------------------
@@ -32,7 +36,7 @@ System Specifications
     * - rg-neuro
       - rudi1
       - `Xavier NX 8 GB <https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-xavier-series/>`__
-      - 6-core NVIDIA Carmel Armv8.2, 1.9 GHz 
+      - 6-core NVIDIA Carmel Arm v8.2, 1.9 GHz 
       - Volta, 384 cores, 48 Tensor Cores
       - 8 GB DRAM
       - 1 Gigabit Ethernet
@@ -40,9 +44,17 @@ System Specifications
     * - rg-neuro
       - rudi2
       - `AGX Orin Devkit <https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/>`__
-      - 
+      - 8-core Arm v8.2, Cortex-A78AE, 2.2 MHz
       - Ampere, 1792 cores, 56 Tensor Cores 
-      - 32 GB DRAM
+      - 32 GB LPDDR5
+      - 1 Gigabit Ethernet
+      -
+    * - rg-neuro
+      - rudi3
+      - `AGX Orin Devkit <https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/>`__
+      - 8-core Arm v8.2, Cortex-A78AE, 2.2 MHz
+      - Ampere, 2048 cores, 64 Tensor Cores 
+      - 64 GB LPDDR5
       - 1 Gigabit Ethernet
       -
 
@@ -66,23 +78,18 @@ Software and Tools
       - GCC 11.4
       - 
       - 
-    * - rudi2
-      - Ubuntu 22.04
-      - 5.10.65
-      - GCC 9.4.0
-      - 
+    * - rudi<2-3>
+      - Ubuntu 22.04.5
+      - 5.15.148
+      - GCC 11.4.0
+      - CUDA 12.6
       - 
 
 How do I get to rudi devkits?
 =============================
 
-As with most CRNCH resources, you need to either log in via the gateway
-node, rg-login, or access the system from the campus network via VPN or
+As with most CRNCH resources, you need to either log in via the gateway node, rg-login, or access the system from the campus network via VPN or
 an on-campus connection. 
-
-.. note:: 
-    
-    We are reworking Slurm for these boards. For the moment, you can ssh directly to each board from rg-login.
 
 To request an allocation on rudi2 using slurm:
 
@@ -91,16 +98,23 @@ To request an allocation on rudi2 using slurm:
     //Request an allocation of 1 hr, partition rg-neuro, and specify the node name for the server with -w
     salloc -t 1:00:00 -p rg-neuro -w rudi2
    
-What's the equivalent of nvidia-smi on Jetson boards?
+How do I run nvidia-smi on Jetson boards?
 =====================================================
 
-Jetson boards don't support nvidia-smi commands, so you need to use the `tegrastats` command to get a running list of statistics. Note that with `tegrastats --help` you can see how to change the interval and configuration used.
+Users typically need to use sudo to run nvidia-smi on Jetson devices since they are configured differently than data center GPUs. This can be done through a local rule that allows limited sudo. Note that nvidia-smi on the Jetson platform does not report as much information as for a data center GPU (e.g., an A30 or A100).
+
+.. code::
+
+    rudi2$> sudo /usr/sbin/nvidia-smi
+
+You can alternatively use the `tegrastats` command to get a running list of statistics. Note that with `tegrastats --help` you can see how to change the interval and configuration used.
     
 .. code::
 
     rudi2$> tegrastats
-    10-16-2023 10:59:22 RAM 1205/30623MB (lfb 6429x4MB) SWAP 0/15311MB (cached 0MB) CPU [0%@729,0%@729,1%@729,0%@729,0%@729,0%@730,0%@730,0%@729,0%@729,0%@729,0%@729,0%@729] EMC_FREQ 0%@204 GR3D_FREQ 0%@114 GR3D2_FREQ 0%@114 NVJPG1 729 VIC_FREQ 729 APE 233 CV0@-256C CPU@43.5C Tdiode@32.5C SOC2@40.062C SOC0@40.5C CV1@-256C GPU@38.156C SOC1@39.125C CV2@-256C VDD_GPU_SOC 4788mW/4788mW VDD_CPU_CV 798mW/798mW VIN_SYS_5V0 3842mW/3842mW NC 0mW/0mW VDDQ_VDD2_1V8AO 707mW/707mW NC 0mW/0mW
-    10-16-2023 10:59:23 RAM 1206/30623MB (lfb 6429x4MB) SWAP 0/15311MB (cached 0MB) CPU [1%@732,0%@729,0%@729,0%@729,0%@729,0%@729,0%@729,0%@728,0%@728,0%@729,0%@730,0%@729] EMC_FREQ 0%@204 GR3D_FREQ 0%@114 GR3D2_FREQ 0%@114 NVJPG1 729 VIC_FREQ 729 APE 233 CV0@-256C CPU@43.906C Tdiode@32.75C SOC2@40.093C SOC0@40.593C CV1@-256C GPU@38C SOC1@39.031C CV2@-256C VDD_GPU_SOC 4788mW/4788mW VDD_CPU_CV 798mW/798mW VIN_SYS_5V0 3842mW/3842mW NC 0mW/0mW VDDQ_VDD2_1V8AO 707mW/707mW NC 0mW/0mW
+    09-01-2025 10:55:25 RAM 1313/30697MB (lfb 37x4MB) SWAP 0/15348MB (cached 0MB) CPU [0%@729,0%@729,0%@729,0%@729,0%@729,0%@729,0%@729,0%@729,off,off,off,off] GR3D_FREQ 0% cpu@43.343C soc2@39.812C soc0@40.312C tj@43.343C soc1@38.843C VDD_GPU_SOC 1995mW/1995mW VDD_CPU_CV 0mW/0mW VIN_SYS_5V0 2524mW/2524mW
+    09-01-2025 10:55:26 RAM 1313/30697MB (lfb 37x4MB) SWAP 0/15348MB (cached 0MB) CPU [0%@729,0%@729,0%@729,0%@729,0%@729,0%@729,0%@729,0%@729,off,off,off,off] GR3D_FREQ 0% cpu@42.875C soc2@39.906C soc0@40.031C tj@42.875C soc1@38.906C VDD_GPU_SOC 1995mW/1995mW VDD_CPU_CV 0mW/0mW VIN_SYS_5V0 2524mW/2524mW
+    
     #Ctrl-C to stop
 
 Using NVIDIA Jetson Developer Kit Modules
