@@ -57,7 +57,6 @@ Courses
 * `Computation and the Brain, CS8803 at Georgia Tech <https://computationandbrain.wordpress.com/>`__ - a special topics course that covers the basics of neuroscience, relation to deep learning networks, and theoretical approaches to neuromorphic computing
 * `Harvard's Fundamentals of Neuroscience EdX <https://www.edx.org/xseries/harvardx-fundamentals-of-neuroscience>`__
 
-
 Survey Papers
 *************
 * `A Survey of Neuromorphic Computing and Neural Networks in Hardware <https://arxiv.org/abs/1705.06963>`__ - a very comprehensive overview of neuromorphic computing from 2017
@@ -78,3 +77,6 @@ These reports published in the US provide insight into the state-of-the-art and 
 Other Resources
 ***************
 * `The Computer and the Brain by John von Neumann <https://www.goodreads.com/book/show/13435605-the-computer-and-the-brain>`__ - an older book from one of the pioneers of computing. Note that neuroscience and computing have both evolved since this was written in 1958! 
+* `C. Schuman, et al. - Opportunities for neuromorphic computing algorithms and applications <https://www.nature.com/articles/s43588-021-00184-y>`__ - a nice article that focuses on advances in neuromorphic algorithms (as opposed to hardware). 
+* `NeuroBench - neuromorphic benchmark suite <https://neurobench.ai/>`__ - a newer effort to create benchmarks for applications that are well-suited for neuromorphic implementations.
+
