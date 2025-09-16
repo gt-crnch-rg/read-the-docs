@@ -1,9 +1,7 @@
 Using GUI Applications with VNC
 ==================================
 
-**NOTE:**\ Please also see our `page on using
-X2Go <%5BMisc%5D-Using-GUI-applications-with-X2Go>`__ as this is a
-little bit simpler to set up than VNC.
+.. caution:: \ \  This page is considered a legacy reference. You should use `Open OnDemand and the VNC application <https://gt-crnch-rg.readthedocs.io/en/main/general/open-on-demand.html>`__ to connect to the GUI on CRNCH RG nodes.
 
 Here we cover how to use a VNC server on the CRNCH Rogues Gallery
 machines to access and manipulate GUI-based applications. We typically
@@ -395,3 +393,4 @@ TBD - not totally clear why this might be happening..
    startxfce4
 
    Cannot open /dev/tty0 (Permission denied)
+
