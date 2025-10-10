@@ -164,31 +164,10 @@ With that in mind, we support the following versions of Xilinx software on our t
 
 How do I check the licenses that are available?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-You can either use the licensing center from the GUI version of a tool like Vivado or Vitis, or you can run the following:
 
-.. code-block::
+You can either use the licensing center from the GUI version of a tool like Vivado or Vitis, or you can use lmutil to check the licensing server. 
 
-    lmutil lmstat -a -c 2100@toolbox.crnch.gatech.edu
-
-    lmutil - Copyright (c) 1989-2016 Flexera Software LLC. All Rights Reserved.
-    Flexible License Manager status on Mon 4/5/2021 21:37
-
-    License server status: 2100@toolbox
-        License file(s) on toolbox: /tools/reconfig/licenses/xilinx_vivado_july2020.lic:
-
-    toolbox: license server UP (MASTER) v11.14.1
-
-    Vendor daemon status (on toolbox):
-
-        xilinxd: UP v11.14.1
-
-    Feature usage info:
-
-    Users of Vivado_System_Edition:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-    Users of SDK:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-    ...
-    Users of HLS:  (Total of 15 licenses issued;  Total of 0 licenses in use)
-    ...
+Please see our internal docs for more details `here <https://github.gatech.edu/crnch-rg/reconfig-docs/blob/main/licensing-servers.md>`__.
 
 Getting started with AWS for development
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
