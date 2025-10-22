@@ -79,17 +79,30 @@ Let's now look at ``init.sh``:
 
 .. figure:: ../figures/general/snNab-jupyter-kernel-init-sh.png
     :alt: init.sh
+Figure 7: init.sh
 
 This file is really only one command, [``apptainer exec``](https://apptainer.org/docs/user/main/cli/apptainer_exec.html). ``--nv`` enables nvidia support. ``/projects/rg_vip_class/neuro/snNab/snntorch-ffmppeg.sif`` is the singularity Apptainer file. 
 If you look at the specification for ``apptainer exec``:
 ``apptainer exec [exec options...] <container> <command>``
 ``python3 -m ipykernel $@`` is the command that is run inside of the container. ``python3 -m ipykernel`` runs the ipykernel module.
-But was is ``$@``? [Here](https://unix.stackexchange.com/questions/660122/what-is-in-bash) a good stack overflow thread on the ``$@`` special parameter. Remember "argv" in kernel.json. 
-The first element of argv: "/projects/rg_vip_class/neuro/snNab/kernel-spec/init.sh" is the name of the script for our new kernel to run, in this case, ``init.sh``. 
-The next two elements of "argv" are command line arguments we wish to pass to ``init.sh``. ``$@`` expands out all arguments passed into the script. In effect, the command the will be run is
+But was is ``$@``? [Here](https://unix.stackexchange.com/questions/660122/what-is-in-bash) is a good stack overflow thread on the ``$@`` special parameter. Remember "argv" in kernel.json. 
+The first element of argv: "/projects/rg_vip_class/neuro/snNab/kernel-spec/init.sh" is the name of the script for our kernel to run, in this case, ``init.sh``. 
+The next two elements of "argv" are command line arguments we wish to pass into ``init.sh``. ``$@`` expands out these arguments passed into the script. In effect, the command that will be run is:
 ``apptainer exec --nv /projects/rg_vip_class/neuro/snNab/snntorch-ffmppeg.sif python3 -m ipykernel -f {connection_file}``
 connection_file is provided to us by our JupyterNotebook. Ipykernel still acts as the interface between our Jupyter notebook and the language, but now it is running inside of our specified Apptainer image.
 It will now have access to all of the libraries and other dependencies that we included in the image. 
+
+
+Select Kernel in JupyterNotebook
+================================
+To select your new kernel inside of your JupyterNotebook, go to Kernel -> Change kernel and then select the kernel that you'd like to use.
+
+.. figure:: ../figures/general/jupyter-notebook-switch-kernel1.png
+    :alt: Switch Kernel
+Figure 8: Kernel -> Change kernel
+
+.. figure:: ../figures/general/jupyter-notebook-switch-kernel2.png
+Figure 9: Selecting SNN Torch kernel
 
 
 
