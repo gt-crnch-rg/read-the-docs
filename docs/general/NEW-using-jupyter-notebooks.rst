@@ -90,6 +90,15 @@ The next two elements of "argv" are command line arguments we wish to pass into 
 connection_file is provided to us by our JupyterNotebook. Ipykernel still acts as the interface between our Jupyter notebook and the language, but now it is running inside of our specified Apptainer image.
 The notebook codde can now utilize all of the dependencies that we included in the image. 
 
+Finally, you will need to move / copy the kernel into Jupyer's kernel directory: ``.local/share/jupyter/kernels/``
+You can do this with by creating a symbolic link between the kernel directory and a new directory in ``.local/share/jupyter/kernels``.
+The command for this is:  
+``ln -sfn /path/to/your/kernel/dir .local/share/jupyter/kernels/kernel-dir-name``
+
+.. figure:: ..figures/general/jupyter-kernel-movement.png
+    :alt: Moving kernel to Jupyter
+
+
 
 Select Kernel in JupyterNotebook
 --------------------------------
