@@ -44,7 +44,7 @@ Once your JupyterLab session is ready, its status will be shown. You can connect
     :alt: JupyerLab session running
 Figure 4: JupyterLab Session Running
 
-Finally you will be redirected to your JupyterLab session! It should look something like this:
+Finally, you will be redirected to your JupyterLab session! It should look something like this:
 
 .. figure:: ../figures/general/jupyter-lab-example2.png
     :alt: Example JupyterLab session
@@ -56,7 +56,7 @@ Overview of Starting a JupyerLab session on Open OnDemand:
 
 Running JupyterLab through Apptainer Container
 ----------------------------------------------
-Apptainer containers are enormously useful to standardize program dependencies. Unfortunately it is not obvious how to run Jupyter notebook code through an Apptainer. 
+Apptainer containers are enormously useful to standardize program dependencies. Unfortunately, it is not obvious how to run Jupyter notebook code through an Apptainer. 
 The solution is to use `Jupyter kernels <https://docs.jupyter.org/en/stable/projects/kernels.html>`__.
 The kernel acts an interface between the Jupyter notebook and the programming language. Given the notebook code to run, 
 the kernel runs the code and then helps display any outputs: text, graphs, etc. 
@@ -70,7 +70,7 @@ Inside our kernel-spec directory are two files. ``kernel.json`` and ``init.sh``.
     :alt: kernel.json
 Figure 6: kernel.json
 
-This file is relatively self explanatory, aside from "argv". Note that we specify our language as python. 
+This file is relatively self explanatory, aside from "argv". 
 "argv" is a list of command line arguments that will be passed to ``init.sh``. 
 
 Let's now look at ``init.sh``:
@@ -79,11 +79,13 @@ Let's now look at ``init.sh``:
     :alt: init.sh
 Figure 7: init.sh
 
-This file is really only one command, `apptainer exec <(https://apptainer.org/docs/user/main/cli/apptainer_exec.html)>`__. ``--nv`` enables nvidia support. ``/projects/rg_vip_class/neuro/snNab/snntorch-ffmppeg.sif`` is the singularity Apptainer file. 
+This file is really only one command, `apptainer exec <https://apptainer.org/docs/user/main/cli/apptainer_exec.html>`__. The ``--nv`` option enables nvidia support. ``/projects/rg_vip_class/neuro/snNab/snntorch-ffmppeg.sif`` is the singularity Apptainer file. 
 If you look at the specification for ``apptainer exec``:  
+
 ``apptainer exec [exec options...] <container> <command>``  
-``python3 -m ipykernel $@`` is the command that is run inside of the container. ``python3 -m ipykernel`` runs the ipykernel module.
-But was is ``$@``? `Here <https://unix.stackexchange.com/questions/660122/what-is-in-bash>`__ is a good stack overflow thread on the ``$@`` special parameter. Remember "argv" in kernel.json. 
+
+it is clear that ``python3 -m ipykernel $@`` is the command that is run inside of the container. ``python3 -m ipykernel`` runs the ipykernel module.
+But what is ``$@``? `Here <https://unix.stackexchange.com/questions/660122/what-is-in-bash>`__ is a good stack overflow thread on the ``$@`` special parameter. Remember "argv" in kernel.json. 
 The first element of argv: "/projects/rg_vip_class/neuro/snNab/kernel-spec/init.sh" is the name of the script for our kernel to run, in this case, ``init.sh``. 
 The next two elements of "argv" are command line arguments we wish to pass into ``init.sh``. ``$@`` expands out these arguments passed into the script. In effect, the command that will be run is:  
 ``apptainer exec --nv /projects/rg_vip_class/neuro/snNab/snntorch-ffmppeg.sif python3 -m ipykernel -f {connection_file}``  
