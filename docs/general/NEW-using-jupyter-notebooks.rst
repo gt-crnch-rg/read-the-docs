@@ -12,8 +12,8 @@ schedulable Jupyter notebooks via our Slurm scheduler.
 Using Open On Demand
 --------------------------------------------
 We recommend using Open on Demand to run JupyterLab. 
-To begin, head to the `CRNCH OOD Login Page <https://rg-ood.crnch.gatech.edu>`__
-You will need to authenticate with your GT credentials. 
+To begin, head to the `CRNCH OOD Login Page <https://rg-ood.crnch.gatech.edu>`__,
+you will need to authenticate with your GT credentials. 
 
 Next, go to Interactive Apps -> JupyterLab
 
@@ -88,16 +88,16 @@ The first element of argv: "/projects/rg_vip_class/neuro/snNab/kernel-spec/init.
 The next two elements of "argv" are command line arguments we wish to pass into ``init.sh``. ``$@`` expands out these arguments passed into the script. In effect, the command that will be run is:  
 ``apptainer exec --nv /projects/rg_vip_class/neuro/snNab/snntorch-ffmppeg.sif python3 -m ipykernel -f {connection_file}``  
 connection_file is provided to us by our JupyterNotebook. Ipykernel still acts as the interface between our Jupyter notebook and the language, but now it is running inside of our specified Apptainer image.
-The notebook codde can now utilize all of the dependencies that we included in the image. 
+The notebook code is able to utilize all of the dependencies that we included in the image. 
 
 Finally, you will need to move / copy the kernel into Jupyer's kernel directory: ``.local/share/jupyter/kernels/``
-You can do this with by creating a symbolic link between the kernel directory and a new directory in ``.local/share/jupyter/kernels``.
+You can do this with by creating a symbolic link between the kernel directory and a new directory in ``.local/share/jupyter/kernels/``.
 The command for this is:  
 
 ``ln -sfn /path/to/your/kernel/dir .local/share/jupyter/kernels/kernel-dir-name``
 
-.. figure:: ..figures/general/jupyter-kernel-movement.png
-    :alt: Moving kernel to Jupyter
+.. figure:: ../figures/general/jupyter-kernel-movement.png
+    :alt: Example: Moving kernel to Jupyter
 
 
 
