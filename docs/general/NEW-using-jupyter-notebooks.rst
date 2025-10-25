@@ -25,7 +25,6 @@ Figure 1: Interactive Apps -> JupyterLab
 You will then need to configure the settings for your JupyterLab session. For general use, Dr.Young recommends
 the partition be set to **rg-dev** using the **crush** node. 
 You can select the hours and CPU settings according to your needs. 
-For general use (i.e not ML training, HPC tasks) you should not need more than 1 CPU. 
 
 .. figure:: ../figures/general/ood-navbar-jupyter-lab.png
     :alt: Setting JupyterLab session settings
@@ -55,17 +54,16 @@ Overview of Starting a JupyerLab session on Open OnDemand:
 
 Running JupyterLab through Apptainer Container
 ==============================================
-Apptainer containers are an enormously useful to standardize program dependencies. Unfortunately it is not obvious how to run Jupyter notebook code through an Apptainer. 
+Apptainer containers are enormously useful to standardize program dependencies. Unfortunately it is not obvious how to run Jupyter notebook code through an Apptainer. 
 The solution is to use `Jupyter kernels <https://docs.jupyter.org/en/stable/projects/kernels.html>`.
-The kernel is an interface between the Jupyter notebook and the programming language. Given the notebook code to run, 
+The kernel acts an interface between the Jupyter notebook and the programming language. Given the notebook code to run, 
 the kernel runs the code and then helps display any outputs: text, graphs, etc. 
 [ipykernel](https://github.com/ipython/ipykernel) is Jupyter's built in python kernel, which itself is built on top of [IPython](https://ipython.org/). 
 To use run our (python) code through an Apptainer, we will build an additional layer on top of IPython.
 We use as example a kernel created by Dr. Jezghani for the neuromorphic subteam.
 
 
-// TODO: ADD LINK
-[Link]()
+[kernel-spec](https://github.gatech.edu/crnch-rg/vip-neuro-snNab)
 
 Inside our kernel-spec directory are two files. ``kernel.json`` and ``init.sh``. Let's begin with kernel.json:
 .. figure:: ../figures/general/snNab-jupyter-kernel-spec.png
@@ -103,6 +101,7 @@ Figure 8: Kernel -> Change kernel
 
 .. figure:: ../figures/general/jupyter-notebook-switch-kernel2.png
 Figure 9: Selecting SNN Torch kernel
+
 
 
 
