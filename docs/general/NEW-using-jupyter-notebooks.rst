@@ -93,6 +93,7 @@ The notebook codde can now utilize all of the dependencies that we included in t
 Finally, you will need to move / copy the kernel into Jupyer's kernel directory: ``.local/share/jupyter/kernels/``
 You can do this with by creating a symbolic link between the kernel directory and a new directory in ``.local/share/jupyter/kernels``.
 The command for this is:  
+
 ``ln -sfn /path/to/your/kernel/dir .local/share/jupyter/kernels/kernel-dir-name``
 
 .. figure:: ..figures/general/jupyter-kernel-movement.png
