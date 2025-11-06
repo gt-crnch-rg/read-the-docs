@@ -8,6 +8,7 @@ Current maintainers:
 
 Community Contributors (listed alphabetically):
 -----------------------------------------------
+* Alaric Jenkins, Georgia Tech
 * Yujen Juan, Lucata Corporation
 * Simrat Kaur, Illinois Tech
 * Jason Riedy, Lucata Corporation

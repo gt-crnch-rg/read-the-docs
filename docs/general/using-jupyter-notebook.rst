@@ -3,9 +3,7 @@ Jupyter Notebooks
 JuptyerLab is an interactive notebook that interleaves runnable code with figures, text, and other educational aids.
 
 We suggest using JupyterLab as your interface for neuromorphic, quantum,
-and reconfigurable research. PACE has a `nice
-article <https://docs.pace.gatech.edu/interactiveJobs/jupyterInt/>`__ on
-using Jupyter notebooks we also recommend. Eventually we will support
+and reconfigurable research. Eventually we will support
 schedulable Jupyter notebooks via our Slurm scheduler.
 
 
@@ -22,7 +20,7 @@ Next, go to Interactive Apps -> JupyterLab
 Figure 1: Interactive Apps -> JupyterLab
 
 
-You will then need to configure the settings for your JupyterLab session. For general use, Dr. Young recommends
+You will then need to configure the settings for your JupyterLab session. For general use, we recommend
 the partition be set to **rg-dev** using the **crush** node. 
 You can select the hours and CPU settings according to your needs. 
 
@@ -62,7 +60,7 @@ The kernel acts an interface between the Jupyter notebook and the programming la
 the kernel runs the code and then helps display any outputs: text, graphs, etc. 
 `ipykernel <https://github.com/ipython/ipykernel>`__ is Jupyter's built in python kernel, which itself is built on top of `IPython <https://ipython.org/>`__. 
 To use run our (python) code through an Apptainer, we will build an additional layer on top of IPython.
-We use as example a kernel created by Dr. Jezghani for the neuromorphic subteam: `kernel-spec <https://github.gatech.edu/crnch-rg/vip-neuro-snNab>`__
+We use as example a kernel for the neuromorphic subteam: `kernel-spec <https://github.gatech.edu/crnch-rg/vip-neuro-snNab>`__
 
 Inside our kernel-spec directory are two files. ``kernel.json`` and ``init.sh``. Let's begin with kernel.json:
 
