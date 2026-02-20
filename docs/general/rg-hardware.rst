@@ -17,20 +17,14 @@ hardware, as described more in the tables below.
 .. figure:: ../figures/general/rg-machine-overview.png
    :alt: Rogues Gallery Hardware
 
-RG Virtual Machines
-===================
 
-Note that VMs are meant as development resources since we may need to
-reboot physical hardware often to apply new drivers or reconfigure for
-specific experiments. These VMs have limited CPU cores and memory, but
-we can reconfigure them as needed or provide additional resources for
-long-running simulations. Local storage refers to space hosted within
-the VM for /localscratch. Except where noted, all machines are running
-RHEL8 or Ubuntu 22.04.
+RG Compute Nodes
+====================
 
-RG Virtual Machines
---------------------
-.. list-table:: 
+Development and Simulation
+--------------------------------
+
+.. list-table::
     :widths: auto
     :header-rows: 1
     :stub-columns: 1
@@ -38,21 +32,17 @@ RG Virtual Machines
     * - Resource
       - CPU
       - Memory (GB)
-      - Local Storage (GB)
-      - Software and Features
-    * - rg-emu-dev
-      - 4 core, E312xx
-      - 4
-      - 33
-      - Emu simulator and tools
-      
+      - Network
+      - Notes
+    * - crush
+      - 4x `Intel E5-4620 v4 <https://www.intel.com/content/www/us/en/products/sku/93800/intel-xeon-processor-e54620-v4-25m-cache-2-10-ghz/specifications.html>`__
+      - 1024 DDR3
+      - 10 GE
+      - Used for Jupyter notebooks, containers, general development, and simulations
 
+Novel HPC and Novel Networking
+------------------------------
 
-RG Physical Machines
-====================
-
-Arm HPC
---------------------
 .. list-table:: 
     :widths: auto
     :header-rows: 1
@@ -64,17 +54,42 @@ Arm HPC
       - Network
       - Cards
       - Notes
-    * - octavius<1-16>
+    * - octavius<1-8>
       - A64FX
       - 32 GB HBM2e
       - EDR IB
       - 
-      - 
+      -
+    * - flubber6
+      - 2x `AMD EPYC 7513 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7513>`__
+      - 256 DDR4, 3200 MHz, 16 GB DIMMs
+      - NVIDIA ConnectX-6, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__, Bluefield-2 NIC, Intel N6000
+      - NA
+      - Smart Networking Node
+    * - flubber7
+      - 2x `AMD EPYC 7513 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7513>`__
+      - 256 DDR4, 3200 MHz, 16 GB DIMMs
+      - NVIDIA ConnectX-6, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__, Bluefield-2 NIC, Intel N6000 
+      - NA
+      - Smart Networking Node
+    * - flubber9
+      - 2x `Intel Gold 6338 <https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html>`__
+      - 512 DDR4, 3200 MHz, 32 GB DIMMs
+      - NVIDIA ConnectX-6
+      - NA
+      - NA
+    * - flubber10
+      - 2x `Intel Gold 6338 <https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html>`__
+      - 512 DDR4, 3200 MHz, 32 GB DIMMs
+      - NVIDIA ConnectX-6
+      - NA 
+      - NA
+
 
 Near-Memory
 --------------------
 
-The Pathfinder system consists of 4 chassis while the Emu Chick is a one chassis system. We recommend that you use the newer Pathfinder system for your work.
+The Lucata Pathfinder system consists of 4 chassis of novel, near-memory compute accelerators.
 
 .. list-table:: 
     :widths: auto
@@ -93,12 +108,6 @@ The Pathfinder system consists of 4 chassis while the Emu Chick is a one chassis
       - 784
       - RapidIO 2.0, 10 GE
       - 
-    * - karrawingi (Emu Chick, 1 chassis)
-      - 8
-      - 512
-      - 64
-      - RapidIO, 1 GE
-      - karrawingi-login
 
 Neuromorphic/AI
 --------------------
@@ -125,29 +134,17 @@ Neuromorphic/AI
       - Bluefield-2 NIC, 10 GE
       - 4x A30, 1x A100
       -
-    * - rg-fpaa-host
-      - Raspberry Pi Model 3B
-      - 2 GB
-      - 
-      - 
-      - Hosts FPAA via USB UART connection
-    * - rudi1
-      - 
+    * - kingpin<1-2>
       -
       -
       -
-      - `Jetson Xavier NX Developer Kit <https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit>`__
-    * - rudi2
-      - 
       -
       -
-      -
-      - `Jetson Orin AGX Developer Kit (see page here `<https://gt-crnch-rg.readthedocs.io/en/main/neuromorphic/rudi-jetson-dev-boards.html>`__)
-      
-Reconfigurable and Novel Networking
+
+Reconfigurable Computing
 -----------------------------------
-	
-.. list-table:: 
+
+.. list-table::
     :widths: auto
     :header-rows: 1
     :stub-columns: 1
@@ -188,58 +185,14 @@ Reconfigurable and Novel Networking
       - NVIDIA ConnectX-6 
       - Xilinx Alveo U280
       - NA
-    * - flubber6
-      - 2x `AMD EPYC 7513 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7513>`__
-      - 256 DDR4, 3200 MHz, 16 GB DIMMs
-      - NVIDIA ConnectX-6, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__, Bluefield-2 NIC, Intel N6000 
-      - NA 
-      - Smart Networking Node
-    * - flubber7
-      - 2x `AMD EPYC 7513 (Milan) <https://www.amd.com/en/products/cpu/amd-epyc-7513>`__
-      - 256 DDR4, 3200 MHz, 16 GB DIMMs
-      - NVIDIA ConnectX-6, Innova-2 Flex, `Bluefield-1 NIC <https://github.gatech.edu/crnch-rg/rogues-docs/wiki/%5BNetworking%5D-Mellanox-BlueField-Resources>`__, Bluefield-2 NIC, Intel N6000 
-      - NA
-      - Smart Networking Node
     * - flubber8
       - 2x `Intel Gold 6338 <https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html>`__
       - 512 DDR4, 3200 MHz, 32 GB DIMMs
       - NVIDIA ConnectX-6
       - NA 
       - NA
-    * - flubber9
-      - 2x `Intel Gold 6338 <https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html>`__
-      - 512 DDR4, 3200 MHz, 32 GB DIMMs
-      - NVIDIA ConnectX-6
-      - NA 
-      - NA
-    * - flubber10
-      - 2x `Intel Gold 6338 <https://www.intel.com/content/www/us/en/products/sku/212285/intel-xeon-gold-6338-processor-48m-cache-2-00-ghz/specifications.html>`__
-      - 512 DDR4, 3200 MHz, 32 GB DIMMs
-      - NVIDIA ConnectX-6
-      - NA 
-      - NA
       
-Devboard Hosts
---------------------   
-.. list-table:: 
-    :widths: auto
-    :header-rows: 1
-    :stub-columns: 1
-    
-    * - Resource
-      - CPU
-      - Memory (GB)
-      - Network
-      - Cards
-      - Notes
-    * - brainard2
-      - i5-10210U
-      - 32 GB DDR4, 2666 MHz, 16 GB DIMMs
-      - 1 GE
-      - 
-      - Connection to RISC-V board and FPGA, `Intel NUC10i5FNK <https://www.intel.com/content/www/us/en/products/sku/195507/intel-nuc-10-performance-kit-nuc10i5fnk/specifications.html>`__
-      
-RISC-V
+Devboards and NUCs (Intel, RISC-V, Arm)
 --------------------   
 .. list-table:: 
     :widths: auto
@@ -252,9 +205,15 @@ RISC-V
       - Network
       - Platform Name
       - Notes
+    * - brainard2
+      - i5-10210U
+      - 32 GB DDR4, 2666 MHz, 16 GB DIMMs
+      - 1 GE
+      - 
+      - Connection to RISC-V board and FPGA, `Intel NUC10i5FNK <https://www.intel.com/content/www/us/en/products/sku/195507/intel-nuc-10-performance-kit-nuc10i5fnk/specifications.html>`__
     * - johnny-rv5-1
       - 4xU74 cores and 1xS7 core, 1.4 GHz
-      - 16 GB DDR4	
+      - 16 GB DDR4
       - 1 GB Ethernet
       - SiFive Unmatched board
       -
@@ -276,25 +235,12 @@ RISC-V
       - 1 GB Ethernet
       - `Milk-V Pioneer system <https://milkv.io/pioneer>`__
       - Contains AMD R5 230 GPU (2014 era GPU)
-
-Simulation and Tutorial Machines
---------------------------------
-	
-.. list-table:: 
-    :widths: auto
-    :header-rows: 1
-    :stub-columns: 1
-
-    * - Resource
-      - CPU
-      - Memory (GB)
-      - Network
-      - Notes
-    * - crush
-      - 4x `Intel E5-4620 v4 <https://www.intel.com/content/www/us/en/products/sku/93800/intel-xeon-processor-e54620-v4-25m-cache-2-10-ghz/specifications.html>`__
-      - 1024 DDR3
-      - 10 GE
-      - Used for Jupyter notebooks, containers, and simulations
+    * - magpie5-1
+      - Arm Cortex-A76
+      - 8 GB DDR4
+      - 1 GB Ethernet
+      - Raspberry Pi 5
+      -
 
 Rogues Gallery Networking
 =========================
@@ -326,7 +272,7 @@ File servers typically connect to the network via paired 40 Gigabit Ethernet lin
       - 100 Gigabit
       - Octavius, Mellanox NICs 
       - Used to connect the Octavius nodes together as well as for requested InfiniBand network accelerators
-    * - Cisco 1 GE Switch__
+    * - Cisco 1 GE Switch
       - 48x 1 Gigabit Ethernet
       - 1 Gigabit
       - pynq-z2-*, johnny-rv5-*, brainard2
@@ -357,3 +303,21 @@ Techfee Systems
       - BlueField 3 DPU, 10 GE
       - Dash 1-2 have an Alveo U280; Dash 3-4 have Napa:Tech SmartNICs
       - FY 2023 TechFee Acquisition
+    * - cable1
+      - 
+      -
+      -
+      -
+      - AMD Threadripper system
+    * - rudi1
+      - 
+      -
+      -
+      -
+      - `Jetson Xavier NX Developer Kit <https://developer.nvidia.com/embedded/jetson-xavier-nx-devkit>`__
+    * - rudi2
+      - 
+      -
+      -
+      -
+      - `Jetson Orin AGX Developer Kit <https://gt-crnch-rg.readthedocs.io/en/main/neuromorphic/rudi-jetson-dev-boards.html>`__
